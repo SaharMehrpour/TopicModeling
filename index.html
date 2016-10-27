@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Topic Model Browser</title>
+    <link rel="stylesheet" href="public/css/index.css" type="text/css">
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="main_nav" class="container">
+    <ul class="navbar">
+      <li id="nav_model" class="active"><a href="#/model">Overview</a></li>
+      <li id="nav_topic" class="dropdown"><a href="#/topic">Topic</a></li>
+      <li id="nav_doc"><a href="#/doc">Document</a></li>
+      <li id="nav_word"><a href="#/word">Word</a></li>
+      <li id="nav_bib"><a href="#/bib">Bibliography</a></li>
+      <li id="nav_words"><a href="#/words">Word index</a></li>
+      <li id="nav_settings" style="float:right"><a href="#/settings">Settings</a></li>
+      <li id="nav_about" style="float:right"><a href="#/about">About</a></li>
+    </ul>
+</div>
+
+<div id="view_container" class="container">
+    <div id="model_nav" class="container">
+        <div>
+            <ul class="navbar">
+                <li id="nav_model_list" class="active"><a href="#/model/list">List</a></li>
+                <li id="nav_model_scaled"><a href="#/model/scaled">Scaled</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main_view_container" class="container">
+        <div id="model_view" class="main_view hidden">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <a href="#/model/list/topic" title="click to sort">
+                            Topic Name
+                        </a><span class="glyphicon glyphicon-sort"></span>
+                    </th>
+                    <th>
+                        <a href="#/model/list/condition"
+                           title="click to sort by location of peak">
+                            Distribution Over Time
+                        </a><span class="glyphicon glyphicon-sort"></span>
+                    </th>
+                    <th>
+                        <a href="#/model/list/words" title="click to sort">
+                            Top Words
+                        </a><span class="glyphicon glyphicon-sort"></span>
+                    </th>
+                    <th colspan="2">
+                        <a href="#/model/list/frac" title="click to sort">
+                            Proportion of Corpus
+                        </a><span class="glyphicon glyphicon-sort"></span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="topic_view" class="main_view hidden">
+            <div id="topic_view_title" class="row">
+                <h1>Topic Title</h1>
+            </div>
+            <div class="row container">
+                <div class="column1">
+                    <h3>Topic Words</h3>
+                    <table id="topic_view_table" class="table">
+                        <thead>
+                        <tr>
+                            <th>
+                                <a href="#/model/list/topic" title="click to sort">
+                                    Word
+                                </a><span class="glyphicon glyphicon-sort"></span>
+                            </th>
+                            <th>
+                                <a href="#/model/list/condition"
+                                   title="click to sort by location of peak">
+                                    Weight
+                                </a><span class="glyphicon glyphicon-sort"></span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="column2">
+                    <div class="container">
+                        <h3>Conditional proportion of words in topic</h3>
+                        <p>Click a bar to limit to the documents it represents clear selected</p>
+                        <div> button</div>
+                        <div id="topic_view_graph"></div>
+                    </div>
+                    <div id="topic_view_papers" class="container">
+                        <h3>Topic documents</h3>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <a href="#/model/list/topic" title="click to sort">
+                                        Document
+                                    </a><span class="glyphicon glyphicon-sort"></span>
+                                </th>
+                                <th>
+                                    <a href="#/model/list/condition"
+                                       title="click to sort by location of peak">
+                                        %
+                                    </a><span class="glyphicon glyphicon-sort"></span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bib_view" class="main_view hidden">
+            bib view
+        </div>
+        <div id="doc_view" class="main_view hidden">
+            doc view
+        </div>
+        <div id="words_view" class="main_view hidden">
+            words view
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript" src="public/js/modelViewList.js"></script>
+<script type="application/javascript" src="public/js/topicViewGraph.js"></script>
+<script type="application/javascript" src="public/js/topicViewTable.js"></script>
+<script type="application/javascript" src="public/js/topicViewPapers.js"></script>
+<script type="application/javascript" src="public/js/topicView.js"></script>
+<script type="application/javascript" src="public/js/menuChart.js"></script>
+<script type="application/javascript" src="public/js/urlChangingHandling.js"></script>
+<script type="application/javascript" src="public/js/main.js"></script>
+
+<!--
+<div style="background-color: skyblue; padding: 12px; height: 100%; position: relative">
+menu
+</div>
+<div style="background-color: forestgreen; padding: 12px; height: 100%; position: relative">
+View container
+<div style="background-color: lime; padding: 12px">
+     view menu container
+    <div style="background-color: brown; padding: 12px">
+        view menu
+    </div>
+</div>
+<div style="background-color: rebeccapurple; padding: 12px">
+    main view container
+    <div style="background-color: orchid; padding: 12px">
+        Main stuff goes here!!!
+    </div>
+</div>
+</div>
+-->
+</body>
+
+</html>
+

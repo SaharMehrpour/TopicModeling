@@ -1,0 +1,113 @@
+/* The main menu bar style*/
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.active {
+    background-color: lightsteelblue;
+}
+
+/* Container divisions styles */
+
+.main_view {
+    /*background-color: gray;*/
+}
+
+.hidden {
+    display: none!important;
+    visibility: hidden!important;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    position: relative;
+    padding: 12px;
+}
+
+.row{
+    /* cover all width */
+}
+
+#topic_view .column1 {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+#topic_view .column2 {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+
+/* Table Styles */
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th{
+    border-bottom: 3px solid #ddd;
+    border-top: 3px solid #ddd;
+}
+
+.table th a {
+    display: block;
+    color: #333333;
+    text-align: left;
+    text-decoration: none;
+}
+
+.table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color:#f5f5f5
+}
+
+.corpusText {
+    fill: black;
+    font: 10px sans-serif;
+}
+
+/* Graph Style*/
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
