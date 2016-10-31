@@ -14,7 +14,7 @@ function TopicViewTable(topicWords) {
     self.topicWords = topicWords["tw"];
 
     self.dimensions = {
-        "wordCellwidth": 70, "weightCellWidth": 90, "weigthCellHeight": 20
+        "wordCellwidth": 70, "weightCellWidth": 90, "weightCellHeight": 20
     };
 
 }
@@ -84,7 +84,7 @@ TopicViewTable.prototype.update = function(topicID) {
 
         var group = d3.select(this).append("svg")
             .attr("width", self.dimensions.weightCellWidth)
-            .attr("height", self.dimensions.weigthCellHeight)
+            .attr("height", self.dimensions.weightCellHeight)
             .append("g");
 
         group.append("rect")
@@ -93,11 +93,11 @@ TopicViewTable.prototype.update = function(topicID) {
             .attr("width", function () {
                 return weightXScale(+d.value);
             })
-            .attr("height", self.dimensions.weigthCellHeight)
+            .attr("height", self.dimensions.weightCellHeight)
             .attr("fill", function () {
                 return weightColorScale(+d.value);
             });
-
+/*
         group.append("text")
             .attr("x", 5)
             .attr("y", self.dimensions.weigthCellHeight / 2)
@@ -106,6 +106,7 @@ TopicViewTable.prototype.update = function(topicID) {
                 return d.value;
             })
             .attr("class", "corpusText");
+*/
     });
 
     // add more columns

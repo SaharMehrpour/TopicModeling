@@ -5,7 +5,7 @@
 /**
  * Constructor for the TopicView
  */
-function TopicView(topicWords,topicLabels,topicYears,papers) {
+function TopicView(topicWords,topicLabels,topicYears,papers,paperTopics) {
 
     var self = this;
 
@@ -13,13 +13,14 @@ function TopicView(topicWords,topicLabels,topicYears,papers) {
 
     self.topicWords = topicWords["tw"];
     self.topicLabels = topicLabels;
+    self.paperTopics = paperTopics;
     self.papers = papers;
 
     self.title = self.div.select("#topic_view_title > h1");
 
     self.topicViewTable = new TopicViewTable(topicWords);
     self.topicViewGraph = new TopicViewGraph(topicYears);
-    self.topicViewPapers = new TopicViewPapers(papers);
+    self.topicViewPapers = new TopicViewPapers(papers, paperTopics);
 }
 
 TopicView.prototype.update = function(topicID) {
@@ -31,4 +32,5 @@ TopicView.prototype.update = function(topicID) {
 
     self.topicViewTable.update(topicID);
     self.topicViewGraph.update(topicID);
+    self.topicViewPapers.update(topicID);
 };

@@ -47,6 +47,11 @@ div {
     padding: 12px;
 }
 
+.cont2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .row{
     /* cover all width */
 }

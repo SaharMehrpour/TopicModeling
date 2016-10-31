@@ -25,9 +25,11 @@
                             var modelViewList = new ModelViewList(topicWords, topicLabels,
                                 paperTopics, topicYears);
 
-                            var topicView = new TopicView(topicWords, topicLabels, topicYears,papers);
+                            var topicView = new TopicView(topicWords, topicLabels, topicYears, papers, paperTopics);
 
-                            var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList, topicView);
+                            var docView = new DocView(papers, paperTopics, topicLabels, topicWords);
+
+                            var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList, topicView, docView);
 
                             if ("onhashchange" in window) { // event supported?
                                 window.onhashchange = function () {

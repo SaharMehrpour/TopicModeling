@@ -32,6 +32,8 @@ function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
     self.asc = [false, false, false, false]; // For sorting
     self.corpusThreshold = 0.1;
     self.maxCorpusValue = 10; // max percentage value for corpus, used for visualizing the forth column
+    self.maxBarValue = 30; // max value for bars in the table
+    self.xTopWords = 10;
 
     self.init();
 
@@ -144,15 +146,17 @@ ModelViewList.prototype.update = function() {
 
         var yearsColorScale = d3.scaleLinear()
             .range(["lightblue", "darkblue"])
-            .domain([0, d3.max(years, function (g) {
-                return +g;
-            })]);
+            //.domain([0, d3.max(years, function (g) {
+            //    return +g;
+            //})]);
+            .domain([0, self.maxBarValue]);
 
         var yScale = d3.scaleLinear()
             .range([0, self.dimensions.yearCellHeight])
-            .domain([0, d3.max(years, function (g) {
-                return +g;
-            })]);
+            //.domain([0, d3.max(years, function (g) {
+            //    return +g;
+            //})]);
+            .domain([0, self.maxBarValue]);
 
         var xScale = d3.scaleLinear()
             .range([0, self.dimensions.yearCellWidth])
@@ -193,7 +197,7 @@ ModelViewList.prototype.update = function() {
     }).each(function (d) {
         d3.select(this)
             .text(function () {
-                return findTopWord(d.value);
+                return self.findTopWord(d.value);
             });
     });
 
@@ -259,9 +263,8 @@ ModelViewList.prototype.computeCorpus = function (topicIndex) {
 /*
 Sort words based on weight.
  */
-function findTopWord(wordWeight) {
-
-    var xTopWords = 10;
+ModelViewList.prototype.findTopWord = function(wordWeight) {
+    var self = this;
 
     var list = [];
     for (var i = 0; i < wordWeight['words'].length; i++)
@@ -271,13 +274,11 @@ function findTopWord(wordWeight) {
         return ((a.weight < b.weight) ? -1 : ((a.weight == b.weight) ? 0 : 1));
     });
 
-    console.log(list);
-
     var words = "";
-    for (var j = 0; j < xTopWords - 1; j++) {
+    for (var j = 0; j < self.xTopWords - 1; j++) {
         words += list[j]['label'] + ", ";
     }
-    words += list[xTopWords - 1]['label'];
+    words += list[self.xTopWords - 1]['label'];
     return words;
 
 };

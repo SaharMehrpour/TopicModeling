@@ -96,11 +96,11 @@ TopicViewGraph.prototype.update = function(topicID) {
 
     self.div.select("svg").append("g")
         .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
-        .call(yAxis)
-        .selectAll("text")
-        .text(function () {
-            return d3.select(this).text() + "%";
-        });
+        .call(yAxis);
+        //.selectAll("text")
+        //.text(function () {
+        //    return d3.select(this).text() + "%";
+        //});
 
     self.div.select("svg").append("g")
         .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
