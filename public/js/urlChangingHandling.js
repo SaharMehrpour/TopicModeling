@@ -14,6 +14,8 @@ function UrlChangingHandling(menuChart,modelViewList,topicView,docView) {
 
 UrlChangingHandling.prototype.hashChangedHandler = function(hash){
 
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     self.menuChart.update(hash);
 
     d3.selectAll(".main_view").classed("hidden",true);

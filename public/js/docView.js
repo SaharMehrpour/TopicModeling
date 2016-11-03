@@ -94,14 +94,19 @@ DocView.prototype.update = function(paperID) {
             // TODO: do something!
         });
 
-    var cells = enterRows.merge(rows).selectAll("td")
+    rows = enterRows.merge(rows);
+
+    rows.on("click",function (d) {
+        location.hash = "#/topic/" + d["id"];
+    });
+
+    var cells = rows.selectAll("td")
         .data(function (d) {
             return [
                 {'type': 'topic_name', 'value': d['id']}, // data for column 1
                 {'type': 'topWords', 'value': d['id']},  // data for column 2
                 {'type': 'weight', 'value': d['value']},   // data for column 3
                 {'type': 'percentage', 'value': d['value']},   // data for column 4
-                {'type': 'tokens', 'value': d['id']}   // data for column 5
                 // add the data for more columns
             ];
         });
@@ -185,19 +190,6 @@ DocView.prototype.update = function(paperID) {
                     return d3.format(".3n")(d.value * 100) + "%";
                 });
         });
-
-    // 5th Column
-
-    var tokens = cells.filter(function (d) {
-        return d.type == 'tokens'
-    })
-        .each(function (d) {
-            d3.select(this)
-                .text(function () {
-                    //return self.findTokens(d.value);
-                });
-        });
-
 
     // add more columns
 

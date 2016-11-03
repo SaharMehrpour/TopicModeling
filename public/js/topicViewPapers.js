@@ -19,7 +19,7 @@ function TopicViewPapers(papers, paperTopics) {
 }
 
 
-TopicViewPapers.prototype.update = function(topicID) {
+TopicViewPapers.prototype.update = function(topicID,year) {
 
     var self = this;
 
@@ -28,10 +28,29 @@ TopicViewPapers.prototype.update = function(topicID) {
         return d3.descending(a[topicID], b[topicID]);
     });
 
-    var topDocs = self.paperTopics
-        .filter(function (d, i) {
-            return i < self.xTop;
-        });
+    var topDocs;
+
+    if(year !== undefined) {
+        topDocs = self.paperTopics
+            .filter(function (d) {
+
+                var paper = self.papers.filter(function (g) {
+                    return g["Paper Id"] === d["paper"];
+                });
+
+                if (paper.length === 0) return;
+                return paper[0]["Year"] == year;
+            })
+            .filter(function (d, i) {
+                return (i < self.xTop && d[topicID] > 0);
+            });
+    }
+    else {
+        topDocs = self.paperTopics
+            .filter(function (d, i) {
+                return i < self.xTop;
+            });
+    }
 
     var rows = self.table.select("tbody").selectAll("tr")
         .data(topDocs);
@@ -41,7 +60,6 @@ TopicViewPapers.prototype.update = function(topicID) {
     var enterRows = rows.enter()
         .append("tr")
         .on("click", function (d) {  // clicking a row in a table will do this
-            // TODO: do something!
             location.hash = "#/doc/" + d["paper"];
         });
 

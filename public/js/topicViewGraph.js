@@ -5,12 +5,13 @@
 /**
  * Constructor for the TopicViewGraph
  */
-function TopicViewGraph(topicYears) {
+function TopicViewGraph(topicYears,topicViewPapers) {
 
     var self = this;
 
     self.div = d3.select("#topic_view_graph");
     self.topicYears = topicYears;
+    self.topicViewPapers = topicViewPapers;
 
     self.dimensions = {
         "svgWidth": 750, "svgHeight" : 300,
@@ -97,17 +98,21 @@ TopicViewGraph.prototype.update = function(topicID) {
     self.div.select("svg").append("g")
         .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
         .call(yAxis);
-        //.selectAll("text")
-        //.text(function () {
-        //    return d3.select(this).text() + "%";
-        //});
+    //.selectAll("text")
+    //.text(function () {
+    //    return d3.select(this).text() + "%";
+    //});
 
-    self.div.select("svg").append("g")
-        .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
-        .attr("class", "grid")
-        .call(yAxis
-            .tickSize(-self.dimensions.graphWidth)
-            .tickFormat(""));
+
+    /*
+     // add grid lines
+     var gridlines = self.div.select("svg").append("g")
+     .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
+     .attr("class", "grid")
+     .call(yAxis
+     .tickSize(-self.dimensions.graphWidth)
+     .tickFormat(""));
+     */
 
     // add bars
 
@@ -117,6 +122,7 @@ TopicViewGraph.prototype.update = function(topicID) {
 
     rects.enter()
         .append("rect")
+        .merge(rects)
         .attr("x", function (d, i) {
             return xScale(i) + self.padding;
         })
@@ -127,9 +133,20 @@ TopicViewGraph.prototype.update = function(topicID) {
         .attr("width", xScale(1) - self.padding)
         .attr("fill", function (d) {
             return yearsColorScale(+d);
+        })
+        .on("click", function (d, i) {
+            if (d3.select(this).classed("selectedBar")) {
+                d3.select(this).classed("selectedBar", false);
+                d3.select("#topic_view_papers").select("span").text("")
+                self.topicViewPapers.update(topicID)
+            }
+            else {
+                self.div.selectAll("rect").classed("selectedBar", false);
+                d3.select(this).classed("selectedBar", true);
+                d3.select("#topic_view_papers").select("span").text(": " + (self.baseYear + i))
+                self.topicViewPapers.update(topicID, self.baseYear + i)
+            }
         });
-
-
 
 };
 

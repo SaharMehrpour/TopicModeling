@@ -47,6 +47,7 @@
                             }
 
                             location.hash = "#/model/list"; // initial page
+                            modelViewList.update();
 
                         });
                     });

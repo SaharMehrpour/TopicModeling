@@ -99,7 +99,6 @@ ModelViewList.prototype.update = function() {
         .append("tr")
         .on("click", function (d, i) {  // clicking a row in a table will do this
 
-            self.div.classed("hidden",true);
             self.menu.classed("hidden",true);
 
             location.hash = "#/topic/" + d["id"];

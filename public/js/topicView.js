@@ -19,8 +19,8 @@ function TopicView(topicWords,topicLabels,topicYears,papers,paperTopics) {
     self.title = self.div.select("#topic_view_title > h1");
 
     self.topicViewTable = new TopicViewTable(topicWords);
-    self.topicViewGraph = new TopicViewGraph(topicYears);
     self.topicViewPapers = new TopicViewPapers(papers, paperTopics);
+    self.topicViewGraph = new TopicViewGraph(topicYears, self.topicViewPapers);
 }
 
 TopicView.prototype.update = function(topicID) {
