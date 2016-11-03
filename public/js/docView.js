@@ -55,7 +55,7 @@ DocView.prototype.update = function(paperID) {
         self.title.select("h1").text(
             paper[0]["Title"] + ", " + paper[0]["Conference"] + ", " + paper[0]["Session"] + ", " + paper[0]["Year"]);
         self.title.select("p")
-            .append("a")
+            .select("a")
             .attr("href", paper[0]["Url"])
             .text("Paper Link");
     }
