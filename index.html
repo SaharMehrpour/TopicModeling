@@ -18,7 +18,9 @@
 <div id="main_nav" class="container cont2">
     <ul class="navbar">
       <li id="nav_model" class="active"><a href="#/model">Overview</a></li>
-      <li id="nav_topic" class="dropdown"><a href="#/topic">Topic</a></li>
+      <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic</a>
+          <div id="topic_dropdown_div" class="dropdown-content"></div>
+      </li>
       <li id="nav_doc"><a href="#/doc">Document</a></li>
       <li id="nav_word"><a href="#/word">Word</a></li>
       <li id="nav_bib"><a href="#/bib">Bibliography</a></li>
@@ -74,7 +76,6 @@
                     <div class="container">
                         <h3>Conditional proportion of words in topic</h3>
                         <p>Click a bar to limit to the documents it represents, click again to clear selection.</p>
-                        <!--<div> button</div>-->
                         <div id="topic_view_graph"></div>
                     </div>
                     <div id="topic_view_papers" class="container">
@@ -93,8 +94,15 @@
                 </div>
             </div>
         </div>
-        <div id="bib_view" class="main_view hidden cont2">
-            bib view
+        <div id="bib_view" class="main_view hidden">
+            <div class="row container">
+                <div class="column1">
+                    <div id="year_nav"><p>Jump to:</p></div>
+                </div>
+                <div class="column2">
+                    <div class="container" id="paper_years_sections"></div>
+                </div>
+            </div>
         </div>
         <div id="doc_view" class="main_view hidden">
             <div id="doc_view_title" class="row">
@@ -116,9 +124,10 @@
                 </table>
             </div>
         </div>
-        <div id="words_view" class="main_view hidden cont2">
-            words view
+        <div id="word_view" class="main_view hidden cont2">
+            word view
         </div>
+        <div id="wordIndex_view" class="main_view hidden cont1"></div>
     </div>
 </div>
 
@@ -129,6 +138,8 @@
 <script type="application/javascript" src="public/js/topicView.js"></script>
 <script type="application/javascript" src="public/js/menuChart.js"></script>
 <script type="application/javascript" src="public/js/docView.js"></script>
+<script type="application/javascript" src="public/js/bibView.js"></script>
+<script type="application/javascript" src="public/js/wordIndexView.js"></script>
 <script type="application/javascript" src="public/js/urlChangingHandling.js"></script>
 <script type="application/javascript" src="public/js/main.js"></script>
 

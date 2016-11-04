@@ -2,13 +2,15 @@
  * Created by sahar on 2016-10-26.
  */
 
-function UrlChangingHandling(menuChart,modelViewList,topicView,docView) {
+function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,wordViewIndex) {
     self = this;
 
     self.modelViewList = modelViewList;
     self.topicView = topicView;
     self.menuChart = menuChart;
     self.docView = docView;
+    self.bibView = bibView;
+    self.wordViewIndex = wordViewIndex;
 
 }
 
@@ -19,6 +21,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
     self.menuChart.update(hash);
 
     d3.selectAll(".main_view").classed("hidden",true);
+    d3.select("#model_nav").classed("hidden",true);
 
     var splittedHash = hash.split("/");
 
@@ -53,5 +56,13 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
         }
         var paperID = splittedHash[2];
         self.docView.update(paperID);
+    }
+
+    else if(splittedHash[1] === 'bib'){
+        self.bibView.update(paperID);
+    }
+
+    else if(splittedHash[1] === 'words'){
+        self.wordViewIndex.update();
     }
 };

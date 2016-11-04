@@ -42,15 +42,18 @@ TopicViewPapers.prototype.update = function(topicID,year) {
                 return paper[0]["Year"] == year;
             })
             .filter(function (d, i) {
-                return (i < self.xTop && d[topicID] > 0);
+                return (/*i < self.xTop &&*/ d[topicID] > 0);
             });
     }
+
     else {
         topDocs = self.paperTopics
             .filter(function (d, i) {
-                return i < self.xTop;
+                return (/*i < self.xTop &&*/ d[topicID] > 0);
             });
+
     }
+
 
     var rows = self.table.select("tbody").selectAll("tr")
         .data(topDocs);

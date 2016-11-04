@@ -5,11 +5,13 @@
 /**
  * Constructor for the MenuChart
  */
-function MenuChart(){
+function MenuChart(topicLabels) {
 
     var self = this;
-    self.init();
-};
+
+    self.topicLabels = topicLabels;
+
+}
 
 MenuChart.prototype.init = function() {
     var self = this;
@@ -17,8 +19,47 @@ MenuChart.prototype.init = function() {
     self.mainNav = d3.select("#main_nav");
     self.modelNav = d3.select("#model_nav");
 
-    //self.mainNav.select("#nav_model").classed("active",true);
-    //self.modelNav.select("#nav_model_list").classed("active",true);
+    var topicDropDownDiv = self.mainNav.select("#topic_dropdown_div");
+
+    // populate the menu
+
+    var dropDownItems = topicDropDownDiv
+        .selectAll("a")
+        .data(self.topicLabels)
+        .enter()
+        .append("a")
+        .attr("href", function (d) {
+            return "#/topic/" + (+d["index"] - 1);
+        })
+        .text(function (d) {
+            return d["label"];
+        });
+
+    // on click event
+
+    var topicButton = self.mainNav.select(".dropbtn")
+        .on("click", function () {
+            var button = d3.select(this);
+            if (button.classed('open')){
+                button.classed('open',false);
+                d3.select("#topic_dropdown_div").classed("show",false);
+                d3.select("#topic_dropdown_div").selectAll("a").classed("show",false);
+            }
+            else {
+                button.classed('open',true);
+                d3.select("#topic_dropdown_div").classed("show",true);
+                d3.select("#topic_dropdown_div").selectAll("a").classed("show",true);
+            }
+        });
+
+    var topicItems = d3.select("#topic_dropdown_div").selectAll("a")
+        .on("click", function () {
+            self.mainNav.select(".dropbtn").classed('open',false);
+            d3.select("#topic_dropdown_div").classed("show",false);
+            d3.select("#topic_dropdown_div").selectAll("a").classed("show",false);
+        });
+
+
 };
 
 

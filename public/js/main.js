@@ -20,7 +20,7 @@
                     d3.csv("data/Paper_topics.csv", function (error, paperTopics) {
                         d3.csv("data/Topic_years.csv", function (error, topicYears) {
 
-                            var menuChart = new MenuChart();
+                            var menuChart = new MenuChart(topicLabels);
 
                             var modelViewList = new ModelViewList(topicWords, topicLabels,
                                 paperTopics, topicYears);
@@ -29,7 +29,11 @@
 
                             var docView = new DocView(papers, paperTopics, topicLabels, topicWords);
 
-                            var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList, topicView, docView);
+                            var bibView = new BibView(papers);
+
+                            var wordViewIndex = new WordIndexView(topicWords);
+
+                            var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList, topicView, docView, bibView, wordViewIndex);
 
                             if ("onhashchange" in window) { // event supported?
                                 window.onhashchange = function () {
@@ -47,6 +51,8 @@
                             }
 
                             location.hash = "#/model/list"; // initial page
+
+                            menuChart.init();
                             modelViewList.update();
 
                         });

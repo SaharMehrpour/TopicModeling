@@ -270,7 +270,7 @@ ModelViewList.prototype.findTopWord = function(wordWeight) {
         list.push({'label': wordWeight['words'][i], 'weight': wordWeight['weights'][i]});
 
     list.sort(function (a, b) {
-        return ((a.weight < b.weight) ? -1 : ((a.weight == b.weight) ? 0 : 1));
+        return ((a.weight < b.weight) ? 1 : ((a.weight == b.weight) ? 0 : -1));
     });
 
     var words = "";
