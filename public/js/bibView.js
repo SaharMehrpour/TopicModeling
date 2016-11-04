@@ -87,9 +87,13 @@ BibView.prototype.paperInfo = function(paperID) {
             return d["Paper Id"] == paperID;
         });
 
-    if (s.length == 0) return "no entry for '" + paperID + "' in paper.csv dataset";;
+    if (s.length == 0) return "no entry for '" + paperID + "' in paper.csv dataset";
     if (s.length > 1) return "redundant entry for '" + paperID + "' in paper.csv dataset";
-    return s[0]["Title"] + ", " + s[0]["Conference"] + ", " + s[0]["Session"] + ", " + s[0]["Year"];
+
+    var title = s[0]["Title"] + ", " + s[0]["Conference"];
+    if (s[0]["Session"] !== "")
+        title = title + ", " + s[0]["Session"];
+    return title + ", " + s[0]["Year"];
 
 };
 
