@@ -15,9 +15,10 @@
 
 <body>
 
-<div id="main_nav" class="container cont2">
+<div id="main_nav">
     <ul class="navbar">
-      <li id="nav_model" class="active"><a href="#/model">Overview</a></li>
+        <li id="nav_secPriveMeta" class="active"><a href="#/secPriveMeta">SecPriveMeta</a></li>
+      <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
       <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic</a>
           <div id="topic_dropdown_div" class="dropdown-content"></div>
       </li>
@@ -31,15 +32,16 @@
 </div>
 
 <div id="view_container" class="container">
-    <div id="model_nav" class="container cont2">
+    <div id="model_nav" class="container cont2 hidden">
         <div>
-            <ul class="navbar">
+            <ul class="navbar navbar2">
                 <li id="nav_model_list" class="active"><a href="#/model/list">List</a></li>
                 <li id="nav_model_scaled"><a href="#/model/scaled">Scaled</a></li>
             </ul>
         </div>
     </div>
     <div id="main_view_container" class="container cont2">
+        <div id="sec_prive_meta" class="main_view hidden">Default page</div>
         <div id="model_view" class="main_view hidden">
             <table class="table">
                 <thead>
@@ -58,7 +60,7 @@
             <div id="topic_view_title" class="row">
                 <h1>Topic Title</h1>
             </div>
-            <div class="row container">
+            <div>
                 <div class="column1">
                     <h3>Topic Words</h3>
                     <table id="topic_view_table" class="table">
@@ -84,6 +86,7 @@
                             <thead>
                             <tr>
                                 <th>Document</th>
+                                <th></th>
                                 <th>%</th>
                             </tr>
                             </thead>
@@ -105,8 +108,10 @@
             </div>
         </div>
         <div id="doc_view" class="main_view hidden">
-            <div id="doc_view_title" class="row">
-                <h1>Paper Title</h1>
+            <div id="doc_view_info" class="row">
+                <h1 id="paper_title"></h1>
+                <h2 id="conf_name"></h2>
+                <h2 id="session_name"></h2>
                 <p><a></a></p>
             </div>
             <div class="container row">

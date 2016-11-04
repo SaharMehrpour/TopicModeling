@@ -25,7 +25,11 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
 
     var splittedHash = hash.split("/");
 
-    if(splittedHash[1] === 'model'){
+    if(splittedHash[1] === 'secPriveMeta') {
+
+        d3.select("#sec_prive_meta").classed('hidden', false);
+    }
+    else if(splittedHash[1] === 'model'){
         if(splittedHash.length < 3){
             self.modelViewList.update();
             return;

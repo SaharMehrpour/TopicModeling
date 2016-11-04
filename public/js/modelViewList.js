@@ -10,7 +10,7 @@ function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
     var self = this;
 
     self.div = d3.select("#model_view");
-    self.menu = d3.select("#model_nav");
+    //self.menu = d3.select("#model_nav");
     self.table = self.div.select("table");
 
     self.topicWords = topicWords["tw"];
@@ -58,17 +58,17 @@ ModelViewList.prototype.init = function() {
                         return d3.descending(self.topicNames[a["id"]]["label"], self.topicNames[b["id"]]["label"]);
                 }
 
-                if (i == 1) { // sort the second column
+                else if (i == 1) { // sort the second column
                     //if (self.asc[1])
                     //else
                     //return;
                 }
-                if (i == 2) {  // sort the thirs column
+                else if (i == 2) {  // sort the thirs column
                     //if (self.asc[2])
                     //else
                     //return;
                 }
-                if (i == 3) { // sort the third column based on corpus
+                else if (i == 3) { // sort the third column based on corpus
                     if (self.asc[3])
                         return d3.ascending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
                     else
@@ -76,19 +76,9 @@ ModelViewList.prototype.init = function() {
                 }
             });
 
-            self.update();
         });
-};
 
-/*
-Update the table
- */
-
-ModelViewList.prototype.update = function() {
-    var self = this;
-
-    self.div.classed("hidden",false);
-    self.menu.classed("hidden",false);
+    // populate the table
 
     var rows = self.table.select("tbody").selectAll("tr")
         .data(self.topicWords);
@@ -99,8 +89,7 @@ ModelViewList.prototype.update = function() {
         .append("tr")
         .on("click", function (d, i) {  // clicking a row in a table will do this
 
-            self.menu.classed("hidden",true);
-
+            //self.menu.classed("hidden",true);
             location.hash = "#/topic/" + d["id"];
         });
 
@@ -243,6 +232,171 @@ ModelViewList.prototype.update = function() {
     });
 
     // add more columns
+};
+
+/*
+Update the table
+ */
+
+ModelViewList.prototype.update = function() {
+    var self = this;
+
+    self.div.classed("hidden",false);
+    //self.menu.classed("hidden",false);
+
+    var rows = self.table.select("tbody").selectAll("tr")
+        .data(self.topicWords);
+
+    rows.exit().remove();
+
+    var enterRows = rows.enter()
+        .append("tr")
+        .on("click", function (d, i) {  // clicking a row in a table will do this
+
+            //self.menu.classed("hidden",true);
+            location.hash = "#/topic/" + d["id"];
+        });
+
+    var cells = enterRows.merge(rows).selectAll("td")
+        .data(function (d) {
+            return [
+                {'type': 'topic_name', 'value': self.topicNames[d["id"]]["label"]}, // data for column 1
+                {'type': 'year_bars', 'value': self.topicYears[d["id"]]["years"]},  // data for column 2
+                {'type': 'topic_words', 'value': d},   // data for column 3
+                {'type': 'corpus', 'value': d["id"]}  // data for column 4
+                // add the data for more columns
+            ];
+        });
+
+    var enterCells = cells.enter().append("td");
+    cells = enterCells.merge(cells);
+
+    // 1st Column
+
+    var topicName = cells.filter(function (d) {
+        return d.type == 'topic_name'
+    })
+        .attr("width", self.dimensions.topicCellwidth)
+        .each(function (d) {
+            d3.select(this)
+                .text(function () {
+                    return d.value;
+                });
+        });
+
+
+    // 2nd Column
+
+    var yearBars = cells.filter(function (d) {
+        return d.type == 'year_bars';
+    }).each(function (d) {
+
+        var years = d3.dsvFormat(";").parseRows(d.value, function (g) {
+            return g;
+        })[0];
+
+
+        var yearsColorScale = d3.scaleLinear()
+            .range(["lightblue", "darkblue"])
+            //.domain([0, d3.max(years, function (g) {
+            //    return +g;
+            //})]);
+            .domain([0, self.maxBarValue]);
+
+        var yScale = d3.scaleLinear()
+            .range([0, self.dimensions.yearCellHeight])
+            //.domain([0, d3.max(years, function (g) {
+            //    return +g;
+            //})]);
+            .domain([0, self.maxBarValue]);
+
+        var xScale = d3.scaleLinear()
+            .range([0, self.dimensions.yearCellWidth])
+            .domain([0, years.length]);
+
+        d3.select(this).selectAll("svg").remove();
+
+        var group = d3.select(this)
+            .append("svg")
+            .attr("width", self.dimensions.yearCellWidth)
+            .attr("height", self.dimensions.yearCellHeight)
+            .append("g")
+            .attr("transform", "translate(0, " + self.dimensions.yearCellHeight + " ) scale(1,-1)");
+
+        var rects = group
+            .selectAll("rect")
+            .data(years);
+
+        rects.enter()
+            .append("rect")
+            .attr("x", function (dd, ii) {
+                return xScale(ii);
+            })
+            .attr("y", 0)
+            .attr("height", function (dd) {
+                return yScale(+dd);
+            })
+            .attr("width", xScale(1))
+            .attr("fill", function (dd) {
+                return yearsColorScale(+dd);
+            });
+    });
+
+    // 3rd Column
+
+    var topicWords = cells.filter(function (d) {
+        return d.type == 'topic_words'
+    }).each(function (d) {
+        d3.select(this)
+            .text(function () {
+                return self.findTopWord(d.value);
+            });
+    });
+
+    // 4th Column
+
+    var corpusColorScale = d3.scaleLinear()
+        .range(['#ece2f0', '#016450'])
+        .domain([0, self.maxCorpusValue]);
+
+    var barScale = d3.scaleLinear()
+        .range([0, self.dimensions.corpusCellWidth])
+        .domain([0, self.maxCorpusValue]);
+
+    cells.filter(function (d) {
+        return d.type == 'corpus';
+    }).each(function (d) {
+
+        d3.select(this).selectAll("svg").remove();
+
+        var group = d3.select(this).append("svg")
+            .attr("width", self.dimensions.corpusCellWidth)
+            .attr("height", self.dimensions.corpusCellHeight)
+            .append("g");
+
+        group.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", function () {
+                return barScale(+self.computeCorpus(+d.value));
+            })
+            .attr("height", self.dimensions.corpusCellHeight)
+            .attr("fill", function () {
+                return corpusColorScale(+self.computeCorpus(+d.value));
+            });
+
+        group.append("text")
+            .attr("x", 5)
+            .attr("y", self.dimensions.corpusCellHeight / 2)
+            .attr("dy", ".35em")
+            .text(function () {
+                return self.computeCorpus(d.value) + "%";
+            })
+            .attr("class", "corpusText");
+    });
+
+    // add more columns
+
 };
 
 /*

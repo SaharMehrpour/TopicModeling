@@ -50,11 +50,9 @@
                                 }, 100);
                             }
 
-                            location.hash = "#/model/list"; // initial page
+                            location.hash = "#/secPriveMeta"; // initial page
 
                             menuChart.init();
-                            modelViewList.update();
-
                         });
                     });
                 });

@@ -14,6 +14,10 @@ function TopicViewPapers(papers, paperTopics) {
     self.paperTopics = paperTopics;
     self.papers = papers;
 
+    self.dimensions = {
+        "barsCellWidth": 50, "barsCellHeight": 20
+    };
+
     self.xTop = 10;
 
 }
@@ -70,7 +74,8 @@ TopicViewPapers.prototype.update = function(topicID,year) {
         .data(function (d) {
             return [
                 {'type': 'doc_name', 'value': d["paper"]}, // data for column 1
-                {'type': 'percentage', 'value': d[topicID]}  // data for column 2
+                {'type': 'bars', 'value': d[topicID]},  // data for column 2
+                {'type': 'percentage', 'value': d[topicID]}  // data for column 3
                 // add the data for more columns
             ];
         });
@@ -93,6 +98,45 @@ TopicViewPapers.prototype.update = function(topicID,year) {
 
 
     // 2nd Column
+
+    var weightColorScale = d3.scaleLinear()
+        .range(['#ece2f0', '#016450'])
+        .domain([0,1]);
+    //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
+    //    return +g;
+    //})]);
+
+    var weightXScale = d3.scaleLinear()
+        .range([0, self.dimensions.barsCellWidth])
+        .domain([0,1]);
+    //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
+    //    return +g;
+    //})]);
+
+    var bars = cells.filter(function (d) {
+        return d.type == 'bars';
+    }).each(function (d) {
+
+        d3.select(this).selectAll("svg").remove();
+
+        var group = d3.select(this).append("svg")
+            .attr("width", self.dimensions.barsCellWidth)
+            .attr("height", self.dimensions.barsCellHeight)
+            .append("g");
+
+        group.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", function () {
+                return weightXScale(+d.value);
+            })
+            .attr("height", self.dimensions.barsCellHeight)
+            .attr("fill", function () {
+                return weightColorScale(+d.value);
+            });
+    });
+
+    // 3rd Column
 
     var percentage = cells.filter(function (d) {
         return d.type == 'percentage'
