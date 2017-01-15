@@ -1,6 +1,3 @@
-/**
- * Created by sahar on 2016-10-25.
- */
 
 /**
  * Constructor for the TopicViewTable

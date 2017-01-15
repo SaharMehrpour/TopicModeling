@@ -1,8 +1,4 @@
 /**
- * Created by saharmehrpour on 11/3/16.
- */
-
-/**
  * Constructor for the WordIndexView
  */
 function WordIndexView(topicWords) {
@@ -47,6 +43,8 @@ WordIndexView.prototype.init = function() {
 
     items.enter().append("li").text(function (d) {
         return d.key;
+    }).on("click", function (g) {  // clicking a row in a table will do this
+        location.hash = "#/word/" + g.key;
     });
 
 

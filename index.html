@@ -3,7 +3,8 @@
 
 <head>
 <meta charset="utf-8">
-<title>Topic Model Browser</title>
+<title>SecPrivMeta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/index.css" type="text/css">
     <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
@@ -17,39 +18,50 @@
 
 <div id="main_nav">
     <ul class="navbar">
-        <li id="nav_secPriveMeta" class="active"><a href="#/secPriveMeta">SecPriveMeta</a></li>
+        <li id="nav_secPriveMeta" class="active"><a href="#/secPriveMeta">About</a></li>
       <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
-      <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic</a>
-          <div id="topic_dropdown_div" class="dropdown-content"></div>
+      <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic <span class="caret"></span></a>
+          <div id="topic_dropdown_div" class="dropdown-content" style="max-height: 600px; height: 600px; overflow: auto;"></div>
       </li>
-      <li id="nav_doc"><a href="#/doc">Document</a></li>
-      <li id="nav_word"><a href="#/word">Word</a></li>
-      <li id="nav_bib"><a href="#/bib">Bibliography</a></li>
-      <li id="nav_words"><a href="#/words">Word index</a></li>
-      <li id="nav_settings" style="float:right"><a href="#/settings">Settings</a></li>
-      <li id="nav_about" style="float:right"><a href="#/about">About</a></li>
+      <li id="nav_bib"><a href="#/bib">Paper List</a></li>
+      <li id="nav_doc"><a href="#/doc">Paper</a></li>
+      <li id="nav_wordIndex"><a href="#/wordIndex">Word Index</a></li>
+      
+      <li id="nav_settings" style="float:right"><a style="padding-right:0px" href="#/settings">Settings</a></li>
+      <li id="nav_files" style="float:right"><a href="#/files">Downloads</a></li>
+      <!--<li id="nav_about" style="float:right"><a href="#/about">About</a></li>-->
     </ul>
 </div>
 
 <div id="view_container" class="container">
-    <div id="model_nav" class="container cont2 hidden">
-        <div>
-            <ul class="navbar navbar2">
-                <li id="nav_model_list" class="active"><a href="#/model/list">List</a></li>
-                <li id="nav_model_scaled"><a href="#/model/scaled">Scaled</a></li>
-            </ul>
+        <!--<div id="model_nav" class="container cont2 hidden">
+            <div>
+                <ul class="navbar navbar2">
+                    <li id="nav_model_list" class="active"><a href="#/model/list">List</a></li>
+                    <li id="nav_model_scaled"><a href="#/model/scaled">Scaled</a></li>
+                </ul>
+            </div>
+        </div>-->
+        <div id="main_view_container">
+            <div id="sec_prive_meta" class="main_view hidden">
+
+                <h3>A Data-Driven Reflection on 36 years of Security and Privacy Research</h3><br>
+                    <p>We present a topic modeling on the publications of
+    the IEEE Symposium on Security &amp; Privacy (1980-2015), the ACM Conference on Computer and Communications Security (1993-2015), the USENIX Security Symposium (1993-2015), and the Network and Distributed System Security Symposium (1997-2015).</p>
+
+                    <p>The visualizations of topics and papers are built upon the concept of <a class="external" href="https://agoldst.github.io/dfr-browser/" target="_blank">dfr-browser</a> developed by Andrew Goldstone.</p>
+
+                    <p>More visualizations to come in the future. Please check again!</p>
+            </div>
         </div>
-    </div>
-    <div id="main_view_container" class="container cont2">
-        <div id="sec_prive_meta" class="main_view hidden">Default page</div>
         <div id="model_view" class="main_view hidden">
-            <table class="table">
+            <table class="custom_table">
                 <thead>
                 <tr>
-                    <th>Topic Name</th>
-                    <th>Distribution Over Time</th>
-                    <th>Top Words</th>
-                    <th colspan="2">Proportion of Corpus</th>
+                    <th><h4 class="sort">Topics <!--<span class = "glyphicon glyphicon-sort"></span>--></h4></th>
+                    <th><h4>Timeline</h4></th>
+                    <th><h4>Top Words</h4></th>
+                    <th colspan="2"><h4 class="sort">% of corpus <!--<span class = "glyphicon glyphicon-sort"></span>--></h4></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -58,16 +70,15 @@
         </div>
         <div id="topic_view" class="main_view hidden">
             <div id="topic_view_title" class="row">
-                <h1>Topic Title</h1>
+                <h3>Topic Title</h3>
             </div>
             <div>
                 <div class="column1">
-                    <h3>Topic Words</h3>
-                    <table id="topic_view_table" class="table">
+                    <table id="topic_view_table" class="custom_table">
                         <thead>
                         <tr>
-                            <th>Word</th>
-                            <th>Weight</th>
+                            <th><h4>Top words</h4></th>
+                            <th><h4>Weight</h4></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -75,19 +86,18 @@
                     </table>
                 </div>
                 <div class="column2">
-                    <div class="container">
-                        <h3>Conditional proportion of words in topic</h3>
-                        <p>Click a bar to limit to the documents it represents, click again to clear selection.</p>
+                    <div id = "topic_timeline">
+                        <h4>Timeline</h4>
+                        <p>Select a bar to limit to the documents it represents, click again to clear selection</p>
                         <div id="topic_view_graph"></div>
                     </div>
-                    <div id="topic_view_papers" class="container">
-                        <h3>Top documents<span></span></h3>
-                        <table class="table">
+                    <div id="topic_view_papers">
+                        <table class="custom_table">
                             <thead>
                             <tr>
-                                <th>Document</th>
-                                <th></th>
+                                <th><h4 style="padding-top: 15px">Documents</h4></th>
                                 <th>%</th>
+                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -98,30 +108,36 @@
             </div>
         </div>
         <div id="bib_view" class="main_view hidden">
-            <div class="row container">
-                <div class="column1">
-                    <div id="year_nav"><p>Jump to:</p></div>
+
+            <div class="row container_full">
+                <div class="column1" id="conf_sidebar">
+                    <div id="year_nav"><p>Go to year:</p></div>
+                    <input type="checkbox" name="conf1" value="IEEE S&P" checked> IEEE S&P<br>
+                    <input type="checkbox" name="conf1" value="USENIX" checked> USENIX<br>
+                    <input type="checkbox" name="conf1" value="NDSS" checked> NDSS<br>
+                    <input type="checkbox" name="conf1" value="CCS" checked> CCS<br>
                 </div>
                 <div class="column2">
-                    <div class="container" id="paper_years_sections"></div>
+                    <div class="container_full" id="paper_years_sections"></div>
                 </div>
             </div>
         </div>
         <div id="doc_view" class="main_view hidden">
             <div id="doc_view_info" class="row">
-                <h1 id="paper_title"></h1>
-                <h2 id="conf_name"></h2>
-                <h2 id="session_name"></h2>
-                <p><a></a></p>
+                <h3 id="paper_title"></h3>
+                <h4 id="conf_name"></h4>
+                <h4 id="session_name"></h4>
+                <p><a target="_blank"></a></p>
+                <br>
             </div>
-            <div class="container row">
-                <table class="table">
+            <div class="container_full row">
+                <table class="custom_table">
                     <thead>
                     <tr>
-                        <th>Topic</th>
-                        <th>Top Words</th>
-                        <th>Topic Weight</th>
-                        <th>%</th>
+                        <th><h4>Topic</h4></th>
+                        <th><h4>Top Words</h4></th>
+                        <th><h4>Topic %</h4></th>
+                        <th><h4></h4></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -129,12 +145,19 @@
                 </table>
             </div>
         </div>
-        <div id="word_view" class="main_view hidden cont2">
-            word view
+        <div id="file_view" class="main_view hidden">
+            <ul>
+                <li><a href="files/acronym.txt" download>Acronym list</a></li>
+                <li><a href="files/stopword.txt" download>Stopword list</a></li>
+                <li><a href="files/phrase.txt" download>Phrase list</a></li>
+            </ul>
+            <p>The paper corpus and meta-data are available upon request</p>
         </div>
         <div id="wordIndex_view" class="main_view hidden cont1"></div>
+        <div id="temp_view" class="main_view"></div>
     </div>
 </div>
+
 
 <script type="application/javascript" src="public/js/modelViewList.js"></script>
 <script type="application/javascript" src="public/js/topicViewGraph.js"></script>
@@ -148,26 +171,6 @@
 <script type="application/javascript" src="public/js/urlChangingHandling.js"></script>
 <script type="application/javascript" src="public/js/main.js"></script>
 
-<!--
-<div style="background-color: skyblue; padding: 12px; height: 100%; position: relative">
-menu
-</div>
-<div style="background-color: forestgreen; padding: 12px; height: 100%; position: relative">
-View container
-<div style="background-color: lime; padding: 12px">
-     view menu container
-    <div style="background-color: brown; padding: 12px">
-        view menu
-    </div>
-</div>
-<div style="background-color: rebeccapurple; padding: 12px">
-    main view container
-    <div style="background-color: orchid; padding: 12px">
-        Main stuff goes here!!!
-    </div>
-</div>
-</div>
--->
 </body>
 
 </html>

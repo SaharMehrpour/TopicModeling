@@ -1,8 +1,4 @@
 /**
- * Created by saharmehrpour on 10/23/16.
- */
-
-/**
  * Constructor for the ModelViewList
  */
 function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
@@ -57,16 +53,11 @@ ModelViewList.prototype.init = function() {
                     else
                         return d3.descending(self.topicNames[a["id"]]["label"], self.topicNames[b["id"]]["label"]);
                 }
-
                 else if (i == 1) { // sort the second column
-                    //if (self.asc[1])
-                    //else
-                    //return;
+                    return;
                 }
-                else if (i == 2) {  // sort the thirs column
-                    //if (self.asc[2])
-                    //else
-                    //return;
+                else if (i == 2) {  // sort the third column
+                    return;
                 }
                 else if (i == 3) { // sort the third column based on corpus
                     if (self.asc[3])
@@ -75,6 +66,10 @@ ModelViewList.prototype.init = function() {
                         return d3.descending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
                 }
             });
+
+            // Update the table
+            if (i==0 || i==3)
+                self.update();
 
         });
 
@@ -133,7 +128,7 @@ ModelViewList.prototype.init = function() {
 
 
         var yearsColorScale = d3.scaleLinear()
-            .range(["lightblue", "darkblue"])
+            .range(["lightsteelblue", "#003366"])
             //.domain([0, d3.max(years, function (g) {
             //    return +g;
             //})]);
@@ -297,7 +292,7 @@ ModelViewList.prototype.update = function() {
 
 
         var yearsColorScale = d3.scaleLinear()
-            .range(["lightblue", "darkblue"])
+            .range(["lightsteelblue", "midnightblue"])
             //.domain([0, d3.max(years, function (g) {
             //    return +g;
             //})]);
@@ -429,7 +424,7 @@ ModelViewList.prototype.findTopWord = function(wordWeight) {
 
     var words = "";
     for (var j = 0; j < self.xTopWords - 1; j++) {
-        words += list[j]['label'] + ", ";
+        words += list[j]['label'] + " ";
     }
     words += list[self.xTopWords - 1]['label'];
     return words;

@@ -1,0 +1,1250 @@
+From, To
+ABI, Application Binary Interface 
+ABS, Anti-Lock Braking System 
+ACG, Access-Control Gadget 
+ACH, Automated Clearing House 
+ADC, Analog-To-Digital Converter 
+ADC, Analog-To-Digital Converters 
+ADS, Anomaly-Detection Systems 
+ADT, Abstract Data-Type 
+ADT, Alternating Decision Trees 
+AE, Authenticated-Encryption 
+AIR, Average Indirect-Target Reduction 
+AIT, Advanced Imaging Technology 
+AIT, Application Information Table 
+AJ, Apache Jmeter 
+AKA, Anarchistic Key Authorization 
+ALU, Arithmetic-Logic Unit 
+AM, Amplitude Modulation 
+AM, Amplitude-Modulated 
+AMI, Amazon Machine Image 
+AML, Adversarial Machine-Learning 
+AML, Arbor Malware Library 
+AMS, Activity Manager Service 
+AMT, Active Management Technology 
+APDU, Application-Protocol Data Unit 
+APE, Abstract Payload Execution 
+AR, Augmented Reality 
+AS, Authentication Server 
+AS, Autonomous System 
+AS, Autonomous Systems 
+ASIC, Application-Specific Ic 
+ASK, Amplitude Shift Keying 
+ASLR, Address-Space Layout Randomization 
+ASM, Android Security Modules 
+ASM, Aurasium Security Manager 
+ASN, Autonomous System Names 
+ASN, Autonomous System Number 
+AT, Address Translation 
+ATR, Automated Target Recognition 
+AV, Anti-Virus 
+BAP, Binary Analysis Platform 
+BAP, Buffer Access Path 
+BAT, Binary Analysis Toolkit 
+BB, Buletin Board 
+BBL, Basic Block 
+BBS, Buletin Board System 
+BCD, Binary Coded Decimal 
+BCR, Binary Code Reutilization 
+BDHE, Bilinear Diffie-Hellman Exponent 
+BER, Basic Encoding Rules 
+BER, Bit-Error Rate 
+BF, Bloom Filters 
+BGP, Border Gateway Protocol 
+BHO, Browser-Helper Object 
+BIO, Block Io 
+BNF, Backus-Naur Form 
+BP, Branch Prediction 
+BP, Brazilian Portuguese 
+BR, Bounds-Check Recognition 
+BSC, Base-Station Controller 
+BSM, Basic Security Module 
+BSS, Base-Station System 
+BTS, Base Transceiver Station 
+BTS, Branch Trace Storage 
+CA, Central Authority 
+CAM, Contentaddressable Memory 
+CAN, Controller-Area Network 
+CAP, Chip Authentication Program 
+CC, Compiler Construction 
+CC, Country Codes 
+CCA, Chosen-Ciphertext Attacks 
+CCA, Chosen-Ciphertext Security 
+CCA, Common Cryptographic Architecture 
+CD, Community Detection 
+CDF, Cumulative Density Function 
+CDF, Cumulative Distribution Functions 
+CDN, Content-Distribution Network 
+CDSA, Common Data-Security Architecture 
+CE, Convergent Encryption 
+CERT, Computer Emergency Response Team 
+CERT, Computing Emergency Response Team 
+CF, Carry Flag 
+CFB, Cipher-Feedback 
+CFG, Context-Free Grammar 
+CFG, Control-Flow Graph 
+CFL, Context-Free Language 
+CFL, Control-Flow Locking 
+CFS, Cryptographic File-System For Unix 
+CG, Call Graph 
+CGI, Common Gateway Interface 
+CI, Consistency Index 
+CIDR, Classless Inter-Domain Routing 
+CISC, Complex Instruction Set Computing 
+CL, Certificate Library 
+CLI, Command-Line Interface 
+CM, Configuration Management 
+CMW, Compartmented Mode Workstation 
+COM, Component Object Model 
+COPS, Computer Oracle Password And Security System 
+COTS, Commercial-Off-The-Shelf 
+CP, Call-Preceded 
+CP, Control Program 
+CPL, Characteristic Path Length 
+CPL, Current Privilege Level 
+CRF, Conditional Random Field 
+CRF, Correlation-Robust Function 
+CRL, Certificate Revocation-List 
+CRT, Cathode Ray Tubes 
+CRT, Certificate Revocation Tree 
+CRT, Certificate Revocation Trees 
+CRT, Chinese Remainder Theorem 
+CS, Call-Site 
+CS, Click Sequence 
+CSCW, Computer-Supported Cooperative Work 
+CSM, Cornered Saliency Map 
+CSP, Content-Security Policy 
+CSP, Cryptographic Service Provider 
+CSV, Client-Side Validation 
+CT, Certificate Transparency 
+CT, Credential Translator 
+CTL, Certificate Trust List 
+CTS, Clear To Send 
+CV, Cloud Verifier 
+DA, De-Anonymization 
+DAC, Data-Abstraction Component 
+DAC, Digital-To-Analog Conversion 
+DAC, Digital-To-Analog Converter 
+DAC, Discretionary Access Controls 
+DAC, Discretionary Access-Control 
+DAE, Data Execution Environment 
+DAE, Deterministic Authenticated-Encryption 
+DANE, Dns-Based Authentication Of Named Entities 
+DB, Database 
+DB, Davies-Bouldin 
+DBI, Dynamic Binary Instrumentation 
+DC, Data Center 
+DC, Domain Clusters 
+DC, Domain Controller 
+DCE, Distributed-Computing Environment 
+DD, Distribution Distance 
+DEP, Data Execution Prevention 
+DER, Distinguished Encoding Rules 
+DES, Data Encryption Standard 
+DF, Document Frequency 
+DF, Don T Fragment 
+DFI, Data-Flow Integrity 
+DFS, Depth-First Search 
+DFS, Distributed File-System 
+DFT, Design For Test 
+DFT, Discrete Fourier Transform 
+DGA, Domain Generation Algorithm 
+DH, Diffie-Hellman 
+DHS, Department Of Homeland Security 
+DHT, Distributed Hash Tables 
+DHT, Distributed Hash-Table 
+DJS, Defensive Javascript 
+DL, Damerau-Levenshtein 
+DL, Discrete-Logarithm 
+DL, Dynamically-Loaded 
+DMA, Direct Memory-Access 
+DN, Distinguished Name 
+DNSBL, Dns-Based Blacklist Lookup 
+DOC, Disk-On-Chip 
+DOC, Diskonchip 
+DOE, Department Of Energy 
+DOS, Denial-Of-Service 
+DP, Differential Privacy 
+DPI, Deep-Packet Inspection 
+DPI, Deep-Packet-Inspection 
+DRE, Direct Recording Electronic 
+DRM, Digital Rights Management 
+DS, Delegation Signer 
+DSA, Data-Structure Analysis 
+DSA, Digital Signature Algorithm 
+DSL, Domain-Specific Language 
+DSP, Datacenter Selection Problem 
+DSP, Digital Signal Processor 
+DSRC, Dedicated Short-Range Communications 
+DSS, Digital Signature Standard 
+DSSS, Direct-Sequence Spread-Spectrum 
+DST, Digital Signature Transponder 
+DTE, Domain Type Enforcement 
+DTOS, Distributed Trusted Operating-System 
+DTS, Digital Thermal Sensor 
+ECC, Elliptic-Curve Cryptography 
+ECC, Error-Correct Code 
+ECT, Enhanced Certificate Transparency 
+ED, Erectile Dysfunction 
+EE, Edge Editing 
+EFS, Encryption File-System 
+EH, Exception-Handling 
+EIP, Extended Instruction Pointer 
+EK, Endorsement Key 
+EMC, Electromagnetic Compatibility 
+EMI, Electromagnetic Interference 
+EMS, Engine Management System 
+EN, English 
+EP, Entry-Point 
+EPC, Electronic Product Code 
+ES, Exported Symbol 
+ESP, Encapsulation Security Payload 
+ESP, Extended Stack-Pointer 
+EULA, End-User License Agreement 
+EV, Extended Validation 
+EWMA, Exponential Weighted Moving Average 
+FAR, False Accept Rate 
+FBI, Federal Bureau Of Investigation 
+FBI, Function Boundary Identification 
+FC, Flow-Control 
+FCFS, First-Come First-Serve 
+FD, Format Distinguisher 
+FD, File Descriptor
+FFT, Fast Fourier Transform 
+FHE, Fully-Homomorphic Encryption 
+FI, Function Identification 
+FIB, Focused Ion Beam 
+FM, Fluhrer-Mcgrew 
+FN, False-Benign 
+FN, False-Negative 
+FNR, False-Negative Rates 
+FP, False-Malicious 
+FP, False-Positive 
+FQDN, Fully-Qualified Domain-Name 
+FSE, Fast Software Encryption 
+FSM, Finite-State Machine 
+FTC, Federal Trade Commission 
+FTE, Format-Transforming Encryption 
+GCM, Galois Counter-Mode 
+GI, Graph-Isomorphism 
+GID, Group Identification 
+GMP, Gnu Multi-Precision 
+GMW, Goldreich-Micali-Wigderson 
+GOT, Global Offset Table 
+GP, General-Purpose 
+GP, Geometry Processor 
+GRE, Generic Routing Encapsulation 
+GS, Global Segment 
+GSA, General Services Administration 
+GSB, Google Safe Browsing 
+GSS, Generic Security Service 
+GTK, Gimp Toolkit 
+GTK, Groupwise Transient Key 
+GTT, Global Translation-Table 
+HLR, Home Location Register 
+HMAC, Hash-Based Message-Authentication Code 
+HP, Hand Position 
+HPC, High-Performance Computing 
+HS, Hidden Service 
+HSTS, Http Strict-Transport-Security 
+HVM, Hardware Virtual-Machine 
+IAT, Import Address Table 
+IC, Indirect-Call 
+IC, Integrated Circuit 
+IC, Integrated Circuits 
+ICA, Import Call Area 
+ICA, Independent Component Analysis 
+ICAP, Internet Content Adaptation Protocol 
+ICC, Inter-Component Communication 
+ICV, Integrity Check Value 
+IDE, Inter-Procedural Distributive Environment 
+IDES, Intrusion-Detection Expert System 
+IDL, Inspected Domain List 
+IDL, Interface Description Language 
+IDS, Intrusion-Detection System 
+IDS, Intrusion-Detection Systems 
+IE, International Enterprise 
+IE, Internet Explorer 
+IFC, Information Flow-Control 
+IIS, Internet Information Services 
+IL, Intermediate Language 
+ILP, Integer Linear Programming 
+ILR, Instruction Location Randomization 
+ILR, Internal Layout Re-Randomization 
+IM, Influence Maximization 
+IM, Instant-Messaging 
+IMA, Integrity Measurement Architecture 
+IME, Input Method Editor 
+IMEI, International Mobile Equipment Identity 
+IMSI, International Mobile Subscriber Identity 
+IPC, Interprocess Communication 
+IPD, Integrated Product Development 
+IPMI, Intelligent Platform Management Interface 
+IPP, Inter-Party Parallelization 
+IPR, In-Place Randomization 
+IPR, Ip Reputation 
+IPS, Intrusion-Prevention Systems 
+IR, Infrared 
+IR, Intermediate-Representation 
+IRAM, Implicitly Restarted Arnoldi Method 
+IRC, Internet Relay Chat 
+IRM, Reference Monitoring 
+IRP, I/O Request Packets 
+ISA, Instruction Set Architecture 
+ISC, Information Security Conference 
+ISI, Information Sciences Institute 
+ISN, Initial Sequence-Number 
+ISR, Instruction Set Randomization 
+IT, Information Technology 
+IT, Information-Theoretic 
+JC, Jaccard Containment 
+JG, Justgarble 
+JIT, Just-In-Time 
+JKL, Jonah Krypto Library 
+JNI, Java Native Interface 
+JOP, Jump-Oriented Programming 
+JSSE, Java Secure Socket Extension 
+JWT, Json Web Tokens 
+KDE, Kernel Density Estimate 
+KDF, Key-Derivation Functions 
+KE, Key-Exchange 
+KEK, Key Encrypting Key 
+KEK, Key Encrypting Keys 
+KL, Kullback-Leibler 
+KS, Key-Server 
+KSA, Key Scheduling Algorithm 
+KSA, Key-Storage Area 
+KV, Key-Value 
+LBNL, Lawrence Berkeley National Laboratory 
+LCC, Largest Connected Component 
+LCC, Local Clustering Coefficient 
+LCS, Longest Common Substring 
+LDAP, Lightweight Directory Access Protocol 
+LE, Linking Effort 
+LE, Linking Efforts 
+LF, Low-Frequency 
+LHS, Left-Hand Side 
+LIFO, Last In First-Out 
+LIS, Longest Increasing Subsequence 
+LKM, Loadable Kernel Module 
+LLC, Large Last-Level Cache 
+LLC, Last-Level Caches 
+LNA, Low-Noise Amplifier 
+LOS, Line-Of-Sight 
+LR, Linear-Regression 
+LR, Link Ratio 
+LR, Linking Ratio 
+LSM, Linux Security Module 
+LSM, Linux Security Modules 
+LWE, Learning With Errors 
+MA, Mandarin 
+MA, Moving Average 
+MAC, Mandatory Access Controls 
+MAC, Mandatory Access-Control 
+MAC, Media Access-Control 
+MAC, Medium Access-Control 
+MAC, Message-Authentication Code 
+MAC, Message-Authentication Codes 
+MAD, Maximum Absolute Deviation 
+MAL, Memory-Access Logic 
+MAP, Maximum A Posteriori 
+MCA, Multiple Correspondence Analysis 
+MDL, Minimum Description Length 
+MDS, Maximum Distance Separableâ  
+MF, More Fragments 
+MI, Mobile Identity 
+MI, Mutual Information 
+MIC, Message Integrity Check 
+ML, Machine-Learning 
+MLE, Message-Locked Encryption 
+MLS, Multilevel Secure 
+MLS, Multilevel Security 
+MMS, Multimedia Messaging Service 
+MNO, Mobile Network Operator 
+MO, Mobile-Originated 
+MOAS, Multiple Origin As 
+MOO, Mode-Of-Operation 
+MPI, Message-Passing Interface 
+MR, Metasymploit Rule 
+MS, Mobile Station 
+MSB, Most-Significant Bits 
+MSC, Mobile Switching Center 
+MSG, Message-Signature Generation 
+MSG, Multilevel Signature Generalization 
+MSR, Machine-Specific Registers 
+MSR, Model-Specific Registers 
+MT, Mersenne Twister 
+MT, Mobile Terminated 
+MT, Modulation Technique 
+MTA, Mail Transfer Agent 
+MX, Mail Exchange 
+NB, Naive Bayesian 
+NBAR, Network-Based Application Recognition 
+NDIS, Intrusion-Detection System 
+NFC, Near Field Communications 
+NIC, Network-Interface Card 
+NIC, Network-Interface Cards 
+NMAC, Nested Mac 
+NN, Nearest-Neighbors 
+NN, Nearest-Neighbors-Based 
+NNTP, Network News Transport Protocol 
+NOP, No-Operation 
+NP, Network Processor 
+NPT, Nested-Page Table 
+NR, Network Resilience 
+NS, Name Server 
+NSS, Network-Security Services 
+NT, Not Typo-Squatting 
+NTL, Number Theory Library 
+NVD, National Vulnerability-Database 
+NX, Non-Executable 
+NX, Non-Execute 
+OCR, Optical Character Recognition 
+OD, Origin-Destination 
+OID, Object Identifier 
+OMG, Object Management Group 
+OO, Object-Oriented 
+OOB, Out Of Bag 
+OOB, Out-Of-Band 
+OP, Onion Proxy 
+OP, Opus Palladianum 
+OR, Official Rule 
+OR, Onion-Router 
+ORB, Object Request Broker 
+OSB, Optimal Subsequence Bijection 
+OSI, Object Security-Identifier 
+OSN, On-Line Social Network 
+OSVDB, Open Sourced Vulnerability-Database 
+OT, Oblivious-Transfer 
+OTP, Onetime Password 
+OTR, Off-The-Record 
+OVAL, Open Vulnerability Assessment Language 
+PAA, Provenance-Aware Application 
+PAE, Physical Address Extension 
+PAKE, Password-Authenticated Key-Exchange 
+PAM, Pluggable Authentication Module 
+PAM, Program-Analysis Mode 
+PAM, Pulse Amplitude Modulation 
+PBC, Pairing-Based Cryptography 
+PBC, Pairings-Based Crypto 
+PBC, Push Button Configuration 
+PBC, Push-Button Configuration 
+PC, Path-Condition 
+PC, Personal Computer 
+PC, Program-Counter 
+PCA, Principal Component Analysis 
+PCA, Proof-Carrying Authorization 
+PCB, Printed Circuit Board 
+PCB, Process Control Block 
+PCI, Payment Card Industry 
+PCR, Platform Configuration Register 
+PCS, Pointer-Combine Semantics 
+PCS, Privacy Concerns Scale 
+PCS, Public Cloud Service 
+PCS, Public Cloud Services 
+PDB, Program Database 
+PDF, Probability Density Function 
+PDS, Persistent Data Stores 
+PDT, Onset Of Nimdatime 
+PE, Portable Executable 
+PE, Privilege-Escalation 
+PEM, Privacy-Enhanced Mail 
+PF, Parity Flag 
+PF, Physical Function 
+PI, Pointer Injection 
+PIC, Position-Independent Code 
+PIE, Position-Independent Executables 
+PII, Personally-Identifiable Information 
+PIR, Private Information Retrieval 
+PIT, Programmable Interval Timer 
+PKG, Private-Key Generator 
+PKI, Public-Key Infrastructure 
+PLC, Packet Loss Concealment 
+PLT, Procedure Linkage Table 
+PLT, Program-Linkage Table 
+PMS, Package Manager Service 
+PMS, Premastersecret 
+PMT, Mapping Table 
+PN, Pseudo-Noise 
+PO, Partial Order 
+POSIX, Portable Operating-System Interface 
+POST, Power-On Self-Test 
+PP, Point-To-Point 
+PP, Privacy Peer 
+PPC, Pay-Per-Click 
+PPP, Point-To-Point Protocol 
+PPR, Pay-Per-Redirect 
+PPT, Probabilistic Polynomial-Time 
+PR, Page-Rank 
+PR, Polynomial Reconstruction 
+PRIV, Privacy Research In Vision 
+PS, Parking-Service 
+PS, Print Side 
+PSD, Power Spectral Distribution 
+PSI, Private Set-Intersection 
+PSOS, Provably-Secure Operating-System 
+PSP, Payment Service Provider 
+PSP, Proactive Surge Protection 
+PSS, Perfect Secret-Sharing 
+PSTN, Public Switched Telephone Network 
+PT, Person Texture 
+PTE, Page-Table Entry 
+PVA, Phone-Verified Account 
+RA, Return-Addresses 
+RAD, Return-Address Defender 
+RADIUS, Remote Authentication Dial-In User Service 
+RC, Random Committee 
+RCS, Random Constant Spread 
+RCS, Remote-Control System 
+RD, Requester Diversity 
+RDF, Resource Description Framework 
+RDS, Radio Data System 
+RE, Regular-Expression 
+RE, Reliable Email 
+RED, Random Early Detection 
+RF, Radio-Frequency 
+RF, Random Forest 
+RF, Random Forests 
+RFB, Remote Frame-Buffer 
+RFC, Request For Comments 
+RHS, Right-Hand Side 
+RI, Regulated Interconnect 
+RIM, Research In Motion 
+RIR, Regional Internet Registries 
+RIR, Regional Internet Registry 
+RLO, Right-To-Left Override 
+RNG, Random-Number Generator 
+ROC, Receiver-Operating Characteristic 
+ROC, Receiver-Operating Characteristics 
+ROM, Random-Oracle Model 
+RP, Relying Parties 
+RP, Rendezvous Point 
+RP, Requester Profile 
+RPC, Remote Procedure Call 
+RPC, Remote Procedure Calls 
+RR, Radio Resources 
+RR, Resource Record 
+RR, Round-Robin 
+RSBAC, Rule-Set Based Access-Control 
+RSS, Received Signal Strength 
+RSS, Resident-Set Size 
+RTL, Register Transfer Language 
+RTTI, Runtime Type Information 
+RW, Random Walk 
+RWX, Read-Write-Execute 
+RX, Role Extraction 
+SA, Security-Association 
+SAC, Sample Autocorrelation 
+SACK, Selective Acknowledgments 
+SAD, Security-Association Database 
+SAFE, Static Analyzer For Executables 
+SATA, Serial Ata 
+SATAN, Security Administrator Tool For Analyzing Networks 
+SBL, Sender Policy Block 
+SC, Skin Conductance 
+SC, State-Cleansing 
+SCM, Service Control Manager 
+SCS, Shortest Common Supersequence 
+SCS, Sort-Compare-Shuffle 
+SCTP, Stream Control Transmission Protocol 
+SD, Secure Digital 
+SD, Sybil Detection 
+SDA, Structure-Based De-Anonymization 
+SDH, Strong Diffie-Hellman 
+SE, Security-Enhanced 
+SE, Semantic Engine 
+SEC, Securities And Exchange Commission 
+SEM, Scanning Electron Microscope 
+SEO, Search-Engine Optimization 
+SF, Spoolfile 
+SGX, Software Guard Extensions 
+SHS, Secure Hash Standard 
+SIE, Security Information Exchange 
+SIMD, Single-Instruction Multiple-Data 
+SIP, Session Initiation Protocol 
+SJCL, Stanford Javascript Crypto Library 
+SL, Secure Loader 
+SL, Session Length 
+SLP, Serial Link Protocol 
+SLP, Service-Location Protocol 
+SMAP, Secure-Mode Access Prevention 
+SMC, Secure Multi-Party Computation 
+SMEP, Supervisor Mode Execution Prevention 
+SMF, Simple Machine Forums 
+SMM, Symbolic Mealy Machine 
+SMM, System Management Mode 
+SMT, Satisfiability Modulo Theories 
+SMT, Simultaneous Multi-Threading 
+SOC, System-On-Chip 
+SOD, State-Of-Discharge 
+SOL, Speed-Of-Light 
+SOP, Same-Origin Policy 
+SOS, Secure Overlay Services 
+SP, Stack-Pointer 
+SP, Synchronization Packet 
+SPL, Stream-Processing Language 
+SPM, Scanning Probe Microscopy 
+SR, Secure Routing 
+SRA, Secure Rpc Authentication 
+SRAM, Static Ram 
+SS, Storage Service 
+SSA, Single Static Assignment 
+SSA, Static Single-Assignment 
+SSD, Solid-State Drives 
+SSE, Streaming Simd Extension 
+SSE, Streaming Simd Extensions 
+SSI, Server-Side Includes 
+SSI, Subject Security-Identifier 
+SSP, Server Selection Problem 
+SSP, Stack-Smashing Protection 
+SSS, Statistical Secret-Sharing 
+ST, Search Target 
+STAT, State-Transition Analysis Tool 
+STM, Scanning Tunneling Microscopy 
+STP, Spanning-Tree Protocol 
+STR, Signed Tree Root 
+SUT, System Under Test 
+SVA, Secure Virtual Architecture 
+SW, Sensing Window 
+SWF, Shockwave Flash 
+SWISS, Sliding-Window Information Secret-Sharing 
+TBF, Temporary Block Flow 
+TC, Transaction Certificate 
+TCB, Tcp Control Block 
+TCB, Trusted Code-Base 
+TCB, Trusted Computing Base 
+TCC, Telematics Call-Center 
+TCG, Trusted Computing Group 
+TE, Type Enforcement 
+TEA, Tamper-Evident Announcement 
+TEA, Tiny Encryption Algorithm 
+TF, Term Frequency 
+TGT, Ticket-Granting Ticket 
+TI, Texas Instrument 
+TID, Taint Id 
+TIS, Tool Interface Standard 
+TIS, Tpm Interface Specification 
+TIS, Trusted Information Systems 
+TK, Transform Key 
+TLD, Top-Level Domain 
+TN, True-Negative 
+TOS, Terms Of Service 
+TOS, Transactions On Storage 
+TP, Transit Portal 
+TP, True Positives 
+TP, True-Positive 
+TRAP, Timely Recovery To Any Point-In-Time 
+TRW, Threshold Random Walk 
+TSC, Time-Stamp Counter 
+TSR, Target/Source 
+TSS, Task State Segment 
+TSS, Tcg Software Stack 
+TSS, Time-Stamp Services 
+TSS, Tiny Secret-Sharing 
+TTL, Time-To-Live 
+TXT, Trusted Execution Technology 
+UHF, Ultrahigh Frequency 
+UHF, Universal Hash Functions 
+UML, Unified Modeling Language 
+UML, User-Mode Linux 
+UPTEMPO, Using Provenance To Expedite Mac Policies 
+URI, Uniform Resource Identifier 
+UWB, Ultra-Wide Band 
+VA, Validation Authority 
+VA, Visual Attention 
+VC, Verifiable Choice 
+VC, Verifiable Computation 
+VC, Voice Commands 
+VFS, Virtual File-System 
+VS, Visual Studio 
+VSA, Value Set Analysis 
+VSA, Vector Signal Analyzer 
+VT, Violating Transparency 
+WG, Working Group 
+WP, Weakest Precondition 
+ Analytical Active Worm Propagation ,AAWP
+ Attribute-Based Encryption ,ABE
+ Access-Control Gadgets ,ACG
+ Access-Control List ,ACL
+ Access-Control Lists ,ACL
+ Access-Control Rules ,ACL
+ Android Debug Bridge ,ADB
+ Advanced Encryption Standard ,AES
+ Apple File Connection ,AFC
+ Authentication Header ,AH
+ Akaike Information Criterion ,AIC
+ Android Interface Definition Language ,AIDL
+ Asynchronous Javascript And Xml ,AJAX
+ Authenticated Key-Exchange ,AKE
+ American Mobile Satellite Corporation ,AMSC
+ Automatic Number Plate Reading ,ANPR
+ Android Open-Source Project ,AOSP
+ Access Point ,AP
+ Association Of Public Safety Communications Officers ,APCO
+Application Program Interface,API
+Application Programming Interface,API
+ Android Application Package ,APK
+ Absolute Radio-Frequency Channel Number ,ARFCN
+ Authority Revocation Lists ,ARL
+ Authority Revocation-List ,ARL
+ Authorityrevocationlist ,ARL
+ Address Resolution Protocol ,ARP
+ Android Security Framework ,ASF
+ Amazon Standard Identification Number ,ASIN
+ Address-Space Layout Permutation ,ASLP
+ Address-Space Randomization ,ASR
+ Abstract Syntax Tree ,AST
+ Attack Path Traceback And Categorization ,ATC
+ Area Under Curve ,AUC
+ Area Under Roc Curve ,AUC
+ Access Vector Cache ,AVC
+ Basic Access-Control ,BAC
+ Bayes Belief Network ,BBN
+ Brain-Computer Interfaces ,BCI
+ Background Draw-A-Secret ,BDAS
+ Basic Fuzzing Framework ,BFF
+ Breadth-First Search ,BFS
+ Breadth-First-Search ,BFS
+ Block Hash Filtering ,BHF
+ Basic Input/Output System ,BIOS
+ Black-Market Reloaded ,BMR
+ British National Corpus ,BNC
+ Beginning Of Message ,BOM
+ Bellare Ristenpart Rogaway And Spies ,BRRS
+ Ballot Sequence-Number ,BSN
+ Branch Target Buffer ,BTB
+ Certificate Authorities ,CA
+ Certificate Authority ,CA
+ Certification Authority ,CA
+ Cipher-Block Chaining ,CBC
+ Collaboratory Builders Environment ,CBE
+ Constraint-Based Geo-Location ,CBG
+ Cryptographic Computational Continuation Passing ,CCCP
+ Cyber-Center For Disease Control ,CDC
+ Commonly Exploitable Content ,CEC
+ Code-Excited Linear Prediction ,CELP
+ Control-Flow Integrity ,CFI
+ Coarse-Grained Parallelization ,CGP
+ Channel Hot Electron ,CHE
+ Chernobyl ,CIH
+ Chinese Japanese Korean ,CJK
+ Corporate Lan Interconnection Network ,CLIN
+ Crack Me If You Can ,CMIYC
+ Complementary Metal-Oxide-Semiconductor ,CMOS
+ Certificate-Management Protocol ,CMP
+ Certificate-Management Protocols ,CMP
+ Content-Management System ,CMS
+ Cryptography Next-Generation ,CNG
+ Collaborative Intrusion-Detection ,CNIDS
+ Content-Based Payload Partitioning ,COPP
+ Children On-Line Privacy-Protection Act ,COPPA
+ Cross-Origin Resource Sharing ,CORS
+ Copy-On-Write ,COW
+ Cipher-Text Policy Attribute-Based Encryption ,CP-ABE
+ Ciphertext-Policy Attribute-Based Encryption ,CP-ABE
+ Cost-Per-Click ,CPC
+ Code-Pointer Integrity ,CPI
+ Cost-Per-Redirect ,CPR
+ Control Protocol Template ,CPT
+ Challenge Reflection With Channel Selection ,CRCS
+ Computational Rfid ,CRFID
+ Certificate Revocation System ,CRS
+ Core Root-Of-Trust For Measurement ,CRTM
+ Complete Software Interpreter Machine ,CSIM
+ Cross-Site Request Forgery ,CSRF
+ Cascading Style Sheets ,CSS
+ Cascading Style-Sheet ,CSS
+ Common Security-Services Manager ,CSSM
+ Common Vulnerabilities And Exposures ,CVE
+ Common Vulnerability Scoring System ,CVSS
+ Common Weakness Enumeration ,CWE
+ Congestion Window ,CWND
+ Direct Acyclic Graph ,DAG
+ Directed-Acyclic Graph ,DAG
+ Data Acquisition ,DAQ
+ Defense Advanced Research Projects Agency ,DARPA
+ Draw-A-Secret ,DAS
+ Data Breach Investigations Reports ,DBIR
+ Dyer Coull Ristenpart And Shrimpton ,DCRS
+ Distributed Denial-Of-Service ,DDOS
+ Device Exclusion Vector ,DEV
+ Deterministic Finite Automata ,DFA
+ Dynamic Host Configuration Protocol ,DHCP
+ Decentralized Information Flow-Control ,DIFC
+ Dynamic Information Flow-Tracking ,DIFT
+ Direct Kernel Object Manipulation ,DKOM
+ Dynamic Linkability Graph ,DLG
+ Dynamically-Linked Libraries ,DLL
+ Decentralized Label Model ,DLM
+ Data Loss Prevention ,DLP
+ Domain-Name System,DNS
+ Dns-Based Ibc ,DNSIBC
+ Domain-Name System Key ,DNSKEY
+ Document Object Model ,DOM
+ Descriptor Privilege Level ,DPL
+ Dynamic Root-Of-Trust For Measurement ,DRTM
+ Data-Retention Voltage ,DRV
+ Dynamic Taint-Analysis ,DTA
+ Dte Language ,DTEL
+ Data Tlb ,DTLB
+ Datagram Transport-Layer Security ,DTLS
+ Digital Terrestrial Television ,DTT
+ Dynamic Time Warping ,DTW
+ Digital Video Broadcasting ,DVB
+ Dalvik Virtual-Machine ,DVM
+ Elliptic-Curve Diffie-Hellman ,ECDH
+ Electrocardiogram ,ECG
+ Explicit Congestion Notification ,ECN
+ Extended Capability Port ,ECP
+ Electroencephalography ,EEG
+ Equal Error Rate ,EER
+ European Electronic Toll Service ,EETS
+ Electronic Frontier Foundation ,EFF
+ Extensible Firmware Interface ,EFI
+ Extended Instruction Flow Graph ,EIFG
+ Extended Inquiry Response ,EIR
+ Encrypted Key-Exchange ,EKE
+ Executable And Linkable Format ,ELF
+ Electromagnetic Radiation ,EMR
+ External Short Message Entity ,EMSE
+ Emission Security ,EMSEC
+ End-Of Message ,EOM
+ Entry-Point Obscuring ,EPO
+ Enhanced Parallel Port ,EPP
+ Event-Related Potentials ,ERP
+ Emulated Stack Area ,ESA
+ Extended Static Checking ,ESC
+ Eprom Tunnel Oxide ,ETOX
+ Electronic Toll Pricing ,ETP
+ Exponentially-Weighted Moving Average ,EWMA
+ Eros Window System ,EWS
+ Frequently-Asked-Questions ,FAQ
+ Foundational Cryptography Framework ,FCF
+ Forward Error-Correction ,FEC
+ Fine-Grained Parallelization ,FGP
+ Frequency Hopping Spread-Spectrum ,FHSS
+ First-In-First-Out ,FIFO
+ Floating-Gate Tunnelling Oxide ,FLOTOX
+ First-Order-Logic ,FOL
+ Format-Preserving Encryption ,FPE
+ Field-Programmable Gate Array ,FPGA
+ Finite-State Automaton ,FSA
+ Function Start Identification ,FSI
+ Frequency-Shift Keying ,FSK
+ Forward-Secure Pseudo-Random Generator ,FSPRG
+ Frame Sync Sequence ,FSS
+ Flash Translation Layer ,FTL
+ File-Transfer Protocol ,FTP
+ Functional Verification Testing ,FVT
+ Flash Write Key ,FWKEY
+ Graph Arc Edit-Distance ,GAED
+ Gnu Compiler Collection ,GCC
+ Greatest Common Divisor ,GCD
+ Google Compute Engine ,GCE
+ Google Custom Search Engines ,GCSE
+ Global Distributed Diary ,GDD
+ Global Descriptor Table ,GDT
+ Generalized Framework For Access-Control ,GFAC
+ Gateway Gprs Support Node ,GGSN
+ Global Internship Management System ,GIMS
+ Group-Key Management Protocol ,GKMP
+ Guilty-Knowledge Test ,GKT
+ Global Linking Effort ,GLE
+ Global Linking Ratio ,GLR
+ Gaussian Mixture Model ,GMM
+ Gated Recurrent Unit ,GRU
+ Gated Recurrent Units ,GRU
+ Greater-Or-Equal ,GTE
+ Graphic User Interfaces ,GUI
+ Graphical User-Interface ,GUI
+ Google Web Toolkit ,GWT
+ History-Based Access-Control ,HBAC
+ Human-Computer Interaction ,HCI
+ High-Bandwidth Digital Copy-Protection ,HDCP
+ Human Interface Device ,HID
+ Hidden-Markov Model ,HMM
+ Hidden-Markov Models ,HMM
+ Highly Predictive Blacklisting ,HPB
+ Http Public-Key Pinning ,HPKP
+ Hijacking State-Transition ,HST
+ Hyper Text Markup Language ,HTML
+Hyper Text Markup Language,HTML
+Hypertext Transfer Protocol,HTTP
+ Http Over Ssl ,HTTPS
+Http Over Ssl,HTTPS
+ Identity-Based Cryptography ,IBC
+ Identity-Based Encryption ,IBE
+ Interval Centroid-Based Watermarking ,ICBW
+ Indirect Control-Flow ,ICF
+ Interrupt Descriptor Table ,IDT
+ Internet Engineering Task Force ,IETF
+ Indirect Function-Call Checks ,IFCC
+ Instruction Flow Graph ,IFG
+ Interior Gateway Protocol ,IGP
+ Internet Inter-Orb Protocol ,IIOP
+ Indirect Jumps ,IJ
+ Internet Key-Exchange ,IKE
+ Inter-Language Unification ,ILU
+ Internet Mail Access Protocol ,IMAP
+ Internet Message Access Protocol ,IMAP
+ Input Method Management Service ,IMMS
+ In-Order Packet Processing ,IOPP
+Internet Protocol,IP
+ Internet Protocol Security Architecture ,IPSEC
+ Art-Vpr Base Throughput ,IPTC
+ Instant-Runoff Voting ,IRV
+ Internet Security-Association And Key-Management Protocol ,ISAKMP
+ Internet Security Threat ,ISTR
+ Information Technology Division ,ITD
+ Instruction Tlb ,ITLB
+ Instruction Translation Look-Aside Buffer ,ITLB
+ Information-Theoretic Pir ,ITPIR
+ Internet Users Information Privacy Concerns ,IUIPC
+ Initialisation Vector ,IV
+ Initialization Vector ,IV
+ Initialization Vectors ,IV
+ Internet Exchange Architecture ,IXA
+ Jonah Directory Library ,JDL
+ Just Fast Keying ,JFK
+ Java Pathfinder ,JPF
+ Javascript Object Notation ,JSON
+ Java Virtual-Machine ,JVM
+ Json Web Encryption ,JWE
+ Kerberized Credential Translator ,KCT
+ Keyed Database Search ,KDS
+ K-Nearest Neighbors ,KNN
+ Kreuter ,KSS
+ Lquid Crystal Display ,LCD
+ Linear Discriminant Analysis ,LDA
+ Lumeta Firewall Analyzer ,LFA
+ Linear-Feedback Shift-Register ,LFSR
+ Logical Key Hierarchy ,LKH
+ Lucent Managed Firewall ,LMF
+ Lights-Out Management ,LOM
+ Low Pin Count ,LPC
+ Long-Range Acoustic Device ,LRAD
+ Least-Significant Bit ,LSB
+ Least-Significant Byte ,LSB
+ Linear Secret-Sharing Schemes ,LSSS
+ Long Short-Term Memory ,LSTM
+ Local Worst Offender List ,LWOL
+ Malware Download Defense ,MDD
+ Micro-Electro-Mechanical Systems ,MEMS
+ Multi-Flow Attack ,MFA
+ Mel-Frequency Cepstral Coefficients ,MFCC
+ Magnetic Force Microscopy ,MFM
+ Mozilla Foundation Security Advisories ,MFSA
+ Minimum-Sized Influential Node Set ,MINS
+ Moving-Image Object Recognition ,MIOR
+ Man-In-The-Browser ,MITB
+ Man-In The Middle ,MITM
+ Man-In-The-Middle ,MITM
+ Android Middleware Layer ,MMAC
+ Markov-Modulated Poisson Process ,MMPP
+ Memory Management Unit ,MMU
+ Multiple Origin Ases ,MOAS
+ Multi-Party Computation ,MPC
+ Minimum Run Time ,MRT
+ Minimum Runtime ,MRT
+ Minimal Set-Cover Problem ,MSCP
+ Mean Squared Error ,MSE
+ Memory Technology Device ,MTD
+ Move To Privileged Register ,MTPR
+ Mail Viewer Agent ,MVA
+ Network Access Code ,NAC
+ North-American Numbering Plan ,NANP
+ Network-Attached Storage ,NAS
+ Network Address Translation ,NAT
+ Network Allocation Vector ,NAV
+ Netware Core Protocol ,NCP
+ No-Combine Semantics ,NCS
+ Netware Directory Service ,NDS
+ National Endowment For Democracy ,NED
+ Non Deterministic Finite Automaton ,NFA
+ Nondeterministic Finite Automata ,NFA
+ Nondeterministic Finite Automaton ,NFA
+ Nondeterministic Finite-State Automata ,NFA
+ Network Functions Virtualization ,NFV
+ Nongovernmental Organization ,NGO
+ National Highway Transportation Safety Administration ,NHTSA
+ Network Idss ,NIDS
+ Network Intrusion-Detection System ,NIDS
+ Network Intrusion-Detection Systems ,NIDS
+ National Institute Of Standards And Technology ,NIST
+ Non-Interactive Zero-Knowledge ,NIZK
+ Nonlinear Feedback Shift-Register ,NLFSR
+ Natural-Language Processing ,NLP
+ National Science Foundation ,NSF
+ National Software Reference Library ,NSRL
+ Network Time Protocol ,NTP
+ Nonuniform Memory-Access ,NUMA
+ On-Line Certificate Status Protocol ,OCSP
+ Object Data-Management ,ODM
+ Output Description Table ,ODT
+ Output Description Tables ,ODT
+ On-Line Agent ,OLA
+ Object-Oriented Programming ,OOP
+ Out-Of-Order Packet Processing ,OOPP
+ Outsourced Oblivious-Transfer ,OOT
+ Oblivious Prf ,OPRF
+ Oblivious Pseudo-Random Function ,OPRF
+ Oblivious-Ram ,ORAM
+ Operating-System,OS
+ Opened Verifiable Choice ,OVC
+ Polymorphic Blending Attack ,PBA
+ Portable Circuit Format ,PCF
+ Probabilistic Context-Free Grammar ,PCFG
+ Pci-X Cryptographic Co-Processor ,PCIXCC
+ Pulse Code Modulation ,PCM
+ Packet Data Protocol ,PDP
+ Policy-Enforcement Points ,PEP
+ Private Equality Test ,PEQT
+ Priority Flow-Control ,PFC
+ Priority-Based Flow-Control ,PFC
+ Perfect Forward-Secrecy ,PFS
+ Probabilistic Finite-State Automaton ,PFSA
+ Picture Gesture Authentication ,PGA
+ Profile-Guided Optimizations ,PGO
+ Pretty Good Privacy ,PGP
+ Process Identifier ,PID
+ Process-Id ,PID
+ Program Integrity Dominates System Integrity ,PIDSI
+ Personal Identification Number ,PIN
+ Privacy Integrated Queries ,PINQ
+ Public-Key Cryptography ,PKC
+ Public-Key Cryptography Standard ,PKCS
+ Public-Key Cryptography Standards ,PKCS
+ Public-Key Distributed-Authentication ,PKDA
+ Public-Key Infrastructure Using X.509 ,PKIX
+ Probabilistic Neural Networks ,PNN
+ Part-Of-Speech ,POS
+ Parts Of Speech ,POS
+ Pay-Per-Install ,PPI
+ Parma Polyhedral Library ,PPL
+ Pay-Per-View ,PPV
+ Pseudo-Random Function ,PRF
+ Pseudo-Random Functions ,PRF
+ Pseudo-Random Generator ,PRG
+ Partial-Response Maximum-Likelihood ,PRML
+ Pseudo-Random Number Generator ,PRNG
+ Pseudo-Random Number Generators ,PRNG
+ Pre-Rendered User-Interface ,PRUI
+ Propensity Score Matching ,PSM
+ Pairwise Transient Key ,PTK
+ Preboot Execution Environment ,PXE
+ Privileged Execute-Never ,PXN
+ Quality-Of-Protection ,QOP
+ Random-Access Memory ,RAM
+ Role-Based Access-Control ,RBAC
+ Reserve Bank Of India ,RBI
+ Recursive Dns ,RDNS
+ Remote Desktop Protocol ,RDP
+ Radio-Frequency Identification ,RFID
+ Radio-Frequency Identifier ,RFID
+ Rijnland Internet Election System ,RIES
+ Run-Length-Limited ,RLL
+ Remote Management Card ,RMC
+ Root-Mean-Square Error ,RMSE
+ Return-Oriented Programing ,ROP
+ Return-Oriented Programming ,ROP
+ Real-Time Clock ,RTC
+ Rtp Control Protocol ,RTCP
+ Real-Time Messaging Protocol ,RTMP
+ Real-Time Transport Protocol ,RTP
+ Request To Send ,RTS
+ Round-Trip Time ,RTT
+ Security Assertion Markup Language ,SAML
+ Statistical Scan Anomaly-Detection Engine ,SCADE
+ System Control Board ,SCB
+ Software Developer Kit ,SDK
+ Secure Software-Development Life-Cycle ,SDLC
+ Software-Defined Networking ,SDN
+ Software-Defined Radio ,SDR
+ Secure Distributed Virtual Conferencing ,SDVC
+ Single-Entry Single Successor ,SESS
+ Secure Function Evaluation ,SFE
+ Symbolic Finite Transducer ,SFT
+ System Identifier ,SID
+ Short Inter-Frame Space ,SIFS
+ Scale-Invariant Feature Transforms ,SIFT
+ Serial Interception Sequence Learning ,SISL
+ Session-Key Disclosure ,SKD
+ Session-Key Negotiation ,SKN
+ Service-Level Agreement ,SLA
+ Service-Level Agreements ,SLA
+ Statistical Payload Anomaly-Detection Engine ,SLADE
+ Samba ,SMB
+ Scalable Multicast Key-Distribution ,SMKD
+ Sequential Minimal Optimization ,SMO
+ Short Message Service ,SMS
+ Short Message Service Center ,SMSC
+ Simple Mail Transport Protocol ,SMTP
+ Succinct Non-Interactive Argument Of Knowledge ,SNARK
+ Server-Name Indication ,SNI
+ Single Nucleotide Polymorphism ,SNP
+ Signal-To-Noise Ratio ,SNR
+ Simple Object Access Protocol ,SOAP
+ Single-Origin As ,SOAS
+ Security-Policy Database ,SPD
+ Squared Prediction Error ,SPE
+ Sender Policy Framework ,SPF
+ Simple Public-Key Infrastructure ,SPKI
+ Synchronized Random Dynamic ,SRD
+ Single Root I/O Virtualization ,SRIOV
+ Storage Root-Key ,SRK
+ Secure Real-Time Transport Protocol ,SRTP
+ Secure Shell ,SSH
+ Source Security Id ,SSID
+ Secure Socket Layer,SSL
+ Secure Sockets Layer,SSL
+ Single Sign-On ,SSO
+ Static Taint-Analysis ,STA
+ Short-Time Energy ,STE
+ Short-Time Fourier Transform ,STFT
+ System Usability Scale ,SUS
+ Singular Value Decomposition ,SVD
+ Storage Virtualization Layer ,SVL
+ Support Vector Machine ,SVM
+ Scantegrity Voting System Team ,SVST
+ System Verification Testing ,SVT
+ Secure Wireless Gateway ,SWG
+ Stepwise Linear Discriminant Analysis ,SWLDA
+ Type Allocation Code ,TAC
+ Time And Remanence Decay In Sram ,TARDIS
+ Topology-Based Geo-Location ,TBG
+Transmission Control Protocol,TCP
+ Trusted Computing Platform Alliance ,TCPA
+ Time Division Multiple Access ,TDMA
+ Thread Environment Block ,TEB
+ Translation Look-Aside Buffer ,TLB
+ Transport-Layer Security,TLS
+ Time-Of-Check To Time-Of-Use ,TOCTTOU
+ Time-Of-Check-To-Time-Of-Use ,TOCTTOU
+ Trust-On-First-Use ,TOFU
+ Two-Party Computation ,TPC
+ Trusted Platform Model ,TPM
+ Trusted Platform Module ,TPM
+ Tire Pressure Monitoring System ,TPMS
+ Tire Pressure Monitoring Systems ,TPMS
+ Transportation Security Administration ,TSA
+ Type-Safe Disk ,TSD
+ Type-Safe Disks ,TSD
+ Target Security Id ,TSID
+ Targeted Threat Index ,TTI
+ Trusted Third-Party ,TTP
+ Therapeutic Range ,TTR
+ Text-To-Speech ,TTS
+ Upper Atmospheric Research Collaboratory ,UARC
+ Unsorted Block Images ,UBI
+ User Data Header ,UDH
+ Unique Device Identifier ,UDID
+ User Datagram Protocol ,UDP
+ Uncoordinated Dsss ,UDSSS
+ Uncoordinated Frequency Hopping ,UFH
+ User-Interface ,UI
+ User-Interface Automation/Accessibility ,UIA
+ Uia Manager ,UIAM
+ Url-Ip Cluster ,UIC
+ Unique Identifier ,UID
+ User Identification ,UID
+ User Identifier ,UID
+ User-Id ,UID
+ User-Input Privacy ,UIP
+Uniform Resource Locator,URL
+ Unlimited Register Machine ,URM
+ Universal Software Radio Peripheral ,USRP
+ User-Space Security Server ,USSS
+ Universally Unique Identifier ,UUID
+ Usb Video Class ,UVC
+ Variable Bit-Rate ,VBR
+ Veris Community Database ,VCDB
+ Virtual Ethernet Bridge ,VEB
+ Virtual Edge Port Aggregator ,VEPA
+ Virtual Function Table ,VFT
+ Vendor Id ,VID
+ Virtually Indexed ,VIVT
+ Very Large-Scale Integration ,VLSI
+Virtual-Machine,VM
+ Vmware Communication Interface ,VMCI
+ Virtual-Machine Introspection ,VMI
+ Virtual-Machine Monitor ,VMM
+ Virtual-Machine Monitors ,VMM
+ Virtual-Machine Operating-System ,VMOS
+ Virtual Private Networks ,VPN
+ Virtual-Private-Network ,VPN
+ Verifiable Secret-Sharing ,VSS
+ Virtual Size ,VSZ
+ Virtual-Table Verification ,VTV
+ Wide-Area Network ,WAN
+ Windows Error Reporting ,WER
+ Website Fingerprinting ,WF
+ Web Hacking Incidents Database ,WHID
+ Worldwide Intelligence Network Environment ,WINE
+ Wireless Lan ,WLAN
+ Weighted Minimal Common Supergraph ,WMCS
+ Weighted Minimal Set-Cover Problem ,WMSCP
+ Worcester Polytechnic Institute ,WPI
+ Wrapper Support Subsystem ,WSS
+ World Uyghur Congress ,WUC
+ World-Wide-Web ,WWW
+ Extensible Access-Control Markup Language ,XACML
+ Cross-Channel Scripting ,XCS
+ Cross-Domain Method Invocation ,XMI
+ Extensible Markup Language ,XML
+ Extensible Messaging And Presence Protocol ,XMPP
+ Execute-Only Memory ,XOM
+ Exclusive-Or ,XOR
+ Exclusive Page Frame Ownership ,XPFO
+ Cross-Site Request Forgery ,XSRF
+ Cross-Site Scripting ,XSS
+ Cross-Site Script Inclusion ,XSSI
+ Xml Signature Wrapping ,XSW
+ Zhubajie ,ZBJ
+ Zero-Knowledge ,ZK
+ Zero-Knowledge Proof ,ZKP
+ Zero-Knowledge Proofs ,ZKP
+ Zero-Knowledge Proofs-Of-Knowledge ,ZKPK
+ Software Fault-Isolation ,SFI
+ Software-Based Fault-Isolation ,SFI
+ Software-Fault Isolation ,SFI
+ False Reject Rate ,FRR
+ False Rejection Rate ,FRR
+ Decision Diffie-Hellman ,DDH
+ Decisional Diffie-Hellman ,DDH
+ Voter Verified Paper Audit Trail ,VVPAT
+ Voter-Verifiable Paper Audit Trail ,VVPAT
+ In-Line Reference Monitors ,IRM
+ Inlined Reference Monitors ,IRM
+ Human Intelligence Task ,HIT
+ Human Interactive Task ,HIT
+ State-Based Cfi ,SBCFI
+ State-Based Control-Flow Integrity ,SBCFI
+ General-Purpose I/O ,GPIO
+ General-Purpose Input/Output ,GPIO
+ Last Branch Record ,LBR
+ Last Branch Recording ,LBR
+ Dns Security ,DNSSEC
+ Domain-Name System Security ,DNSSEC
+ Amazon Web Service ,AWS
+ Amazon Web Services ,AWS
+ Complementary Cdf ,CCDF
+ Complementary Cumulative Distribution Function ,CCDF
+ Receive Signal Strength Indication ,RSSI
+ Received Signal Strength Indication ,RSSI
+ Maximal Transfer Unit ,MTU
+ Maximum Transmission Unit ,MTU
+ Phase Lock Loop ,PLL
+ Phase-Locked Loop ,PLL
+ North America Networks Operators Group ,NANOG
+ North-American Network Operators Group ,NANOG
+ Model-Inference-Assisted Concolic Concrete And Symbolic Exploration ,MACE
+ Model-Inference-Assisted Concolic Exploration ,MACE
+ Lucent Personal Web Assistant ,LPWA
+ Lucent Personalized Web Assistant ,LPWA
+ Portable Document Format ,PDF
+ Multipurpose Internet Mail Extensions ,MIME
+ Wireless Application-Protocol ,WAP
+ Wired Equivalency Protocol ,WEP
+ Wired Equivalent Privacy ,WEP
+ Global System For Mobile Communications ,GSM
+ Ternary Content Addressable Memory ,TCAM

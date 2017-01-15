@@ -1,6 +1,3 @@
-/**
- * Created by saharmehrpour on 10/30/16.
- */
 
 /**
  * Constructor for the docView
@@ -22,9 +19,8 @@ function DocView(papers, paperTopics, topicLabels, topicWords) {
     self.xTopWords = 10;
 
     self.dimensions = {
-        "topicNameCellWidth": 90, "weightCellWidth": 90, "weightCellHeight": 20
+        "topicNameCellWidth": 90, "weightCellWidth": 120, "weightCellHeight": 20
     };
-
 }
 
 
@@ -33,6 +29,8 @@ DocView.prototype.update = function(paperID) {
     var self = this;
 
     self.div.classed("hidden", false);
+
+    self.div.select("#tempDoc").remove();
 
     var paper = self.papers
         .filter(function (d) {
@@ -61,7 +59,7 @@ DocView.prototype.update = function(paperID) {
         self.title.select("p")
             .select("a")
             .attr("href", paper[0]["Url"])
-            .text("Paper Link");
+            .text("View paper");
     }
 
     var topicsOfPaper = self.paperTopics
@@ -225,12 +223,12 @@ DocView.prototype.findTopWord = function(topicID) {
         list.push({'label': wordWeight['words'][i], 'weight': wordWeight['weights'][i]});
 
     list.sort(function (a, b) {
-        return ((a.weight < b.weight) ? -1 : ((a.weight == b.weight) ? 0 : 1));
+        return ((a.weight < b.weight) ? 1 : ((a.weight == b.weight) ? 0 : -1));
     });
 
     var words = "";
     for (var j = 0; j < self.xTopWords - 1; j++) {
-        words += list[j]['label'] + ", ";
+        words += list[j]['label'] + " ";
     }
     words += list[self.xTopWords - 1]['label'];
     return words;

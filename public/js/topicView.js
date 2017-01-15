@@ -1,8 +1,4 @@
 /**
- * Created by saharmehrpour on 10/25/16.
- */
-
-/**
  * Constructor for the TopicView
  */
 function TopicView(topicWords,topicLabels,topicYears,papers,paperTopics) {
@@ -16,7 +12,7 @@ function TopicView(topicWords,topicLabels,topicYears,papers,paperTopics) {
     self.paperTopics = paperTopics;
     self.papers = papers;
 
-    self.title = self.div.select("#topic_view_title > h1");
+    self.title = self.div.select("#topic_view_title > h3");
 
     self.topicViewTable = new TopicViewTable(topicWords);
     self.topicViewPapers = new TopicViewPapers(papers, paperTopics);

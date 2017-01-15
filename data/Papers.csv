@@ -2605,459 +2605,459 @@ CCS_00_25,Cross-domain one-shot authorization using smart cards,N/A,CCS,2000,htt
 CCS_00_26,New constructions for multicast re-keying schemes using perfect hash families,N/A,CCS,2000,http://dl.acm.org/citation.cfm?id=352637
 CCS_00_27,Simple and fault-tolerant key agreement for dynamic collaborative groups,N/A,CCS,2000,http://dl.acm.org/citation.cfm?id=352638
 CCS_00_28,Composition and integrity preservation of secure reactive systems,N/A,CCS,2000,http://dl.acm.org/citation.cfm?id=352639
-NDSS_06_1,A Crawler-based Study of Spyware in the Web,The Web and Malice,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Crawler-based%20Study%20of%20Spyware%20in%20the%20Web%20%28Alexander%20Moshchuk%29.pdf
-NDSS_06_2,Automated Web Patrol with Strider HoneyMonkeys: Finding Web Sites That Exploit Browser Vulnerabilities,The Web and Malice,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Automated%20Web%20Patrol%20with%20Strider%20HoneyMonkeys%20Finding%20Web%20Sites%20That%20Exploit%20Browser%20Vulnerabilities%20%28Yi-Min%20Wang%29.pdf
-NDSS_06_3,Using Generalization and Characterization Techniques in the Anomaly-based Detection of Web Attacks,The Web and Malice,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Using%20Generalization%20and%20Characterization%20Techniques%20in%20the%20Anomaly-based%20Detection%20of%20Web%20Attacks.pdf
-NDSS_06_4,Isolating Intrusions by Automatic Experiments,Healing and Learning,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Isolating%20Intrusions%20by%20Automatic%20Experiments%20%28Stephan%20Neuhaus%29.pdf
-NDSS_06_5,Vulnerability-Specific Execution Filtering for Exploit Prevention on Commodity Software,Healing and Learning,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Vulnerability-Specific%20Execution%20Filtering%20for%20Exploit%20Prevention%20on%20Commodity%20Software%20%28James%20Newsome%29.pdf
-NDSS_06_6,Software Self-Healing Using Collaborative Application,Healing and Learning,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Software%20Self-Healing%20Using%20Collaborative%20Application%20%28Michael%20E.%20Locasto%29.pdf
-NDSS_06_7,Inoculating SSH Against Address Harvesting,Potpourri I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Inoculating%20SSH%20Against%20Address%20Harvesting%20%28Stuart%20E.%20Schechter%29.pdf
-NDSS_06_8,Enterprise Security: A Community of Interest Based Approach,Potpourri I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Enterprise%20Security%20A%20Community%20of%20Interest%20Based%20Approach.pdf
-NDSS_06_9,Protocol-Independent Adaptive Replay of Application Dialog,Potpourri I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Protocol-Independent%20Adaptive%20Replay%20of%20Application%20Dialog%20%28Weidong%20Cui%29.pdf
-NDSS_06_10,Trust Negotiation with Hidden Credentials; Hidden Policies; and Policy Cycles,Crypto,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Trust%20Negotiation%20with%20Hidden%20Credentials%2C%20Hidden%20Policies%2C%20and%20Policy%20Cycles%20%28Keith%20B.%20Frikken%29.pdf
-NDSS_06_11,Deploying a New Hash Algorithm,Crypto,NDSS,20_0,http://www.internetsociety.org/sites/default/files/deploying_new_hash_algorithm.pdf
-NDSS_06_12,Key Regression: Enabling Efficient Key Distribution for Secure Distributed Storage,Crypto,NDSS,20_0,http://www.internetsociety.org/sites/default/files/key_regression.pdf
-NDSS_06_13,Induced Churn as Shelter from Routing-Table Poisoning,Potpourri II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Induced%20Churn%20as%20Shelter%20from%20Routing-Table%20Poisoning%20%28Tyson%20Condie%29.pdf
-NDSS_06_14,Device Identification via Analog Signal Fingerprinting: A Matched Filter Approach,Potpourri II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Device%20Identification%20via%20Analog%20Signal%20Fingerprinting%20A%20Matched%20Filter%20Approach%20%28Ryan%20M.%20Thomas%29.pdf
-NDSS_06_15,Modeling Botnet Propagation Using Time Zones,Potpourri II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Modeling%20Botnet%20Propagation%20Using%20Time%20Zones%20%28David%20Dagon%29.pdf
-NDSS_06_16,Toward a Practical Data Privacy Scheme for a Distributed Implementation of the Smith-Waterman Genome Sequence Comparison Algorithm,Privacy and Integrity,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Toward%20a%20Practical%20Data%20Privacy%20Scheme%20for%20a%20Distributed%20Implementation%20of%20the%20Smith-Waterman%20Genome%20Sequence%20Comparison%20Algorithm%20%28Doug%20Szajda%29.pdf
-NDSS_06_17,Toward Automated Information-Flow Integrity Verification for Security-Critical Applications,Privacy and Integrity,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Toward%20Automated%20Information-Flow%20Integrity%20Verification%20for%20Security-Critical%20Applications%20%28Umash%20Shankar%29.pdf
-NDSS_98_1,Enabling the Internet White Pages Service - the Directory Guardian,INTERNET AND INTRANET,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Enabling%20the%20Internet%20White%20Pages%20Service%20-%20the%20Directory%20Guardian.pdf
-NDSS_98_2,The Multilayer Firewall,INTERNET AND INTRANET,NDSS,20_9,http://www.internetsociety.org/sites/default/files/nessett.pdf
-NDSS_98_3,Efficient Protocols for Signing Routing Messages,INTERNET AND INTRANET,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Ef%EF%AC%81cient%20Protocols%20for%20Signing%20Routing%20Messages.pdf
-NDSS_98_4,Attack Detection Methods for All-Optical Networks,ALL OPTICAL NETWORKS SECURITY,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Attack%20Detection%20Methods%20for%20All-Optical%20Networks.pdf
-NDSS_98_5,Distributed Algorithms for Attack Localization in All-Optical Networks,ALL OPTICAL NETWORKS SECURITY,NDSS,20_9,http://www.internetsociety.org/sites/default/files/bergman.pdf
-NDSS_98_6,Credential Management and Secure Single Login for SPKM,PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Credential%20Management%20and%20Secure%20Single%20Login%20for%20SPKM_0.pdf
-NDSS_98_7,Some Timestamping Protocol Failures,PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Some%20Timestamping%20Protocol%20Failures_0.pdf
-NDSS_98_8,The Secure Remote Password Protocol,PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/The%20Secure%20Remote%20Password%20Protocol.pdf
-NDSS_98_9,On the Problem of Trust in Mobile Agent Systems,MOBILE AGENTS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/On%20the%20Problem%20of%20Trust%20in%20Mobile%20Agent%20Systems.pdf
-NDSS_98_10,Implementing Protection Domains in the Java(tm) Development Kit 1.2,MOBILE AGENTS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/gong.pdf
-NDSS_98_11,Live Traffic Analysis of TCP/IP Gateways,TRAFFIC ANALYSIS AND SECURE BOOTSTRAPPING,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Live%20Traffic%20Analysis%20of%20TCP%20-%20IP%20Gateways.pdf
-NDSS_98_12,Automated Recovery in a Secure Bootstrap Process,TRAFFIC ANALYSIS AND SECURE BOOTSTRAPPING,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Automated%20Recovery%20in%20a%20Secure%20Bootstrap%20Process.pdf
-NDSS_10_1,Server-side Verification of Client Behavior in Online Games,Distributed Systems and Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/beth.pdf
-NDSS_10_2,Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs,Distributed Systems and Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/wol.pdf
-NDSS_10_3,Stealth DoS Attacks on Secure Channels,Distributed Systems and Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Herz.pdf
-NDSS_10_4,Protecting Browsers from Extension Vulnerabilities,Web Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/barth.pdf
-NDSS_10_5,Adnostic: Privacy Preserving Targeted Advertising,Web Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/toub.pdf
-NDSS_10_6,FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications,Web Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/saxe.pdf
-NDSS_10_7,Effective Anomaly Detection with Scarce Training Data,Intrusion Detection and Attack Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/robe.pdf
-NDSS_10_8,Large-Scale Automatic Classification of Phishing Pages,Intrusion Detection and Attack Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/whit.pdf
-NDSS_10_9,A Systematic Characterization of IM Threats using Honeypots,Intrusion Detection and Attack Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/anto.pdf
-NDSS_10_10,On Network-level Clusters for Spam Detection,Spam,NDSS,20_1,http://www.internetsociety.org/sites/default/files/qian.pdf
-NDSS_10_11,Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation,Spam,NDSS,20_1,http://www.internetsociety.org/sites/default/files/sinh.pdf
-NDSS_10_12,Botnet Judo: Fighting Spam with Itself,Spam,NDSS,20_1,http://www.internetsociety.org/sites/default/files/pits.pdf
-NDSS_10_13,Contractual Anonymity,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/schw.pdf
-NDSS_10_14,A3: An Extensible Platform for Application-Aware Anonymity,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/sherr.pdf
-NDSS_10_15,When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/rist.pdf
-NDSS_10_16,InvisiType: Object-Oriented Security Policies,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/seo.pdf
-NDSS_10_17,A Security Evaluation of DNSSEC with NSEC3,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/bau.pdf
-NDSS_10_18,On the Safety of Enterprise Policy Deployment,Anonymity and Cryptographic Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/gao.pdf
-NDSS_10_19,Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation,Languages and Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/char.pdf
-NDSS_10_20,Joe-E: A Security-Oriented Subset of Java,Languages and Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/met.pdf
-NDSS_10_21,Preventing Capability Leaks in Secure JavaScript Subsets,Languages and Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/fini.pdf
-NDSS_10_22,Binary Code Extraction and Interface Identification for Security Applications,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/caba.pdf
-NDSS_10_23,Automatic Reverse Engineering of Data Structures from Binary Execution,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/lin_0.pdf
-NDSS_10_24,Efficient Detection of Split Personalities in Malware,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/balz.pdf
-NDSS_13_1,I can be You: Questioning the use of Keystroke Dynamics as Biometrics,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_1_0.pdf
-NDSS_13_2,A Practical; Targeted; and Stealthy Attack Against WPA Enterprise Authentication,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_2_0.pdf
-NDSS_13_3,Unobservable Re-authentication for Smartphones,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_1_0.pdf
-NDSS_13_4,PlaceRaider: Virtual Theft in Physical Spaces with Smartphones,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_2_0.pdf
-NDSS_13_5,Detecting Passive Content Leaks and Pollution in Android Applications,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_3_0.pdf
-NDSS_13_6,Security Enhanced (SE) Android: Bringing Flexible MAC to Android,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_4.pdf
-NDSS_13_7,The Core of the Matter: Analyzing Malicious Traffic in Cellular Carriers,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_5.pdf
-NDSS_13_8,High Accuracy Attack Provenance via Binary-based Execution Partition,Systems and Software Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_1_0.pdf
-NDSS_13_9,Attack Surface Metrics and Automated Compile-Time OS Kernel Tailoring,Systems and Software Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_2_0.pdf
-NDSS_13_10,Taming Hosted Hypervisors with (Mostly) Deprivileged Execution,Systems and Software Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_3_0.pdf
-NDSS_13_11,When Firmware Modifications Attack: A Case Study of Embedded Exploitation,Systems and Software Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_4_0.pdf
-NDSS_13_12,CAMP: Content-Agnostic Malware Protection,Systems and Software Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_5.pdf
-NDSS_13_13,InteGuard: Toward Automatic Protection of Third-Party Web Service Integrations,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_1_0.pdf
-NDSS_13_14,Preventing Side-Channel Leaks in Web Traffic: A Formal Approach,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_2_0.pdf
-NDSS_13_15,NEIGHBORWATCHER: A Content-Agnostic Comment Spam Inference System,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_3_0.pdf
-NDSS_13_16,AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_4_0.pdf
-NDSS_13_17,The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_5.pdf
-NDSS_13_18,Pisces: Anonymous Communication Using Social Networks,Social Networks and Application Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_1_0.pdf
-NDSS_13_19,Preserving Link Privacy in Social Network Based Systems,Social Networks and Application Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_2_0.pdf
-NDSS_13_20,COMPA: Detecting Compromised Accounts on Social Networks,Social Networks and Application Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_3_0.pdf
-NDSS_13_21,Social Turing Tests: Crowdsourcing Sybil Detection,Mobile and Wireless Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_1_0.pdf
-NDSS_13_22,Comparing Mobile Privacy Protection through Cross-Platform Applications,Mobile and Wireless Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_2_0.pdf
-NDSS_13_23,On Implementing Deniable Storage Encryption for Mobile Devices,Mobile and Wireless Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_3_0.pdf
-NDSS_13_24,Contextual Policy Enforcement in Android Applications with Permission Event Graphs,Mobile and Wireless Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_4_0.pdf
-NDSS_13_25,Low-cost Standard Signatures in Wireless Sensor Networks: A Case for Reviving Pre-computation Techniques?,Mobile and Wireless Security and Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_5.pdf
-NDSS_13_26,Clickonomics: Determining the Effect of Anti-Piracy Measures for One-Click Hosting,Network Security I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_1_0.pdf
-NDSS_13_27,FRESCO: Modular Composable Security Services for Software-Defined Networks,Network Security I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_2_0.pdf
-NDSS_13_28,Intention and Origination: An Inside Look at Large-Scale Bot Queries,Network Security I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_3_0.pdf
-NDSS_13_29,Juice: A Longitudinal Study of an SEO Botnet,Network Security I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_4_0.pdf
-NDSS_13_30,I want my voice to be heard: IP over Voice-over-IP for unobservable censorship circumvention,Network Security I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_5_0.pdf
-NDSS_13_43,One (Block) Size Fits All: PIR and SPIR with Variable-Length Records via Multi-Block Queries,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_1_0.pdf
-NDSS_13_44,rBridge: User Reputation based Tor Bridge Distribution with Privacy Preservation,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_2_0.pdf
-NDSS_13_45,An Empirical Evaluation of Relay Selection in Tor,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_3_0.pdf
-NDSS_13_46,LIRA: Lightweight Incentivized Routing for Anonymity,Anonymity; Authentication and Attacks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_1_0.pdf
-NDSS_13_47,KinWrite: Handwriting-Based Authentication Using Kinect,Anonymity; Authentication and Attacks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_2_0.pdf
-NDSS_13_48,Tailing RFID Tags for Clone Detection,Anonymity; Authentication and Attacks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_3_0.pdf
-NDSS_13_49,One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography,Anonymity; Authentication and Attacks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_4_0.pdf
-NDSS_13_50,Does Counting Still Count? Revisiting the Security of Counting based User Authentication Protocols against Statistical Attacks,Anonymity; Authentication and Attacks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_5.pdf
-NDSS_13_51,Toward Online Verification of Client Behavior in Distributed Applications,Distributed Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_1_0.pdf
-NDSS_13_52,Clear and Present Data: Opaque Traffic and its Security Implications for the Future,Distributed Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_2_0.pdf
-NDSS_13_53,Verito: A Practical System for Transparency and Accountability in Virtual Economies,Distributed Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_3_0.pdf
-NDSS_13_54,Secure Computation on Floating Point Numbers,Distributed Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_4_0.pdf
-NDSS_13_55,Analyzing Unique-Bid Auction Sites for Fun and Profit,Distributed Systems Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_5.pdf
-NDSS_13_56,Fix Me Up: Repairing Access-Control Bugs in Web Applications,Network Security II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_1_0.pdf
-NDSS_13_57,Automatically Inferring the Evolution of Malicious Activity on the Internet,Network Security II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_2_0.pdf
-NDSS_13_58,Detection of Malicious PDF Files Based on Hierarchical Document Structure,Network Security II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_3_0.pdf
-NDSS_13_59,Behind the Scenes of Online Attacks: an Analysis of Exploitation Behaviors on the Web,Network Security II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_4_0.pdf
-NDSS_01_1,An Algebraic Approach to IP Traceback,PACKET FLOWS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20Algebraic%20Approach%20to%20IP%20Traceback%20%28Drew%20Dean%29.pdf
-NDSS_01_2,Authenticating Streamed Data in the Presence of Random Packet Loss,PACKET FLOWS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Authenticating%20Streamed%20Data%20in%20the%20Presence%20of%20Random%20Packet%20Loss%20%28Philippe%20Golle%29.pdf
-NDSS_01_3,Practical Experiences with ATM Encryption,PACKET FLOWS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Practical%20Experiences%20with%20ATM%20Encryption%20%28Gregory%20T.%20Byrd%29.pdf
-NDSS_01_4,Efficient and Secure Source Authentication for Multicast,SECURITY PROTOCOLS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Efficient%20and%20Secure%20Source%20Authentication%20for%20Multicast%20%28Adrian%20Perrig%29.pdf
-NDSS_01_5,TRICERT: A Distributed Certified E-Mail Scheme,SECURITY PROTOCOLS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/TRICERT%20A%20Distributed%20Certified%20E-Mail%20Scheme%20%28Giuseppe%20Atenise%29.pdf
-NDSS_01_6,An Architecture for Flexible; High Assurance; Multi-Security Domain Networks,MISCELLANEOUS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20Architecture%20for%20Flexible%2C%20High%20Assurance%2C%20Multi-Security%20Domain%20Networks%20%28Tim%20Gibson%29.pdf
-NDSS_01_7,Authentication and Key Agreement Via Memorable Passwords,MISCELLANEOUS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Authentication%20and%20Key%20Agreement%20Via%20Memorable%20Passwords%20%28Taekyoung%20Kwon%29.pdf
-NDSS_01_8,SPL: An Access Control Language for Security Policies and Complex Constraints; C. Ribeiro,POLICY,NDSS,20_0,http://www.internetsociety.org/sites/default/files/SPL%20An%20Access%20Control%20Language%20for%20Security%20Policies%20and%20Complex%20Constraints%20%28Carlos%20Riberio%29.pdf
-NDSS_01_9,Limiting the Disclosure of Access Control Policies during Automated Trust Negotiation,POLICY,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Limiting%20the%20Disclosure%20of%20Access%20Control%20Policies%20during%20Automated%20Trust%20Negotiation%20%28Kent%20E.%20Seamons%29.pdf
-NDSS_01_10,Principles of Policy in Secure Groups,POLICY,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Principles%20of%20Policy%20in%20Secure%20Groups%20%28Hugh%20Harney%29.pdf
-NDSS_01_11,Trust Management for IPsec,TRUST MANAGEMENT,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Trust%20Management%20for%20IPsec%20%28Matt%20Blaze%29.pdf
-NDSS_01_12,Building Certifications Paths: Forward  vs. Reverse,TRUST MANAGEMENT,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Building%20Certifications%20Paths%20Forward%20%20vs.%20Reverse%20%28Yassir%20Elley%29.pdf
-NDSS_01_13,Decentralized Jini Security,TRUST MANAGEMENT,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Decentralized%20Jini%20Security%20%28Pasi%20Eronen%29.pdf
-NDSS_01_14,Termination in Language-based Systems,IMPLEMENTATION ISSUES,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Termination%20in%20Language-based%20Systems%20%28Algis%20Rudys%29.pdf
-NDSS_01_15,Cryptology As a Network Service,IMPLEMENTATION ISSUES,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Cryptology%20As%20a%20Network%20Service%20%28Tom%20Berson%29.pdf
-NDSS_01_16,Implementation of Crossrealm Referral Handling in the MIT Kerberos Client,IMPLEMENTATION ISSUES,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Implementation%20of%20Crossrealm%20Referral%20Handling%20in%20the%20MIT%20Kerberos%20Client%20%28Jonathan%20Trostle%29.pdf
-NDSS_02_1,Using the Fluhrer; Mantin; and Shamir Attack to Break WEP,Wireless Security and Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Using%20the%20Fluhrer%2C%20Mantin%2C%20and%20Shamir%20Attack%20to%20Break%20WEP%20%28Adam%20Stubbefild%29.pdf
-NDSS_02_2,Talking to Strangers: Authentication in Ad-Hoc Wireless Networks,Wireless Security and Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Talking%20to%20Strangers%20Authentication%20in%20Ad-Hoc%20Wireless%20Networks%20%28Dirk%20Balfanz%29.pdf
-NDSS_02_3,An Analysis of the Degradation of Anonymous Protocols,Anonymity and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20Analysis%20of%20the%20degradation%20of%20anonymous%20protocols.pdf
-NDSS_02_4,Distributed Pattern Detection for Intrusion Detection,Anonymity and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Distributed%20Pattern%20Detection%20for%20Intrusion%20Detection.pdf
-NDSS_02_5,BlueBox: A Policy-Driven; Host-Based Intrusion Detection System,Anonymity and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/BlueBoX%20A%20Policy%E2%80%93driven%20Host%E2%80%93Based%20Intrusion%20Detection%20system.pdf
-NDSS_02_6,Implementing Pushback: Router-Based Defense Against DDoS Attacks,Defending Against Network Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Implementing%20Pushback%20Router-Based%20Defense%20Against%20DDoS%20Attacks%20%28John%20Ioannidis%29.pdf
-NDSS_02_7,Statistically Unique and Cryptographically Verifiable (SUCV) Identifiers and Addresses,Defending Against Network Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Statistically%20Unique%20and%20Cryptographically%20Verifiable%20%28SUCV%29%20Identifiers%20and%20Addresses%20%28Gabriel%20Montenegro%29.pdf
-NDSS_02_8,Detecting Steganographic Content on the Internet,Steganographic Content,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Detecting%20steganographic%20content%20on%20the%20Internet.pdf
-NDSS_02_9,Experimenting with Server-Aided Signatures,Server-Aided Signatures,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Experimenting%20with%20Server-Aided%20Signatures%20%28Xuhua%20Ding%29.pdf
-NDSS_02_10,Managing Interoperability in Non-Hierarchical Public Key Infrastructures,Certificates and Privilege Management,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Managing%20Interoperability%20in%20Non-Hierarchical%20Public%20Key%20Infrastructures%20%28Peter%20M.%20Hesse%29.pdf
-NDSS_02_11,Active Certificates: A Framework for Delegation,Certificates and Privilege Management,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Active%20certificates%20a%20framework%20for%20delegation.pdf
-NDSS_02_12,PAMINA: A Certificate Based Privilege Management System,Certificates and Privilege Management,NDSS,20_0,http://www.internetsociety.org/sites/default/files/PAMINA%20A%20Certificate%20Based%20Privilege%20Management%20System%20%28Zoltan%20Nochta%29.pdf
-NDSS_02_13,Performance Analysis of TLS Web Servers,Transport Layer Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Performance%20Analysis%20of%20TLS%20Web%20Servers%20%28Cristian%29.pdf
-NDSS_02_14,Fast-Track Session Establishment for TLS,Transport Layer Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Fast-track%20session%20establishment%20for%20TLS.pdf
-NDSS_02_15,Advanced Client/Server Authentication in TLS,Transport Layer Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Advanced%20Client%20Server%20Authentication%20in%20TLS%20%28Adam%20Hess%29.pdf
-NDSS_99_1,Secure Password-Based Protocol for Downloading a Private Key,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,20_9,http://www.internetsociety.org/sites/default/files/perlman_0.pdf
-NDSS_99_2,A Real-World Analysis of Kerberos Password Security,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,20_9,http://www.internetsociety.org/sites/default/files/A%20Real%20World%20Abstract%20Analysis%20of%20Kerberos%20Password%20Security%20%28Thomas%20Wu%29.pdf
-NDSS_99_3,Secure Remote Access to an Internal Web Server,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Secure%20Remote%20Access%20to%20an%20Internal%20Web%20Server.pdf
-NDSS_99_4,Experimenting with Shared Generation of RSA Keys,CRYPTOGRAPHIC PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Experimenting%20with%20Shared%20Generation%20of%20RSA%20keys.pdf
-NDSS_99_5,Addressing the Problem of Undetected Signature Key Compromise,CRYPTOGRAPHIC PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Addressing%20the%20Problem%20of%20Undetected%20Signature%20Key%20Compromise%20%28Mike%20Just%29.pdf
-NDSS_99_6,Practical Approach to Anonymity in Large Scale Electronic Voting Schemes,CRYPTOGRAPHIC PROTOCOLS,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Practical%20Approach%20to%20Anonymity%20in%20Large%20Scale%20Electronic%20Voting%20Schemes.pdf
-NDSS_99_7,Distributed Policy Management for JDK 1.2,POLICY AND TRUST MANAGEMENT,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Distributed%20Policy%20Management%20for%20JDK%201.2.pdf
-NDSS_99_8,Distributed Execution with Remote Audit,POLICY AND TRUST MANAGEMENT,NDSS,20_9,http://www.internetsociety.org/sites/default/files/Distributed%20Execution%20with%20Remote%20Audit.pdf
-NDSS_99_9,An Algebra for Assessing Trust in Certification Chains,POLICY AND TRUST MANAGEMENT,NDSS,20_9,http://www.internetsociety.org/sites/default/files/An%20Algebra%20for%20Assessing%20Trust%20in%20Certification%20Chains.pdf
-NDSS_99_10,PGRIP: PNNI Global Routing Infrastructure Protection,NETWORK INFRASTRUCTURE PROTECTION,NDSS,20_9,http://www.internetsociety.org/sites/default/files/ricciulli.pdf
-NDSS_99_11,Client Puzzles: A Cryptographic Countermeasure Against Connection Depletion Attacks,NETWORK INFRASTRUCTURE PROTECTION,NDSS,20_9,http://www.internetsociety.org/sites/default/files/A%20Cryptographic%20Defense%20Against%20Connection%20Depletion%20Attacks%20%28Ari%20Juels%29.pdf
-NDSS_04_1,DoS Protection for Reliably Authenticated Broadcast,Multicast Authentication,NDSS,20_0,http://www.internetsociety.org/sites/default/files/DoS%20Protection%20for%20Reliably%20Authenticated%20Broadcast%20%28Carl%20A.%20Gunter%29.pdf
-NDSS_04_2,Distillation Codes and Applications to DoS Resistant Multicast Authentication,Multicast Authentication,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Distillation%20Codes%20and%20Applications%20to%20DoS%20Resistant%20Multicast%20Authentication%20%28Chris%20Karlof%29.pdf
-NDSS_04_3,Efficient Context-Sensitive Intrusion Detection,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Efficient%20Context-Sensitive%20Intrusion%20Detection%20%28Jonathon%20T.%20Giffin%29.pdf
-NDSS_04_4,Global Intrusion Detection in the DOMINO Overlay System,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Global%20Intrusion%20Detection%20in%20the%20DOMINO%20Overlay%20System%20%28Vinod%20Yegneswaran%29_0.pdf
-NDSS_04_5,Building Attack Scenarios through Integration of Complementary Alert Correlation Method,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Building%20Attack%20Scenarios%20through%20Integration%20of%20Complementary%20Alert%20Correlation%20Method%20%28Peng%20Ning%29.pdf
-NDSS_04_6,Client-Side Defense Against Web-Based Identity Theft,New Directions,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Client-Side%20Defense%20Against%20Web-Based%20Identity%20Theft%20%28Neil%20Chou%29.pdf
-NDSS_04_7,Using Directional Antennas to Prevent Wormhole Attacks,New Directions,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Using%20Directional%20Antennas%20to%20Prevent%20Wormhole%20Attacks%20%28Lingxuan%20Hu%29.pdf
-NDSS_04_8,An Effective Architecture and Algorithm for Detecting Worms with Various Scan,New Directions,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20Effective%20Architecture%20and%20Algorithm%20for%20Detecting%20Worms%20with%20Various%20Scan%20%28Jiang%20Wu%29.pdf
-NDSS_04_9,A Practical Dynamic Buffer Overflow Detector,Secure Software,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Practical%20Dynamic%20Buffer%20Overflow%20Detector%20%28Olatunji%20Ruwase%29.pdf
-NDSS_04_10,Model Checking One Million Lines of C Code,Secure Software,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Chen.pdf
-NDSS_04_11,Ostia: A Delegating Architecture for Secure System Call Interposition,Secure Software,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Ostia%20A%20Delegating%20Architecture%20for%20Secure%20System%20Call%20Interposition%20%28Tal%20Garfinke%29.pdf
-NDSS_04_12,Authentication and Integrity in Outsourced Databases,Database and Audit Log Protection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Authentication%20and%20Integrity%20in%20Outsourced%20Databases%20%28Einar%20Mykletun%29.pdf
-NDSS_04_13,Building an Encrypted and Searchable Audit Log,Database and Audit Log Protection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Waters.pdf
-NDSS_04_14,Speeding up Secure Web Transactions Using Elliptic Curve Cryptography,Protocols,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Speeding%20up%20Secure%20Web%20Transactions%20Using%20Elliptic%20Curve%20Cryptography%20%28Vipul%20Gupta%29.pdf
-NDSS_04_15,The Design and Implementation of Datagram TLS,Protocols,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Modadugu.pdf
-NDSS_04_16,The Perils of Unauthenticated Encryption: Kerberos Version 4,Protocols,NDSS,20_0,http://www.internetsociety.org/sites/default/files/The%20Perils%20of%20Unauthenticated%20Encryption%20Kerberos%20Version%204%20%28Tom%20Yu%29.pdf
-NDSS_14_1,On the Mismanagement and Maliciousness of Networks,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_1_1.pdf
-NDSS_14_2,No Direction Home: The True Cost of Routing Around Decoys,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_2_1.pdf
-NDSS_14_3,Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_3_0.pdf
-NDSS_14_4,CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_4.pdf
-NDSS_14_5,Amplification Hell: Revisiting Network Protocols for DDoS Abuse,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_5.pdf
-NDSS_14_6,ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks,Software and System Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_1_1.pdf
-NDSS_14_7,A Trusted Safety Verifier for Process Controller Code,Software and System Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_2_1.pdf
-NDSS_14_8,AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares,Software and System Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_3_1.pdf
-NDSS_14_9,SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks,Software and System Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_4_0.pdf
-NDSS_14_10,Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization,Software and System Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_5_0.pdf
-NDSS_14_11,Screenmilker: How to Milk Your Android Screen for Secrets,Security of Mobile Devices I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_1_1.pdf
-NDSS_14_12,AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable,Security of Mobile Devices I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_2_1.pdf
-NDSS_14_13,Smartphones as Practical and Secure Location Verification Tokens for Payments,Security of Mobile Devices I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_3_1.pdf
-NDSS_14_14,Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks,Security of Mobile Devices I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_4_1.pdf
-NDSS_14_15,Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android,Security of Mobile Devices I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_5_0.pdf
-NDSS_14_16,DSpin: Detecting Automatically Spun Content on the Web,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_1_1.pdf
-NDSS_14_17,Toward Black-Box Detection of Logic Flaws in Web Applications,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_2_1.pdf
-NDSS_14_18,Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_3_1.pdf
-NDSS_14_19,Detecting Logic Vulnerabilities in E-commerce Applications,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_4_1.pdf
-NDSS_14_20,Simulation of Built-in PHP Features for Precise Static Code Analysis,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_5_0.pdf
-NDSS_14_21,Enhanced Certificate Transparency and End-to-End Encrypted Mail,Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_2_1.pdf
-NDSS_14_22,Privacy through Pseudonymity in Mobile Telephony Systems,Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_2_1.pdf
-NDSS_14_23,Privacy-Preserving Distributed Stream Monitoring,Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_3_1.pdf
-NDSS_14_24,The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network,Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_4_0.pdf
-NDSS_14_25,Selling off User Privacy at Auction,Privacy,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_5_0.pdf
-NDSS_14_26,The Tangled Web of Password Reuse,Authentication and Identity I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_1_1.pdf
-NDSS_14_27,On Semantic Patterns of Passwords and their Security Impact,Authentication and Identity I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_2_1.pdf
-NDSS_14_28,From Very Weak to Very Strong: Analyzing Password-Strength Meters,Authentication and Identity I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_3_1.pdf
-NDSS_14_29,Copker: Computing with Private Keys without RAM,Crypto I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_1_1.pdf
-NDSS_14_30,Practical Dynamic Searchable Encryption with Small Leakage,Crypto I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_2_1.pdf
-NDSS_14_31,Decentralized Anonymous Credentials,Crypto I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_3_1.pdf
-NDSS_14_32,Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation,Crypto I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_4_1.pdf
-NDSS_14_33,Authentication Using Pulse-Response Biometrics,Authentication and Identity II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_1_0.pdf
-NDSS_14_34,Hardening Persona - Improving Federated Web Login,Authentication and Identity II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_2_0.pdf
-NDSS_14_35,Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices,Authentication and Identity II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_3_0.pdf
-NDSS_14_36,Leveraging USB to Establish Host Identity Using Commodity Devices,Authentication and Identity II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_4.pdf
-NDSS_14_37,PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces,New Applications; Attacks; and Security Economics,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_1_1.pdf
-NDSS_14_38,Auditable Version Control Systems,New Applications; Attacks; and Security Economics,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_2_1.pdf
-NDSS_14_39,Power Attack: An Increasing Threat to Data Centers,New Applications; Attacks; and Security Economics,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_3_1.pdf
-NDSS_14_40,Scambaiter: Understanding Targeted Nigerian Scams on Craigslist,New Applications; Attacks; and Security Economics,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_4.pdf
-NDSS_14_41,Botcoin: Monetizing Stolen Cycles,New Applications; Attacks; and Security Economics,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_5.pdf
-NDSS_14_42,A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks,Security of Mobile Devices II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_1_1.pdf
-NDSS_14_43,AirBag: Boosting Smartphone Resistance to Malware Infection,Security of Mobile Devices II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_2_1.pdf
-NDSS_14_44,SMV-Hunter: Large Scale; Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps,Security of Mobile Devices II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_3_1.pdf
-NDSS_14_45,AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications,Security of Mobile Devices II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_4_1.pdf
-NDSS_14_46,Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications,Security of Mobile Devices II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_5_0.pdf
-NDSS_14_47,Nazca: Detecting Malware Distribution in Large-Scale Networks,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_1_1.pdf
-NDSS_14_48,Persistent Data-only Malware: Function Hooks without Code,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_2_1.pdf
-NDSS_14_49,DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_3_1.pdf
-NDSS_14_50,Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_4_1.pdf
-NDSS_14_51,Neural Signatures of User-Centered Security: An fMRI Study of Phishing; and Malware Warnings,Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_5_0.pdf
-NDSS_14_52,Web PKI: Closing the Gap between Guidelines and Practices,Crypto II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_1_1.pdf
-NDSS_14_53,Efficient Private File Retrieval by Combining ORAM and PIR,Crypto II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_1_1.pdf
-NDSS_14_54,Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems,Crypto II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_3_1.pdf
-NDSS_14_55,Practical Issues with TLS Client Certificate Authentication,Crypto II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_4_1.pdf
-NDSS_15_1,Identifying Cross-origin Resource Status Using Application Cache,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_1_2.pdf
-NDSS_15_2,Parking Sensors: Analyzing and Detecting Parked Domains,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_2_2.pdf
-NDSS_15_3,Seven Months' Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_3_1.pdf
-NDSS_15_4,Upgrading HTTPS in mid-air: An empirical study of strict transport security and key pinning,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Upgrading%20HTTPS%20in%20Mid-Air-%20An%20Empirical%20Study%20of%20Strict%20Transport%20Security%20and%20Key%20Pinning.pdf
-NDSS_15_5,I Do Not Know What You Visited Last Summer: Protecting users from stateful third-party web tracking with TrackingFree browser,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_5_0.pdf
-NDSS_15_6,Information Flow Analysis of Android Applications in DroidSafe,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_1_2.pdf
-NDSS_15_7,What's in Your Dongle and Bank Account?  Mandatory and Discretionary Protection of Android External Resources,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_2_2.pdf
-NDSS_15_8,EdgeMiner: Automatically Detecting Implicit Control Flow Transitions through the Android Framework,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_3_2.pdf
-NDSS_15_9,CopperDroid: Automatic Reconstruction of Android Malware Behaviors,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_4_1.pdf
-NDSS_15_10,DeepDroid: Dynamically Enforcing Enterprise Policy on Android Devices,Mobile Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_5_1.pdf
-NDSS_15_11,VTint: Protecting Virtual Function Tables' Integrity,Detection; Analysis; Prevention & Response - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_1_2.pdf
-NDSS_15_12,Phoneypot: Data-driven Understanding of Telephony Threats,Detection; Analysis; Prevention & Response - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_2_3.pdf
-NDSS_15_13,SeCReT: Secure Channel between Rich Execution Environment and Trusted Execution Environment,Detection; Analysis; Prevention & Response - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_3_2.pdf
-NDSS_15_14,FreeSentry: protecting against use-after-free vulnerabilities due to dangling pointers,Detection; Analysis; Prevention & Response - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_4_2.pdf
-NDSS_15_15,EKHunter: A Counter-Offensive Toolkit for Exploit Kit Infiltration,Detection; Analysis; Prevention & Response - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_5_1.pdf
-NDSS_15_16,Machine Learning Classification over Encrypted Data,Privacy - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_1_2.pdf
-NDSS_15_17,Gracewipe: Secure and Verifiable Deletion under Coercion,Privacy - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_2_2.pdf
-NDSS_15_18,Privacy Preserving Payments in Credit Networks: Enabling trust with privacy in online marketplaces,Privacy - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_3_2.pdf
-NDSS_15_19,Checking More and Alerting Less: Detecting Privacy Leakages via Enhanced Data-flow Analysis and Peer Voting,Privacy - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_4_2.pdf
-NDSS_15_20,DEFY: A Deniable; Encrypted File System for Log-Structured Storage,Privacy - Part I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_5_1.pdf
-NDSS_15_21,Preventing Use-after-free with Dangling Pointers Nullification,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_1_2.pdf
-NDSS_15_22,StackArmor: Comprehensive Protection From Stack-based Memory Error Vulnerabilities for Binaries,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_2_2.pdf
-NDSS_15_23,Isomeron: Code Randomization Resilient to (Just-In-Time) Return-Oriented Programming,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_3_2.pdf
-NDSS_15_24,Thwarting Cache Side-Channel Attacks Through Dynamic Software Diversity,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/05_4_1.pdf
-NDSS_15_25,Principled Sampling for Anomaly Detection,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_1_2.pdf
-NDSS_15_26,Integrated Circuit (IC) Decamouflaging: Reverse Engineering Camouflaged ICs within Minutes,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_2_2.pdf
-NDSS_15_27,Opaque Control-Flow Integrity,Detection; Analysis; Prevention & Response - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_3_2.pdf
-NDSS_15_28,Bloom Cookies: Web Search Personalization without User Tracking,Privacy - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_4_1.pdf
-NDSS_15_29,NSEC5: Provably Preventing DNSSEC Zone Enumeration,Privacy - Part II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_5_0.pdf
-NDSS_15_30,Predicting Users' Motivations behind Location Check-Ins and Utility Implications of Privacy Protection Mechanisms,Social Networks and Cloud Services,NDSS,20_1,http://www.internetsociety.org/sites/default/files/NDSS2015_PredictingUsers-Motivations_07_1.pdf
-NDSS_15_31,On Your Social Network De-anonymizablity: Quantification and Large Scale Evaluation with Seed Knowledge,Social Networks and Cloud Services,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_2_2.pdf
-NDSS_15_32,Efficient RAM and control flow in verifiable outsourced computation,Social Networks and Cloud Services,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_3_2.pdf
-NDSS_15_33,Integro: Leveraging Victim Prediction for Robust Fake Account Detection in OSNs,Social Networks and Cloud Services,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_4_2.pdf
-NDSS_15_34,Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_1_1.pdf
-NDSS_15_35,ABY - A Framework for Efficient Mixed-Protocol Secure Two-Party Computation,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_2_1.pdf
-NDSS_15_36,Preventing Lunchtime Attacks: Fighting Insider Threats With Eye Movement Biometrics,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_3_1.pdf
-NDSS_15_37,Knock Yourself Out: Secure Authentication with Short Re-Usable Passwords,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_4_0.pdf
-NDSS_15_38,Verified Contributive Channel Bindings for Compound Authentication,Authentication,NDSS,20_1,http://www.internetsociety.org/sites/default/files/08_5.pdf
-NDSS_15_39,The Devil is in the Constants: Bypassing Defenses in Browser JIT Engines,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_1_2.pdf
-NDSS_15_40,Exploiting and Protecting Dynamic Code Generation,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_2_2.pdf
-NDSS_15_41,Too LeJIT to Quit: Extending JIT Spraying to ARM,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_3_2.pdf
-NDSS_15_42,Run-time Monitoring and Formal Analysis of Information Flows in Chromium,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_4_0.pdf
-NDSS_15_43,Mind Your Blocks: On the Stealthiness of Malicious BGP Hijacks,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/NDSS2015_Mind_Your_Blocks_Stealthiness_Malicious_BGP_Attacks.pdf
-NDSS_15_44,SPHINX: Detecting Security Attacks in Software-Defined Networks,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_2_2.pdf
-NDSS_15_45,Securing the Software Defined Network Control Layer,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_3_2.pdf
-NDSS_15_46,Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures,Network Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/10_4_2.pdf
-NDSS_15_47,Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware,Detection; Analysis; Prevention & Response - Part IV,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_1_2.pdf
-NDSS_15_48,vfGuard: Strict Protection for Virtual Function Calls in COTS C++ Binaries,Detection; Analysis; Prevention & Response - Part IV,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_2_2.pdf
-NDSS_15_49,P2C: Understanding Output Data Files via On-the-Fly Transformation from Producer to Consumer Executions,Detection; Analysis; Prevention & Response - Part IV,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_3_2.pdf
-NDSS_15_50,No More Gotos: Decompilation Using Pattern-Independent Control-Flow Structuring and Semantic-Preserving Transformations,Detection; Analysis; Prevention & Response - Part IV,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_4_2.pdf
-NDSS_07_1,Low-Rate TCP-Targeted DoS Attack Disrupts Internet Routing,Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Low-Rate%20TCP-Targeted%20DoS%20Attack%20Disrupts%20Internet%20Routing%20%28Ying%20Zhang%29.pdf
-NDSS_07_2,Playing Devil's Advocate: Inferring Sensitive Information from Anonymized Network Traces,Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Playing%20Devil%27s%20Advocate%20Inferring%20Sensitive%20Information%20from%20Anonymized%20Network%20Traces%20%28Scott%20E.%20Coull%29.pdf
-NDSS_07_3,Fig: Automatic Fingerprint Generation,Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Fig%20Automatic%20Fingerprint%20Generation%20%28Juan%20Caballero%29.pdf
-NDSS_07_4,Cross Site Scripting Prevention with Dynamic Data Tainting and Static Analysis,Web Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Cross%20Site%20Scripting%20Prevention%20with%20Dynamic%20Data%20Tainting%20and%20Static%20Analysis%20%28Philipp%20Vogt%29.pdf
-NDSS_07_5,A Quantitative Study of Forum Spamming Using Context-based Analysis,Web Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Quantitative%20Study%20of%20Forum%20Spamming%20Using%20Context-based%20Analysis%20%28Yuan%20Niu%29.pdf
-NDSS_07_6,Phinding Phish: An Evaluation of Anti-Phishing Toolbars,More Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Phinding%20Phish%20An%20Evaluation%20of%20Anti-Phishing%20Toolbars%20%28Lorrie%20Cranor%29.pdf
-NDSS_07_7,Army of Botnets,More Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Army%20of%20Botnets%20%28Ryan%20Vogt%29.pdf
-NDSS_07_8,Shedding Light on the Configuration of Dark Addresses,More Threats,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Shedding%20Light%20on%20the%20Configuration%20of%20Dark%20Addresses%20%28Sushant%20Sinha%29.pdf
-NDSS_07_9,Consumable Credentials in Linear-Logic-Based Access-Control Systems,Authentication,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Consumable%20Credentials%20in%20Linear-Logic-Based%20Access-Control%20Systems.pdf
-NDSS_07_10,Secret Handshakes with Dynamic and Fuzzy Matching,Authentication,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Secret%20Handshakes%20with%20Dynamic%20and%20Fuzzy%20Matching%20%28Giuseppe%20Ateniese%29.pdf
-NDSS_07_11,Attribute-Based Publishing with Hidden Credentials and Hidden Policies,Authentication,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Attribute-Based%20Publishing%20with%20Hidden%20Credentials%20and%20Hidden%20Policies%20%28Apu%20Kapadia%29.pdf
-NDSS_07_12,File System Design with Assured Delete,Privacy,NDSS,20_0,http://www.internetsociety.org/sites/default/files/File%20System%20Design%20with%20Assured%20Delete%20%28Radia%20Perlman%29.pdf
-NDSS_07_13,Cryptographic Methods for Storing Ballots on a Voting Machine,Privacy,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Cryptographic%20Methods%20for%20Storing%20Ballots%20on%20a%20Voting%20Machine%20%28John%20Bethencourt%29.pdf
-NDSS_07_14,On the Practicality of Private Information Retrieval,Privacy,NDSS,20_0,http://www.internetsociety.org/sites/default/files/On%20the%20Practicality%20of%20Private%20Information%20Retrieval%20%28Radu%20Sion%29.pdf
-NDSS_07_15,RICH: Automatically Protecting Against Integer-Based Vulnerabilities,Intrusion Detection and Prevention,NDSS,20_0,http://www.internetsociety.org/sites/default/files/RICH%20Automatically%20Protecting%20Against%20Integer-Based%20Vulnerabilities%20%28David%20Brumley%29.pdf
-NDSS_07_16,Generic Application-Level Protocol Analyzer and its Language,Intrusion Detection and Prevention,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Generic%20Application-Level%20Protocol%20Analyzer%20and%20its%20Language%20%28Nikita%20Borisov%29.pdf
-NDSS_07_17,OPTWALL: A Hierarchical Traffic-Aware Firewall,Intrusion Detection and Prevention,NDSS,20_0,http://www.internetsociety.org/sites/default/files/OPTWALL%20A%20Hierarchical%20Traffic-Aware%20Firewall%20%28Subarta%20Acharya%29.pdf
-NDSS_97_1,Experimental Results of Covert Channel Limitation in One-Way Communication Systems,Things That Go Bump In The Net,NDSS,20_9,
-NDSS_97_2,Blocking Java Applets at the Firewall,Things That Go Bump In The Net,NDSS,20_9,
-NDSS_97_3,Continuous Assessment of a Unix Configuration: Integrating Intrusion Detection and Configuration Analysis,Things That Go Bump In The Net,NDSS,20_9,
-NDSS_97_4,An Interface Specification Language for Automatically Analyzing Cryptographic Protocols,Protocol Implementation And Analysis,NDSS,20_9,
-NDSS_97_5,Probable Plaintext Cryptanalysis of the IP Security Protocols,Protocol Implementation And Analysis,NDSS,20_9,
-NDSS_97_6,Misplaced Trust: Kerberos 4 Session Keys,Protocol Implementation And Analysis,NDSS,20_9,
-NDSS_97_7,Securing the Nimrod Routing Architecture,Routing Security,NDSS,20_9,
-NDSS_97_8,Securing Distance-Vector Routing Protocols,Routing Security,NDSS,20_9,
-NDSS_97_9,Reducing the Cost of Security in Link-State Routing,Routing Security,NDSS,20_9,
-NDSS_97_10,Securing Web Access with DCE,Security For The World Wide Web,NDSS,20_9,
-NDSS_97_11,Hierarchical Organization of Certification Authorities for Secure Environments,Public Key Management,NDSS,20_9,
-NDSS_97_12,Trust Models in ICE-TEL,Public Key Management,NDSS,20_9,
-NDSS_97_13,Distributed Authentication in Kerberos Using Public Key Cryptography,Public Key Management,NDSS,20_9,
-NDSS_11_1,Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones,Secure Emerging Applications: Social Networks and Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/schlegel.pdf
-NDSS_11_2,A Security API for Distributed Social Networks,Secure Emerging Applications: Social Networks and Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/backes.pdf
-NDSS_11_3,Location Privacy via Private Proximity Testing,Secure Emerging Applications: Social Networks and Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/nara.pdf
-NDSS_11_4,Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars,Wireless Attacks!,NDSS,20_1,http://www.internetsociety.org/sites/default/files/franc.pdf
-NDSS_11_5,Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks,Wireless Attacks!,NDSS,20_1,http://www.internetsociety.org/sites/default/files/omid.pdf
-NDSS_11_6,Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas,Wireless Attacks!,NDSS,20_1,http://www.internetsociety.org/sites/default/files/cai.pdf
-NDSS_11_7,Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions,OS Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/xipdf.pdf
-NDSS_11_8,Efficient Monitoring of Untrusted Kernel-Mode Execution,OS Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/sriv.pdf
-NDSS_11_9,SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures,OS Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/lin.pdf
-NDSS_11_10,Losing Control of the Internet: Using the Data Plane to Attack the Control Plane,Network Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/schu.pdf
-NDSS_11_11,EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis,Network Malware,NDSS,20_1,http://www.internetsociety.org/sites/default/files/bilg.pdf
-NDSS_11_12,Howard: A Dynamic Excavator for Reverse Engineering Data Structures,Software Security / Code Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/slow.pdf
-NDSS_11_13,No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects,Software Security / Code Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/dewey.pdf
-NDSS_11_14,TIE: Principled Reverse Engineering of Types in Binary Programs,Software Security / Code Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/lee.pdf
-NDSS_11_15,DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation,Software Security / Code Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Avg.pdf
-NDSS_11_16,AEG: Automatic Exploit Generation,Software Security / Code Analysis,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Avg.pdf
-NDSS_11_17,Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Bald.pdf
-NDSS_11_18,WebShield: Enabling Various Web Defense Techniques without Client Side Modifications,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Li.pdf
-NDSS_11_19,HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/luo.pdf
-NDSS_11_20,Accurate and Provably Secure Latency Estimation with Treeple,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/tin.pdf
-NDSS_11_21,On Measuring the Similarity of Network Hosts: Pitfalls; New Metrics; and Empirical Analyses,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/coull.pdf
-NDSS_11_22,SWIRL: A Scalable Watermark to Detect Correlated Network Flows,Web Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/houm.pdf
-NDSS_11_23,SPARE: Replicas on Hold,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/dist.pdf
-NDSS_11_24,Efficient Privacy-Preserving Biometric Identification,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/Huang_0.pdf
-NDSS_11_25,Usability Testing a Malware-Resistant Input Mechanism,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/libon.pdf
-NDSS_11_26,Tracker: Security and Privacy for RFID-based Supply Chains,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/blass.pdf
-NDSS_11_27,PiOS: Detecting Privacy Leaks in iOS Applications,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/egel.pdf
-NDSS_11_28,Privacy-Preserving Aggregation of Time-Series Data,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,20_1,http://www.internetsociety.org/sites/default/files/shi.pdf
-NDSS_03_1,Fighting Spam by Encapsulating Policy in Email Addresses,Defending Against Network Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Fighting%20Spam%20by%20Encapsulating%20Policy%20in%20Email%20Addresses%20%28John%20Ioannidis%29.pdf
-NDSS_03_2,Moderately Hard; Memory-Bound Functions,Defending Against Network Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Moderately%20Hard%2C%20Memory-Bound%20Functions%20%28Martin%20Abadi%29.pdf
-NDSS_03_3,Secure IP Telephony using Multi-layered Protection,Defending Against Network Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Secure%20IP%20Telephony%20using%20Multi-layered%20Protection%20%28Brennen%20Reynolds%29.pdf
-NDSS_03_4,Efficient Security Mechanisms for Routing Protocols,Mobility and Secure Routing,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Efficient%20Security%20Mechanisms%20for%20Routing%20Protocolsa%20%28Yih-Chun%20Hu%29.pdf
-NDSS_03_5,Working around BGP: An Incremental Approach to Improving Security and Accuracy in Interdomain Routing,Mobility and Secure Routing,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Working%20around%20BGP%20An%20Incremental%20Approach%20to%20Improving%20Security%20and%20Accuracy%20in%20Interdomain%20Routing%20%28Geoffrey%20Goodell%29.pdf
-NDSS_03_6,Integrating Security; Mobility and Multi-Homing in a HIP Way,Mobility and Secure Routing,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Integrating%20Security%2C%20Mobility%20and%20Multi-Homing%20in%20a%20HIP%20Way%20%28Pekka%20Nikander%29.pdf
-NDSS_03_7,Access Control Based on Execution History,Access Control and Penetration Resistance,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Access%20Control%20Based%20on%20Execution%20History%20%28Martin%20Abadi%29.pdf
-NDSS_03_8,Testing C Programs for Buffer Overflow Vulnerabilities,Access Control and Penetration Resistance,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Testing%20C%20Programs%20for%20Buffer%20Overflow%20Vulnerabilities%20%28Eric%20Haugh%29.pdf
-NDSS_03_9,SiRiUS: Securing Remote Untrusted Storage,Access Control and Penetration Resistance,NDSS,20_0,http://www.internetsociety.org/sites/default/files/SiRiUS%20Securing%20Remote%20Untrusted%20Storage%20%28Eu-Jin%20Goh%29.pdf
-NDSS_03_10,A Comparison of Publicly Available Tools for Dynamic Buffer Overflow Prevention,Network Monitoring and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Comparison%20of%20Publicly%20Available%20Tools%20for%20Dynamic%20Buffer%20Overflow%20Prevention%20%28John%20Wilander%29.pdf
-NDSS_03_11,Traps and Pitfalls: Practical Problems in System Call Interposition Based Security Tools,Network Monitoring and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Traps%20and%20Pitfalls%20Practical%20Problems%20in%20System%20Call%20Interposition%20Based%20Security%20Tools%20%28Tal%20Garfinkel%29.pdf
-NDSS_03_12,Detecting Service Violations and DoS Attacks,Network Monitoring and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Detecting%20Service%20Violations%20and%20DoS%20Attacks%20%28Ahsan%20Habib%29.pdf
-NDSS_03_13,A Virtual Machine Introspection Based Architecture for Intrusion Detection,Network Monitoring and Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Virtual%20Machine%20Introspection%20Based%20Architecture%20for%20Intrusion%20Detection%20%28Tal%20Garfinkel%29.pdf
-NDSS_03_14,Proxy Cryptography Revisited,Cryptographic Protocols and Constructs,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Proxy%20Cryptography%20Revisited%20%28Anca%20Ivan%29.pdf
-NDSS_03_15,Proactive Two-Party Signatures for User Authentication,Cryptographic Protocols and Constructs,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Proactive%20Two-Party%20Signatures%20for%20User%20Authentication%20%28Antonio%20Nicolosi%29.pdf
-NDSS_03_16,Efficient Multicast Packet Authentication,Cryptographic Protocols and Constructs,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Efficient%20Multicast%20Packet%20Authentication%20%28Alain%20Pannetrat%29.pdf
-NDSS_03_17,Efficient Distribution of Key Chain Commitments for Broadcast Authentication in Distributed Sensor Networks,Cryptographic Protocols and Constructs,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Efficient%20Distribution%20of%20Key%20Chain%20Commitments%20for%20Broadcast%20Authentication%20in%20Distributed%20Sensor%20Networks%20%28Donggang%20Liu%29.pdf
-NDSS_09_1,Document Structure Integrity: A Robust Basis for Cross-site Scripting Defense,Web Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Document%20Structure%20Integrity%20A%20Robust%20Basis%20for%20Cross-site%20Scripting%20Defense%20%20%28Yacin%20Nadji%29.pdf
-NDSS_09_2,An Efficient Black-box Technique for Defeating Web Application Attacks,Web Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20Efficient%20Black-box%20Technique%20for%20Defeating%20Web%20Application%20Attacks%20%28paper%29%20%28R.%20Sekar%29.pdf
-NDSS_09_3,Noncespaces: Using Randomization to Enforce Information Flow Tracking and Thwart Cross-site Scripting Attacks,Web Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Noncespaces%20Using%20Randomization%20to%20Enforce%20Information%20Flow%20Tracking%20and%20Thwart%20Cross-site%20Scripting%20Attacks%20%28paper%29%20%28Matthew%20Van%20Gundy%29.pdf
-NDSS_09_4,The Blind Stone Tablet: Outsourcing Durability to Untrusted Parties,Distributed Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/The%20Blind%20Stone%20Tablet%20Outsourcing%20Durability%20to%20Untrusted%20Parties%20%28paper%29%20%28Peter%20Williams%29.pdf
-NDSS_09_5,Two-Party Computation Model for Privacy-Preserving Queries over Distributed Databases,Distributed Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Two-Party%20Computation%20Model%20for%20Privacy-Preserving%20Queries%20over%20Distributed%20Databases%20%28Sherman%20S.%20M.%20Chow%29.pdf
-NDSS_09_6,Sybillnfer: Detecting Sybil Nodes using Social Networks,Distributed Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Sybillnfer%20Detecting%20Sybil%20Nodes%20using%20Social%20Networks%20%28George%20Danezis%29.pdf
-NDSS_09_7,Spectrogram: A Mixture-of-Markov-Chains Model for Anomaly Detection in Web Traffic,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/song.pdf
-NDSS_09_8,Detecting Forged TCP Reset Packets,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/weav.pdf
-NDSS_09_9,Coordinated Scan Detection,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/gates.pdf
-NDSS_09_10,RB-Seeker: Auto-detection of Redirection Botnets,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/RB-Seeker%20Auto-detection%20of%20Redirection%20Botnets%20%28paper%29%20%28Xin%20Hu%29.pdf
-NDSS_09_11,Scalable; Behavior-Based Malware Clustering,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/bay.pdf
-NDSS_09_12,K-Tracer: A System for Extracting Kernel Malware Behavior,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/lanzi.pdf
-NDSS_09_13,RAINBOW: A Robust and Invisible Non-Blind Watermark for Network Flows,Traffic Protection and Infrastructure Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/hou.pdf
-NDSS_09_14,Traffic Morphing: An Efficient Defense Against Statistical Traffic Analysis,Traffic Protection and Infrastructure Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/wright.pdf
-NDSS_09_15,Recursive DNS Architectures and Vulnerability Implications,Traffic Protection and Infrastructure Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/dagon.pdf
-NDSS_09_16,Analyzing and Comparing the Protection Quality of Security Enhanced Operating Systems,Host Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/chen.pdf
-NDSS_09_17,IntScope: Automatically Detecting Integer Overflow Vulnerability in X86 Binary Using Symbolic Execution,Host Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/wang.pdf
-NDSS_09_18,Safe Passage for Passwords and Other Sensitive Data,Authentication and Accountability,NDSS,20_0,http://www.internetsociety.org/sites/default/files/mccune.pdf
-NDSS_09_19,Conditioned-safe Ceremonies and a User Study of an Application to Web Authentication,Authentication and Accountability,NDSS,20_0,http://www.internetsociety.org/sites/default/files/karlof.pdf
-NDSS_09_20,CSAR: A Practical and Provable Technique to Make Randomized Systems Accountable,Authentication and Accountability,NDSS,20_0,http://www.internetsociety.org/sites/default/files/backes_0.pdf
-NDSS_12_1,Plaintext-Recovery Attacks Against Datagram TLS,Networking I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P01_1.pdf
-NDSS_12_2,ANDaNA: Anonymous Named Data Networking Application,Networking I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/01_2.pdf
-NDSS_12_3,Persistent OSPF Attacks,Networking I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P01_3.pdf
-NDSS_12_4,You are what you like! Information leakage through users' Interests,Social Networks and User Behavior I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P02_1.pdf
-NDSS_12_5,X-Vine: Secure and Pseudonymous Routing in DHTs Using Social Networks,Social Networks and User Behavior I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_2.pdf
-NDSS_12_6,Towards Online Spam Filtering in Social Networks,Social Networks and User Behavior I,NDSS,20_1,http://www.internetsociety.org/sites/default/files/02_3.pdf
-NDSS_12_7,Location leaks over the GSM air interface,Mobile Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P03_1.pdf
-NDSS_12_8,Track Me If You Can: On the Effectiveness of Context-based Identifier Changes in Deployed Mobile Networks,Mobile Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_2.pdf
-NDSS_12_9,You Can Run; but You Can't Hide: Exposing Network Location for Targeted DoS Attacks in Cellular Networks,Mobile Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/03_3.pdf
-NDSS_12_10,Weaponizing Femtocells: The Effect of Rogue Devices on Mobile Telecommunications,Mobile Networks,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P03_4.pdf
-NDSS_12_11,Privacy-preserving Logarithmic-time Search on Encrypted Data in Cloud,Clouds/Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P04_1.pdf
-NDSS_12_12,Large-Scale Privacy-Preserving Mapping of Human Genomic Sequences on Hybrid Clouds,Clouds/Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_2.pdf
-NDSS_12_13,Making argument systems for outsourced computation practical (sometimes),Clouds/Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_3.pdf
-NDSS_12_14,Towards Practical Oblivious RAM,Clouds/Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/04_4.pdf
-NDSS_12_23,Access Pattern disclosure on Searchable Encryption: Ramification; Attack and Mitigation,Applied Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_1.pdf
-NDSS_12_24,On Limitations of Designing Leakage-Resilient Password Systems: Attacks; Principals and Usability,Applied Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_2.pdf
-NDSS_12_25,Adaptive Password-Strength Meters from Markov Models,Applied Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/06_3.pdf
-NDSS_12_26,Private Set Intersection: Are Garbled Circuits Better than Custom Protocols?,Applied Crypto,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P06_4.pdf
-NDSS_12_27,Guess Who's Texting You? Evaluating the Security of Smartphone Messaging Applications,Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_1.pdf
-NDSS_12_28,MoCFI: A Framework to Mitigate Control-Flow Attacks on Smartphones,Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/07_2.pdf
-NDSS_12_29,Towards Taming Privilege-Escalation Attacks on Android,Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P07_3.pdf
-NDSS_12_30,Systematic Detection of Capability Leaks in Stock Android Smartphones,Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P07_4.pdf
-NDSS_12_31,Hey; You; Get Off of My Market: Detecting Malicious Apps in Official and Alternative Android Markets,Smartphones,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P07_5.pdf
-NDSS_12_32,Insights into User Behavior in Dealing with Internet Attacks,Social Networks and User Behavior II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P08_1.pdf
-NDSS_12_33,PathCutter: Severing the Self-Propagation Path of XSS JavaScript Worms in Social Web Networks,Social Networks and User Behavior II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P08_2.pdf
-NDSS_12_34,The Latent Community Model for Detecting Sybils in Social Networks,Social Networks and User Behavior II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P08_3.pdf
-NDSS_12_35,BLACR: TTP-Free Blacklistable Anonymous Credentials with Reputation,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P09_1.pdf
-NDSS_12_36,Accountable Wiretapping -or- I know they can hear you now,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P09_2.pdf
-NDSS_12_37,Shadow: Running Tor in a Box for Accurate and Efficient Experimentation,Privacy and Anonymity,NDSS,20_1,http://www.internetsociety.org/sites/default/files/09_3.pdf
-NDSS_12_38,Discovering Semantic Data of Interest from Un-mappable Memory with Confidence,Host Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P10_1.pdf
-NDSS_12_39,SecureSwitch: BIOS-Assisted Isolation and Switch between Trusted and Untrusted Commodity OSes,Host Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P10_2.pdf
-NDSS_12_40,SMART: Secure and Minimal Architecture for (Establishing Dynamic) Root of Trust,Host Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P10_3.pdf
-NDSS_12_41,Kruiser: Semi-synchronized Non-blocking Concurrent Kernel Heap Buffer Overflow Monitoring,Host Security,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P10_4.pdf
-NDSS_12_42,WarningBird: Detecting Suspicious URLs in Twitter Stream,Web,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_1.pdf
-NDSS_12_43,Using replicated execution for a more secure and reliable web browser,Web,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P11_2.pdf
-NDSS_12_44,Host Fingerprinting and Tracking on the Web: Privacy and Security Implications,Web,NDSS,20_1,http://www.internetsociety.org/sites/default/files/11_3.pdf
-NDSS_12_45,Chrome Extensions: Threat Analysis and Countermeasures,Web,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P11_4.pdf
-NDSS_12_46,Ghost Domain Names: Revoked Yet Still Resolvable,Networking II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/12_1.pdf
-NDSS_12_47,ShortMAC: Efficient Data-Plane Fault Localization,Networking II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P12_2.pdf
-NDSS_12_48,Bypassing Space Explosion in Regular Expression Matching for Network Intrusion Detection and Prevention Systems,Networking II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P12_3.pdf
-NDSS_12_49,The Case for Prefetching and Prevalidating TLS Server Certificates,Networking II,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P12_4.pdf
-NDSS_12_50,Gatling: Automatic Attack Discovery in Large-Scale Distributed Systems,Distributed Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/13_1.pdf
-NDSS_12_51,Automated Synthesis of Secure Distributed Applications,Distributed Systems,NDSS,20_1,http://www.internetsociety.org/sites/default/files/13_2.pdf
-NDSS_12_52,A General Approach for Efficiently Accelerating Software-based Dynamic Data Flow Tracking on Commodity Hardware,Software,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P14_1.pdf
-NDSS_12_53,Static detection of C++ vtable escape vulnerabilities in binary code,Software,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P14_2.pdf
-NDSS_12_54,Identifying and Analyzing Pointer Misuses for Sophisticated Memory-corruption Exploit Diagnosis,Software,NDSS,20_1,http://www.internetsociety.org/sites/default/files/P14_3.pdf
-NDSS_08_1,A New Privacy-Enhanced Matchmaking Protocol,Large Scale Systems,NDSS,20_0,
-NDSS_08_2,Corrupted DNS Resolution Paths: The Rise of a Malicious Resolution Authority,Large Scale Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Corrupted%20DNS%20Resolution%20Paths%20The%20Rise%20of%20a%20Malicious%20Resolution%20Authority%20%28paper%29%20%28David%20Dagon%29.pdf
-NDSS_08_3,A Tune-up for Tor: Improving Security and Performance in the Tor Network,Large Scale Systems,NDSS,20_0,
-NDSS_08_4,Halo: High Assurance Locate for Distributed Hash Tables,Collaborative Systems,NDSS,20_0,
-NDSS_08_5,Robust Receipt-Free Election System with Ballot Secrecy and Verifiability,Collaborative Systems,NDSS,20_0,
-NDSS_08_6,Realizing Massive-Scale Conditional Access Systems Through Attribute-Based Cryptosystems,Collaborative Systems,NDSS,20_0,
-NDSS_08_7,Analyzing Privacy in Enterprise Packet Trace Anonymization,Collaborative Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Analyzing%20Privacy%20in%20Enterprise%20Packet%20Trace%20Anonymization%20%28paper%29%20%28Bruno%20Ribeiro%29.pdf
-NDSS_08_8,Taming the Devil: Techniques for Evaluating Anonymized Network Data,Collaborative Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Taming%20the%20Devil%20Techniques%20for%20Evaluating%20Anonymized%20Network%20Data%20%28paper%29%20%28S.E.%20Coull%29.pdf
-NDSS_08_9,Usable PIR,Collaborative Systems,NDSS,20_0,
-NDSS_08_10,Automated Whitebox Fuzz Testing,Collaborative Systems,NDSS,20_0,
-NDSS_08_11,Would Diversity Really Increase the Robustness of the Routing Infrastructure Against Software Defects?,Collaborative Systems,NDSS,20_0,
-NDSS_08_12,PRECIP: Towards Practical and Retrofittable Confidential Information Protection,Collaborative Systems,NDSS,20_0,
-NDSS_08_13,Automatic Network Protocol Analysis,Collaborative Systems,NDSS,20_0,
-NDSS_08_14,Automatic Protocol Format Reverse Engineering through Context-Aware Monitored Execution,Collaborative Systems,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Automatic%20Protocol%20Format%20Reverse%20Engineering%20through%20Context-Aware%20Monitored%20Execution%20%28Zhiqiang%20Lin%29.pdf
-NDSS_08_15,HookFinder: Identifying and Understanding Malware Hooking Behaviors,Collaborative Systems,NDSS,20_0,
-NDSS_08_16,Measuring and Detecting Fast-Flux Service Networks,Intrusion Prevention,NDSS,20_0,
-NDSS_08_17,BotSniffer: Detecting Botnet Command and Control Channels in Network Traffic,Intrusion Prevention,NDSS,20_0,
-NDSS_08_18,Limits of Learning-based Signature Generation with Adversaries,Intrusion Prevention,NDSS,20_0,
-NDSS_08_19,Impeding Malware Analysis Using Conditional Code Obfuscation,Malware,NDSS,20_0,
-NDSS_08_20,Analysis-Resistant Malware,Malware,NDSS,20_0,
-NDSS_08_21,Exploiting Opportunistic Scheduling in Cellular Data Networks,Malware,NDSS,20_0,
-NDSS_05_1,Space-Efficient Block Storage Integrity,Cryptography in Network Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Space-Efficient%20Block%20Storage%20Integrity%20%28Alina%20Oprea%29pdf
-NDSS_05_2,Improved Proxy Re-Encryption Schemes with Applications to Secure Distributed Storage,Cryptography in Network Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Improved%20Proxy%20Re-Encryption%20Schemes%20with%20Applications%20to%20Secure%20Distributed%20Storage%20%28Kevin%20Fu%29pdf
-NDSS_05_3,Rekeying and Storage Cost for Multiple User Revocation,Cryptography in Network Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/mainpdf
-NDSS_05_4,On a New Class of Pulsing Denial-of-Service Attacks and the Defense,Denial of Service Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/On%20a%20New%20Class%20of%20Pulsing%20Denial-of-Service%20Attacks%20and%20the%20Defense%20%28Xiapu%20Luo%29pdf
-NDSS_05_5,MOVE:  An End-to-End Solution to Network Denial of Service,Denial of Service Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/move.pdf
-NDSS_05_6,Security Analysis and Improvements for IEEE 802.11i,Denial of Service Attacks,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Security%20Analysis%20and%20Improvements%20for%20IEEE%20802.11i%20%28Changhua%20He%29pdf
-NDSS_05_7,Privacy-Preserving Friends Troubleshooting Network,Peer-to-Peer Approaches,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Privacy-Preserving%20Friends%20Troubleshooting%20Network%20%28Qiang%20Huang%29pdf
-NDSS_05_8,Pretty Secure BGP; psBGP,Peer-to-Peer Approaches,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Pretty%20Secure%20BGP%2C%20psBGP%20%28Tao%20Wan%29pdf
-NDSS_05_9,New Streaming Algorithms for Fast Detection of Superspreaders,Internet Defense,NDSS,20_0,http://www.internetsociety.org/sites/default/files/New%20Streaming%20Algorithms%20for%20Fast%20Detection%20of%20Superspreaders%20%28Avrim%20Blum%29pdf
-NDSS_05_10,The Internet Motion Sensor - A Distributed Blackhole Monitoring System,Internet Defense,NDSS,20_0,http://www.internetsociety.org/sites/default/files/The%20Internet%20Motion%20Sensor%20-%20A%20Distributed%20Blackhole%20Monitoring%20System%20%28Evan%20Cooke%29pdf
-NDSS_05_11,DNS-based Detection of Scanning Worms in an Enterprise Network,Internet Defense,NDSS,20_0,http://www.internetsociety.org/sites/default/files/DNS-based%20Detection%20of%20Scanning%20Worms%20in%20an%20Enterprise%20Network%20%28David%20Whyte%29pdf
-NDSS_05_12,DIRA: Automatic Detection; Identification and Repair of Control-Hijacking Attacks,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/DIRA%20Automatic%20Detection%2C%20Identification%20and%20Repair%20of%20Control-Hijacking%20Attackspdf
-NDSS_05_13,Dynamic Taint Analysis for Automatic Detection; Analysis; and SignatureGeneration of Exploits on Commodity Software,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Dynamic%20Taint%20Analysis%20for%20Automatic%20Detection%2C%20Analysis%2C%20and%20SignatureGeneration%20of%20Exploits%20on%20Commodity%20Software%20%28Dawn%20Song%29pdf
-NDSS_05_14,Enriching Intrusion Alerts Through Multi-Host Causality,Intrusion Detection,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Enriching%20Intrusion%20Alerts%20Through%20Multi-Host%20Causality%20%28Morley%20Mao%29pdf
-NDSS_05_15,A Black-Box Tracing Technique to Identify Causes of Least-Privilege Incompatibilities,Platform Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Black-Box%20Tracing%20Technique%20to%20Identify%20Causes%20of%20Least-Privilege%20Incompatibilities%20%28Shuo%20Chen%29pdf
-NDSS_05_16,One-Way Isolation:  An Effective Approach for Realizing Safe Execution Environments,Platform Security,NDSS,20_0,http://www.internetsociety.org/sites/default/files/One-Way%20Isolation%20%20An%20Effective%20Approach%20for%20Realizing%20Safe%20Execution%20Environments%20%28Weiqing%20Sun%29.pdf
-NDSS_00_1,A First Step Towards Automated Detection of Buffer Overrun Vulnerabilities,SOFTWARE ASSURANCE,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20First%20Step%20Towards%20Automated%20Detection%20of%20Buffer%20Overrun%20Vulnerabilities%20%5BPaper%5D%20%28David%20Wagner%29.pdf
-NDSS_00_2,User-Level Infrastructure for System Call Interposition: A Platform for Intrusion Detection and Confinement,SOFTWARE ASSURANCE,NDSS,20_0,http://www.internetsociety.org/sites/default/files/User-Level%20Infrastructure%20for%20System%20Call%20Interposition%20A%20Platform%20for%20Intrusion%20Detection%20and%20Confinement%20%28K.%20Jain%29.pdf
-NDSS_00_3,Optimized Rekey for Group Communication Systems,GROUP AND MULTICAST SECURITY,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Optimized%20Rekey%20for%20Group%20Communication%20Systems%20%28paper%29%28Ohad%20Rodeh%29.pdf
-NDSS_00_4,An IPSec-based Host Architecture for Secure Internet Multicast,GROUP AND MULTICAST SECURITY,NDSS,20_0,http://www.internetsociety.org/sites/default/files/An%20IPSec-based%20Host%20Architecture%20for%20Secure%20Internet%20Multicast%20%28paper%29%20%28Ran%20Canetti%29.pdf
-NDSS_00_5,A First Step Towards the Automatic Generation of Security Protocols,PROTOCOLS I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20First%20Step%20Towards%20the%20Automatic%20Generation%20of%20Security%20Protocols%20%28paper%29%20%28Adrian%20Perrig%29.pdf
-NDSS_00_6,A Revocation; Validation and Authentication Protocol for SPKI Based Delegation Systems,PROTOCOLS I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Revocation%2C%20Validation%20and%20Authentication%20Protocol%20for%20SPKI%20Based%20Delegation%20Systems%20%28paper%29%28Yki%20Kortesniemi%29.pdf
-NDSS_00_7,Secure Border Gateway Protocol (S-BGP) - Real World Performance and Deployment Issues,PROTOCOLS I,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Secure%20Border%20Gateway%20Protocol%20%28S-BGP%29%20-%20Real%20World%20Performance%20and%20Deployment%20Issues%20%28paper%29%28Stephen%20Kent%29.pdf
-NDSS_00_8,Analysis of a Fair Exchange Protocol,PROTOCOLS II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Analysis%20of%20a%20Fair%20Exchange%20Protocol%20%28paper%29%20%28Vitaty%20Shmatkov%29.pdf
-NDSS_00_9,Secure Password-Based Cipher Suite for TLS,PROTOCOLS II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Secure%20Password-Based%20Cipher%20Suite%20for%20TLS%20%28paper%29%20%28Peter%20Buhler%29.pdf
-NDSS_00_10,Chameleon Signatures,PROTOCOLS II,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Chameleon%20Signatures%20%28paper%29%20%28Hugo%20Krawczyk%29.pdf
-NDSS_00_11,A Lightweight Tool for Detecting Web Server Attacks,INTRUSION DETECTION,NDSS,20_0,http://www.internetsociety.org/sites/default/files/A%20Lightweight%20Tool%20for%20Detecting%20Web%20Server%20Attacks%20%28paper%29%20%28Magnus%20Almgren%29.pdf
-NDSS_00_12,Building Adaptive and Agile Applications Using Intrusion Detection and Response,INTRUSION DETECTION,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Building%20Adaptive%20and%20Agile%20Applications%20Using%20Intrusion%20Detection%20and%20Response%20%28paper%29%20%28Joshep%20P.%20Loyall%29.pdf
-NDSS_00_13,Secure Virtual Enclaves: Supporting Coalition Use of Distributed Application Technologies,DISTRIBUTED SYSTEMS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Secure%20Virtual%20Enclaves%20Supporting%20Coalition%20Use%20of%20Distributed%20Application%20Technologies%20%28paper%29%20%28Deborah%20Shands%29.pdf
-NDSS_00_14,Security of Encrypted rlogin Connections Created With Kerberos IV,DISTRIBUTED SYSTEMS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Security%20of%20Encrypted%20rlogin%20Connections%20Created%20With%20Kerberos%20IV%20%28Kirsten%20Hildrum%29.pdf
-NDSS_00_15,Accountability and Control of Process Creation in Metasystems,DISTRIBUTED SYSTEMS,NDSS,20_0,http://www.internetsociety.org/sites/default/files/Accountability%20and%20Control%20of%20Process%20Creation%20in%20Metasystems%20%28Marty%20Humphrey%29.pdf
+NDSS_06_1,A Crawler-based Study of Spyware in the Web,The Web and Malice,NDSS,2006,http://www.internetsociety.org/sites/default/files/A%20Crawler-based%20Study%20of%20Spyware%20in%20the%20Web%20%28Alexander%20Moshchuk%29.pdf
+NDSS_06_2,Automated Web Patrol with Strider HoneyMonkeys: Finding Web Sites That Exploit Browser Vulnerabilities,The Web and Malice,NDSS,2006,http://www.internetsociety.org/sites/default/files/Automated%20Web%20Patrol%20with%20Strider%20HoneyMonkeys%20Finding%20Web%20Sites%20That%20Exploit%20Browser%20Vulnerabilities%20%28Yi-Min%20Wang%29.pdf
+NDSS_06_3,Using Generalization and Characterization Techniques in the Anomaly-based Detection of Web Attacks,The Web and Malice,NDSS,2006,http://www.internetsociety.org/sites/default/files/Using%20Generalization%20and%20Characterization%20Techniques%20in%20the%20Anomaly-based%20Detection%20of%20Web%20Attacks.pdf
+NDSS_06_4,Isolating Intrusions by Automatic Experiments,Healing and Learning,NDSS,2006,http://www.internetsociety.org/sites/default/files/Isolating%20Intrusions%20by%20Automatic%20Experiments%20%28Stephan%20Neuhaus%29.pdf
+NDSS_06_5,Vulnerability-Specific Execution Filtering for Exploit Prevention on Commodity Software,Healing and Learning,NDSS,2006,http://www.internetsociety.org/sites/default/files/Vulnerability-Specific%20Execution%20Filtering%20for%20Exploit%20Prevention%20on%20Commodity%20Software%20%28James%20Newsome%29.pdf
+NDSS_06_6,Software Self-Healing Using Collaborative Application,Healing and Learning,NDSS,2006,http://www.internetsociety.org/sites/default/files/Software%20Self-Healing%20Using%20Collaborative%20Application%20%28Michael%20E.%20Locasto%29.pdf
+NDSS_06_7,Inoculating SSH Against Address Harvesting,Potpourri I,NDSS,2006,http://www.internetsociety.org/sites/default/files/Inoculating%20SSH%20Against%20Address%20Harvesting%20%28Stuart%20E.%20Schechter%29.pdf
+NDSS_06_8,Enterprise Security: A Community of Interest Based Approach,Potpourri I,NDSS,2006,http://www.internetsociety.org/sites/default/files/Enterprise%20Security%20A%20Community%20of%20Interest%20Based%20Approach.pdf
+NDSS_06_9,Protocol-Independent Adaptive Replay of Application Dialog,Potpourri I,NDSS,2006,http://www.internetsociety.org/sites/default/files/Protocol-Independent%20Adaptive%20Replay%20of%20Application%20Dialog%20%28Weidong%20Cui%29.pdf
+NDSS_06_10,Trust Negotiation with Hidden Credentials; Hidden Policies; and Policy Cycles,Crypto,NDSS,2006,http://www.internetsociety.org/sites/default/files/Trust%20Negotiation%20with%20Hidden%20Credentials%2C%20Hidden%20Policies%2C%20and%20Policy%20Cycles%20%28Keith%20B.%20Frikken%29.pdf
+NDSS_06_11,Deploying a New Hash Algorithm,Crypto,NDSS,2006,http://www.internetsociety.org/sites/default/files/deploying_new_hash_algorithm.pdf
+NDSS_06_12,Key Regression: Enabling Efficient Key Distribution for Secure Distributed Storage,Crypto,NDSS,2006,http://www.internetsociety.org/sites/default/files/key_regression.pdf
+NDSS_06_13,Induced Churn as Shelter from Routing-Table Poisoning,Potpourri II,NDSS,2006,http://www.internetsociety.org/sites/default/files/Induced%20Churn%20as%20Shelter%20from%20Routing-Table%20Poisoning%20%28Tyson%20Condie%29.pdf
+NDSS_06_14,Device Identification via Analog Signal Fingerprinting: A Matched Filter Approach,Potpourri II,NDSS,2006,http://www.internetsociety.org/sites/default/files/Device%20Identification%20via%20Analog%20Signal%20Fingerprinting%20A%20Matched%20Filter%20Approach%20%28Ryan%20M.%20Thomas%29.pdf
+NDSS_06_15,Modeling Botnet Propagation Using Time Zones,Potpourri II,NDSS,2006,http://www.internetsociety.org/sites/default/files/Modeling%20Botnet%20Propagation%20Using%20Time%20Zones%20%28David%20Dagon%29.pdf
+NDSS_06_16,Toward a Practical Data Privacy Scheme for a Distributed Implementation of the Smith-Waterman Genome Sequence Comparison Algorithm,Privacy and Integrity,NDSS,2006,http://www.internetsociety.org/sites/default/files/Toward%20a%20Practical%20Data%20Privacy%20Scheme%20for%20a%20Distributed%20Implementation%20of%20the%20Smith-Waterman%20Genome%20Sequence%20Comparison%20Algorithm%20%28Doug%20Szajda%29.pdf
+NDSS_06_17,Toward Automated Information-Flow Integrity Verification for Security-Critical Applications,Privacy and Integrity,NDSS,2006,http://www.internetsociety.org/sites/default/files/Toward%20Automated%20Information-Flow%20Integrity%20Verification%20for%20Security-Critical%20Applications%20%28Umash%20Shankar%29.pdf
+NDSS_98_1,Enabling the Internet White Pages Service - the Directory Guardian,INTERNET AND INTRANET,NDSS,1998,http://www.internetsociety.org/sites/default/files/Enabling%20the%20Internet%20White%20Pages%20Service%20-%20the%20Directory%20Guardian.pdf
+NDSS_98_2,The Multilayer Firewall,INTERNET AND INTRANET,NDSS,1998,http://www.internetsociety.org/sites/default/files/nessett.pdf
+NDSS_98_3,Efficient Protocols for Signing Routing Messages,INTERNET AND INTRANET,NDSS,1998,http://www.internetsociety.org/sites/default/files/Ef%EF%AC%81cient%20Protocols%20for%20Signing%20Routing%20Messages.pdf
+NDSS_98_4,Attack Detection Methods for All-Optical Networks,ALL OPTICAL NETWORKS SECURITY,NDSS,1998,http://www.internetsociety.org/sites/default/files/Attack%20Detection%20Methods%20for%20All-Optical%20Networks.pdf
+NDSS_98_5,Distributed Algorithms for Attack Localization in All-Optical Networks,ALL OPTICAL NETWORKS SECURITY,NDSS,1998,http://www.internetsociety.org/sites/default/files/bergman.pdf
+NDSS_98_6,Credential Management and Secure Single Login for SPKM,PROTOCOLS,NDSS,1998,http://www.internetsociety.org/sites/default/files/Credential%20Management%20and%20Secure%20Single%20Login%20for%20SPKM_0.pdf
+NDSS_98_7,Some Timestamping Protocol Failures,PROTOCOLS,NDSS,1998,http://www.internetsociety.org/sites/default/files/Some%20Timestamping%20Protocol%20Failures_0.pdf
+NDSS_98_8,The Secure Remote Password Protocol,PROTOCOLS,NDSS,1998,http://www.internetsociety.org/sites/default/files/The%20Secure%20Remote%20Password%20Protocol.pdf
+NDSS_98_9,On the Problem of Trust in Mobile Agent Systems,MOBILE AGENTS,NDSS,1998,http://www.internetsociety.org/sites/default/files/On%20the%20Problem%20of%20Trust%20in%20Mobile%20Agent%20Systems.pdf
+NDSS_98_10,Implementing Protection Domains in the Java(tm) Development Kit 1.2,MOBILE AGENTS,NDSS,1998,http://www.internetsociety.org/sites/default/files/gong.pdf
+NDSS_98_11,Live Traffic Analysis of TCP/IP Gateways,TRAFFIC ANALYSIS AND SECURE BOOTSTRAPPING,NDSS,1998,http://www.internetsociety.org/sites/default/files/Live%20Traffic%20Analysis%20of%20TCP%20-%20IP%20Gateways.pdf
+NDSS_98_12,Automated Recovery in a Secure Bootstrap Process,TRAFFIC ANALYSIS AND SECURE BOOTSTRAPPING,NDSS,1998,http://www.internetsociety.org/sites/default/files/Automated%20Recovery%20in%20a%20Secure%20Bootstrap%20Process.pdf
+NDSS_10_1,Server-side Verification of Client Behavior in Online Games,Distributed Systems and Networks,NDSS,2010,http://www.internetsociety.org/sites/default/files/beth.pdf
+NDSS_10_2,Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs,Distributed Systems and Networks,NDSS,2010,http://www.internetsociety.org/sites/default/files/wol.pdf
+NDSS_10_3,Stealth DoS Attacks on Secure Channels,Distributed Systems and Networks,NDSS,2010,http://www.internetsociety.org/sites/default/files/Herz.pdf
+NDSS_10_4,Protecting Browsers from Extension Vulnerabilities,Web Security and Privacy,NDSS,2010,http://www.internetsociety.org/sites/default/files/barth.pdf
+NDSS_10_5,Adnostic: Privacy Preserving Targeted Advertising,Web Security and Privacy,NDSS,2010,http://www.internetsociety.org/sites/default/files/toub.pdf
+NDSS_10_6,FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications,Web Security and Privacy,NDSS,2010,http://www.internetsociety.org/sites/default/files/saxe.pdf
+NDSS_10_7,Effective Anomaly Detection with Scarce Training Data,Intrusion Detection and Attack Analysis,NDSS,2010,http://www.internetsociety.org/sites/default/files/robe.pdf
+NDSS_10_8,Large-Scale Automatic Classification of Phishing Pages,Intrusion Detection and Attack Analysis,NDSS,2010,http://www.internetsociety.org/sites/default/files/whit.pdf
+NDSS_10_9,A Systematic Characterization of IM Threats using Honeypots,Intrusion Detection and Attack Analysis,NDSS,2010,http://www.internetsociety.org/sites/default/files/anto.pdf
+NDSS_10_10,On Network-level Clusters for Spam Detection,Spam,NDSS,2010,http://www.internetsociety.org/sites/default/files/qian.pdf
+NDSS_10_11,Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation,Spam,NDSS,2010,http://www.internetsociety.org/sites/default/files/sinh.pdf
+NDSS_10_12,Botnet Judo: Fighting Spam with Itself,Spam,NDSS,2010,http://www.internetsociety.org/sites/default/files/pits.pdf
+NDSS_10_13,Contractual Anonymity,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/schw.pdf
+NDSS_10_14,A3: An Extensible Platform for Application-Aware Anonymity,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/sherr.pdf
+NDSS_10_15,When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/rist.pdf
+NDSS_10_16,InvisiType: Object-Oriented Security Policies,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/seo.pdf
+NDSS_10_17,A Security Evaluation of DNSSEC with NSEC3,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/bau.pdf
+NDSS_10_18,On the Safety of Enterprise Policy Deployment,Anonymity and Cryptographic Systems,NDSS,2010,http://www.internetsociety.org/sites/default/files/gao.pdf
+NDSS_10_19,Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation,Languages and Systems Security,NDSS,2010,http://www.internetsociety.org/sites/default/files/char.pdf
+NDSS_10_20,Joe-E: A Security-Oriented Subset of Java,Languages and Systems Security,NDSS,2010,http://www.internetsociety.org/sites/default/files/met.pdf
+NDSS_10_21,Preventing Capability Leaks in Secure JavaScript Subsets,Languages and Systems Security,NDSS,2010,http://www.internetsociety.org/sites/default/files/fini.pdf
+NDSS_10_22,Binary Code Extraction and Interface Identification for Security Applications,Malware,NDSS,2010,http://www.internetsociety.org/sites/default/files/caba.pdf
+NDSS_10_23,Automatic Reverse Engineering of Data Structures from Binary Execution,Malware,NDSS,2010,http://www.internetsociety.org/sites/default/files/lin_0.pdf
+NDSS_10_24,Efficient Detection of Split Personalities in Malware,Malware,NDSS,2010,http://www.internetsociety.org/sites/default/files/balz.pdf
+NDSS_13_1,I can be You: Questioning the use of Keystroke Dynamics as Biometrics,Authentication,NDSS,2013,http://www.internetsociety.org/sites/default/files/01_1_0.pdf
+NDSS_13_2,A Practical; Targeted; and Stealthy Attack Against WPA Enterprise Authentication,Authentication,NDSS,2013,http://www.internetsociety.org/sites/default/files/01_2_0.pdf
+NDSS_13_3,Unobservable Re-authentication for Smartphones,Mobile Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/02_1_0.pdf
+NDSS_13_4,PlaceRaider: Virtual Theft in Physical Spaces with Smartphones,Mobile Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/02_2_0.pdf
+NDSS_13_5,Detecting Passive Content Leaks and Pollution in Android Applications,Mobile Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/02_3_0.pdf
+NDSS_13_6,Security Enhanced (SE) Android: Bringing Flexible MAC to Android,Mobile Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/02_4.pdf
+NDSS_13_7,The Core of the Matter: Analyzing Malicious Traffic in Cellular Carriers,Mobile Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/02_5.pdf
+NDSS_13_8,High Accuracy Attack Provenance via Binary-based Execution Partition,Systems and Software Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/03_1_0.pdf
+NDSS_13_9,Attack Surface Metrics and Automated Compile-Time OS Kernel Tailoring,Systems and Software Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/03_2_0.pdf
+NDSS_13_10,Taming Hosted Hypervisors with (Mostly) Deprivileged Execution,Systems and Software Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/03_3_0.pdf
+NDSS_13_11,When Firmware Modifications Attack: A Case Study of Embedded Exploitation,Systems and Software Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/03_4_0.pdf
+NDSS_13_12,CAMP: Content-Agnostic Malware Protection,Systems and Software Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/03_5.pdf
+NDSS_13_13,InteGuard: Toward Automatic Protection of Third-Party Web Service Integrations,Web Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/04_1_0.pdf
+NDSS_13_14,Preventing Side-Channel Leaks in Web Traffic: A Formal Approach,Web Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/04_2_0.pdf
+NDSS_13_15,NEIGHBORWATCHER: A Content-Agnostic Comment Spam Inference System,Web Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/04_3_0.pdf
+NDSS_13_16,AUTHSCAN: Automatic Extraction of Web Authentication Protocols from Implementations,Web Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/04_4_0.pdf
+NDSS_13_17,The Postman Always Rings Twice: Attacking and Defending postMessage in HTML5 Websites,Web Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/04_5.pdf
+NDSS_13_18,Pisces: Anonymous Communication Using Social Networks,Social Networks and Application Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/05_1_0.pdf
+NDSS_13_19,Preserving Link Privacy in Social Network Based Systems,Social Networks and Application Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/05_2_0.pdf
+NDSS_13_20,COMPA: Detecting Compromised Accounts on Social Networks,Social Networks and Application Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/05_3_0.pdf
+NDSS_13_21,Social Turing Tests: Crowdsourcing Sybil Detection,Mobile and Wireless Security and Privacy,NDSS,2013,http://www.internetsociety.org/sites/default/files/06_1_0.pdf
+NDSS_13_22,Comparing Mobile Privacy Protection through Cross-Platform Applications,Mobile and Wireless Security and Privacy,NDSS,2013,http://www.internetsociety.org/sites/default/files/06_2_0.pdf
+NDSS_13_23,On Implementing Deniable Storage Encryption for Mobile Devices,Mobile and Wireless Security and Privacy,NDSS,2013,http://www.internetsociety.org/sites/default/files/06_3_0.pdf
+NDSS_13_24,Contextual Policy Enforcement in Android Applications with Permission Event Graphs,Mobile and Wireless Security and Privacy,NDSS,2013,http://www.internetsociety.org/sites/default/files/06_4_0.pdf
+NDSS_13_25,Low-cost Standard Signatures in Wireless Sensor Networks: A Case for Reviving Pre-computation Techniques?,Mobile and Wireless Security and Privacy,NDSS,2013,http://www.internetsociety.org/sites/default/files/06_5.pdf
+NDSS_13_26,Clickonomics: Determining the Effect of Anti-Piracy Measures for One-Click Hosting,Network Security I,NDSS,2013,http://www.internetsociety.org/sites/default/files/07_1_0.pdf
+NDSS_13_27,FRESCO: Modular Composable Security Services for Software-Defined Networks,Network Security I,NDSS,2013,http://www.internetsociety.org/sites/default/files/07_2_0.pdf
+NDSS_13_28,Intention and Origination: An Inside Look at Large-Scale Bot Queries,Network Security I,NDSS,2013,http://www.internetsociety.org/sites/default/files/07_3_0.pdf
+NDSS_13_29,Juice: A Longitudinal Study of an SEO Botnet,Network Security I,NDSS,2013,http://www.internetsociety.org/sites/default/files/07_4_0.pdf
+NDSS_13_30,I want my voice to be heard: IP over Voice-over-IP for unobservable censorship circumvention,Network Security I,NDSS,2013,http://www.internetsociety.org/sites/default/files/07_5_0.pdf
+NDSS_13_43,One (Block) Size Fits All: PIR and SPIR with Variable-Length Records via Multi-Block Queries,Privacy and Anonymity,NDSS,2013,http://www.internetsociety.org/sites/default/files/09_1_0.pdf
+NDSS_13_44,rBridge: User Reputation based Tor Bridge Distribution with Privacy Preservation,Privacy and Anonymity,NDSS,2013,http://www.internetsociety.org/sites/default/files/09_2_0.pdf
+NDSS_13_45,An Empirical Evaluation of Relay Selection in Tor,Privacy and Anonymity,NDSS,2013,http://www.internetsociety.org/sites/default/files/09_3_0.pdf
+NDSS_13_46,LIRA: Lightweight Incentivized Routing for Anonymity,Anonymity; Authentication and Attacks,NDSS,2013,http://www.internetsociety.org/sites/default/files/10_1_0.pdf
+NDSS_13_47,KinWrite: Handwriting-Based Authentication Using Kinect,Anonymity; Authentication and Attacks,NDSS,2013,http://www.internetsociety.org/sites/default/files/10_2_0.pdf
+NDSS_13_48,Tailing RFID Tags for Clone Detection,Anonymity; Authentication and Attacks,NDSS,2013,http://www.internetsociety.org/sites/default/files/10_3_0.pdf
+NDSS_13_49,One Bad Apple: Backwards Compatibility Attacks on State-of-the-Art Cryptography,Anonymity; Authentication and Attacks,NDSS,2013,http://www.internetsociety.org/sites/default/files/10_4_0.pdf
+NDSS_13_50,Does Counting Still Count? Revisiting the Security of Counting based User Authentication Protocols against Statistical Attacks,Anonymity; Authentication and Attacks,NDSS,2013,http://www.internetsociety.org/sites/default/files/10_5.pdf
+NDSS_13_51,Toward Online Verification of Client Behavior in Distributed Applications,Distributed Systems Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/11_1_0.pdf
+NDSS_13_52,Clear and Present Data: Opaque Traffic and its Security Implications for the Future,Distributed Systems Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/11_2_0.pdf
+NDSS_13_53,Verito: A Practical System for Transparency and Accountability in Virtual Economies,Distributed Systems Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/11_3_0.pdf
+NDSS_13_54,Secure Computation on Floating Point Numbers,Distributed Systems Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/11_4_0.pdf
+NDSS_13_55,Analyzing Unique-Bid Auction Sites for Fun and Profit,Distributed Systems Security,NDSS,2013,http://www.internetsociety.org/sites/default/files/11_5.pdf
+NDSS_13_56,Fix Me Up: Repairing Access-Control Bugs in Web Applications,Network Security II,NDSS,2013,http://www.internetsociety.org/sites/default/files/12_1_0.pdf
+NDSS_13_57,Automatically Inferring the Evolution of Malicious Activity on the Internet,Network Security II,NDSS,2013,http://www.internetsociety.org/sites/default/files/12_2_0.pdf
+NDSS_13_58,Detection of Malicious PDF Files Based on Hierarchical Document Structure,Network Security II,NDSS,2013,http://www.internetsociety.org/sites/default/files/12_3_0.pdf
+NDSS_13_59,Behind the Scenes of Online Attacks: an Analysis of Exploitation Behaviors on the Web,Network Security II,NDSS,2013,http://www.internetsociety.org/sites/default/files/12_4_0.pdf
+NDSS_01_1,An Algebraic Approach to IP Traceback,PACKET FLOWS,NDSS,2001,http://www.internetsociety.org/sites/default/files/An%20Algebraic%20Approach%20to%20IP%20Traceback%20%28Drew%20Dean%29.pdf
+NDSS_01_2,Authenticating Streamed Data in the Presence of Random Packet Loss,PACKET FLOWS,NDSS,2001,http://www.internetsociety.org/sites/default/files/Authenticating%20Streamed%20Data%20in%20the%20Presence%20of%20Random%20Packet%20Loss%20%28Philippe%20Golle%29.pdf
+NDSS_01_3,Practical Experiences with ATM Encryption,PACKET FLOWS,NDSS,2001,http://www.internetsociety.org/sites/default/files/Practical%20Experiences%20with%20ATM%20Encryption%20%28Gregory%20T.%20Byrd%29.pdf
+NDSS_01_4,Efficient and Secure Source Authentication for Multicast,SECURITY PROTOCOLS,NDSS,2001,http://www.internetsociety.org/sites/default/files/Efficient%20and%20Secure%20Source%20Authentication%20for%20Multicast%20%28Adrian%20Perrig%29.pdf
+NDSS_01_5,TRICERT: A Distributed Certified E-Mail Scheme,SECURITY PROTOCOLS,NDSS,2001,http://www.internetsociety.org/sites/default/files/TRICERT%20A%20Distributed%20Certified%20E-Mail%20Scheme%20%28Giuseppe%20Atenise%29.pdf
+NDSS_01_6,An Architecture for Flexible; High Assurance; Multi-Security Domain Networks,MISCELLANEOUS,NDSS,2001,http://www.internetsociety.org/sites/default/files/An%20Architecture%20for%20Flexible%2C%20High%20Assurance%2C%20Multi-Security%20Domain%20Networks%20%28Tim%20Gibson%29.pdf
+NDSS_01_7,Authentication and Key Agreement Via Memorable Passwords,MISCELLANEOUS,NDSS,2001,http://www.internetsociety.org/sites/default/files/Authentication%20and%20Key%20Agreement%20Via%20Memorable%20Passwords%20%28Taekyoung%20Kwon%29.pdf
+NDSS_01_8,SPL: An Access Control Language for Security Policies and Complex Constraints; C. Ribeiro,POLICY,NDSS,2001,http://www.internetsociety.org/sites/default/files/SPL%20An%20Access%20Control%20Language%20for%20Security%20Policies%20and%20Complex%20Constraints%20%28Carlos%20Riberio%29.pdf
+NDSS_01_9,Limiting the Disclosure of Access Control Policies during Automated Trust Negotiation,POLICY,NDSS,2001,http://www.internetsociety.org/sites/default/files/Limiting%20the%20Disclosure%20of%20Access%20Control%20Policies%20during%20Automated%20Trust%20Negotiation%20%28Kent%20E.%20Seamons%29.pdf
+NDSS_01_10,Principles of Policy in Secure Groups,POLICY,NDSS,2001,http://www.internetsociety.org/sites/default/files/Principles%20of%20Policy%20in%20Secure%20Groups%20%28Hugh%20Harney%29.pdf
+NDSS_01_11,Trust Management for IPsec,TRUST MANAGEMENT,NDSS,2001,http://www.internetsociety.org/sites/default/files/Trust%20Management%20for%20IPsec%20%28Matt%20Blaze%29.pdf
+NDSS_01_12,Building Certifications Paths: Forward  vs. Reverse,TRUST MANAGEMENT,NDSS,2001,http://www.internetsociety.org/sites/default/files/Building%20Certifications%20Paths%20Forward%20%20vs.%20Reverse%20%28Yassir%20Elley%29.pdf
+NDSS_01_13,Decentralized Jini Security,TRUST MANAGEMENT,NDSS,2001,http://www.internetsociety.org/sites/default/files/Decentralized%20Jini%20Security%20%28Pasi%20Eronen%29.pdf
+NDSS_01_14,Termination in Language-based Systems,IMPLEMENTATION ISSUES,NDSS,2001,http://www.internetsociety.org/sites/default/files/Termination%20in%20Language-based%20Systems%20%28Algis%20Rudys%29.pdf
+NDSS_01_15,Cryptology As a Network Service,IMPLEMENTATION ISSUES,NDSS,2001,http://www.internetsociety.org/sites/default/files/Cryptology%20As%20a%20Network%20Service%20%28Tom%20Berson%29.pdf
+NDSS_01_16,Implementation of Crossrealm Referral Handling in the MIT Kerberos Client,IMPLEMENTATION ISSUES,NDSS,2001,http://www.internetsociety.org/sites/default/files/Implementation%20of%20Crossrealm%20Referral%20Handling%20in%20the%20MIT%20Kerberos%20Client%20%28Jonathan%20Trostle%29.pdf
+NDSS_02_1,Using the Fluhrer; Mantin; and Shamir Attack to Break WEP,Wireless Security and Attacks,NDSS,2002,http://www.internetsociety.org/sites/default/files/Using%20the%20Fluhrer%2C%20Mantin%2C%20and%20Shamir%20Attack%20to%20Break%20WEP%20%28Adam%20Stubbefild%29.pdf
+NDSS_02_2,Talking to Strangers: Authentication in Ad-Hoc Wireless Networks,Wireless Security and Attacks,NDSS,2002,http://www.internetsociety.org/sites/default/files/Talking%20to%20Strangers%20Authentication%20in%20Ad-Hoc%20Wireless%20Networks%20%28Dirk%20Balfanz%29.pdf
+NDSS_02_3,An Analysis of the Degradation of Anonymous Protocols,Anonymity and Intrusion Detection,NDSS,2002,http://www.internetsociety.org/sites/default/files/An%20Analysis%20of%20the%20degradation%20of%20anonymous%20protocols.pdf
+NDSS_02_4,Distributed Pattern Detection for Intrusion Detection,Anonymity and Intrusion Detection,NDSS,2002,http://www.internetsociety.org/sites/default/files/Distributed%20Pattern%20Detection%20for%20Intrusion%20Detection.pdf
+NDSS_02_5,BlueBox: A Policy-Driven; Host-Based Intrusion Detection System,Anonymity and Intrusion Detection,NDSS,2002,http://www.internetsociety.org/sites/default/files/BlueBoX%20A%20Policy%E2%80%93driven%20Host%E2%80%93Based%20Intrusion%20Detection%20system.pdf
+NDSS_02_6,Implementing Pushback: Router-Based Defense Against DDoS Attacks,Defending Against Network Attacks,NDSS,2002,http://www.internetsociety.org/sites/default/files/Implementing%20Pushback%20Router-Based%20Defense%20Against%20DDoS%20Attacks%20%28John%20Ioannidis%29.pdf
+NDSS_02_7,Statistically Unique and Cryptographically Verifiable (SUCV) Identifiers and Addresses,Defending Against Network Attacks,NDSS,2002,http://www.internetsociety.org/sites/default/files/Statistically%20Unique%20and%20Cryptographically%20Verifiable%20%28SUCV%29%20Identifiers%20and%20Addresses%20%28Gabriel%20Montenegro%29.pdf
+NDSS_02_8,Detecting Steganographic Content on the Internet,Steganographic Content,NDSS,2002,http://www.internetsociety.org/sites/default/files/Detecting%20steganographic%20content%20on%20the%20Internet.pdf
+NDSS_02_9,Experimenting with Server-Aided Signatures,Server-Aided Signatures,NDSS,2002,http://www.internetsociety.org/sites/default/files/Experimenting%20with%20Server-Aided%20Signatures%20%28Xuhua%20Ding%29.pdf
+NDSS_02_10,Managing Interoperability in Non-Hierarchical Public Key Infrastructures,Certificates and Privilege Management,NDSS,2002,http://www.internetsociety.org/sites/default/files/Managing%20Interoperability%20in%20Non-Hierarchical%20Public%20Key%20Infrastructures%20%28Peter%20M.%20Hesse%29.pdf
+NDSS_02_11,Active Certificates: A Framework for Delegation,Certificates and Privilege Management,NDSS,2002,http://www.internetsociety.org/sites/default/files/Active%20certificates%20a%20framework%20for%20delegation.pdf
+NDSS_02_12,PAMINA: A Certificate Based Privilege Management System,Certificates and Privilege Management,NDSS,2002,http://www.internetsociety.org/sites/default/files/PAMINA%20A%20Certificate%20Based%20Privilege%20Management%20System%20%28Zoltan%20Nochta%29.pdf
+NDSS_02_13,Performance Analysis of TLS Web Servers,Transport Layer Security,NDSS,2002,http://www.internetsociety.org/sites/default/files/Performance%20Analysis%20of%20TLS%20Web%20Servers%20%28Cristian%29.pdf
+NDSS_02_14,Fast-Track Session Establishment for TLS,Transport Layer Security,NDSS,2002,http://www.internetsociety.org/sites/default/files/Fast-track%20session%20establishment%20for%20TLS.pdf
+NDSS_02_15,Advanced Client/Server Authentication in TLS,Transport Layer Security,NDSS,2002,http://www.internetsociety.org/sites/default/files/Advanced%20Client%20Server%20Authentication%20in%20TLS%20%28Adam%20Hess%29.pdf
+NDSS_99_1,Secure Password-Based Protocol for Downloading a Private Key,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,1999,http://www.internetsociety.org/sites/default/files/perlman_0.pdf
+NDSS_99_2,A Real-World Analysis of Kerberos Password Security,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,1999,http://www.internetsociety.org/sites/default/files/A%20Real%20World%20Abstract%20Analysis%20of%20Kerberos%20Password%20Security%20%28Thomas%20Wu%29.pdf
+NDSS_99_3,Secure Remote Access to an Internal Web Server,USER AUTHENTICATION AND PUBLIC KEY CRYPTOGRAPHY,NDSS,1999,http://www.internetsociety.org/sites/default/files/Secure%20Remote%20Access%20to%20an%20Internal%20Web%20Server.pdf
+NDSS_99_4,Experimenting with Shared Generation of RSA Keys,CRYPTOGRAPHIC PROTOCOLS,NDSS,1999,http://www.internetsociety.org/sites/default/files/Experimenting%20with%20Shared%20Generation%20of%20RSA%20keys.pdf
+NDSS_99_5,Addressing the Problem of Undetected Signature Key Compromise,CRYPTOGRAPHIC PROTOCOLS,NDSS,1999,http://www.internetsociety.org/sites/default/files/Addressing%20the%20Problem%20of%20Undetected%20Signature%20Key%20Compromise%20%28Mike%20Just%29.pdf
+NDSS_99_6,Practical Approach to Anonymity in Large Scale Electronic Voting Schemes,CRYPTOGRAPHIC PROTOCOLS,NDSS,1999,http://www.internetsociety.org/sites/default/files/Practical%20Approach%20to%20Anonymity%20in%20Large%20Scale%20Electronic%20Voting%20Schemes.pdf
+NDSS_99_7,Distributed Policy Management for JDK 1.2,POLICY AND TRUST MANAGEMENT,NDSS,1999,http://www.internetsociety.org/sites/default/files/Distributed%20Policy%20Management%20for%20JDK%201.2.pdf
+NDSS_99_8,Distributed Execution with Remote Audit,POLICY AND TRUST MANAGEMENT,NDSS,1999,http://www.internetsociety.org/sites/default/files/Distributed%20Execution%20with%20Remote%20Audit.pdf
+NDSS_99_9,An Algebra for Assessing Trust in Certification Chains,POLICY AND TRUST MANAGEMENT,NDSS,1999,http://www.internetsociety.org/sites/default/files/An%20Algebra%20for%20Assessing%20Trust%20in%20Certification%20Chains.pdf
+NDSS_99_10,PGRIP: PNNI Global Routing Infrastructure Protection,NETWORK INFRASTRUCTURE PROTECTION,NDSS,1999,http://www.internetsociety.org/sites/default/files/ricciulli.pdf
+NDSS_99_11,Client Puzzles: A Cryptographic Countermeasure Against Connection Depletion Attacks,NETWORK INFRASTRUCTURE PROTECTION,NDSS,1999,http://www.internetsociety.org/sites/default/files/A%20Cryptographic%20Defense%20Against%20Connection%20Depletion%20Attacks%20%28Ari%20Juels%29.pdf
+NDSS_04_1,DoS Protection for Reliably Authenticated Broadcast,Multicast Authentication,NDSS,2004,http://www.internetsociety.org/sites/default/files/DoS%20Protection%20for%20Reliably%20Authenticated%20Broadcast%20%28Carl%20A.%20Gunter%29.pdf
+NDSS_04_2,Distillation Codes and Applications to DoS Resistant Multicast Authentication,Multicast Authentication,NDSS,2004,http://www.internetsociety.org/sites/default/files/Distillation%20Codes%20and%20Applications%20to%20DoS%20Resistant%20Multicast%20Authentication%20%28Chris%20Karlof%29.pdf
+NDSS_04_3,Efficient Context-Sensitive Intrusion Detection,Intrusion Detection,NDSS,2004,http://www.internetsociety.org/sites/default/files/Efficient%20Context-Sensitive%20Intrusion%20Detection%20%28Jonathon%20T.%20Giffin%29.pdf
+NDSS_04_4,Global Intrusion Detection in the DOMINO Overlay System,Intrusion Detection,NDSS,2004,http://www.internetsociety.org/sites/default/files/Global%20Intrusion%20Detection%20in%20the%20DOMINO%20Overlay%20System%20%28Vinod%20Yegneswaran%29_0.pdf
+NDSS_04_5,Building Attack Scenarios through Integration of Complementary Alert Correlation Method,Intrusion Detection,NDSS,2004,http://www.internetsociety.org/sites/default/files/Building%20Attack%20Scenarios%20through%20Integration%20of%20Complementary%20Alert%20Correlation%20Method%20%28Peng%20Ning%29.pdf
+NDSS_04_6,Client-Side Defense Against Web-Based Identity Theft,New Directions,NDSS,2004,http://www.internetsociety.org/sites/default/files/Client-Side%20Defense%20Against%20Web-Based%20Identity%20Theft%20%28Neil%20Chou%29.pdf
+NDSS_04_7,Using Directional Antennas to Prevent Wormhole Attacks,New Directions,NDSS,2004,http://www.internetsociety.org/sites/default/files/Using%20Directional%20Antennas%20to%20Prevent%20Wormhole%20Attacks%20%28Lingxuan%20Hu%29.pdf
+NDSS_04_8,An Effective Architecture and Algorithm for Detecting Worms with Various Scan,New Directions,NDSS,2004,http://www.internetsociety.org/sites/default/files/An%20Effective%20Architecture%20and%20Algorithm%20for%20Detecting%20Worms%20with%20Various%20Scan%20%28Jiang%20Wu%29.pdf
+NDSS_04_9,A Practical Dynamic Buffer Overflow Detector,Secure Software,NDSS,2004,http://www.internetsociety.org/sites/default/files/A%20Practical%20Dynamic%20Buffer%20Overflow%20Detector%20%28Olatunji%20Ruwase%29.pdf
+NDSS_04_10,Model Checking One Million Lines of C Code,Secure Software,NDSS,2004,http://www.internetsociety.org/sites/default/files/Chen.pdf
+NDSS_04_11,Ostia: A Delegating Architecture for Secure System Call Interposition,Secure Software,NDSS,2004,http://www.internetsociety.org/sites/default/files/Ostia%20A%20Delegating%20Architecture%20for%20Secure%20System%20Call%20Interposition%20%28Tal%20Garfinke%29.pdf
+NDSS_04_12,Authentication and Integrity in Outsourced Databases,Database and Audit Log Protection,NDSS,2004,http://www.internetsociety.org/sites/default/files/Authentication%20and%20Integrity%20in%20Outsourced%20Databases%20%28Einar%20Mykletun%29.pdf
+NDSS_04_13,Building an Encrypted and Searchable Audit Log,Database and Audit Log Protection,NDSS,2004,http://www.internetsociety.org/sites/default/files/Waters.pdf
+NDSS_04_14,Speeding up Secure Web Transactions Using Elliptic Curve Cryptography,Protocols,NDSS,2004,http://www.internetsociety.org/sites/default/files/Speeding%20up%20Secure%20Web%20Transactions%20Using%20Elliptic%20Curve%20Cryptography%20%28Vipul%20Gupta%29.pdf
+NDSS_04_15,The Design and Implementation of Datagram TLS,Protocols,NDSS,2004,http://www.internetsociety.org/sites/default/files/Modadugu.pdf
+NDSS_04_16,The Perils of Unauthenticated Encryption: Kerberos Version 4,Protocols,NDSS,2004,http://www.internetsociety.org/sites/default/files/The%20Perils%20of%20Unauthenticated%20Encryption%20Kerberos%20Version%204%20%28Tom%20Yu%29.pdf
+NDSS_14_1,On the Mismanagement and Maliciousness of Networks,Network Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/01_1_1.pdf
+NDSS_14_2,No Direction Home: The True Cost of Routing Around Decoys,Network Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/01_2_1.pdf
+NDSS_14_3,Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission,Network Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/01_3_0.pdf
+NDSS_14_4,CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers,Network Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/01_4.pdf
+NDSS_14_5,Amplification Hell: Revisiting Network Protocols for DDoS Abuse,Network Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/01_5.pdf
+NDSS_14_6,ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks,Software and System Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/02_1_1.pdf
+NDSS_14_7,A Trusted Safety Verifier for Process Controller Code,Software and System Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/02_2_1.pdf
+NDSS_14_8,AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares,Software and System Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/02_3_1.pdf
+NDSS_14_9,SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks,Software and System Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/02_4_0.pdf
+NDSS_14_10,Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization,Software and System Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/02_5_0.pdf
+NDSS_14_11,Screenmilker: How to Milk Your Android Screen for Secrets,Security of Mobile Devices I,NDSS,2014,http://www.internetsociety.org/sites/default/files/03_1_1.pdf
+NDSS_14_12,AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable,Security of Mobile Devices I,NDSS,2014,http://www.internetsociety.org/sites/default/files/03_2_1.pdf
+NDSS_14_13,Smartphones as Practical and Secure Location Verification Tokens for Payments,Security of Mobile Devices I,NDSS,2014,http://www.internetsociety.org/sites/default/files/03_3_1.pdf
+NDSS_14_14,Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks,Security of Mobile Devices I,NDSS,2014,http://www.internetsociety.org/sites/default/files/03_4_1.pdf
+NDSS_14_15,Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android,Security of Mobile Devices I,NDSS,2014,http://www.internetsociety.org/sites/default/files/03_5_0.pdf
+NDSS_14_16,DSpin: Detecting Automatically Spun Content on the Web,Web Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/04_1_1.pdf
+NDSS_14_17,Toward Black-Box Detection of Logic Flaws in Web Applications,Web Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/04_2_1.pdf
+NDSS_14_18,Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud,Web Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/04_3_1.pdf
+NDSS_14_19,Detecting Logic Vulnerabilities in E-commerce Applications,Web Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/04_4_1.pdf
+NDSS_14_20,Simulation of Built-in PHP Features for Precise Static Code Analysis,Web Security,NDSS,2014,http://www.internetsociety.org/sites/default/files/04_5_0.pdf
+NDSS_14_21,Enhanced Certificate Transparency and End-to-End Encrypted Mail,Privacy,NDSS,2014,http://www.internetsociety.org/sites/default/files/12_2_1.pdf
+NDSS_14_22,Privacy through Pseudonymity in Mobile Telephony Systems,Privacy,NDSS,2014,http://www.internetsociety.org/sites/default/files/05_2_1.pdf
+NDSS_14_23,Privacy-Preserving Distributed Stream Monitoring,Privacy,NDSS,2014,http://www.internetsociety.org/sites/default/files/05_3_1.pdf
+NDSS_14_24,The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network,Privacy,NDSS,2014,http://www.internetsociety.org/sites/default/files/05_4_0.pdf
+NDSS_14_25,Selling off User Privacy at Auction,Privacy,NDSS,2014,http://www.internetsociety.org/sites/default/files/05_5_0.pdf
+NDSS_14_26,The Tangled Web of Password Reuse,Authentication and Identity I,NDSS,2014,http://www.internetsociety.org/sites/default/files/06_1_1.pdf
+NDSS_14_27,On Semantic Patterns of Passwords and their Security Impact,Authentication and Identity I,NDSS,2014,http://www.internetsociety.org/sites/default/files/06_2_1.pdf
+NDSS_14_28,From Very Weak to Very Strong: Analyzing Password-Strength Meters,Authentication and Identity I,NDSS,2014,http://www.internetsociety.org/sites/default/files/06_3_1.pdf
+NDSS_14_29,Copker: Computing with Private Keys without RAM,Crypto I,NDSS,2014,http://www.internetsociety.org/sites/default/files/07_1_1.pdf
+NDSS_14_30,Practical Dynamic Searchable Encryption with Small Leakage,Crypto I,NDSS,2014,http://www.internetsociety.org/sites/default/files/07_2_1.pdf
+NDSS_14_31,Decentralized Anonymous Credentials,Crypto I,NDSS,2014,http://www.internetsociety.org/sites/default/files/07_3_1.pdf
+NDSS_14_32,Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation,Crypto I,NDSS,2014,http://www.internetsociety.org/sites/default/files/07_4_1.pdf
+NDSS_14_33,Authentication Using Pulse-Response Biometrics,Authentication and Identity II,NDSS,2014,http://www.internetsociety.org/sites/default/files/08_1_0.pdf
+NDSS_14_34,Hardening Persona - Improving Federated Web Login,Authentication and Identity II,NDSS,2014,http://www.internetsociety.org/sites/default/files/08_2_0.pdf
+NDSS_14_35,Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices,Authentication and Identity II,NDSS,2014,http://www.internetsociety.org/sites/default/files/08_3_0.pdf
+NDSS_14_36,Leveraging USB to Establish Host Identity Using Commodity Devices,Authentication and Identity II,NDSS,2014,http://www.internetsociety.org/sites/default/files/08_4.pdf
+NDSS_14_37,PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces,New Applications; Attacks; and Security Economics,NDSS,2014,http://www.internetsociety.org/sites/default/files/09_1_1.pdf
+NDSS_14_38,Auditable Version Control Systems,New Applications; Attacks; and Security Economics,NDSS,2014,http://www.internetsociety.org/sites/default/files/09_2_1.pdf
+NDSS_14_39,Power Attack: An Increasing Threat to Data Centers,New Applications; Attacks; and Security Economics,NDSS,2014,http://www.internetsociety.org/sites/default/files/09_3_1.pdf
+NDSS_14_40,Scambaiter: Understanding Targeted Nigerian Scams on Craigslist,New Applications; Attacks; and Security Economics,NDSS,2014,http://www.internetsociety.org/sites/default/files/09_4.pdf
+NDSS_14_41,Botcoin: Monetizing Stolen Cycles,New Applications; Attacks; and Security Economics,NDSS,2014,http://www.internetsociety.org/sites/default/files/09_5.pdf
+NDSS_14_42,A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks,Security of Mobile Devices II,NDSS,2014,http://www.internetsociety.org/sites/default/files/10_1_1.pdf
+NDSS_14_43,AirBag: Boosting Smartphone Resistance to Malware Infection,Security of Mobile Devices II,NDSS,2014,http://www.internetsociety.org/sites/default/files/10_2_1.pdf
+NDSS_14_44,SMV-Hunter: Large Scale; Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps,Security of Mobile Devices II,NDSS,2014,http://www.internetsociety.org/sites/default/files/10_3_1.pdf
+NDSS_14_45,AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications,Security of Mobile Devices II,NDSS,2014,http://www.internetsociety.org/sites/default/files/10_4_1.pdf
+NDSS_14_46,Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications,Security of Mobile Devices II,NDSS,2014,http://www.internetsociety.org/sites/default/files/10_5_0.pdf
+NDSS_14_47,Nazca: Detecting Malware Distribution in Large-Scale Networks,Malware,NDSS,2014,http://www.internetsociety.org/sites/default/files/11_1_1.pdf
+NDSS_14_48,Persistent Data-only Malware: Function Hooks without Code,Malware,NDSS,2014,http://www.internetsociety.org/sites/default/files/11_2_1.pdf
+NDSS_14_49,DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket,Malware,NDSS,2014,http://www.internetsociety.org/sites/default/files/11_3_1.pdf
+NDSS_14_50,Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications,Malware,NDSS,2014,http://www.internetsociety.org/sites/default/files/11_4_1.pdf
+NDSS_14_51,Neural Signatures of User-Centered Security: An fMRI Study of Phishing; and Malware Warnings,Malware,NDSS,2014,http://www.internetsociety.org/sites/default/files/11_5_0.pdf
+NDSS_14_52,Web PKI: Closing the Gap between Guidelines and Practices,Crypto II,NDSS,2014,http://www.internetsociety.org/sites/default/files/12_1_1.pdf
+NDSS_14_53,Efficient Private File Retrieval by Combining ORAM and PIR,Crypto II,NDSS,2014,http://www.internetsociety.org/sites/default/files/05_1_1.pdf
+NDSS_14_54,Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems,Crypto II,NDSS,2014,http://www.internetsociety.org/sites/default/files/12_3_1.pdf
+NDSS_14_55,Practical Issues with TLS Client Certificate Authentication,Crypto II,NDSS,2014,http://www.internetsociety.org/sites/default/files/12_4_1.pdf
+NDSS_15_1,Identifying Cross-origin Resource Status Using Application Cache,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/01_1_2.pdf
+NDSS_15_2,Parking Sensors: Analyzing and Detecting Parked Domains,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/01_2_2.pdf
+NDSS_15_3,Seven Months' Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/01_3_1.pdf
+NDSS_15_4,Upgrading HTTPS in mid-air: An empirical study of strict transport security and key pinning,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/Upgrading%20HTTPS%20in%20Mid-Air-%20An%20Empirical%20Study%20of%20Strict%20Transport%20Security%20and%20Key%20Pinning.pdf
+NDSS_15_5,I Do Not Know What You Visited Last Summer: Protecting users from stateful third-party web tracking with TrackingFree browser,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/01_5_0.pdf
+NDSS_15_6,Information Flow Analysis of Android Applications in DroidSafe,Mobile Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/02_1_2.pdf
+NDSS_15_7,What's in Your Dongle and Bank Account?  Mandatory and Discretionary Protection of Android External Resources,Mobile Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/02_2_2.pdf
+NDSS_15_8,EdgeMiner: Automatically Detecting Implicit Control Flow Transitions through the Android Framework,Mobile Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/02_3_2.pdf
+NDSS_15_9,CopperDroid: Automatic Reconstruction of Android Malware Behaviors,Mobile Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/02_4_1.pdf
+NDSS_15_10,DeepDroid: Dynamically Enforcing Enterprise Policy on Android Devices,Mobile Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/02_5_1.pdf
+NDSS_15_11,VTint: Protecting Virtual Function Tables' Integrity,Detection; Analysis; Prevention & Response - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/03_1_2.pdf
+NDSS_15_12,Phoneypot: Data-driven Understanding of Telephony Threats,Detection; Analysis; Prevention & Response - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/03_2_3.pdf
+NDSS_15_13,SeCReT: Secure Channel between Rich Execution Environment and Trusted Execution Environment,Detection; Analysis; Prevention & Response - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/03_3_2.pdf
+NDSS_15_14,FreeSentry: protecting against use-after-free vulnerabilities due to dangling pointers,Detection; Analysis; Prevention & Response - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/03_4_2.pdf
+NDSS_15_15,EKHunter: A Counter-Offensive Toolkit for Exploit Kit Infiltration,Detection; Analysis; Prevention & Response - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/03_5_1.pdf
+NDSS_15_16,Machine Learning Classification over Encrypted Data,Privacy - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/04_1_2.pdf
+NDSS_15_17,Gracewipe: Secure and Verifiable Deletion under Coercion,Privacy - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/04_2_2.pdf
+NDSS_15_18,Privacy Preserving Payments in Credit Networks: Enabling trust with privacy in online marketplaces,Privacy - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/04_3_2.pdf
+NDSS_15_19,Checking More and Alerting Less: Detecting Privacy Leakages via Enhanced Data-flow Analysis and Peer Voting,Privacy - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/04_4_2.pdf
+NDSS_15_20,DEFY: A Deniable; Encrypted File System for Log-Structured Storage,Privacy - Part I,NDSS,2015,http://www.internetsociety.org/sites/default/files/04_5_1.pdf
+NDSS_15_21,Preventing Use-after-free with Dangling Pointers Nullification,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/05_1_2.pdf
+NDSS_15_22,StackArmor: Comprehensive Protection From Stack-based Memory Error Vulnerabilities for Binaries,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/05_2_2.pdf
+NDSS_15_23,Isomeron: Code Randomization Resilient to (Just-In-Time) Return-Oriented Programming,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/05_3_2.pdf
+NDSS_15_24,Thwarting Cache Side-Channel Attacks Through Dynamic Software Diversity,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/05_4_1.pdf
+NDSS_15_25,Principled Sampling for Anomaly Detection,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/06_1_2.pdf
+NDSS_15_26,Integrated Circuit (IC) Decamouflaging: Reverse Engineering Camouflaged ICs within Minutes,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/06_2_2.pdf
+NDSS_15_27,Opaque Control-Flow Integrity,Detection; Analysis; Prevention & Response - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/06_3_2.pdf
+NDSS_15_28,Bloom Cookies: Web Search Personalization without User Tracking,Privacy - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/06_4_1.pdf
+NDSS_15_29,NSEC5: Provably Preventing DNSSEC Zone Enumeration,Privacy - Part II,NDSS,2015,http://www.internetsociety.org/sites/default/files/06_5_0.pdf
+NDSS_15_30,Predicting Users' Motivations behind Location Check-Ins and Utility Implications of Privacy Protection Mechanisms,Social Networks and Cloud Services,NDSS,2015,http://www.internetsociety.org/sites/default/files/NDSS2015_PredictingUsers-Motivations_07_1.pdf
+NDSS_15_31,On Your Social Network De-anonymizablity: Quantification and Large Scale Evaluation with Seed Knowledge,Social Networks and Cloud Services,NDSS,2015,http://www.internetsociety.org/sites/default/files/07_2_2.pdf
+NDSS_15_32,Efficient RAM and control flow in verifiable outsourced computation,Social Networks and Cloud Services,NDSS,2015,http://www.internetsociety.org/sites/default/files/07_3_2.pdf
+NDSS_15_33,Integro: Leveraging Victim Prediction for Robust Fake Account Detection in OSNs,Social Networks and Cloud Services,NDSS,2015,http://www.internetsociety.org/sites/default/files/07_4_2.pdf
+NDSS_15_34,Spaced Repetition and Mnemonics Enable Recall of Multiple Strong Passwords,Authentication,NDSS,2015,http://www.internetsociety.org/sites/default/files/08_1_1.pdf
+NDSS_15_35,ABY - A Framework for Efficient Mixed-Protocol Secure Two-Party Computation,Authentication,NDSS,2015,http://www.internetsociety.org/sites/default/files/08_2_1.pdf
+NDSS_15_36,Preventing Lunchtime Attacks: Fighting Insider Threats With Eye Movement Biometrics,Authentication,NDSS,2015,http://www.internetsociety.org/sites/default/files/08_3_1.pdf
+NDSS_15_37,Knock Yourself Out: Secure Authentication with Short Re-Usable Passwords,Authentication,NDSS,2015,http://www.internetsociety.org/sites/default/files/08_4_0.pdf
+NDSS_15_38,Verified Contributive Channel Bindings for Compound Authentication,Authentication,NDSS,2015,http://www.internetsociety.org/sites/default/files/08_5.pdf
+NDSS_15_39,The Devil is in the Constants: Bypassing Defenses in Browser JIT Engines,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/09_1_2.pdf
+NDSS_15_40,Exploiting and Protecting Dynamic Code Generation,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/09_2_2.pdf
+NDSS_15_41,Too LeJIT to Quit: Extending JIT Spraying to ARM,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/09_3_2.pdf
+NDSS_15_42,Run-time Monitoring and Formal Analysis of Information Flows in Chromium,Web Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/09_4_0.pdf
+NDSS_15_43,Mind Your Blocks: On the Stealthiness of Malicious BGP Hijacks,Network Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/NDSS2015_Mind_Your_Blocks_Stealthiness_Malicious_BGP_Attacks.pdf
+NDSS_15_44,SPHINX: Detecting Security Attacks in Software-Defined Networks,Network Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/10_2_2.pdf
+NDSS_15_45,Securing the Software Defined Network Control Layer,Network Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/10_3_2.pdf
+NDSS_15_46,Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures,Network Security,NDSS,2015,http://www.internetsociety.org/sites/default/files/10_4_2.pdf
+NDSS_15_47,Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware,Detection; Analysis; Prevention & Response - Part IV,NDSS,2015,http://www.internetsociety.org/sites/default/files/11_1_2.pdf
+NDSS_15_48,vfGuard: Strict Protection for Virtual Function Calls in COTS C++ Binaries,Detection; Analysis; Prevention & Response - Part IV,NDSS,2015,http://www.internetsociety.org/sites/default/files/11_2_2.pdf
+NDSS_15_49,P2C: Understanding Output Data Files via On-the-Fly Transformation from Producer to Consumer Executions,Detection; Analysis; Prevention & Response - Part IV,NDSS,2015,http://www.internetsociety.org/sites/default/files/11_3_2.pdf
+NDSS_15_50,No More Gotos: Decompilation Using Pattern-Independent Control-Flow Structuring and Semantic-Preserving Transformations,Detection; Analysis; Prevention & Response - Part IV,NDSS,2015,http://www.internetsociety.org/sites/default/files/11_4_2.pdf
+NDSS_07_1,Low-Rate TCP-Targeted DoS Attack Disrupts Internet Routing,Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Low-Rate%20TCP-Targeted%20DoS%20Attack%20Disrupts%20Internet%20Routing%20%28Ying%20Zhang%29.pdf
+NDSS_07_2,Playing Devil's Advocate: Inferring Sensitive Information from Anonymized Network Traces,Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Playing%20Devil%27s%20Advocate%20Inferring%20Sensitive%20Information%20from%20Anonymized%20Network%20Traces%20%28Scott%20E.%20Coull%29.pdf
+NDSS_07_3,Fig: Automatic Fingerprint Generation,Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Fig%20Automatic%20Fingerprint%20Generation%20%28Juan%20Caballero%29.pdf
+NDSS_07_4,Cross Site Scripting Prevention with Dynamic Data Tainting and Static Analysis,Web Security,NDSS,2007,http://www.internetsociety.org/sites/default/files/Cross%20Site%20Scripting%20Prevention%20with%20Dynamic%20Data%20Tainting%20and%20Static%20Analysis%20%28Philipp%20Vogt%29.pdf
+NDSS_07_5,A Quantitative Study of Forum Spamming Using Context-based Analysis,Web Security,NDSS,2007,http://www.internetsociety.org/sites/default/files/A%20Quantitative%20Study%20of%20Forum%20Spamming%20Using%20Context-based%20Analysis%20%28Yuan%20Niu%29.pdf
+NDSS_07_6,Phinding Phish: An Evaluation of Anti-Phishing Toolbars,More Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Phinding%20Phish%20An%20Evaluation%20of%20Anti-Phishing%20Toolbars%20%28Lorrie%20Cranor%29.pdf
+NDSS_07_7,Army of Botnets,More Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Army%20of%20Botnets%20%28Ryan%20Vogt%29.pdf
+NDSS_07_8,Shedding Light on the Configuration of Dark Addresses,More Threats,NDSS,2007,http://www.internetsociety.org/sites/default/files/Shedding%20Light%20on%20the%20Configuration%20of%20Dark%20Addresses%20%28Sushant%20Sinha%29.pdf
+NDSS_07_9,Consumable Credentials in Linear-Logic-Based Access-Control Systems,Authentication,NDSS,2007,http://www.internetsociety.org/sites/default/files/Consumable%20Credentials%20in%20Linear-Logic-Based%20Access-Control%20Systems.pdf
+NDSS_07_10,Secret Handshakes with Dynamic and Fuzzy Matching,Authentication,NDSS,2007,http://www.internetsociety.org/sites/default/files/Secret%20Handshakes%20with%20Dynamic%20and%20Fuzzy%20Matching%20%28Giuseppe%20Ateniese%29.pdf
+NDSS_07_11,Attribute-Based Publishing with Hidden Credentials and Hidden Policies,Authentication,NDSS,2007,http://www.internetsociety.org/sites/default/files/Attribute-Based%20Publishing%20with%20Hidden%20Credentials%20and%20Hidden%20Policies%20%28Apu%20Kapadia%29.pdf
+NDSS_07_12,File System Design with Assured Delete,Privacy,NDSS,2007,http://www.internetsociety.org/sites/default/files/File%20System%20Design%20with%20Assured%20Delete%20%28Radia%20Perlman%29.pdf
+NDSS_07_13,Cryptographic Methods for Storing Ballots on a Voting Machine,Privacy,NDSS,2007,http://www.internetsociety.org/sites/default/files/Cryptographic%20Methods%20for%20Storing%20Ballots%20on%20a%20Voting%20Machine%20%28John%20Bethencourt%29.pdf
+NDSS_07_14,On the Practicality of Private Information Retrieval,Privacy,NDSS,2007,http://www.internetsociety.org/sites/default/files/On%20the%20Practicality%20of%20Private%20Information%20Retrieval%20%28Radu%20Sion%29.pdf
+NDSS_07_15,RICH: Automatically Protecting Against Integer-Based Vulnerabilities,Intrusion Detection and Prevention,NDSS,2007,http://www.internetsociety.org/sites/default/files/RICH%20Automatically%20Protecting%20Against%20Integer-Based%20Vulnerabilities%20%28David%20Brumley%29.pdf
+NDSS_07_16,Generic Application-Level Protocol Analyzer and its Language,Intrusion Detection and Prevention,NDSS,2007,http://www.internetsociety.org/sites/default/files/Generic%20Application-Level%20Protocol%20Analyzer%20and%20its%20Language%20%28Nikita%20Borisov%29.pdf
+NDSS_07_17,OPTWALL: A Hierarchical Traffic-Aware Firewall,Intrusion Detection and Prevention,NDSS,2007,http://www.internetsociety.org/sites/default/files/OPTWALL%20A%20Hierarchical%20Traffic-Aware%20Firewall%20%28Subarta%20Acharya%29.pdf
+NDSS_97_1,Experimental Results of Covert Channel Limitation in One-Way Communication Systems,Things That Go Bump In The Net,NDSS,1997,
+NDSS_97_2,Blocking Java Applets at the Firewall,Things That Go Bump In The Net,NDSS,1997,
+NDSS_97_3,Continuous Assessment of a Unix Configuration: Integrating Intrusion Detection and Configuration Analysis,Things That Go Bump In The Net,NDSS,1997,
+NDSS_97_4,An Interface Specification Language for Automatically Analyzing Cryptographic Protocols,Protocol Implementation And Analysis,NDSS,1997,
+NDSS_97_5,Probable Plaintext Cryptanalysis of the IP Security Protocols,Protocol Implementation And Analysis,NDSS,1997,
+NDSS_97_6,Misplaced Trust: Kerberos 4 Session Keys,Protocol Implementation And Analysis,NDSS,1997,
+NDSS_97_7,Securing the Nimrod Routing Architecture,Routing Security,NDSS,1997,
+NDSS_97_8,Securing Distance-Vector Routing Protocols,Routing Security,NDSS,1997,
+NDSS_97_9,Reducing the Cost of Security in Link-State Routing,Routing Security,NDSS,1997,
+NDSS_97_10,Securing Web Access with DCE,Security For The World Wide Web,NDSS,1997,
+NDSS_97_11,Hierarchical Organization of Certification Authorities for Secure Environments,Public Key Management,NDSS,1997,
+NDSS_97_12,Trust Models in ICE-TEL,Public Key Management,NDSS,1997,
+NDSS_97_13,Distributed Authentication in Kerberos Using Public Key Cryptography,Public Key Management,NDSS,1997,
+NDSS_11_1,Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones,Secure Emerging Applications: Social Networks and Smartphones,NDSS,2011,http://www.internetsociety.org/sites/default/files/schlegel.pdf
+NDSS_11_2,A Security API for Distributed Social Networks,Secure Emerging Applications: Social Networks and Smartphones,NDSS,2011,http://www.internetsociety.org/sites/default/files/backes.pdf
+NDSS_11_3,Location Privacy via Private Proximity Testing,Secure Emerging Applications: Social Networks and Smartphones,NDSS,2011,http://www.internetsociety.org/sites/default/files/nara.pdf
+NDSS_11_4,Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars,Wireless Attacks!,NDSS,2011,http://www.internetsociety.org/sites/default/files/franc.pdf
+NDSS_11_5,Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks,Wireless Attacks!,NDSS,2011,http://www.internetsociety.org/sites/default/files/omid.pdf
+NDSS_11_6,Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas,Wireless Attacks!,NDSS,2011,http://www.internetsociety.org/sites/default/files/cai.pdf
+NDSS_11_7,Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions,OS Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/xipdf.pdf
+NDSS_11_8,Efficient Monitoring of Untrusted Kernel-Mode Execution,OS Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/sriv.pdf
+NDSS_11_9,SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures,OS Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/lin.pdf
+NDSS_11_10,Losing Control of the Internet: Using the Data Plane to Attack the Control Plane,Network Malware,NDSS,2011,http://www.internetsociety.org/sites/default/files/schu.pdf
+NDSS_11_11,EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis,Network Malware,NDSS,2011,http://www.internetsociety.org/sites/default/files/bilg.pdf
+NDSS_11_12,Howard: A Dynamic Excavator for Reverse Engineering Data Structures,Software Security / Code Analysis,NDSS,2011,http://www.internetsociety.org/sites/default/files/slow.pdf
+NDSS_11_13,No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects,Software Security / Code Analysis,NDSS,2011,http://www.internetsociety.org/sites/default/files/dewey.pdf
+NDSS_11_14,TIE: Principled Reverse Engineering of Types in Binary Programs,Software Security / Code Analysis,NDSS,2011,http://www.internetsociety.org/sites/default/files/lee.pdf
+NDSS_11_15,DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation,Software Security / Code Analysis,NDSS,2011,http://www.internetsociety.org/sites/default/files/Avg.pdf
+NDSS_11_16,AEG: Automatic Exploit Generation,Software Security / Code Analysis,NDSS,2011,http://www.internetsociety.org/sites/default/files/Avg.pdf
+NDSS_11_17,Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/Bald.pdf
+NDSS_11_18,WebShield: Enabling Various Web Defense Techniques without Client Side Modifications,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/Li.pdf
+NDSS_11_19,HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/luo.pdf
+NDSS_11_20,Accurate and Provably Secure Latency Estimation with Treeple,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/tin.pdf
+NDSS_11_21,On Measuring the Similarity of Network Hosts: Pitfalls; New Metrics; and Empirical Analyses,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/coull.pdf
+NDSS_11_22,SWIRL: A Scalable Watermark to Detect Correlated Network Flows,Web Security,NDSS,2011,http://www.internetsociety.org/sites/default/files/houm.pdf
+NDSS_11_23,SPARE: Replicas on Hold,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/dist.pdf
+NDSS_11_24,Efficient Privacy-Preserving Biometric Identification,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/Huang_0.pdf
+NDSS_11_25,Usability Testing a Malware-Resistant Input Mechanism,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/libon.pdf
+NDSS_11_26,Tracker: Security and Privacy for RFID-based Supply Chains,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/blass.pdf
+NDSS_11_27,PiOS: Detecting Privacy Leaks in iOS Applications,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/egel.pdf
+NDSS_11_28,Privacy-Preserving Aggregation of Time-Series Data,Real-World Security: Cloud Computing; Biometrics; and Humans,NDSS,2011,http://www.internetsociety.org/sites/default/files/shi.pdf
+NDSS_03_1,Fighting Spam by Encapsulating Policy in Email Addresses,Defending Against Network Attacks,NDSS,2003,http://www.internetsociety.org/sites/default/files/Fighting%20Spam%20by%20Encapsulating%20Policy%20in%20Email%20Addresses%20%28John%20Ioannidis%29.pdf
+NDSS_03_2,Moderately Hard; Memory-Bound Functions,Defending Against Network Attacks,NDSS,2003,http://www.internetsociety.org/sites/default/files/Moderately%20Hard%2C%20Memory-Bound%20Functions%20%28Martin%20Abadi%29.pdf
+NDSS_03_3,Secure IP Telephony using Multi-layered Protection,Defending Against Network Attacks,NDSS,2003,http://www.internetsociety.org/sites/default/files/Secure%20IP%20Telephony%20using%20Multi-layered%20Protection%20%28Brennen%20Reynolds%29.pdf
+NDSS_03_4,Efficient Security Mechanisms for Routing Protocols,Mobility and Secure Routing,NDSS,2003,http://www.internetsociety.org/sites/default/files/Efficient%20Security%20Mechanisms%20for%20Routing%20Protocolsa%20%28Yih-Chun%20Hu%29.pdf
+NDSS_03_5,Working around BGP: An Incremental Approach to Improving Security and Accuracy in Interdomain Routing,Mobility and Secure Routing,NDSS,2003,http://www.internetsociety.org/sites/default/files/Working%20around%20BGP%20An%20Incremental%20Approach%20to%20Improving%20Security%20and%20Accuracy%20in%20Interdomain%20Routing%20%28Geoffrey%20Goodell%29.pdf
+NDSS_03_6,Integrating Security; Mobility and Multi-Homing in a HIP Way,Mobility and Secure Routing,NDSS,2003,http://www.internetsociety.org/sites/default/files/Integrating%20Security%2C%20Mobility%20and%20Multi-Homing%20in%20a%20HIP%20Way%20%28Pekka%20Nikander%29.pdf
+NDSS_03_7,Access Control Based on Execution History,Access Control and Penetration Resistance,NDSS,2003,http://www.internetsociety.org/sites/default/files/Access%20Control%20Based%20on%20Execution%20History%20%28Martin%20Abadi%29.pdf
+NDSS_03_8,Testing C Programs for Buffer Overflow Vulnerabilities,Access Control and Penetration Resistance,NDSS,2003,http://www.internetsociety.org/sites/default/files/Testing%20C%20Programs%20for%20Buffer%20Overflow%20Vulnerabilities%20%28Eric%20Haugh%29.pdf
+NDSS_03_9,SiRiUS: Securing Remote Untrusted Storage,Access Control and Penetration Resistance,NDSS,2003,http://www.internetsociety.org/sites/default/files/SiRiUS%20Securing%20Remote%20Untrusted%20Storage%20%28Eu-Jin%20Goh%29.pdf
+NDSS_03_10,A Comparison of Publicly Available Tools for Dynamic Buffer Overflow Prevention,Network Monitoring and Intrusion Detection,NDSS,2003,http://www.internetsociety.org/sites/default/files/A%20Comparison%20of%20Publicly%20Available%20Tools%20for%20Dynamic%20Buffer%20Overflow%20Prevention%20%28John%20Wilander%29.pdf
+NDSS_03_11,Traps and Pitfalls: Practical Problems in System Call Interposition Based Security Tools,Network Monitoring and Intrusion Detection,NDSS,2003,http://www.internetsociety.org/sites/default/files/Traps%20and%20Pitfalls%20Practical%20Problems%20in%20System%20Call%20Interposition%20Based%20Security%20Tools%20%28Tal%20Garfinkel%29.pdf
+NDSS_03_12,Detecting Service Violations and DoS Attacks,Network Monitoring and Intrusion Detection,NDSS,2003,http://www.internetsociety.org/sites/default/files/Detecting%20Service%20Violations%20and%20DoS%20Attacks%20%28Ahsan%20Habib%29.pdf
+NDSS_03_13,A Virtual Machine Introspection Based Architecture for Intrusion Detection,Network Monitoring and Intrusion Detection,NDSS,2003,http://www.internetsociety.org/sites/default/files/A%20Virtual%20Machine%20Introspection%20Based%20Architecture%20for%20Intrusion%20Detection%20%28Tal%20Garfinkel%29.pdf
+NDSS_03_14,Proxy Cryptography Revisited,Cryptographic Protocols and Constructs,NDSS,2003,http://www.internetsociety.org/sites/default/files/Proxy%20Cryptography%20Revisited%20%28Anca%20Ivan%29.pdf
+NDSS_03_15,Proactive Two-Party Signatures for User Authentication,Cryptographic Protocols and Constructs,NDSS,2003,http://www.internetsociety.org/sites/default/files/Proactive%20Two-Party%20Signatures%20for%20User%20Authentication%20%28Antonio%20Nicolosi%29.pdf
+NDSS_03_16,Efficient Multicast Packet Authentication,Cryptographic Protocols and Constructs,NDSS,2003,http://www.internetsociety.org/sites/default/files/Efficient%20Multicast%20Packet%20Authentication%20%28Alain%20Pannetrat%29.pdf
+NDSS_03_17,Efficient Distribution of Key Chain Commitments for Broadcast Authentication in Distributed Sensor Networks,Cryptographic Protocols and Constructs,NDSS,2003,http://www.internetsociety.org/sites/default/files/Efficient%20Distribution%20of%20Key%20Chain%20Commitments%20for%20Broadcast%20Authentication%20in%20Distributed%20Sensor%20Networks%20%28Donggang%20Liu%29.pdf
+NDSS_09_1,Document Structure Integrity: A Robust Basis for Cross-site Scripting Defense,Web Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/Document%20Structure%20Integrity%20A%20Robust%20Basis%20for%20Cross-site%20Scripting%20Defense%20%20%28Yacin%20Nadji%29.pdf
+NDSS_09_2,An Efficient Black-box Technique for Defeating Web Application Attacks,Web Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/An%20Efficient%20Black-box%20Technique%20for%20Defeating%20Web%20Application%20Attacks%20%28paper%29%20%28R.%20Sekar%29.pdf
+NDSS_09_3,Noncespaces: Using Randomization to Enforce Information Flow Tracking and Thwart Cross-site Scripting Attacks,Web Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/Noncespaces%20Using%20Randomization%20to%20Enforce%20Information%20Flow%20Tracking%20and%20Thwart%20Cross-site%20Scripting%20Attacks%20%28paper%29%20%28Matthew%20Van%20Gundy%29.pdf
+NDSS_09_4,The Blind Stone Tablet: Outsourcing Durability to Untrusted Parties,Distributed Systems,NDSS,2009,http://www.internetsociety.org/sites/default/files/The%20Blind%20Stone%20Tablet%20Outsourcing%20Durability%20to%20Untrusted%20Parties%20%28paper%29%20%28Peter%20Williams%29.pdf
+NDSS_09_5,Two-Party Computation Model for Privacy-Preserving Queries over Distributed Databases,Distributed Systems,NDSS,2009,http://www.internetsociety.org/sites/default/files/Two-Party%20Computation%20Model%20for%20Privacy-Preserving%20Queries%20over%20Distributed%20Databases%20%28Sherman%20S.%20M.%20Chow%29.pdf
+NDSS_09_6,Sybillnfer: Detecting Sybil Nodes using Social Networks,Distributed Systems,NDSS,2009,http://www.internetsociety.org/sites/default/files/Sybillnfer%20Detecting%20Sybil%20Nodes%20using%20Social%20Networks%20%28George%20Danezis%29.pdf
+NDSS_09_7,Spectrogram: A Mixture-of-Markov-Chains Model for Anomaly Detection in Web Traffic,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/song.pdf
+NDSS_09_8,Detecting Forged TCP Reset Packets,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/weav.pdf
+NDSS_09_9,Coordinated Scan Detection,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/gates.pdf
+NDSS_09_10,RB-Seeker: Auto-detection of Redirection Botnets,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/RB-Seeker%20Auto-detection%20of%20Redirection%20Botnets%20%28paper%29%20%28Xin%20Hu%29.pdf
+NDSS_09_11,Scalable; Behavior-Based Malware Clustering,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/bay.pdf
+NDSS_09_12,K-Tracer: A System for Extracting Kernel Malware Behavior,Intrusion Detection,NDSS,2009,http://www.internetsociety.org/sites/default/files/lanzi.pdf
+NDSS_09_13,RAINBOW: A Robust and Invisible Non-Blind Watermark for Network Flows,Traffic Protection and Infrastructure Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/hou.pdf
+NDSS_09_14,Traffic Morphing: An Efficient Defense Against Statistical Traffic Analysis,Traffic Protection and Infrastructure Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/wright.pdf
+NDSS_09_15,Recursive DNS Architectures and Vulnerability Implications,Traffic Protection and Infrastructure Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/dagon.pdf
+NDSS_09_16,Analyzing and Comparing the Protection Quality of Security Enhanced Operating Systems,Host Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/chen.pdf
+NDSS_09_17,IntScope: Automatically Detecting Integer Overflow Vulnerability in X86 Binary Using Symbolic Execution,Host Security,NDSS,2009,http://www.internetsociety.org/sites/default/files/wang.pdf
+NDSS_09_18,Safe Passage for Passwords and Other Sensitive Data,Authentication and Accountability,NDSS,2009,http://www.internetsociety.org/sites/default/files/mccune.pdf
+NDSS_09_19,Conditioned-safe Ceremonies and a User Study of an Application to Web Authentication,Authentication and Accountability,NDSS,2009,http://www.internetsociety.org/sites/default/files/karlof.pdf
+NDSS_09_20,CSAR: A Practical and Provable Technique to Make Randomized Systems Accountable,Authentication and Accountability,NDSS,2009,http://www.internetsociety.org/sites/default/files/backes_0.pdf
+NDSS_12_1,Plaintext-Recovery Attacks Against Datagram TLS,Networking I,NDSS,2012,http://www.internetsociety.org/sites/default/files/P01_1.pdf
+NDSS_12_2,ANDaNA: Anonymous Named Data Networking Application,Networking I,NDSS,2012,http://www.internetsociety.org/sites/default/files/01_2.pdf
+NDSS_12_3,Persistent OSPF Attacks,Networking I,NDSS,2012,http://www.internetsociety.org/sites/default/files/P01_3.pdf
+NDSS_12_4,You are what you like! Information leakage through users' Interests,Social Networks and User Behavior I,NDSS,2012,http://www.internetsociety.org/sites/default/files/P02_1.pdf
+NDSS_12_5,X-Vine: Secure and Pseudonymous Routing in DHTs Using Social Networks,Social Networks and User Behavior I,NDSS,2012,http://www.internetsociety.org/sites/default/files/02_2.pdf
+NDSS_12_6,Towards Online Spam Filtering in Social Networks,Social Networks and User Behavior I,NDSS,2012,http://www.internetsociety.org/sites/default/files/02_3.pdf
+NDSS_12_7,Location leaks over the GSM air interface,Mobile Networks,NDSS,2012,http://www.internetsociety.org/sites/default/files/P03_1.pdf
+NDSS_12_8,Track Me If You Can: On the Effectiveness of Context-based Identifier Changes in Deployed Mobile Networks,Mobile Networks,NDSS,2012,http://www.internetsociety.org/sites/default/files/03_2.pdf
+NDSS_12_9,You Can Run; but You Can't Hide: Exposing Network Location for Targeted DoS Attacks in Cellular Networks,Mobile Networks,NDSS,2012,http://www.internetsociety.org/sites/default/files/03_3.pdf
+NDSS_12_10,Weaponizing Femtocells: The Effect of Rogue Devices on Mobile Telecommunications,Mobile Networks,NDSS,2012,http://www.internetsociety.org/sites/default/files/P03_4.pdf
+NDSS_12_11,Privacy-preserving Logarithmic-time Search on Encrypted Data in Cloud,Clouds/Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/P04_1.pdf
+NDSS_12_12,Large-Scale Privacy-Preserving Mapping of Human Genomic Sequences on Hybrid Clouds,Clouds/Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/04_2.pdf
+NDSS_12_13,Making argument systems for outsourced computation practical (sometimes),Clouds/Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/04_3.pdf
+NDSS_12_14,Towards Practical Oblivious RAM,Clouds/Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/04_4.pdf
+NDSS_12_23,Access Pattern disclosure on Searchable Encryption: Ramification; Attack and Mitigation,Applied Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/06_1.pdf
+NDSS_12_24,On Limitations of Designing Leakage-Resilient Password Systems: Attacks; Principals and Usability,Applied Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/06_2.pdf
+NDSS_12_25,Adaptive Password-Strength Meters from Markov Models,Applied Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/06_3.pdf
+NDSS_12_26,Private Set Intersection: Are Garbled Circuits Better than Custom Protocols?,Applied Crypto,NDSS,2012,http://www.internetsociety.org/sites/default/files/P06_4.pdf
+NDSS_12_27,Guess Who's Texting You? Evaluating the Security of Smartphone Messaging Applications,Smartphones,NDSS,2012,http://www.internetsociety.org/sites/default/files/07_1.pdf
+NDSS_12_28,MoCFI: A Framework to Mitigate Control-Flow Attacks on Smartphones,Smartphones,NDSS,2012,http://www.internetsociety.org/sites/default/files/07_2.pdf
+NDSS_12_29,Towards Taming Privilege-Escalation Attacks on Android,Smartphones,NDSS,2012,http://www.internetsociety.org/sites/default/files/P07_3.pdf
+NDSS_12_30,Systematic Detection of Capability Leaks in Stock Android Smartphones,Smartphones,NDSS,2012,http://www.internetsociety.org/sites/default/files/P07_4.pdf
+NDSS_12_31,Hey; You; Get Off of My Market: Detecting Malicious Apps in Official and Alternative Android Markets,Smartphones,NDSS,2012,http://www.internetsociety.org/sites/default/files/P07_5.pdf
+NDSS_12_32,Insights into User Behavior in Dealing with Internet Attacks,Social Networks and User Behavior II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P08_1.pdf
+NDSS_12_33,PathCutter: Severing the Self-Propagation Path of XSS JavaScript Worms in Social Web Networks,Social Networks and User Behavior II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P08_2.pdf
+NDSS_12_34,The Latent Community Model for Detecting Sybils in Social Networks,Social Networks and User Behavior II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P08_3.pdf
+NDSS_12_35,BLACR: TTP-Free Blacklistable Anonymous Credentials with Reputation,Privacy and Anonymity,NDSS,2012,http://www.internetsociety.org/sites/default/files/P09_1.pdf
+NDSS_12_36,Accountable Wiretapping -or- I know they can hear you now,Privacy and Anonymity,NDSS,2012,http://www.internetsociety.org/sites/default/files/P09_2.pdf
+NDSS_12_37,Shadow: Running Tor in a Box for Accurate and Efficient Experimentation,Privacy and Anonymity,NDSS,2012,http://www.internetsociety.org/sites/default/files/09_3.pdf
+NDSS_12_38,Discovering Semantic Data of Interest from Un-mappable Memory with Confidence,Host Security,NDSS,2012,http://www.internetsociety.org/sites/default/files/P10_1.pdf
+NDSS_12_39,SecureSwitch: BIOS-Assisted Isolation and Switch between Trusted and Untrusted Commodity OSes,Host Security,NDSS,2012,http://www.internetsociety.org/sites/default/files/P10_2.pdf
+NDSS_12_40,SMART: Secure and Minimal Architecture for (Establishing Dynamic) Root of Trust,Host Security,NDSS,2012,http://www.internetsociety.org/sites/default/files/P10_3.pdf
+NDSS_12_41,Kruiser: Semi-synchronized Non-blocking Concurrent Kernel Heap Buffer Overflow Monitoring,Host Security,NDSS,2012,http://www.internetsociety.org/sites/default/files/P10_4.pdf
+NDSS_12_42,WarningBird: Detecting Suspicious URLs in Twitter Stream,Web,NDSS,2012,http://www.internetsociety.org/sites/default/files/11_1.pdf
+NDSS_12_43,Using replicated execution for a more secure and reliable web browser,Web,NDSS,2012,http://www.internetsociety.org/sites/default/files/P11_2.pdf
+NDSS_12_44,Host Fingerprinting and Tracking on the Web: Privacy and Security Implications,Web,NDSS,2012,http://www.internetsociety.org/sites/default/files/11_3.pdf
+NDSS_12_45,Chrome Extensions: Threat Analysis and Countermeasures,Web,NDSS,2012,http://www.internetsociety.org/sites/default/files/P11_4.pdf
+NDSS_12_46,Ghost Domain Names: Revoked Yet Still Resolvable,Networking II,NDSS,2012,http://www.internetsociety.org/sites/default/files/12_1.pdf
+NDSS_12_47,ShortMAC: Efficient Data-Plane Fault Localization,Networking II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P12_2.pdf
+NDSS_12_48,Bypassing Space Explosion in Regular Expression Matching for Network Intrusion Detection and Prevention Systems,Networking II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P12_3.pdf
+NDSS_12_49,The Case for Prefetching and Prevalidating TLS Server Certificates,Networking II,NDSS,2012,http://www.internetsociety.org/sites/default/files/P12_4.pdf
+NDSS_12_50,Gatling: Automatic Attack Discovery in Large-Scale Distributed Systems,Distributed Systems,NDSS,2012,http://www.internetsociety.org/sites/default/files/13_1.pdf
+NDSS_12_51,Automated Synthesis of Secure Distributed Applications,Distributed Systems,NDSS,2012,http://www.internetsociety.org/sites/default/files/13_2.pdf
+NDSS_12_52,A General Approach for Efficiently Accelerating Software-based Dynamic Data Flow Tracking on Commodity Hardware,Software,NDSS,2012,http://www.internetsociety.org/sites/default/files/P14_1.pdf
+NDSS_12_53,Static detection of C++ vtable escape vulnerabilities in binary code,Software,NDSS,2012,http://www.internetsociety.org/sites/default/files/P14_2.pdf
+NDSS_12_54,Identifying and Analyzing Pointer Misuses for Sophisticated Memory-corruption Exploit Diagnosis,Software,NDSS,2012,http://www.internetsociety.org/sites/default/files/P14_3.pdf
+NDSS_08_1,A New Privacy-Enhanced Matchmaking Protocol,Large Scale Systems,NDSS,2008,
+NDSS_08_2,Corrupted DNS Resolution Paths: The Rise of a Malicious Resolution Authority,Large Scale Systems,NDSS,2008,http://www.internetsociety.org/sites/default/files/Corrupted%20DNS%20Resolution%20Paths%20The%20Rise%20of%20a%20Malicious%20Resolution%20Authority%20%28paper%29%20%28David%20Dagon%29.pdf
+NDSS_08_3,A Tune-up for Tor: Improving Security and Performance in the Tor Network,Large Scale Systems,NDSS,2008,
+NDSS_08_4,Halo: High Assurance Locate for Distributed Hash Tables,Collaborative Systems,NDSS,2008,
+NDSS_08_5,Robust Receipt-Free Election System with Ballot Secrecy and Verifiability,Collaborative Systems,NDSS,2008,
+NDSS_08_6,Realizing Massive-Scale Conditional Access Systems Through Attribute-Based Cryptosystems,Collaborative Systems,NDSS,2008,
+NDSS_08_7,Analyzing Privacy in Enterprise Packet Trace Anonymization,Collaborative Systems,NDSS,2008,http://www.internetsociety.org/sites/default/files/Analyzing%20Privacy%20in%20Enterprise%20Packet%20Trace%20Anonymization%20%28paper%29%20%28Bruno%20Ribeiro%29.pdf
+NDSS_08_8,Taming the Devil: Techniques for Evaluating Anonymized Network Data,Collaborative Systems,NDSS,2008,http://www.internetsociety.org/sites/default/files/Taming%20the%20Devil%20Techniques%20for%20Evaluating%20Anonymized%20Network%20Data%20%28paper%29%20%28S.E.%20Coull%29.pdf
+NDSS_08_9,Usable PIR,Collaborative Systems,NDSS,2008,
+NDSS_08_10,Automated Whitebox Fuzz Testing,Collaborative Systems,NDSS,2008,
+NDSS_08_11,Would Diversity Really Increase the Robustness of the Routing Infrastructure Against Software Defects?,Collaborative Systems,NDSS,2008,
+NDSS_08_12,PRECIP: Towards Practical and Retrofittable Confidential Information Protection,Collaborative Systems,NDSS,2008,
+NDSS_08_13,Automatic Network Protocol Analysis,Collaborative Systems,NDSS,2008,
+NDSS_08_14,Automatic Protocol Format Reverse Engineering through Context-Aware Monitored Execution,Collaborative Systems,NDSS,2008,http://www.internetsociety.org/sites/default/files/Automatic%20Protocol%20Format%20Reverse%20Engineering%20through%20Context-Aware%20Monitored%20Execution%20%28Zhiqiang%20Lin%29.pdf
+NDSS_08_15,HookFinder: Identifying and Understanding Malware Hooking Behaviors,Collaborative Systems,NDSS,2008,
+NDSS_08_16,Measuring and Detecting Fast-Flux Service Networks,Intrusion Prevention,NDSS,2008,
+NDSS_08_17,BotSniffer: Detecting Botnet Command and Control Channels in Network Traffic,Intrusion Prevention,NDSS,2008,
+NDSS_08_18,Limits of Learning-based Signature Generation with Adversaries,Intrusion Prevention,NDSS,2008,
+NDSS_08_19,Impeding Malware Analysis Using Conditional Code Obfuscation,Malware,NDSS,2008,
+NDSS_08_20,Analysis-Resistant Malware,Malware,NDSS,2008,
+NDSS_08_21,Exploiting Opportunistic Scheduling in Cellular Data Networks,Malware,NDSS,2008,
+NDSS_05_1,Space-Efficient Block Storage Integrity,Cryptography in Network Security,NDSS,2005,http://www.internetsociety.org/sites/default/files/Space-Efficient%20Block%20Storage%20Integrity%20%28Alina%20Oprea%29pdf
+NDSS_05_2,Improved Proxy Re-Encryption Schemes with Applications to Secure Distributed Storage,Cryptography in Network Security,NDSS,2005,http://www.internetsociety.org/sites/default/files/Improved%20Proxy%20Re-Encryption%20Schemes%20with%20Applications%20to%20Secure%20Distributed%20Storage%20%28Kevin%20Fu%29pdf
+NDSS_05_3,Rekeying and Storage Cost for Multiple User Revocation,Cryptography in Network Security,NDSS,2005,http://www.internetsociety.org/sites/default/files/mainpdf
+NDSS_05_4,On a New Class of Pulsing Denial-of-Service Attacks and the Defense,Denial of Service Attacks,NDSS,2005,http://www.internetsociety.org/sites/default/files/On%20a%20New%20Class%20of%20Pulsing%20Denial-of-Service%20Attacks%20and%20the%20Defense%20%28Xiapu%20Luo%29pdf
+NDSS_05_5,MOVE:  An End-to-End Solution to Network Denial of Service,Denial of Service Attacks,NDSS,2005,http://www.internetsociety.org/sites/default/files/move.pdf
+NDSS_05_6,Security Analysis and Improvements for IEEE 802.11i,Denial of Service Attacks,NDSS,2005,http://www.internetsociety.org/sites/default/files/Security%20Analysis%20and%20Improvements%20for%20IEEE%20802.11i%20%28Changhua%20He%29pdf
+NDSS_05_7,Privacy-Preserving Friends Troubleshooting Network,Peer-to-Peer Approaches,NDSS,2005,http://www.internetsociety.org/sites/default/files/Privacy-Preserving%20Friends%20Troubleshooting%20Network%20%28Qiang%20Huang%29pdf
+NDSS_05_8,Pretty Secure BGP; psBGP,Peer-to-Peer Approaches,NDSS,2005,http://www.internetsociety.org/sites/default/files/Pretty%20Secure%20BGP%2C%20psBGP%20%28Tao%20Wan%29pdf
+NDSS_05_9,New Streaming Algorithms for Fast Detection of Superspreaders,Internet Defense,NDSS,2005,http://www.internetsociety.org/sites/default/files/New%20Streaming%20Algorithms%20for%20Fast%20Detection%20of%20Superspreaders%20%28Avrim%20Blum%29pdf
+NDSS_05_10,The Internet Motion Sensor - A Distributed Blackhole Monitoring System,Internet Defense,NDSS,2005,http://www.internetsociety.org/sites/default/files/The%20Internet%20Motion%20Sensor%20-%20A%20Distributed%20Blackhole%20Monitoring%20System%20%28Evan%20Cooke%29pdf
+NDSS_05_11,DNS-based Detection of Scanning Worms in an Enterprise Network,Internet Defense,NDSS,2005,http://www.internetsociety.org/sites/default/files/DNS-based%20Detection%20of%20Scanning%20Worms%20in%20an%20Enterprise%20Network%20%28David%20Whyte%29pdf
+NDSS_05_12,DIRA: Automatic Detection; Identification and Repair of Control-Hijacking Attacks,Intrusion Detection,NDSS,2005,http://www.internetsociety.org/sites/default/files/DIRA%20Automatic%20Detection%2C%20Identification%20and%20Repair%20of%20Control-Hijacking%20Attackspdf
+NDSS_05_13,Dynamic Taint Analysis for Automatic Detection; Analysis; and SignatureGeneration of Exploits on Commodity Software,Intrusion Detection,NDSS,2005,http://www.internetsociety.org/sites/default/files/Dynamic%20Taint%20Analysis%20for%20Automatic%20Detection%2C%20Analysis%2C%20and%20SignatureGeneration%20of%20Exploits%20on%20Commodity%20Software%20%28Dawn%20Song%29pdf
+NDSS_05_14,Enriching Intrusion Alerts Through Multi-Host Causality,Intrusion Detection,NDSS,2005,http://www.internetsociety.org/sites/default/files/Enriching%20Intrusion%20Alerts%20Through%20Multi-Host%20Causality%20%28Morley%20Mao%29pdf
+NDSS_05_15,A Black-Box Tracing Technique to Identify Causes of Least-Privilege Incompatibilities,Platform Security,NDSS,2005,http://www.internetsociety.org/sites/default/files/A%20Black-Box%20Tracing%20Technique%20to%20Identify%20Causes%20of%20Least-Privilege%20Incompatibilities%20%28Shuo%20Chen%29pdf
+NDSS_05_16,One-Way Isolation:  An Effective Approach for Realizing Safe Execution Environments,Platform Security,NDSS,2005,http://www.internetsociety.org/sites/default/files/One-Way%20Isolation%20%20An%20Effective%20Approach%20for%20Realizing%20Safe%20Execution%20Environments%20%28Weiqing%20Sun%29.pdf
+NDSS_00_1,A First Step Towards Automated Detection of Buffer Overrun Vulnerabilities,SOFTWARE ASSURANCE,NDSS,2000,http://www.internetsociety.org/sites/default/files/A%20First%20Step%20Towards%20Automated%20Detection%20of%20Buffer%20Overrun%20Vulnerabilities%20%5BPaper%5D%20%28David%20Wagner%29.pdf
+NDSS_00_2,User-Level Infrastructure for System Call Interposition: A Platform for Intrusion Detection and Confinement,SOFTWARE ASSURANCE,NDSS,2000,http://www.internetsociety.org/sites/default/files/User-Level%20Infrastructure%20for%20System%20Call%20Interposition%20A%20Platform%20for%20Intrusion%20Detection%20and%20Confinement%20%28K.%20Jain%29.pdf
+NDSS_00_3,Optimized Rekey for Group Communication Systems,GROUP AND MULTICAST SECURITY,NDSS,2000,http://www.internetsociety.org/sites/default/files/Optimized%20Rekey%20for%20Group%20Communication%20Systems%20%28paper%29%28Ohad%20Rodeh%29.pdf
+NDSS_00_4,An IPSec-based Host Architecture for Secure Internet Multicast,GROUP AND MULTICAST SECURITY,NDSS,2000,http://www.internetsociety.org/sites/default/files/An%20IPSec-based%20Host%20Architecture%20for%20Secure%20Internet%20Multicast%20%28paper%29%20%28Ran%20Canetti%29.pdf
+NDSS_00_5,A First Step Towards the Automatic Generation of Security Protocols,PROTOCOLS I,NDSS,2000,http://www.internetsociety.org/sites/default/files/A%20First%20Step%20Towards%20the%20Automatic%20Generation%20of%20Security%20Protocols%20%28paper%29%20%28Adrian%20Perrig%29.pdf
+NDSS_00_6,A Revocation; Validation and Authentication Protocol for SPKI Based Delegation Systems,PROTOCOLS I,NDSS,2000,http://www.internetsociety.org/sites/default/files/A%20Revocation%2C%20Validation%20and%20Authentication%20Protocol%20for%20SPKI%20Based%20Delegation%20Systems%20%28paper%29%28Yki%20Kortesniemi%29.pdf
+NDSS_00_7,Secure Border Gateway Protocol (S-BGP) - Real World Performance and Deployment Issues,PROTOCOLS I,NDSS,2000,http://www.internetsociety.org/sites/default/files/Secure%20Border%20Gateway%20Protocol%20%28S-BGP%29%20-%20Real%20World%20Performance%20and%20Deployment%20Issues%20%28paper%29%28Stephen%20Kent%29.pdf
+NDSS_00_8,Analysis of a Fair Exchange Protocol,PROTOCOLS II,NDSS,2000,http://www.internetsociety.org/sites/default/files/Analysis%20of%20a%20Fair%20Exchange%20Protocol%20%28paper%29%20%28Vitaty%20Shmatkov%29.pdf
+NDSS_00_9,Secure Password-Based Cipher Suite for TLS,PROTOCOLS II,NDSS,2000,http://www.internetsociety.org/sites/default/files/Secure%20Password-Based%20Cipher%20Suite%20for%20TLS%20%28paper%29%20%28Peter%20Buhler%29.pdf
+NDSS_00_10,Chameleon Signatures,PROTOCOLS II,NDSS,2000,http://www.internetsociety.org/sites/default/files/Chameleon%20Signatures%20%28paper%29%20%28Hugo%20Krawczyk%29.pdf
+NDSS_00_11,A Lightweight Tool for Detecting Web Server Attacks,INTRUSION DETECTION,NDSS,2000,http://www.internetsociety.org/sites/default/files/A%20Lightweight%20Tool%20for%20Detecting%20Web%20Server%20Attacks%20%28paper%29%20%28Magnus%20Almgren%29.pdf
+NDSS_00_12,Building Adaptive and Agile Applications Using Intrusion Detection and Response,INTRUSION DETECTION,NDSS,2000,http://www.internetsociety.org/sites/default/files/Building%20Adaptive%20and%20Agile%20Applications%20Using%20Intrusion%20Detection%20and%20Response%20%28paper%29%20%28Joshep%20P.%20Loyall%29.pdf
+NDSS_00_13,Secure Virtual Enclaves: Supporting Coalition Use of Distributed Application Technologies,DISTRIBUTED SYSTEMS,NDSS,2000,http://www.internetsociety.org/sites/default/files/Secure%20Virtual%20Enclaves%20Supporting%20Coalition%20Use%20of%20Distributed%20Application%20Technologies%20%28paper%29%20%28Deborah%20Shands%29.pdf
+NDSS_00_14,Security of Encrypted rlogin Connections Created With Kerberos IV,DISTRIBUTED SYSTEMS,NDSS,2000,http://www.internetsociety.org/sites/default/files/Security%20of%20Encrypted%20rlogin%20Connections%20Created%20With%20Kerberos%20IV%20%28Kirsten%20Hildrum%29.pdf
+NDSS_00_15,Accountability and Control of Process Creation in Metasystems,DISTRIBUTED SYSTEMS,NDSS,2000,http://www.internetsociety.org/sites/default/files/Accountability%20and%20Control%20of%20Process%20Creation%20in%20Metasystems%20%28Marty%20Humphrey%29.pdf

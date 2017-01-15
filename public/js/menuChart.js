@@ -1,8 +1,4 @@
 /**
- * Created by saharmehrpour on 10/22/16.
- */
-
-/**
  * Constructor for the MenuChart
  */
 function MenuChart(topicLabels) {

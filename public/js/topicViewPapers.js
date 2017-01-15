@@ -1,8 +1,4 @@
 /**
- * Created by sahar on 2016-10-26.
- */
-
-/**
  * Constructor for the TopicViewPaper
  */
 function TopicViewPapers(papers, paperTopics) {
@@ -15,7 +11,7 @@ function TopicViewPapers(papers, paperTopics) {
     self.papers = papers;
 
     self.dimensions = {
-        "barsCellWidth": 50, "barsCellHeight": 20
+        "barsCellWidth": 150, "barsCellHeight": 20
     };
 
     self.xTop = 10;
@@ -163,9 +159,9 @@ TopicViewPapers.prototype.paperInfo = function(paperID) {
     if (s.length == 0) return "no entry for '" + paperID + "' in paper.csv dataset";
     if (s.length > 1) return "redundant entry for '" + paperID + "' in paper.csv dataset";
 
-    var title = s[0]["Title"] + ", " + s[0]["Conference"];
+    var title = s[0]["Title"] + ", " + s[0]["Conference"] + " " + s[0]["Year"];
     if (s[0]["Session"] !== "")
-        title = title + ", " + s[0]["Session"];
-    return title + ", " + s[0]["Year"];
+        title = title + ", Session: " + s[0]["Session"];
+    return title;
 
 };

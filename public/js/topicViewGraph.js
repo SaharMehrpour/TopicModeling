@@ -1,8 +1,4 @@
 /**
- * Created by sahar on 2016-10-25.
- */
-
-/**
  * Constructor for the TopicViewGraph
  */
 function TopicViewGraph(topicYears,topicViewPapers) {
@@ -13,9 +9,10 @@ function TopicViewGraph(topicYears,topicViewPapers) {
     self.topicYears = topicYears;
     self.topicViewPapers = topicViewPapers;
 
+    width = 800;//parseInt(window.innerWidth)*.75*.75;
     self.dimensions = {
-        "svgWidth": 750, "svgHeight" : 300,
-        "graphWidth": 700, "graphHeight": 250
+        "svgWidth": width, "svgHeight" : 300,
+        "graphWidth": width, "graphHeight": 250
     };
 
     self.margins = {
@@ -37,7 +34,7 @@ TopicViewGraph.prototype.update = function(topicID) {
     })[0];
 
     var yearsColorScale = d3.scaleLinear()
-        .range(["lightblue", "darkblue"])
+        .range(["lightsteelblue", "#003366"])
         .domain([0, d3.max(years, function (g) {
             return +g;
         })]);
@@ -93,7 +90,8 @@ TopicViewGraph.prototype.update = function(topicID) {
         .range([self.dimensions.graphHeight, 0]);
 
     var yAxis = d3.axisLeft()
-        .scale(yAxisScale);
+        .scale(yAxisScale)
+        .tickFormat(d3.format("d"));
 
     self.div.select("svg").append("g")
         .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
@@ -134,6 +132,7 @@ TopicViewGraph.prototype.update = function(topicID) {
         .attr("fill", function (d) {
             return yearsColorScale(+d);
         })
+        /*.attr("fill", "#003366")*/
         .on("click", function (d, i) {
             if (d3.select(this).classed("selectedBar")) {
                 d3.select(this).classed("selectedBar", false);

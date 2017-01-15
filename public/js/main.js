@@ -1,7 +1,3 @@
-/**
- * Created by saharmehrpour on 10/22/16.
- */
-
 (function(){
     var instance = null;
 

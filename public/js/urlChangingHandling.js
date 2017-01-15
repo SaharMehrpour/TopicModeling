@@ -1,6 +1,3 @@
-/**
- * Created by sahar on 2016-10-26.
- */
 
 function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,wordViewIndex) {
     self = this;
@@ -56,6 +53,8 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
     else if(splittedHash[1] === 'doc'){
         if(splittedHash.length < 3){
             console.log("error in parsing the URL");
+            d3.select("#temp_view").html("Please select a paper from the Paper List.")
+                .classed("hidden",false);
             return;
         }
         var paperID = splittedHash[2];
@@ -66,7 +65,11 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
         self.bibView.update(paperID);
     }
 
-    else if(splittedHash[1] === 'words'){
+    else if(splittedHash[1] === 'wordIndex'){
         self.wordViewIndex.update();
+    }
+
+    else if(splittedHash[1] === 'files'){
+        d3.select("#file_view").classed('hidden', false);
     }
 };
