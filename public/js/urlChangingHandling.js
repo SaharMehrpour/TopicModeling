@@ -1,6 +1,18 @@
-
-function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,wordViewIndex) {
-    self = this;
+/**
+ * This module handles changes in Hash address
+ */
+/**
+ * @param menuChart
+ * @param modelViewList
+ * @param topicView
+ * @param docView
+ * @param bibView
+ * @param wordViewIndex
+ * @param authorView
+ * @constructor
+ */
+function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,wordViewIndex,authorView) {
+    var self = this;
 
     self.modelViewList = modelViewList;
     self.topicView = topicView;
@@ -8,10 +20,17 @@ function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,w
     self.docView = docView;
     self.bibView = bibView;
     self.wordViewIndex = wordViewIndex;
+    self.authorView = authorView;
 
 }
 
+/**
+ * This class updates the view based on changes in Hash address
+ * @param hash
+ */
 UrlChangingHandling.prototype.hashChangedHandler = function(hash){
+
+    var self = this;
 
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 
@@ -62,6 +81,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
     }
 
     else if(splittedHash[1] === 'bib'){
+        var paperID = splittedHash[2];
         self.bibView.update(paperID);
     }
 
@@ -71,5 +91,16 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
 
     else if(splittedHash[1] === 'files'){
         d3.select("#file_view").classed('hidden', false);
+    }
+
+    else if(splittedHash[1] === 'author'){
+        if(splittedHash.length < 3){
+            console.log("error in parsing the URL");
+            d3.select("#temp_view").html("Please select an author from the Author List.")
+                .classed("hidden",false);
+            return;
+        }
+        var authorID = splittedHash[2];
+        self.authorView.update(authorID);
     }
 };

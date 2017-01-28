@@ -1,5 +1,12 @@
 /**
- * Constructor for the ModelViewList
+ * This module create the model view of the topics.
+ */
+/**
+ * @param topicWords
+ * @param topicNames
+ * @param paperTopics
+ * @param topicYears
+ * @constructor
  */
 function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
 
@@ -18,8 +25,6 @@ function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
     self.paperTopics = paperTopics;
     self.topicYears = topicYears;
 
-    //self.topicView = topicView; // Instance of TopicView used for interaction
-
     self.dimensions = {
         "topicCellwidth": 80, "yearCellWidth": 120, "wordCellWidth": 100, "corpusCellWidth": 80,
         "yearCellHeight": 40, "corpusCellHeight": 20
@@ -35,10 +40,14 @@ function ModelViewList(topicWords,topicNames,paperTopics,topicYears) {
 
 }
 
-
+/**
+ * This function populate the svg table
+ */
 ModelViewList.prototype.init = function() {
 
     var self = this;
+
+    // sorting option for headers
 
     var headers = self.table.select("thead")
         .selectAll("th")
@@ -73,166 +82,12 @@ ModelViewList.prototype.init = function() {
 
         });
 
-    // populate the table
-
-    var rows = self.table.select("tbody").selectAll("tr")
-        .data(self.topicWords);
-
-    rows.exit().remove();
-
-    var enterRows = rows.enter()
-        .append("tr")
-        .on("click", function (d, i) {  // clicking a row in a table will do this
-
-            //self.menu.classed("hidden",true);
-            location.hash = "#/topic/" + d["id"];
-        });
-
-    var cells = enterRows.merge(rows).selectAll("td")
-        .data(function (d) {
-            return [
-                {'type': 'topic_name', 'value': self.topicNames[d["id"]]["label"]}, // data for column 1
-                {'type': 'year_bars', 'value': self.topicYears[d["id"]]["years"]},  // data for column 2
-                {'type': 'topic_words', 'value': d},   // data for column 3
-                {'type': 'corpus', 'value': d["id"]}  // data for column 4
-                // add the data for more columns
-            ];
-        });
-
-    var enterCells = cells.enter().append("td");
-    cells = enterCells.merge(cells);
-
-    // 1st Column
-
-    var topicName = cells.filter(function (d) {
-        return d.type == 'topic_name'
-    })
-        .attr("width", self.dimensions.topicCellwidth)
-        .each(function (d) {
-            d3.select(this)
-                .text(function () {
-                    return d.value;
-                });
-        });
-
-
-    // 2nd Column
-
-    var yearBars = cells.filter(function (d) {
-        return d.type == 'year_bars';
-    }).each(function (d) {
-
-        var years = d3.dsvFormat(";").parseRows(d.value, function (g) {
-            return g;
-        })[0];
-
-
-        var yearsColorScale = d3.scaleLinear()
-            .range(["lightsteelblue", "#003366"])
-            //.domain([0, d3.max(years, function (g) {
-            //    return +g;
-            //})]);
-            .domain([0, self.maxBarValue]);
-
-        var yScale = d3.scaleLinear()
-            .range([0, self.dimensions.yearCellHeight])
-            //.domain([0, d3.max(years, function (g) {
-            //    return +g;
-            //})]);
-            .domain([0, self.maxBarValue]);
-
-        var xScale = d3.scaleLinear()
-            .range([0, self.dimensions.yearCellWidth])
-            .domain([0, years.length]);
-
-        d3.select(this).selectAll("svg").remove();
-
-        var group = d3.select(this)
-            .append("svg")
-            .attr("width", self.dimensions.yearCellWidth)
-            .attr("height", self.dimensions.yearCellHeight)
-            .append("g")
-            .attr("transform", "translate(0, " + self.dimensions.yearCellHeight + " ) scale(1,-1)");
-
-        var rects = group
-            .selectAll("rect")
-            .data(years);
-
-        rects.enter()
-            .append("rect")
-            .attr("x", function (dd, ii) {
-                return xScale(ii);
-            })
-            .attr("y", 0)
-            .attr("height", function (dd) {
-                return yScale(+dd);
-            })
-            .attr("width", xScale(1))
-            .attr("fill", function (dd) {
-                return yearsColorScale(+dd);
-            });
-    });
-
-    // 3rd Column
-
-    var topicWords = cells.filter(function (d) {
-        return d.type == 'topic_words'
-    }).each(function (d) {
-        d3.select(this)
-            .text(function () {
-                return self.findTopWord(d.value);
-            });
-    });
-
-    // 4th Column
-
-    var corpusColorScale = d3.scaleLinear()
-        .range(['#ece2f0', '#016450'])
-        .domain([0, self.maxCorpusValue]);
-
-    var barScale = d3.scaleLinear()
-        .range([0, self.dimensions.corpusCellWidth])
-        .domain([0, self.maxCorpusValue]);
-
-    cells.filter(function (d) {
-        return d.type == 'corpus';
-    }).each(function (d) {
-
-        d3.select(this).selectAll("svg").remove();
-
-        var group = d3.select(this).append("svg")
-            .attr("width", self.dimensions.corpusCellWidth)
-            .attr("height", self.dimensions.corpusCellHeight)
-            .append("g");
-
-        group.append("rect")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("width", function () {
-                return barScale(+self.computeCorpus(+d.value));
-            })
-            .attr("height", self.dimensions.corpusCellHeight)
-            .attr("fill", function () {
-                return corpusColorScale(+self.computeCorpus(+d.value));
-            });
-
-        group.append("text")
-            .attr("x", 5)
-            .attr("y", self.dimensions.corpusCellHeight / 2)
-            .attr("dy", ".35em")
-            .text(function () {
-                return self.computeCorpus(d.value) + "%";
-            })
-            .attr("class", "corpusText");
-    });
-
-    // add more columns
+    self.update();
 };
 
-/*
-Update the table
+/**
+ * This function update the table, initially and when sorted
  */
-
 ModelViewList.prototype.update = function() {
     var self = this;
 
@@ -394,10 +249,11 @@ ModelViewList.prototype.update = function() {
 
 };
 
-/*
-Compute the Portion of corpus
+/**
+ * This function compute the corpus of a topic
+ * @param topicIndex
+ * @returns {*}
  */
-
 ModelViewList.prototype.computeCorpus = function (topicIndex) {
     var self = this;
 
@@ -408,8 +264,10 @@ ModelViewList.prototype.computeCorpus = function (topicIndex) {
     return d3.format(".3n")(papersWithTopic.length / self.paperTopics.length * 100);
 };
 
-/*
-Sort words based on weight.
+/**
+ * This function returns xTopWords for a given list of words-weights
+ * @param wordWeight
+ * @returns {string}
  */
 ModelViewList.prototype.findTopWord = function(wordWeight) {
     var self = this;

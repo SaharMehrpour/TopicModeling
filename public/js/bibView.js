@@ -1,6 +1,11 @@
 /**
- * Constructor for the BibView
+ * This module create a bibliography view for a list of papers
  */
+/**
+ * @param papers
+ * @constructor
+ */
+
 function BibView(papers) {
 
     var self = this;
@@ -12,20 +17,22 @@ function BibView(papers) {
     self.papers = papers;
     self.papersToShow = papers;
 
+    // sorting papers based on years
     self.papers.sort(function (a, b) {
         return d3.ascending(a["Year"], b["Year"]);
     });
 
+    // grouping papers based on years
     var papersYears = d3.nest().key(function (d) {
         return d["Year"];
     }).entries(self.papers);
 
+    // conference selection options
+    // adding listeners on check-boxes
     d3.select("#conf_sidebar").selectAll("input")
         .on("change", function () {
             var input = this;
             window.scrollTo(0, 0);
-
-            console.log(d3.select(input).property("checked"));
 
             if (d3.select(input).property("checked")) {
                 var dataToAppend = self.papers
@@ -45,7 +52,9 @@ function BibView(papers) {
                 return d["Year"];
             }).entries(self.papersToShow);
 
-            console.log(self.papersToShow.length);
+            newPapersYears.sort(function (a, b) {
+                return d3.ascending(a.key, b.key);
+            });
 
             self.populate(newPapersYears);
 
@@ -55,10 +64,16 @@ function BibView(papers) {
 
 }
 
+/**
+ * This class populate the view by grouped papers
+ * @param papersYears
+ */
 BibView.prototype.populate = function(papersYears) {
 
     var self = this;
 
+    // Clear existing content in the div
+    // useful when repopulating for selected conferences
     self.paperSection.selectAll("div")
         .remove();
 
@@ -77,7 +92,6 @@ BibView.prototype.populate = function(papersYears) {
         });
 
     yearsSecEnter.each(function (d,i) {
-
         d3.select(this).selectAll("ul")
             .data(d.values)
             .enter()
@@ -91,7 +105,6 @@ BibView.prototype.populate = function(papersYears) {
     });
 
     // Year Nav bar
-
     var ul = self.yearNav.selectAll("ul")
         .data([1])
         .enter()
@@ -113,6 +126,11 @@ BibView.prototype.populate = function(papersYears) {
 
 };
 
+/**
+ * This function returns information of a paper given an ID
+ * @param paperID
+ * @returns {string}
+ */
 BibView.prototype.paperInfo = function(paperID) {
     var self = this;
 
@@ -131,31 +149,11 @@ BibView.prototype.paperInfo = function(paperID) {
 
 };
 
-
+/**
+ * This function makes the view visible
+ */
 BibView.prototype.update = function() {
 
     var self = this;
-
     self.div.classed("hidden",false);
-};
-
-BibView.prototype.updateConference = function(conf) {
-
-    var self = this;
-
-    self.paperSection.selectAll("div").remove();
-
-    var conf_paper = self.papers.filter(function (d) {
-       return d["Conference"] == conf
-    });
-
-    conf_paper.sort(function (a,b) {
-        return d3.ascending(a["Year"],b["Year"]);
-    });
-
-    var papersYears = d3.nest().key(function (d) {
-        return d["Year"];
-    }).entries(conf_paper);
-
-    self.populate(papersYears);
 };

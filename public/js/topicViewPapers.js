@@ -1,5 +1,10 @@
 /**
- * Constructor for the TopicViewPaper
+ * This module creates and updates an svg table of papers for a topic in a topic view
+ */
+/**
+ * @param papers
+ * @param paperTopics
+ * @constructor
  */
 function TopicViewPapers(papers, paperTopics) {
 
@@ -18,7 +23,11 @@ function TopicViewPapers(papers, paperTopics) {
 
 }
 
-
+/**
+ * This function update the svg table given a topic ID
+ * @param topicID
+ * @param year
+ */
 TopicViewPapers.prototype.update = function(topicID,year) {
 
     var self = this;
@@ -30,7 +39,7 @@ TopicViewPapers.prototype.update = function(topicID,year) {
 
     var topDocs;
 
-    if(year !== undefined) {
+    if (year !== undefined) {
         topDocs = self.paperTopics
             .filter(function (d) {
 
@@ -51,9 +60,7 @@ TopicViewPapers.prototype.update = function(topicID,year) {
             .filter(function (d, i) {
                 return (/*i < self.xTop &&*/ d[topicID] > 0);
             });
-
     }
-
 
     var rows = self.table.select("tbody").selectAll("tr")
         .data(topDocs);
@@ -97,14 +104,14 @@ TopicViewPapers.prototype.update = function(topicID,year) {
 
     var weightColorScale = d3.scaleLinear()
         .range(['#ece2f0', '#016450'])
-        .domain([0,1]);
+        .domain([0, 1]);
     //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
     //    return +g;
     //})]);
 
     var weightXScale = d3.scaleLinear()
         .range([0, self.dimensions.barsCellWidth])
-        .domain([0,1]);
+        .domain([0, 1]);
     //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
     //    return +g;
     //})]);
@@ -149,7 +156,11 @@ TopicViewPapers.prototype.update = function(topicID,year) {
 
 };
 
-
+/**
+ * This function return the information of a paper given an ID
+ * @param paperID
+ * @returns {string}
+ */
 TopicViewPapers.prototype.paperInfo = function(paperID) {
     var self = this;
     var s = self.papers

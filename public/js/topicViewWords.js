@@ -1,8 +1,14 @@
-
 /**
- * Constructor for the TopicViewTable
+ * This module creates and updates the list of words and their weights for a topic view
+ * given the data set of the topic-words
+ *
+ * renamed from topicViewTable
  */
-function TopicViewTable(topicWords) {
+/**
+ * @param topicWords
+ * @constructor
+ */
+function TopicViewWords(topicWords) {
 
     var self = this;
 
@@ -16,8 +22,11 @@ function TopicViewTable(topicWords) {
 
 }
 
-
-TopicViewTable.prototype.update = function(topicID) {
+/**
+ * This function updates the list of words given a topic ID
+ * @param topicID
+ */
+TopicViewWords.prototype.update = function(topicID) {
     var self = this;
 
     // TODO: sort topicWords
@@ -29,8 +38,8 @@ TopicViewTable.prototype.update = function(topicID) {
 
     var enterRows = rows.enter()
         .append("tr")
-        .on("click", function (d, i) {  // clicking a row in a table will do this
-            // some function
+        .on("click", function (d) {  // clicking a row in a table will do this
+            location.hash = "#/word/" + d;
         });
 
     var cells = enterRows.merge(rows).selectAll("td")
@@ -94,16 +103,16 @@ TopicViewTable.prototype.update = function(topicID) {
             .attr("fill", function () {
                 return weightColorScale(+d.value);
             });
-/*
-        group.append("text")
-            .attr("x", 5)
-            .attr("y", self.dimensions.weigthCellHeight / 2)
-            .attr("dy", ".35em")
-            .text(function () {
-                return d.value;
-            })
-            .attr("class", "corpusText");
-*/
+        /*
+         group.append("text")
+         .attr("x", 5)
+         .attr("y", self.dimensions.weigthCellHeight / 2)
+         .attr("dy", ".35em")
+         .text(function () {
+         return d.value;
+         })
+         .attr("class", "corpusText");
+         */
     });
 
     // add more columns

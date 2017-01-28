@@ -1,5 +1,9 @@
 /**
- * Constructor for the WordIndexView
+ * This module creates the view for the list of words
+ */
+/**
+ * @param topicWords
+ * @constructor
  */
 function WordIndexView(topicWords) {
 
@@ -13,6 +17,9 @@ function WordIndexView(topicWords) {
 
 }
 
+/**
+ * This function populates the view with the list of all words
+ */
 WordIndexView.prototype.init = function() {
 
     var self = this;
@@ -50,7 +57,9 @@ WordIndexView.prototype.init = function() {
 
 };
 
-
+/**
+ * This function update the view by making it visible
+ */
 WordIndexView.prototype.update = function() {
 
     var self = this;

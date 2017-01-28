@@ -1,5 +1,10 @@
 /**
- * Constructor for the TopicViewGraph
+ * This module creates and updates the time-line for the topic view
+ */
+/**
+ * @param topicYears
+ * @param topicViewPapers
+ * @constructor
  */
 function TopicViewGraph(topicYears,topicViewPapers) {
 
@@ -9,7 +14,10 @@ function TopicViewGraph(topicYears,topicViewPapers) {
     self.topicYears = topicYears;
     self.topicViewPapers = topicViewPapers;
 
-    width = 800;//parseInt(window.innerWidth)*.75*.75;
+    var width = parseInt(window.innerWidth)*.75*.75; //800
+
+    console.log(parseInt(window.innerWidth));
+
     self.dimensions = {
         "svgWidth": width, "svgHeight" : 300,
         "graphWidth": width, "graphHeight": 250
@@ -24,10 +32,15 @@ function TopicViewGraph(topicYears,topicViewPapers) {
 
 }
 
-
+/**
+ * This function updates the time-line based on a new topic ID
+ * @param topicID
+ */
 TopicViewGraph.prototype.update = function(topicID) {
 
     var self = this;
+
+    // TODO: fix the width of the graph when window is changed
 
     var years = d3.dsvFormat(";").parseRows(self.topicYears[topicID]["years"], function (g) {
         return g;
@@ -102,7 +115,7 @@ TopicViewGraph.prototype.update = function(topicID) {
     //});
 
 
-    /*
+/*
      // add grid lines
      var gridlines = self.div.select("svg").append("g")
      .attr("transform", "translate(" + self.margins.left + "," + self.margins.top + ")")
@@ -110,7 +123,7 @@ TopicViewGraph.prototype.update = function(topicID) {
      .call(yAxis
      .tickSize(-self.dimensions.graphWidth)
      .tickFormat(""));
-     */
+*/
 
     // add bars
 

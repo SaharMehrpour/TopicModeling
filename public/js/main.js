@@ -8,47 +8,50 @@
     function init() {
         //Creating instances for each visualization
 
-        var menu = new MenuChart();
-
         d3.csv("data/Papers.csv", function (error, papers) {
             d3.json("data/Topic_words.json", function (error, topicWords) {
                 d3.csv("data/Topic_labels.csv", function (error, topicLabels) {
                     d3.csv("data/Paper_topics.csv", function (error, paperTopics) {
                         d3.csv("data/Topic_years.csv", function (error, topicYears) {
+                            d3.csv("data/paper_authors.csv", function (error, paperAuthors) {
 
-                            var menuChart = new MenuChart(topicLabels);
+                                var menuChart = new MenuChart(topicLabels);
 
-                            var modelViewList = new ModelViewList(topicWords, topicLabels,
-                                paperTopics, topicYears);
+                                var modelViewList = new ModelViewList(topicWords, topicLabels,
+                                    paperTopics, topicYears);
 
-                            var topicView = new TopicView(topicWords, topicLabels, topicYears, papers, paperTopics);
+                                var topicView = new TopicView(topicWords, topicLabels, topicYears, papers, paperTopics);
 
-                            var docView = new DocView(papers, paperTopics, topicLabels, topicWords);
+                                var docView = new DocView(papers, paperTopics, topicLabels, topicWords);
 
-                            var bibView = new BibView(papers);
+                                var bibView = new BibView(papers);
 
-                            var wordViewIndex = new WordIndexView(topicWords);
+                                var wordViewIndex = new WordIndexView(topicWords);
 
-                            var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList, topicView, docView, bibView, wordViewIndex);
+                                var authorView = new AuthorView(paperAuthors);
 
-                            if ("onhashchange" in window) { // event supported?
-                                window.onhashchange = function () {
-                                    urlChangingHandler.hashChangedHandler(window.location.hash);
-                                }
-                            }
-                            else { // event not supported:
-                                var storedHash = window.location.hash;
-                                window.setInterval(function () {
-                                    if (window.location.hash != storedHash) {
-                                        storedHash = window.location.hash;
-                                        urlChangingHandler.hashChangedHandler(storedHash);
+                                var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
+                                    , topicView, docView, bibView, wordViewIndex, authorView);
+
+                                if ("onhashchange" in window) { // event supported?
+                                    window.onhashchange = function () {
+                                        urlChangingHandler.hashChangedHandler(window.location.hash);
                                     }
-                                }, 100);
-                            }
+                                }
+                                else { // event not supported:
+                                    var storedHash = window.location.hash;
+                                    window.setInterval(function () {
+                                        if (window.location.hash != storedHash) {
+                                            storedHash = window.location.hash;
+                                            urlChangingHandler.hashChangedHandler(storedHash);
+                                        }
+                                    }, 100);
+                                }
 
-                            location.hash = "#/secPriveMeta"; // initial page
+                                location.hash = "#/secPriveMeta"; // initial page
 
-                            menuChart.init();
+                                menuChart.init();
+                            });
                         });
                     });
                 });

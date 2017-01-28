@@ -19,17 +19,20 @@
 <div id="main_nav">
     <ul class="navbar">
         <li id="nav_secPriveMeta" class="active"><a href="#/secPriveMeta">About</a></li>
-      <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
-      <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic <span class="caret"></span></a>
-          <div id="topic_dropdown_div" class="dropdown-content" style="max-height: 600px; height: 600px; overflow: auto;"></div>
-      </li>
-      <li id="nav_bib"><a href="#/bib">Paper List</a></li>
-      <li id="nav_doc"><a href="#/doc">Paper</a></li>
-      <li id="nav_wordIndex"><a href="#/wordIndex">Word Index</a></li>
-      
-      <li id="nav_settings" style="float:right"><a style="padding-right:0px" href="#/settings">Settings</a></li>
-      <li id="nav_files" style="float:right"><a href="#/files">Downloads</a></li>
-      <!--<li id="nav_about" style="float:right"><a href="#/about">About</a></li>-->
+        <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
+        <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic <span class="caret"></span></a>
+            <div id="topic_dropdown_div" class="dropdown-content" style="max-height: 600px; height: 600px; overflow: auto;"></div>
+        </li>
+        <li id="nav_bib"><a href="#/bib">Paper List</a></li>
+        <li id="nav_doc"><a href="#/doc">Paper</a></li>
+        <li id="nav_wordIndex"><a href="#/wordIndex">Word Index</a></li>
+        <!--<li id="nav_word"><a href="#/word">Word</a></li>-->
+        <li id="nav_aut"><a href="#/aut">Author List</a></li>
+        <!--<li id="nav_author"><a href="#/author">Author</a></li>-->
+
+        <li id="nav_settings" style="float:right"><a style="padding-right:0px" href="#/settings">Settings</a></li>
+        <li id="nav_files" style="float:right"><a href="#/files">Downloads</a></li>
+        <!--<li id="nav_about" style="float:right"><a href="#/about">About</a></li>-->
     </ul>
 </div>
 
@@ -155,19 +158,40 @@
         </div>
         <div id="wordIndex_view" class="main_view hidden cont1"></div>
         <div id="temp_view" class="main_view"></div>
+        <div id="author_view" class="main_view hidden">
+            <div>
+                <h3 id="author_name"></h3>
+            </div>
+            <div>
+                <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Papers</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                </div>
+                <div id="author_col"></div>
+            <div>
+        </div>
     </div>
 </div>
 
 
 <script type="application/javascript" src="public/js/modelViewList.js"></script>
 <script type="application/javascript" src="public/js/topicViewGraph.js"></script>
-<script type="application/javascript" src="public/js/topicViewTable.js"></script>
+<script type="application/javascript" src="public/js/topicViewWords.js"></script>
 <script type="application/javascript" src="public/js/topicViewPapers.js"></script>
 <script type="application/javascript" src="public/js/topicView.js"></script>
 <script type="application/javascript" src="public/js/menuChart.js"></script>
 <script type="application/javascript" src="public/js/docView.js"></script>
 <script type="application/javascript" src="public/js/bibView.js"></script>
 <script type="application/javascript" src="public/js/wordIndexView.js"></script>
+<script type="application/javascript" src="public/js/authorView.js"></script>
 <script type="application/javascript" src="public/js/urlChangingHandling.js"></script>
 <script type="application/javascript" src="public/js/main.js"></script>
 

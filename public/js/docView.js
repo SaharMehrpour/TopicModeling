@@ -1,6 +1,13 @@
+/**
+ * This module create a view for visualizing information of a paper
+ */
 
 /**
- * Constructor for the docView
+ * @param papers
+ * @param paperTopics
+ * @param topicLabels
+ * @param topicWords
+ * @constructor
  */
 function DocView(papers, paperTopics, topicLabels, topicWords) {
 
@@ -23,7 +30,10 @@ function DocView(papers, paperTopics, topicLabels, topicWords) {
     };
 }
 
-
+/**
+ * This function updates a view given a paper ID
+ * @param paperID
+ */
 DocView.prototype.update = function(paperID) {
 
     var self = this;
@@ -67,6 +77,7 @@ DocView.prototype.update = function(paperID) {
             return d["paper"] == paperID;
         });
 
+    // finding xTop topics for the paper
 
     var topicsValues = [];
 
@@ -85,18 +96,15 @@ DocView.prototype.update = function(paperID) {
 
 //***************
 
+    // Populate the svg table
+
     var rows = self.table.select("tbody").selectAll("tr")
         .data(topTopics);
-
-    console.log(topTopics);
 
     rows.exit().remove();
 
     var enterRows = rows.enter()
-        .append("tr")
-        .on("click", function (d, i) {  // clicking a row in a table will do this
-            // TODO: do something!
-        });
+        .append("tr");
 
     rows = enterRows.merge(rows);
 
@@ -110,7 +118,7 @@ DocView.prototype.update = function(paperID) {
                 {'type': 'topic_name', 'value': d['id']}, // data for column 1
                 {'type': 'topWords', 'value': d['id']},  // data for column 2
                 {'type': 'weight', 'value': d['value']},   // data for column 3
-                {'type': 'percentage', 'value': d['value']},   // data for column 4
+                {'type': 'percentage', 'value': d['value']}   // data for column 4
                 // add the data for more columns
             ];
         });
@@ -199,7 +207,11 @@ DocView.prototype.update = function(paperID) {
 
 };
 
-
+/**
+ * This function return the name of the Topic given an ID
+ * @param topicID
+ * @returns {*}
+ */
 DocView.prototype.topicInfo = function(topicID) {
     var self = this;
     var s = self.topicLabels
@@ -212,6 +224,11 @@ DocView.prototype.topicInfo = function(topicID) {
 
 };
 
+/**
+ * This function find xTopWords for the Topic given an ID
+ * @param topicID
+ * @returns {string}
+ */
 DocView.prototype.findTopWord = function(topicID) {
 
     var self = this;
@@ -235,7 +252,9 @@ DocView.prototype.findTopWord = function(topicID) {
 
 };
 
+/*
 DocView.prototype.findTokens = function (topicID) {
     self = this;
     return self.topicWords[topicID]["words"].length;
 };
+*/

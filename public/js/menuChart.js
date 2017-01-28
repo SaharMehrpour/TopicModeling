@@ -1,5 +1,9 @@
 /**
- * Constructor for the MenuChart
+ * This module creates and handles the menu on top of the page
+ */
+/**
+ * @param topicLabels used for topic list
+ * @constructor
  */
 function MenuChart(topicLabels) {
 
@@ -9,6 +13,9 @@ function MenuChart(topicLabels) {
 
 }
 
+/**
+ * This function create the menu and populating the topic list
+ */
 MenuChart.prototype.init = function() {
     var self = this;
 
@@ -17,7 +24,7 @@ MenuChart.prototype.init = function() {
 
     var topicDropDownDiv = self.mainNav.select("#topic_dropdown_div");
 
-    // populate the menu
+    // populate the topic list
 
     var dropDownItems = topicDropDownDiv
         .selectAll("a")
@@ -32,7 +39,6 @@ MenuChart.prototype.init = function() {
         });
 
     // on click event
-
     var topicButton = self.mainNav.select(".dropbtn")
         .on("click", function () {
             if (d3.select(this).classed('open')) {
@@ -53,9 +59,13 @@ MenuChart.prototype.init = function() {
             if (!d3.select(this).classed("dropbtn"))
                 self.hideDropDown();
         });
+    // TODO: hideDropDown when click somewhere
 };
 
-
+/**
+ * This function update the class of the item of menu based on hash
+ * @param hash
+ */
 MenuChart.prototype.update = function(hash) {
     var self = this;
 
@@ -75,6 +85,9 @@ MenuChart.prototype.update = function(hash) {
 */
 };
 
+/**
+ * hide the drop-down menu for the topic list
+ */
 MenuChart.prototype.hideDropDown = function () {
 
     var self = this;
@@ -84,6 +97,9 @@ MenuChart.prototype.hideDropDown = function () {
     d3.select("#topic_dropdown_div").selectAll("a").classed("show",false);
 };
 
+/**
+ * display the drop-down menu for the topic list
+ */
 MenuChart.prototype.showDropDown = function () {
 
     var self = this;
