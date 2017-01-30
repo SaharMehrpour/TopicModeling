@@ -99,8 +99,6 @@ div {
 }
 
 
-
-
 /* Different views */
 
 #topic_view h3 {
@@ -279,7 +277,7 @@ div#topic_view_graph svg {
 
 }
 
-/* topic deropdown style */
+/* topic dropdown style */
 
 .dropdown-content {
     display: none;
@@ -352,4 +350,37 @@ div#topic_view_graph svg {
     padding-bottom:0;
     margin-bottom:0;
     color:#484043;
+}
+
+/* authorView */
+
+.left_column {
+    float: left;
+    width: 75%;
+    padding: 1em;
+    height: 100%;
+}
+
+.right_column {
+    float: left;
+    width: 25%;
+    padding: 2em 1em 1em 1em;
+    height: 100%;
+}
+
+#author_view .custom_table {
+    text-align: center;
+}
+
+#author_view .first_column {
+    text-align: left;
+    width: 40%;
+}
+
+#author_view .middle_column {
+    text-align: center;
+}
+
+.collaborators_list{
+    cursor: pointer;
 }

@@ -16,8 +16,6 @@ function TopicViewGraph(topicYears,topicViewPapers) {
 
     var width = parseInt(window.innerWidth)*.75*.75; //800
 
-    console.log(parseInt(window.innerWidth));
-
     self.dimensions = {
         "svgWidth": width, "svgHeight" : 300,
         "graphWidth": width, "graphHeight": 250

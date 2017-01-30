@@ -39,7 +39,9 @@ TopicViewWords.prototype.update = function(topicID) {
     var enterRows = rows.enter()
         .append("tr")
         .on("click", function (d) {  // clicking a row in a table will do this
-            location.hash = "#/word/" + d;
+            // TODO: clear this later!
+            //location.hash = "#/word/" + d;
+            location.hash = "#/author/authorID";
         });
 
     var cells = enterRows.merge(rows).selectAll("td")
