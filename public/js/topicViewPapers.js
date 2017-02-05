@@ -72,13 +72,13 @@ TopicViewPapers.prototype.update = function(topicID,year) {
     var enterRows = rows.enter()
         .append("tr")
         .on("click", function (d) {  // clicking a row in a table will do this
-            location.hash = "#/doc/" + d["paper"];
+            location.hash = "#/doc/" + d["paperID"];
         });
 
     var cells = enterRows.merge(rows).selectAll("td")
         .data(function (d) {
             return [
-                {'type': 'doc_name', 'value': d["paper"]}, // data for column 1
+                {'type': 'doc_name', 'value': d["paperID"]}, // data for column 1
                 {'type': 'bars', 'value': d[topicID]},  // data for column 2
                 {'type': 'percentage', 'value': d[topicID]}  // data for column 3
                 // add the data for more columns
