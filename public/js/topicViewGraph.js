@@ -14,7 +14,7 @@ function TopicViewGraph(topicYears,topicViewPapers) {
     self.topicYears = topicYears;
     self.topicViewPapers = topicViewPapers;
 
-    var width = parseInt(window.innerWidth)*.75*.75; //800
+    var width = parseInt(window.innerWidth)*.7*0.7;
 
     self.dimensions = {
         "svgWidth": width, "svgHeight" : 300,

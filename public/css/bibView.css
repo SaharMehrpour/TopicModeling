@@ -1,0 +1,76 @@
+/* bib view styles*/
+
+.section h2{
+    /*border-top: 1px solid rgb(221, 221, 211);
+    border-bottom: 1px solid rgb(221, 221, 211);*/
+    cursor:pointer;
+}
+
+.section p {
+    cursor:pointer;
+    padding-left: 0px;
+    margin-left: 0px
+}
+
+.section {
+    padding-bottom: 10px;
+}
+
+#year_nav {
+    padding: 0px;
+    max-width: 225px;
+    /*position: fixed;*/
+}
+
+#year_nav p{
+    padding: 0px; margin: 0px
+}
+
+#year_nav li {
+    min-width: 3.25em;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 0px;
+    cursor:pointer;
+}
+
+#year_nav li:hover{
+    font-weight: bold;
+}
+
+#year_nav ul {
+    list-style-type: none;
+    height: auto;
+    max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*border: 1px solid rgb(221, 221, 211);*/
+    padding-left: 0;
+    margin-left: 0px;
+}
+
+#bib_view .column1 {
+    width: 15%;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+#bib_view .column2 {
+    width: 85%;
+    position: relative;
+    float: right;
+}
+
+#bib_view .column2 div {
+    padding-left: 30px;
+}
+
+#bib_view h2 {
+    padding-bottom: 10px
+}
+
+#paper_years_sections p:hover {
+    font-weight: bold
+}

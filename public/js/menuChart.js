@@ -11,6 +11,27 @@ function MenuChart(topicLabels) {
 
     self.topicLabels = topicLabels;
 
+    d3.select("#view_container")
+        .on("click", function () {
+            self.hideDropDown();
+            //document.getElementById("myInput").value = "";  // not working
+        });
+/*
+    d3.select("#myInput")
+        .on("keyup", function () {
+            var filter = document.getElementById("myInput").value.toUpperCase();
+            var items = d3.select("#topic_dropdown_div")
+                .selectAll("a")
+                .each(function (d,i) {
+                    if(d["label"].toUpperCase().indexOf(filter) > -1) {
+                        d3.select(this).classed("show","true");  // not working
+                    }
+                    else {
+                        d3.select(this).classed("show","false")
+                    }
+                })
+        })
+*/
 }
 
 /**

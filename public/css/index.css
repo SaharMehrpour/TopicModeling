@@ -9,60 +9,9 @@ body {
 }
 
 h3, h2, h1, h4{
-    margin: 0px;
-    padding: 0px;
-}
-
-/* The main menu bar styles */
-
-#main_nav {
-    width: 100%;
-    background-color: #eee;
-    margin: 0 auto;
-    border-bottom: 3px solid #D23641;
-    text-align: center;
-    padding:0 0 0 0;
-    height: 55px;
-    position: fixed;
-    z-index: 9999;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-backface-visibility: hidden; 
-    -webkit-transform: translateZ(0);
-}
-.navbar{
-    list-style-type: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #eee;
-    width: 75%;
-    text-align: center;
-    position: relative;    /*display:table;*/
-
 }
-.navbar > li {
-   /*display:table-cell;*/
-   float:left;
-}
-.navbar > li > a {
-    /*display: block;*/
-    display: block;
-    color: #484043;
-    text-align: center;
-    padding: 15px 15px 15px 15px;
-    text-decoration: none;
-    cursor:pointer;
-    font-weight: 600;
-}
-.navbar > li:first-child a{
-    padding-left: 0;
-}
-.navbar > li a:hover, .dropdown:hover .dropbtn  {
-    color: black;
-}
-div#main_nav ul.navbar li.active a{ color: #B52735; }
-
 
 /* General container divisions styles */
 
@@ -99,288 +48,51 @@ div {
 }
 
 
-/* Different views */
+/* Sec Priv Meta */
 
-#topic_view h3 {
-    color:#484043;
-}
-#topic_view .column1 {
-    width: 20%;
-    position: relative;
-    float: left;
-    padding-top:0px;
-    margin-top:0px;
-}
-#topic_view .column2 {
-    width: 80%;
-    position: relative;
-    float: right;
-}
-#topic_view .column2 div{
-    padding-left:30px;
-}
-#topic_view .column2 div#topic_view_graph{
-    padding-left:0px;
-    padding-top:0px;
-}
-div#topic_view_graph{
-    width:100%;
-}
-div#topic_view_graph svg { 
-	width: 100%;
-	top: 0;
-	left: 0;
+#sec_prive_meta {
+    color: #484043;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left
 }
 
+#sec_prive_meta h3 {
+    text-align: left
+}
 
-#bib_view .column1 {
-    width: 15%;
-    position: fixed;
-    float: left;
-    position: fixed;
-    z-index: 1;
-    -webkit-backface-visibility: hidden; 
-    -webkit-transform: translateZ(0);
+#sec_prive_meta p {
+    text-align: justify
 }
-#bib_view .column2 {
-    width: 85%;
-    position: relative;
-    float: right;
+
+#sec_prive_meta p a {
+    color: #336699
 }
-#bib_view .column2 div{
-    padding-left:30px;
+
+/* File View */
+
+#file_view li a {
+    color: #336699
 }
-#bib_view h2{padding-bottom: 10px}
-#topic_timeline{
-	width:100%;
+
+#file_view ul {
+    list-style: none;
+    padding-left: 0px;
     padding-top: 8px;
 }
 
-
-#sec_prive_meta{color:#484043;width:100%;margin: 0 auto;text-align: left}
-#sec_prive_meta h3{text-align: left}
-#sec_prive_meta p{text-align: justify}
-#sec_prive_meta p a{color:#336699}
-
-#file_view li a{color:#336699}
-#file_view ul{list-style: none; padding-left:0px;padding-top: 8px;}
-#file_view {text-align: left;}
-
-#topic_dropdown_div a {margin: 0; padding:4px;}
-
-#topic_view_title {
-    padding-bottom: 20px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-#paper_years_sections p:hover{font-weight: bold}
-
-
-#doc_view_info a{color:#336699;}
-
-#doc_view_info h3{color:#484043; padding-bottom: 10px}
-#doc_view_info h4{color:#6E6568;padding-bottom: 10px}
-
-
-#model_view table thead tr h4.sort{cursor:pointer;}
-
-
-/* Graph Style*/
-
-.grid line {
-    stroke: lightgrey;
-    stroke-opacity: 0.5;
-    shape-rendering: crispEdges;
-}
-
-.grid path {
-    stroke-width: 0;
-}
-
-.selectedBar {
-    fill: #B52735;
-}
-
-/* bib view styles*/
-
-.section h2{
-    /*border-top: 1px solid rgb(221, 221, 211);
-    border-bottom: 1px solid rgb(221, 221, 211);*/
-    cursor:pointer;
-}
-
-.section p {
-    cursor:pointer;
-    padding-left: 0px;
-    margin-left: 0px
-}
-
-.section {
-    padding-bottom: 10px;
-}
-
-#year_nav {
-    padding: 0px;
-    max-width: 225px;
-    /*position: fixed;*/
-}
-
-#year_nav p{
-    padding: 0px; margin: 0px
-}
-
-#year_nav li {
-    min-width: 3.25em;
-    display: inline-block;
-    padding-right: 10px;
-    padding-left: 0px;
-    cursor:pointer;
-}
-
-#year_nav li:hover{
-    font-weight: bold;
-}
-
-#year_nav ul {
-    list-style-type: none;
-    height: auto;
-    max-height: 210px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    /*border: 1px solid rgb(221, 221, 211);*/
-    padding-left: 0;
-    margin-left: 0px;
-}
-
-
-/* word index view */
-
-#wordIndex_view li {
-    min-width: 15em;
-    display: inline-block;
-    cursor:pointer;
-}
-
-#wordIndex_view ul {
-    padding-left: 0;
-    list-style-type: none;
-    list-style-position: initial;
-    list-style-image: initial;
-    display: block;
-
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 40px;
-
-}
-
-/* topic dropdown style */
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #eee;/*whitesmoke;*/
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1000;
-}
-
-.dropdown-content a {
-    color: #484043;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+#file_view {
     text-align: left;
 }
 
-.dropdown-content a:hover {
-    background-color: #777777;
-}
-
-.show {
-    display: block;
-}
 
 
-/* Table Styles */
-
-.custom_table {
-    border-collapse: collapse;
-    width: 100%;
-
-}
-
-.custom_table h3 {
-    padding-bottom:0;
-    margin-bottom:0;
-}
-.custom_table th{
-    border-bottom: 2px solid #ddd;
-    margin: 0;
-    padding: 8px 0px 8px 0px;
-    text-align: left;
-    /*border-top: 3px solid #ddd;*/
-}
-
-.custom_table th a {
-    display: block;
-    color: #333333;
-    text-align: left;
-    text-decoration: none;
-    cursor:pointer;
-}
-
-.custom_table td {
-    border-bottom: 1px solid #ddd;
-    margin: 0;
-    padding: 8px 0px 8px 0px;
-    text-align: left;
-    cursor:pointer;
-}
-
-.custom_table tbody tr:hover {
-    background-color:#f5f5f5
-}
 
 
-.custom_table > th > h4{
-    padding-bottom:0;
-    margin-bottom:0;
-    color:#484043;
-}
 
-/* authorView */
 
-.left_column {
-    float: left;
-    width: 75%;
-    padding: 1em;
-    height: 100%;
-}
 
-.right_column {
-    float: left;
-    width: 25%;
-    padding: 2em 1em 1em 1em;
-    height: 100%;
-}
 
-#author_view .custom_table {
-    text-align: center;
-}
 
-#author_view .first_column {
-    text-align: left;
-    width: 40%;
-}
 
-#author_view .middle_column {
-    text-align: center;
-}
 
-.collaborators_list{
-    cursor: pointer;
-}

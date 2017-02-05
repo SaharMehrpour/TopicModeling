@@ -15,8 +15,10 @@ function TopicViewPapers(papers, paperTopics) {
     self.paperTopics = paperTopics;
     self.papers = papers;
 
+    var width = parseInt(window.innerWidth)*.2*0.3;
+
     self.dimensions = {
-        "barsCellWidth": 150, "barsCellHeight": 20
+        "barsCellWidth": width, "barsCellHeight": 20
     };
 
     self.xTop = 10;
@@ -44,7 +46,7 @@ TopicViewPapers.prototype.update = function(topicID,year) {
             .filter(function (d) {
 
                 var paper = self.papers.filter(function (g) {
-                    return g["Paper Id"] === d["paper"];
+                    return g["Paper Id"] === d["paperID"];
                 });
 
                 if (paper.length === 0) return;
@@ -57,7 +59,7 @@ TopicViewPapers.prototype.update = function(topicID,year) {
 
     else {
         topDocs = self.paperTopics
-            .filter(function (d, i) {
+            .filter(function (d) {
                 return (/*i < self.xTop &&*/ d[topicID] > 0);
             });
     }

@@ -5,13 +5,25 @@
 <meta charset="utf-8">
 <title>SecPrivMeta</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="public/css/index.css" type="text/css">
+    <link rel="stylesheet" href="public/css/menu.css" type="text/css">
+    <link rel="stylesheet" href="public/css/authorView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/table.css" type="text/css">
+    <link rel="stylesheet" href="public/css/bibView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/modelView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/wordIndex.css" type="text/css">
+    <link rel="stylesheet" href="public/css/docView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/topicView.css" type="text/css">
+
     <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
     <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +33,9 @@
         <li id="nav_secPriveMeta" class="active"><a href="#/secPriveMeta">About</a></li>
         <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
         <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic <span class="caret"></span></a>
-            <div id="topic_dropdown_div" class="dropdown-content" style="max-height: 600px; height: 600px; overflow: auto;"></div>
+            <div id="topic_dropdown_div" class="dropdown-content">
+                <!--<input type="text" placeholder="Search.." id="myInput">-->
+            </div>
         </li>
         <li id="nav_bib"><a href="#/bib">Paper List</a></li>
         <li id="nav_doc"><a href="#/doc">Paper</a></li>
@@ -172,8 +186,18 @@
                     </tbody>
                 </table>
                 </div>
-                <div id="author_col" class="right_column">
-                    <ul></ul>
+                <div class="right_column">
+                    <div class="pieChart">
+                        <div id="topicPie">
+                            <h6>Topics</h6>
+                        </div>
+                        <div id="confPie">
+                            <h6>Conferences</h6>
+                        </div>
+                    </div>
+                    <div id="author_col">
+                        <ul></ul>
+                    </div>
                 </div>
             </div>
         </div>

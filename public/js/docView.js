@@ -74,7 +74,7 @@ DocView.prototype.update = function(paperID) {
 
     var topicsOfPaper = self.paperTopics
         .filter(function (d) {
-            return d["paper"] == paperID;
+            return d["paperID"] == paperID;
         });
 
     // finding xTop topics for the paper

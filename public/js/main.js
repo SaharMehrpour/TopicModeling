@@ -28,7 +28,7 @@
 
                                 var wordViewIndex = new WordIndexView(topicWords);
 
-                                var authorView = new AuthorView(paperAuthors);
+                                var authorView = new AuthorView(paperAuthors, paperTopics, papers);
 
                                 var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
                                     , topicView, docView, bibView, wordViewIndex, authorView);

@@ -16,8 +16,10 @@ function TopicViewWords(topicWords) {
 
     self.topicWords = topicWords["tw"];
 
+    var width = parseInt(window.innerWidth)*.2*0.2;
+
     self.dimensions = {
-        "wordCellwidth": 70, "weightCellWidth": 90, "weightCellHeight": 20
+        "wordCellwidth": 70, "weightCellWidth": width, "weightCellHeight": 20
     };
 
 }
@@ -41,7 +43,7 @@ TopicViewWords.prototype.update = function(topicID) {
         .on("click", function (d) {  // clicking a row in a table will do this
             // TODO: clear this later!
             //location.hash = "#/word/" + d;
-            location.hash = "#/author/authorID";
+            location.hash = "#/author/Arvind Krishnamurthy";
         });
 
     var cells = enterRows.merge(rows).selectAll("td")

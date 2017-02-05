@@ -10,7 +10,7 @@
  * @param paperAuthors
  * @constructor
  */
-function AuthorView(paperAuthors) {
+function AuthorView(paperAuthors, paperTopics, papers) {
 
     var self = this;
     self.div = d3.select("#author_view");
@@ -19,7 +19,8 @@ function AuthorView(paperAuthors) {
     self.authorColDiv = d3.select("#author_col");
 
     self.paperAuthors = paperAuthors;
-
+    self.paperTopics = paperTopics;
+    self.papers = papers;
 }
 
 /**
@@ -33,13 +34,15 @@ AuthorView.prototype.update = function (authorID) {
 
     // header
     // TODO: find the name an author given authorID
-    self.authorNameHeader.text("Name of the author based on authorID: " + authorID);
+    self.authorNameHeader.text(authorID);
 
     // paper list and collaborators list, all topic IDs, header data
-    var papers = self.findPaperIDs(authorID);
-    var collaborators = self.findCollaborators(authorID);
-    var allTopicIDs = self.findTopicIDsForPapers(papers);
-    var header_data = ["Papers"].concat(allTopicIDs);
+    var paperIDs = self.findPaperIDs(authorID);
+    var collaborators = self.findCollaborators(authorID, paperIDs);
+    var allTopicIDs = self.findTopicIDsForPapers(paperIDs);
+    var header_data = ["Papers"].concat(allTopicIDs.map(function (d) {
+        return d["key"];
+    }));
 
     var collaborators_list = self.authorColDiv.select("ul")
         .selectAll("li")
@@ -51,17 +54,23 @@ AuthorView.prototype.update = function (authorID) {
         .append("li")
         .merge(collaborators_list)
         .on("click", function (d) {
-            location.hash = "#/author/" + d["id"];
+            location.hash = "#/author/" + d["value"];
         })
         .attr("class", "collaborators_list")
         .text(function (d) {
-            return d["name"];
+            return d["key"];
         });
 
     collaborators_list.exit().remove();
 
     // table of paper-topics
     // header
+
+    self.table
+        .select("thead > tr")
+        .selectAll("th")
+        .remove();
+
     var header = self.table
         .select("thead > tr")
         .selectAll("th");
@@ -75,21 +84,29 @@ AuthorView.prototype.update = function (authorID) {
         })
         .classed("first_column", function (d, i) {
             return (i == 0);
+        })
+        .classed("middle_column", function (d,i) {
+            return i != 0;
         });
 
     header.exit().remove();
 
-    // body
+    // table body
+
+    self.table
+        .select("tbody")
+        .selectAll("tr")
+        .remove();
 
     var rows = self.table
         .select("tbody")
         .selectAll("tr")
-        .data(papers);
+        .data(paperIDs);
 
     var cells = rows.enter()
         .append("tr")
         .on("click", function (d) { // on click for a row
-            location.hash = "#/paper/" + d;
+            location.hash = "#/doc/" + d;
         })
         .selectAll("td")
         .data(function (d) {
@@ -109,7 +126,109 @@ AuthorView.prototype.update = function (authorID) {
                 return g["value"];
             if (g["value"])
                 return "✓";
+        });
+
+    // Create Pie charts
+
+    var arc = d3.arc()
+        .outerRadius(40)
+        .innerRadius(0);
+
+    var pie = d3.pie()
+        .sort(null)
+        .value(function(d) { return d; });
+
+    // Topic Pie Chart
+    // TODO: add tooltip based on "key"
+
+    var topicData = allTopicIDs.map(function (d) {
+        return d["value"];
+    });
+
+    var colorbrewerLimit = d3.max([3,d3.min([9,topicData.length])]);
+
+    var colorTopic = d3.scaleOrdinal()
+        .range(colorbrewer.YlGnBu[colorbrewerLimit]);
+
+    var topicPieDiv = d3.select("#topicPie");
+
+    topicPieDiv.selectAll("svg").remove();
+
+    topicPieDiv.selectAll("svg")
+        .data(["topic pie"])
+        .enter()
+        .append("svg");
+
+    // TODO: fix width and height
+    var topicPieSVG = topicPieDiv.select("svg")
+        .attr("width", "100px")
+        .attr("height", "100px")
+        .append("g")
+        .attr("transform", "translate(50,50)");
+
+    var topicPieGroup = topicPieSVG.selectAll(".arc")
+        .data(pie(topicData))
+        .enter().append("g")
+        .attr("class", "arc");
+
+    topicPieGroup.append("path")
+        .attr("d", arc)
+        .style("fill", function(d,i) {
+            return colorTopic(i);
+        });
+
+    // Conferences Pie Chart
+    // TODO: add tooltip based on "key"
+
+    var confs = self.papers.filter(function (d) {
+        return paperIDs.indexOf(d["Paper Id"]) != -1
+    }).map(function (g) {
+        return g["Conference"];
+    });
+
+    var nest = d3.nest()
+        .key(function (d) {
+            return d;
         })
+        .rollup(function (leaves) {
+            return leaves.length
+        })
+        .entries(confs);
+
+    var confData = nest.map(function (d) {
+        return d["value"];
+    });
+
+    colorbrewerLimit = d3.max([3,d3.min([9,confData.length])]);
+
+    var colorConf = d3.scaleOrdinal()
+        .range(colorbrewer.YlGnBu[colorbrewerLimit]);
+
+    var confPieDiv = d3.select("#confPie");
+
+    confPieDiv.selectAll("svg").remove();
+
+    confPieDiv.selectAll("svg")
+        .data(["conference pie"])
+        .enter()
+        .append("svg");
+
+    // TODO: fix width and height
+    var confPieSVG = confPieDiv.select("svg")
+        .attr("width", "100px")
+        .attr("height", "100px")
+        .append("g")
+        .attr("transform", "translate(50,50)");
+
+    var confPieGroup = confPieSVG.selectAll(".arc")
+        .data(pie(confData))
+        .enter().append("g")
+        .attr("class", "arc");
+
+    confPieGroup.append("path")
+        .attr("d", arc)
+        .style("fill", function(d,i) { return colorConf(i); });
+
 };
 
 /**
@@ -118,33 +237,83 @@ AuthorView.prototype.update = function (authorID) {
  * @returns {string[]}
  */
 AuthorView.prototype.findPaperIDs = function (authorID) {
-    // TODO: find all paper IDs for the author
-    var papers = ["paperID 1", "paperID 2", "paperID 3"];
-    return papers;
+    // TODO: author and authorID ?
+
+    var self = this;
+    return self.paperAuthors.filter(function (d) {
+        return d["author"].indexOf(authorID) != -1; // caution!
+    }).map(function (f) {
+        return f["paperID"];
+    });
 };
 
 /**
- * This function returns a list of authors who share a paper with the targeted author
+ * This function returns a list of json: "key": name , "value": id
+ * who share a paper with the targeted author
  * @param authorID
  * @returns {*[]}
  */
-AuthorView.prototype.findCollaborators = function (authorID) {
-    // TODO: find all authors share a paper with the author
-    var list_of_collab = [{"name": "co-author name 1", "id": "collabID1"},
-        {"name": "co-author name 2", "id": "collabID2"},
-        {"name": "co-author name 3", "id": "collabID3"}];
-    return list_of_collab;
+AuthorView.prototype.findCollaborators = function (authorID, paperIDs) {
+    // TODO: author and authorID ?
+    // TODO: should return JSON?
+
+    var self = this;
+
+    var collabList = self.paperAuthors.filter(function (d) {
+        return (paperIDs.indexOf(d["paperID"]) != -1 && d["author"].indexOf(authorID) == -1); // caution!
+    }).map(function (f) {
+        return {"name": f["author"], "id": f["author"]};
+    }).sort(function (a,b) {
+        return d3.ascending(a["name"],b["name"]);
+    });
+
+    var nest = d3.nest()
+        .key(function (d) {
+            return d["name"];
+        })
+        .rollup(function (leaves) {
+            return leaves[0]["id"];
+        })
+        .entries(collabList);
+
+    return nest;
 };
 
 /**
- * This function returns a list of topic IDs for a given list of papers
+ * This function returns a list of topic IDs: json: "key": topicID, "value":number
+ * for a given list of paper IDs
  * @param paperList
  * @returns {string[]}
  */
-AuthorView.prototype.findTopicIDsForPapers = function (paperList) {
-    // TODO: only merge the list of topics for papers
-    var list_of_topics = ["topicID1", "topicID2", "topicID3", "topicID4", "topicID5", "topicID6"];
-    return list_of_topics;
+AuthorView.prototype.findTopicIDsForPapers = function (paperIDList) {
+    // TODO: if corpus needed return json
+
+    var self = this;
+    var topicIDlist = [];
+    var json = [];
+
+    self.paperTopics.filter(function (d) {
+        return paperIDList.indexOf(d["paperID"]) != -1;
+    }).forEach(function (g) {
+        for (var i = 0; i < Object.keys(g).length - 1; i++) {
+            if (g[i] != 0) {
+                json.push({"topicID": i, "corpus": g[i]});
+                topicIDlist.push(i);
+            }
+        }
+    });
+
+    var nest = d3.nest()
+        .key(function (d) {
+            return d
+        }).rollup(function (leaves) {
+            return leaves.length;
+        }).entries (topicIDlist.sort(function (a,b) {
+            return d3.ascending(a,b);
+        }));
+
+    return nest;
+
 };
 
 /**
@@ -155,13 +324,20 @@ AuthorView.prototype.findTopicIDsForPapers = function (paperList) {
  * @returns {*[]}
  */
 AuthorView.prototype.findTopicsForPapers = function (paperID, topicIDs) {
-    // TODO: find a title of the paper given 'paperID'
-    var paper = "get paper title from the paperID: " + paperID;
+    var self = this;
+    var paperInfo = self.papers.filter(function (d) {
+        return d["Paper Id"] == paperID;
+    });
 
-    var list = [{"value": paper}];
-    for (var id in topicIDs) {
-        // TODO: for paperID the topic with 'id' exists?
-        list.push({"value" : true});
+    var list = [{"value": paperInfo[0]["Title"]}];
+
+    var paperTopic = self.paperTopics.filter(function (d) {
+        return d["paperID"] == paperID;
+    })[0];
+
+    for (var index = 0; index < topicIDs.length; index++) {
+        list.push({"value": paperTopic[topicIDs[index]["key"]] != 0});
     }
+
     return list;
 };

@@ -53,7 +53,7 @@ ModelViewList.prototype.init = function() {
         .selectAll("th")
         .on("click", function (d, i) {
 
-            self.asc[i] = self.asc[i] ? false : true;
+            self.asc[i] = !self.asc[i];
 
             self.topicWords.sort(function (a, b) {
                 if (i == 0) { // sort the first column based on topic names
@@ -164,9 +164,12 @@ ModelViewList.prototype.update = function() {
             .range([0, self.dimensions.yearCellWidth])
             .domain([0, years.length]);
 
-        d3.select(this).selectAll("svg").remove();
+        d3.select(this).selectAll("div").remove();
 
-        var group = d3.select(this)
+        var dd = d3.select(this).append("div")
+            .style("padding-right", "10px");
+
+        var group = dd//d3.select(this)
             .append("svg")
             .attr("width", self.dimensions.yearCellWidth)
             .attr("height", self.dimensions.yearCellHeight)

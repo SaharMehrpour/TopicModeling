@@ -1,0 +1,64 @@
+#topic_view h3 {
+    color:#484043;
+}
+
+#topic_view .column1 {
+    width: 20%;
+    position: relative;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#topic_view .column2 {
+    width: 80%;
+    position: relative;
+    float: right;
+}
+
+#topic_view .column2 div {
+    padding-left: 30px;
+}
+
+#topic_view .column2 div#topic_view_graph {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+div#topic_view_graph{
+    width:100%;
+}
+div#topic_view_graph svg {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#topic_timeline{
+    width:100%;
+    padding-top: 8px;
+}
+
+
+/* Graph Style*/
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.5;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.selectedBar {
+    fill: #B52735;
+}
+
+
+#topic_view_title {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
