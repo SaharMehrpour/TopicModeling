@@ -16,22 +16,23 @@ function MenuChart(topicLabels) {
             self.hideDropDown();
             //document.getElementById("myInput").value = "";  // not working
         });
-/*
+
     d3.select("#myInput")
         .on("keyup", function () {
             var filter = document.getElementById("myInput").value.toUpperCase();
             var items = d3.select("#topic_dropdown_div")
                 .selectAll("a")
                 .each(function (d,i) {
+                    if(i==0) console.log(d["label"],filter,d["label"].toUpperCase().indexOf(filter));
                     if(d["label"].toUpperCase().indexOf(filter) > -1) {
-                        d3.select(this).classed("show","true");  // not working
+                        d3.select(this).style("display",null);
                     }
                     else {
-                        d3.select(this).classed("show","false")
+                        d3.select(this).style("display","none")
                     }
                 })
         })
-*/
+
 }
 
 /**
@@ -115,7 +116,6 @@ MenuChart.prototype.hideDropDown = function () {
 
     self.mainNav.select(".dropbtn").classed('open',false);
     d3.select("#topic_dropdown_div").classed("show",false);
-    d3.select("#topic_dropdown_div").selectAll("a").classed("show",false);
 };
 
 /**
@@ -127,5 +127,4 @@ MenuChart.prototype.showDropDown = function () {
 
     self.mainNav.select(".dropbtn").classed('open',true);
     d3.select("#topic_dropdown_div").classed("show",true);
-    d3.select("#topic_dropdown_div").selectAll("a").classed("show",true);
 };

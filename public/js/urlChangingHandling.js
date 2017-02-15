@@ -5,22 +5,25 @@
  * @param menuChart
  * @param modelViewList
  * @param topicView
- * @param docView
+ * @param paperView
  * @param bibView
  * @param wordViewIndex
  * @param authorView
  * @constructor
  */
-function UrlChangingHandling(menuChart,modelViewList,topicView,docView,bibView,wordViewIndex,authorView) {
+function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
+    ,wordViewIndex,authorView,authorListView) {
+
     var self = this;
 
     self.modelViewList = modelViewList;
     self.topicView = topicView;
     self.menuChart = menuChart;
-    self.docView = docView;
+    self.paperView = paperView;
     self.bibView = bibView;
     self.wordViewIndex = wordViewIndex;
     self.authorView = authorView;
+    self.authorListView = authorListView;
 
 }
 
@@ -69,7 +72,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
         self.topicView.update(topicID);
     }
 
-    else if(splittedHash[1] === 'doc'){
+    else if(splittedHash[1] === 'paper'){
         if(splittedHash.length < 3){
             console.log("error in parsing the URL");
             d3.select("#temp_view").html("Please select a paper from the Paper List.")
@@ -77,7 +80,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
             return;
         }
         var paperID = splittedHash[2];
-        self.docView.update(paperID);
+        self.paperView.update(paperID);
     }
 
     else if(splittedHash[1] === 'bib'){
@@ -102,5 +105,9 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
         }
         var authorID = splittedHash[2];
         self.authorView.update(authorID);
+    }
+
+    else if(splittedHash[1] === 'authorList'){
+        self.authorListView.update();
     }
 };

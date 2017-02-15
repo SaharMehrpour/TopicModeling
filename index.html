@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="public/css/bibView.css" type="text/css">
     <link rel="stylesheet" href="public/css/modelView.css" type="text/css">
     <link rel="stylesheet" href="public/css/wordIndex.css" type="text/css">
-    <link rel="stylesheet" href="public/css/docView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/paperView.css" type="text/css">
     <link rel="stylesheet" href="public/css/topicView.css" type="text/css">
+    <link rel="stylesheet" href="public/css/authorList.css" type="text/css">
 
     <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
@@ -34,14 +35,14 @@
         <li id="nav_model"><a href="#/model" id="1">Topic List</a></li>
         <li id="nav_topic" class="dropdown"><a class="dropbtn">Topic <span class="caret"></span></a>
             <div id="topic_dropdown_div" class="dropdown-content">
-                <!--<input type="text" placeholder="Search.." id="myInput">-->
+                <input type="text" placeholder="Search.." id="myInput" class="searchInput">
             </div>
         </li>
         <li id="nav_bib"><a href="#/bib">Paper List</a></li>
-        <li id="nav_doc"><a href="#/doc">Paper</a></li>
+        <!--<li id="nav_paper"><a href="#/paper">Paper</a></li>-->
         <li id="nav_wordIndex"><a href="#/wordIndex">Word Index</a></li>
         <!--<li id="nav_word"><a href="#/word">Word</a></li>-->
-        <li id="nav_aut"><a href="#/aut">Author List</a></li>
+        <li id="nav_authorList"><a href="#/authorList">Author List</a></li>
         <!--<li id="nav_author"><a href="#/author">Author</a></li>-->
 
         <li id="nav_settings" style="float:right"><a style="padding-right:0px" href="#/settings">Settings</a></li>
@@ -60,7 +61,7 @@
             </div>
         </div>-->
         <div id="main_view_container">
-            <div id="sec_prive_meta" class="main_view hidden">
+            <div id="sec_prive_meta" class="main_view">
 
                 <h3>A Data-Driven Reflection on 36 years of Security and Privacy Research</h3><br>
                     <p>We present a topic modeling on the publications of
@@ -125,7 +126,6 @@
             </div>
         </div>
         <div id="bib_view" class="main_view hidden">
-
             <div class="row container_full">
                 <div class="column1" id="conf_sidebar">
                     <div id="year_nav"><p>Go to year:</p></div>
@@ -139,8 +139,8 @@
                 </div>
             </div>
         </div>
-        <div id="doc_view" class="main_view hidden">
-            <div id="doc_view_info" class="row">
+        <div id="paper_view" class="main_view hidden">
+            <div id="paper_view_info" class="row">
                 <h3 id="paper_title"></h3>
                 <h4 id="conf_name"></h4>
                 <h4 id="session_name"></h4>
@@ -170,8 +170,14 @@
             </ul>
             <p>The paper corpus and meta-data are available upon request</p>
         </div>
-        <div id="wordIndex_view" class="main_view hidden cont1"></div>
-        <div id="temp_view" class="main_view"></div>
+        <div id="wordIndex_view" class="main_view hidden cont1">
+            <div class="row">
+                Some sentence stating please search!</br>
+                <input type="text" placeholder="Search.." id="wordInput" class="searchInput">
+            </div>
+            <div id="word_index" class="row"></div>
+        </div>
+        <div id="temp_view" class="main_view hidden"></div>
         <div id="author_view" class="main_view hidden">
             <div class="row">
                 <h3 id="author_name"></h3>
@@ -201,8 +207,17 @@
                 </div>
             </div>
         </div>
+        <div id="authorList_view" class="main_view hidden cont1">
+            <div class="row">
+                Some sentence stating please search!</br>
+                <input type="text" placeholder="Search.." id="authorInput" class="searchInput">
+            </div>
+            <div id="author_list" class="row"></div>
+        </div>
     </div>
 </div>
+
+<div class="tooltip" style="opacity: 0"></div>
 
 
 <script type="application/javascript" src="public/js/modelViewList.js"></script>
@@ -211,10 +226,11 @@
 <script type="application/javascript" src="public/js/topicViewPapers.js"></script>
 <script type="application/javascript" src="public/js/topicView.js"></script>
 <script type="application/javascript" src="public/js/menuChart.js"></script>
-<script type="application/javascript" src="public/js/docView.js"></script>
+<script type="application/javascript" src="public/js/paperView.js"></script>
 <script type="application/javascript" src="public/js/bibView.js"></script>
 <script type="application/javascript" src="public/js/wordIndexView.js"></script>
 <script type="application/javascript" src="public/js/authorView.js"></script>
+<script type="application/javascript" src="public/js/authorListView.js"></script>
 <script type="application/javascript" src="public/js/urlChangingHandling.js"></script>
 <script type="application/javascript" src="public/js/main.js"></script>
 

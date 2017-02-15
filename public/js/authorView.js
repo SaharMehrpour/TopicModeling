@@ -10,7 +10,7 @@
  * @param paperAuthors
  * @constructor
  */
-function AuthorView(paperAuthors, paperTopics, papers) {
+function AuthorView(paperAuthors, paperTopics, papers, topicLabels) {
 
     var self = this;
     self.div = d3.select("#author_view");
@@ -21,6 +21,9 @@ function AuthorView(paperAuthors, paperTopics, papers) {
     self.paperAuthors = paperAuthors;
     self.paperTopics = paperTopics;
     self.papers = papers;
+    self.topicLabels = topicLabels;
+
+    self.tooltip = d3.select(".tooltip");
 }
 
 /**
@@ -48,8 +51,6 @@ AuthorView.prototype.update = function (authorID) {
         .selectAll("li")
         .data(collaborators);
 
-
-    // TODO: correct style -> cursor:hand;
     collaborators_list.enter()
         .append("li")
         .merge(collaborators_list)
@@ -78,15 +79,45 @@ AuthorView.prototype.update = function (authorID) {
     header.data(header_data)
         .enter()
         .append("th")
-        .merge(header)
-        .text(function (d) {
-            return d;
+        .classed("rotate", function (d,i) {
+            return i != 0;
         })
         .classed("first_column", function (d, i) {
             return (i == 0);
         })
         .classed("middle_column", function (d,i) {
             return i != 0;
+        })
+        .on("mouseover",function (d,i) {
+            if(i==0) return;
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(function () {
+                return self.topicLabels[d]["label"];
+            })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d,i) {
+            if(i==0) return;
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        })
+        .on("click", function (d,i) {
+            if (i!=0)
+                location.hash = "#/topic/" + d;
+        })
+        .append("div")
+        .append("span")
+        .merge(header)
+        .text(function (d,i) {
+            if (i==0) return d;
+            var label = self.topicLabels[d]["label"];
+            if(label.length > 16)
+                return label.slice(0,12) + '...';
+            return label;
         });
 
     header.exit().remove();
@@ -106,7 +137,7 @@ AuthorView.prototype.update = function (authorID) {
     var cells = rows.enter()
         .append("tr")
         .on("click", function (d) { // on click for a row
-            location.hash = "#/doc/" + d;
+            location.hash = "#/paper/" + d;
         })
         .selectAll("td")
         .data(function (d) {
@@ -123,9 +154,29 @@ AuthorView.prototype.update = function (authorID) {
         })
         .html(function (g, i) {
             if (i == 0)
-                return g["value"];
-            if (g["value"])
+                return g["title"];
+            if (g["topicValue"]!=0)
                 return "✓";
+        })
+        .on("mouseover",function (g,i) {
+            if(i==0) return;
+            if (g["topicValue"]==0) return;
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(function () {
+                return self.topicLabels[g["topicID"]]["label"]
+                    + '</br>' + d3.format(".3n")(g["topicValue"]*100) + "%";
+            })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(g,i) {
+            if(i==0) return;
+            if (g["topicValue"]==0) return;
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
         });
 
     // Create Pie charts
@@ -134,18 +185,13 @@ AuthorView.prototype.update = function (authorID) {
         .outerRadius(40)
         .innerRadius(0);
 
-    var pie = d3.pie()
-        .sort(null)
-        .value(function(d) { return d; });
-
     // Topic Pie Chart
-    // TODO: add tooltip based on "key"
 
-    var topicData = allTopicIDs.map(function (d) {
-        return d["value"];
-    });
+    var pieTopics = d3.pie()
+        .sort(null)
+        .value(function(d) { return d["value"]; });
 
-    var colorbrewerLimit = d3.max([3,d3.min([9,topicData.length])]);
+    var colorbrewerLimit = d3.max([3,d3.min([9,allTopicIDs.length])]);
 
     var colorTopic = d3.scaleOrdinal()
         .range(colorbrewer.YlGnBu[colorbrewerLimit]);
@@ -167,7 +213,7 @@ AuthorView.prototype.update = function (authorID) {
         .attr("transform", "translate(50,50)");
 
     var topicPieGroup = topicPieSVG.selectAll(".arc")
-        .data(pie(topicData))
+        .data(pieTopics(allTopicIDs))
         .enter().append("g")
         .attr("class", "arc");
 
@@ -175,10 +221,32 @@ AuthorView.prototype.update = function (authorID) {
         .attr("d", arc)
         .style("fill", function(d,i) {
             return colorTopic(i);
+        })
+        .on("mouseover",function (d) {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(function () {
+                return self.topicLabels[d["data"]["key"]]["label"];
+            })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        })
+        .on("click", function (d) {
+            location.hash = "#/topic/" + d["data"]["key"];
         });
 
     // Conferences Pie Chart
     // TODO: add tooltip based on "key"
+
+    var pieConf = d3.pie()
+        .sort(null)
+        .value(function(d) { return d["value"]; });
 
     var confs = self.papers.filter(function (d) {
         return paperIDs.indexOf(d["Paper Id"]) != -1
@@ -186,7 +254,7 @@ AuthorView.prototype.update = function (authorID) {
         return g["Conference"];
     });
 
-    var nest = d3.nest()
+    var confData = d3.nest()
         .key(function (d) {
             return d;
         })
@@ -194,10 +262,6 @@ AuthorView.prototype.update = function (authorID) {
             return leaves.length
         })
         .entries(confs);
-
-    var confData = nest.map(function (d) {
-        return d["value"];
-    });
 
     colorbrewerLimit = d3.max([3,d3.min([9,confData.length])]);
 
@@ -221,13 +285,28 @@ AuthorView.prototype.update = function (authorID) {
         .attr("transform", "translate(50,50)");
 
     var confPieGroup = confPieSVG.selectAll(".arc")
-        .data(pie(confData))
+        .data(pieConf(confData))
         .enter().append("g")
         .attr("class", "arc");
 
     confPieGroup.append("path")
         .attr("d", arc)
-        .style("fill", function(d,i) { return colorConf(i); });
+        .style("fill", function(d,i) { return colorConf(i); })
+        .on("mouseover",function (d) {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(function () {
+                return d["data"]["key"];
+            })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        });
 
 };
 
@@ -319,6 +398,7 @@ AuthorView.prototype.findTopicIDsForPapers = function (paperIDList) {
 /**
  * This function returns an array of the paper title and a whether a specific topic
  * in the given list exists in the paper or not (e.i. true/false).
+ * changed to list of corpus.
  * @param paperID
  * @param topicIDs
  * @returns {*[]}
@@ -329,14 +409,14 @@ AuthorView.prototype.findTopicsForPapers = function (paperID, topicIDs) {
         return d["Paper Id"] == paperID;
     });
 
-    var list = [{"value": paperInfo[0]["Title"]}];
+    var list = [{"title": paperInfo[0]["Title"]}];
 
     var paperTopic = self.paperTopics.filter(function (d) {
         return d["paperID"] == paperID;
     })[0];
 
     for (var index = 0; index < topicIDs.length; index++) {
-        list.push({"value": paperTopic[topicIDs[index]["key"]] != 0});
+        list.push({"topicValue": paperTopic[topicIDs[index]["key"]], "topicID" : topicIDs[index]["key"]});// != 0});
     }
 
     return list;

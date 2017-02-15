@@ -1,64 +1,56 @@
 /**
- * This module creates the view for the list of words
+ * Created by saharmehrpour on 2/12/17.
  */
-/**
- * @param topicWords
- * @constructor
- */
-function WordIndexView(topicWords) {
 
+
+function AuthorListView(paperAuthors){
     var self = this;
 
-    self.div = d3.select("#wordIndex_view");
+    self.div = d3.select("#authorList_view");
 
-    self.topicWords = topicWords["tw"];
+    self.paperAuthors = paperAuthors;
 
-    self.init();
+    self.init()
 
 }
 
-/**
- * This function populates the view with the list of all words
- */
-WordIndexView.prototype.init = function() {
+AuthorListView.prototype.init = function () {
 
     var self = this;
 
-    // all words, duplicated
+    // unique authors
 
-    var allWords = [];
-    for (var i = 0; i < self.topicWords.length; i++) {
-        allWords = allWords.concat(self.topicWords[i]["words"]);
-    }
-
-    // unique words
-
-    var words = d3.nest().key(function (d) {
+    var authors = d3.nest().key(function (d) {
         return d
     }).rollup(function (leaves) {
         return leaves.length;
-    }).entries(allWords);
+    }).entries(self.paperAuthors.map(function (d) {
+        return d["author"];
+    }));
 
 
     // sort alphabetically
 
-    words.sort(function (a, b) {
+    authors.sort(function (a, b) {
         return d3.ascending(a.key, b.key);
     });
 
-    var items = self.div.selectAll("li").data(words);
+    var items = self.div.select("#author_list")
+        .selectAll("li").data(authors);
 
     items.enter().append("li").text(function (d) {
         return d.key;
     }).on("click", function (g) {  // clicking a row in a table will do this
-        location.hash = "#/word/" + g.key;
+        location.hash = "#/author/" + g.key;
     }).style("display","none");
+
+    items.exit().remove(); // Not necessary though!
 
     // Search Option:
 
-    d3.select("#wordInput")
+    d3.select("#authorInput")
         .on("keyup", function () {
-            var filter = document.getElementById("wordInput").value.toUpperCase();
+            var filter = document.getElementById("authorInput").value.toUpperCase();
             if(filter == "") {
                 self.div.selectAll("li").style("display", "none");
                 return
@@ -73,16 +65,10 @@ WordIndexView.prototype.init = function() {
                     }
                 })
         })
-
 };
 
-/**
- * This function update the view by making it visible
- */
-WordIndexView.prototype.update = function() {
-
+AuthorListView.prototype.update = function () {
     var self = this;
 
     self.div.classed("hidden",false);
 };
-

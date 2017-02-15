@@ -100,7 +100,7 @@ BibView.prototype.populate = function(papersYears) {
                 return self.paperInfo(g["Paper Id"]);
             })
             .on("click", function (g) {  // clicking a row in a table will do this
-                location.hash = "#/doc/" + g["Paper Id"];
+                location.hash = "#/paper/" + g["Paper Id"];
             });
     });
 

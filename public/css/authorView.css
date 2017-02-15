@@ -1,5 +1,6 @@
 /* authorView */
 
+/* table */
 .left_column {
     float: left;
     width: 80%;
@@ -27,9 +28,55 @@
     text-align: center;
 }
 
+#author_view .rotate{
+    height: 100px;
+    white-space: nowrap;
+}
+
+#author_view .rotate > div {
+    transform: translate(-8px, 35px) rotate(270deg);
+    width: 30px;
+}
+
+#author_view .rotate > div > span {
+    border-top: 1px solid #ccc;
+    padding: 0px 5px;
+    font-size: 11px;
+}
+
+#author_view td {
+    border-right: 1px solid #ddd;
+}
+
+
+/* Test on hover */
+
+#author_view table {
+    overflow: hidden;
+}
+
+#author_view td, th {
+    position: relative;
+}
+#author_view td.middle_column:hover::after,
+#author_view th:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #f5f5f5;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* collaborators */
+
 .collaborators_list{
     cursor: pointer;
 }
+
+/* charts */
 
 .pieChart svg {
     display: block;
@@ -38,4 +85,16 @@
 
 .pieChart h6 {
     text-align: center;
+}
+
+/* tooltip */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: #ddd;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
 }

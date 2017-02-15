@@ -1,0 +1,21 @@
+/* author list view */
+
+#authorList_view li {
+    min-width: 15em;
+    display: inline-block;
+    cursor:pointer;
+}
+
+#authorList_view ul {
+    padding-left: 0;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    display: block;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+}

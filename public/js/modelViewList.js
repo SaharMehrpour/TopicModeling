@@ -53,6 +53,8 @@ ModelViewList.prototype.init = function() {
         .selectAll("th")
         .on("click", function (d, i) {
 
+            if (i==1 || i==2) return;
+
             self.asc[i] = !self.asc[i];
 
             self.topicWords.sort(function (a, b) {
@@ -62,37 +64,29 @@ ModelViewList.prototype.init = function() {
                     else
                         return d3.descending(self.topicNames[a["id"]]["label"], self.topicNames[b["id"]]["label"]);
                 }
-                else if (i == 1) { // sort the second column
-                    return;
-                }
-                else if (i == 2) {  // sort the third column
-                    return;
-                }
+
                 else if (i == 3) { // sort the third column based on corpus
                     if (self.asc[3])
                         return d3.ascending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
                     else
                         return d3.descending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
                 }
+
             });
 
             // Update the table
             if (i==0 || i==3)
-                self.update();
-
+                self.populate();
         });
 
-    self.update();
+    self.populate();
 };
 
 /**
- * This function update the table, initially and when sorted
+ * This function populate the table, initially and when sorted
  */
-ModelViewList.prototype.update = function() {
+ModelViewList.prototype.populate = function() {
     var self = this;
-
-    self.div.classed("hidden",false);
-    //self.menu.classed("hidden",false);
 
     var rows = self.table.select("tbody").selectAll("tr")
         .data(self.topicWords);
@@ -290,4 +284,12 @@ ModelViewList.prototype.findTopWord = function(wordWeight) {
     words += list[self.xTopWords - 1]['label'];
     return words;
 
+};
+
+
+ModelViewList.prototype.update = function () {
+    var self = this;
+
+    self.div.classed("hidden",false);
+    //self.menu.classed("hidden",false);
 };

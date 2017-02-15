@@ -9,13 +9,13 @@
  * @param topicWords
  * @constructor
  */
-function DocView(papers, paperTopics, topicLabels, topicWords) {
+function PaperView(papers, paperTopics, topicLabels, topicWords) {
 
     var self = this;
 
-    self.div = d3.select("#doc_view");
+    self.div = d3.select("#paper_view");
     self.table = self.div.select("table");
-    self.title = d3.select("#doc_view_info");
+    self.title = d3.select("#paper_view_info");
 
     self.papers = papers;
     self.paperTopics = paperTopics;
@@ -34,13 +34,13 @@ function DocView(papers, paperTopics, topicLabels, topicWords) {
  * This function updates a view given a paper ID
  * @param paperID
  */
-DocView.prototype.update = function(paperID) {
+PaperView.prototype.update = function(paperID) {
 
     var self = this;
 
     self.div.classed("hidden", false);
 
-    self.div.select("#tempDoc").remove();
+    //self.div.select("#tempDoc").remove();
 
     var paper = self.papers
         .filter(function (d) {
@@ -131,7 +131,7 @@ DocView.prototype.update = function(paperID) {
     var topicName = cells.filter(function (d) {
         return d.type == 'topic_name'
     })
-    .attr("width", self.dimensions.topicCellwidth)
+        .attr("width", self.dimensions.topicCellwidth)
         .each(function (d) {
             d3.select(this)
                 .text(function () {
@@ -156,16 +156,16 @@ DocView.prototype.update = function(paperID) {
     var weightColorScale = d3.scaleLinear()
         .range(['#ece2f0', '#016450'])
         .domain([0,1]);
-        //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
-        //    return +g;
-        //})]);
+    //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
+    //    return +g;
+    //})]);
 
     var weightXScale = d3.scaleLinear()
         .range([0, self.dimensions.weightCellWidth])
         .domain([0,1]);
-        //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
-        //    return +g;
-        //})]);
+    //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
+    //    return +g;
+    //})]);
 
     cells.filter(function (d) {
         return d.type == 'weight';
@@ -212,7 +212,7 @@ DocView.prototype.update = function(paperID) {
  * @param topicID
  * @returns {*}
  */
-DocView.prototype.topicInfo = function(topicID) {
+PaperView.prototype.topicInfo = function(topicID) {
     var self = this;
     var s = self.topicLabels
         .filter(function (d) {
@@ -229,7 +229,7 @@ DocView.prototype.topicInfo = function(topicID) {
  * @param topicID
  * @returns {string}
  */
-DocView.prototype.findTopWord = function(topicID) {
+PaperView.prototype.findTopWord = function(topicID) {
 
     var self = this;
 
@@ -253,8 +253,8 @@ DocView.prototype.findTopWord = function(topicID) {
 };
 
 /*
-DocView.prototype.findTokens = function (topicID) {
-    self = this;
-    return self.topicWords[topicID]["words"].length;
-};
-*/
+ PaperView.prototype.findTokens = function (topicID) {
+ self = this;
+ return self.topicWords[topicID]["words"].length;
+ };
+ */

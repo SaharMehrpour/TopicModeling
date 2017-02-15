@@ -6,7 +6,7 @@
      * the classes are defined in the respective javascript files.
      */
     function init() {
-        //Creating instances for each visualization
+        //Creating instances for each view
 
         d3.csv("data/Papers.csv", function (error, papers) {
             d3.json("data/Topic_words.json", function (error, topicWords) {
@@ -22,16 +22,18 @@
 
                                 var topicView = new TopicView(topicWords, topicLabels, topicYears, papers, paperTopics);
 
-                                var docView = new DocView(papers, paperTopics, topicLabels, topicWords);
+                                var paperView = new PaperView(papers, paperTopics, topicLabels, topicWords);
 
                                 var bibView = new BibView(papers);
 
                                 var wordViewIndex = new WordIndexView(topicWords);
 
-                                var authorView = new AuthorView(paperAuthors, paperTopics, papers);
+                                var authorView = new AuthorView(paperAuthors, paperTopics, papers, topicLabels);
+
+                                var authorListView = new AuthorListView(paperAuthors);
 
                                 var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
-                                    , topicView, docView, bibView, wordViewIndex, authorView);
+                                    , topicView, paperView, bibView, wordViewIndex, authorView, authorListView);
 
                                 if ("onhashchange" in window) { // event supported?
                                     window.onhashchange = function () {
@@ -48,7 +50,7 @@
                                     }, 100);
                                 }
 
-                                location.hash = "#/secPriveMeta"; // initial page
+                                //location.hash = "#/secPriveMeta"; // initial page
 
                                 menuChart.init();
                             });
