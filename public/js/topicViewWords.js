@@ -41,9 +41,7 @@ TopicViewWords.prototype.update = function(topicID) {
     var enterRows = rows.enter()
         .append("tr")
         .on("click", function (d) {  // clicking a row in a table will do this
-            // TODO: clear this later!
-            //location.hash = "#/word/" + d;
-            location.hash = "#/author/Arvind Krishnamurthy";
+            location.hash = "#/word/" + d;
         });
 
     var cells = enterRows.merge(rows).selectAll("td")

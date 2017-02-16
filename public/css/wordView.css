@@ -1,0 +1,34 @@
+
+#word_view svg {
+    width: 100%;
+}
+
+#word_view svg path{
+    fill: #ddd;
+    stroke: darkgrey;
+}
+
+#word_view svg circle {
+    stroke: darkgrey;
+    stroke-width: 3px;
+    fill: darkgrey;
+    r: 2;
+}
+
+#word_view svg .topic_title {
+    font-size: 15px;
+}
+
+#word_view svg .topic_title:hover {
+    cursor: pointer;
+}
+
+#word_view .word_circle {
+    fill: darkred;
+    stroke: darkred;
+}
+
+#word_view svg .word {
+    text-anchor: start;
+    cursor: pointer;
+}

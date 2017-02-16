@@ -7,12 +7,12 @@
  * @param topicView
  * @param paperView
  * @param bibView
- * @param wordViewIndex
+ * @param wordIndexView
  * @param authorView
  * @constructor
  */
 function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
-    ,wordViewIndex,authorView,authorListView) {
+    ,wordIndexView,authorView,authorListView,wordView) {
 
     var self = this;
 
@@ -21,9 +21,10 @@ function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
     self.menuChart = menuChart;
     self.paperView = paperView;
     self.bibView = bibView;
-    self.wordViewIndex = wordViewIndex;
+    self.wordIndexView = wordIndexView;
     self.authorView = authorView;
     self.authorListView = authorListView;
+    self.wordView = wordView;
 
 }
 
@@ -44,70 +45,69 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
 
     var splittedHash = hash.split("/");
 
-    if(splittedHash[1] === 'secPriveMeta') {
+    switch(splittedHash[1]){
+        case 'secPriveMeta':
+            d3.select("#sec_prive_meta").classed('hidden', false);
+            break;
 
-        d3.select("#sec_prive_meta").classed('hidden', false);
-    }
-    else if(splittedHash[1] === 'model'){
-        if(splittedHash.length < 3){
+        case 'model':
             self.modelViewList.update();
-            return;
-        }
+            break;
 
-        switch(splittedHash[2]){
-            case 'list':
-                self.modelViewList.update();
-                break;
-            default:
+        case 'bib':
+            self.bibView.update();
+            break;
+
+        case 'wordIndex':
+            self.wordIndexView.update();
+            break;
+
+        case 'files':
+            d3.select("#file_view").classed('hidden', false);
+            break;
+
+        case 'authorList':
+            self.authorListView.update();
+            break;
+
+        case 'topic':
+            if(splittedHash.length < 3){
                 console.log("error in parsing the URL");
                 return;
-        }
-    }
-    else if(splittedHash[1] === 'topic'){
-        if(splittedHash.length < 3){
-            console.log("error in parsing the URL");
-            return;
-        }
-        var topicID = +splittedHash[2];
-        self.topicView.update(topicID);
+            }
+            self.topicView.update(+splittedHash[2]); // topicID
+            break;
+
+        case 'paper':
+            if(splittedHash.length < 3){
+                console.log("error in parsing the URL");
+                d3.select("#temp_view").html("Please select a paper from the Paper List.")
+                    .classed("hidden",false);
+                return;
+            }
+            self.paperView.update(splittedHash[2]); // paperID
+            break;
+
+        case 'author':
+            if(splittedHash.length < 3){
+                console.log("error in parsing the URL");
+                d3.select("#temp_view").html("Please select an author from the Author List.")
+                    .classed("hidden",false);
+                return;
+            }
+            self.authorView.update(splittedHash[2]); //authorID
+            break;
+
+        case 'word':
+            if(splittedHash.length < 3){
+                console.log("error in parsing the URL");
+                d3.select("#temp_view").html("Please select a paper from the Paper List.")
+                    .classed("hidden",false);
+                return;
+            }
+            self.wordView.update(splittedHash[2]); //paperID
+            break;
+
     }
 
-    else if(splittedHash[1] === 'paper'){
-        if(splittedHash.length < 3){
-            console.log("error in parsing the URL");
-            d3.select("#temp_view").html("Please select a paper from the Paper List.")
-                .classed("hidden",false);
-            return;
-        }
-        var paperID = splittedHash[2];
-        self.paperView.update(paperID);
-    }
-
-    else if(splittedHash[1] === 'bib'){
-        var paperID = splittedHash[2];
-        self.bibView.update(paperID);
-    }
-
-    else if(splittedHash[1] === 'wordIndex'){
-        self.wordViewIndex.update();
-    }
-
-    else if(splittedHash[1] === 'files'){
-        d3.select("#file_view").classed('hidden', false);
-    }
-
-    else if(splittedHash[1] === 'author'){
-        if(splittedHash.length < 3){
-            console.log("error in parsing the URL");
-            d3.select("#temp_view").html("Please select an author from the Author List.")
-                .classed("hidden",false);
-            return;
-        }
-        var authorID = splittedHash[2];
-        self.authorView.update(authorID);
-    }
-
-    else if(splittedHash[1] === 'authorList'){
-        self.authorListView.update();
-    }
 };

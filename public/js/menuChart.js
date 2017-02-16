@@ -14,16 +14,15 @@ function MenuChart(topicLabels) {
     d3.select("#view_container")
         .on("click", function () {
             self.hideDropDown();
-            //document.getElementById("myInput").value = "";  // not working
+            //document.getElementById("myInput").value = "";  // not tried to see if it works
         });
 
     d3.select("#myInput")
         .on("keyup", function () {
             var filter = document.getElementById("myInput").value.toUpperCase();
-            var items = d3.select("#topic_dropdown_div")
+            d3.select("#topic_dropdown_div")  // items
                 .selectAll("a")
                 .each(function (d,i) {
-                    if(i==0) console.log(d["label"],filter,d["label"].toUpperCase().indexOf(filter));
                     if(d["label"].toUpperCase().indexOf(filter) > -1) {
                         d3.select(this).style("display",null);
                     }

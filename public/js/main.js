@@ -26,14 +26,17 @@
 
                                 var bibView = new BibView(papers);
 
-                                var wordViewIndex = new WordIndexView(topicWords);
+                                var wordIndexView = new WordIndexView(topicWords);
 
                                 var authorView = new AuthorView(paperAuthors, paperTopics, papers, topicLabels);
 
                                 var authorListView = new AuthorListView(paperAuthors);
 
+                                var wordView = new WordView(topicLabels, topicWords);
+
                                 var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
-                                    , topicView, paperView, bibView, wordViewIndex, authorView, authorListView);
+                                    , topicView, paperView, bibView, wordIndexView, authorView, authorListView
+                                    , wordView);
 
                                 if ("onhashchange" in window) { // event supported?
                                     window.onhashchange = function () {
