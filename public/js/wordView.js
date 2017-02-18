@@ -134,6 +134,7 @@ WordView.prototype.update = function(wordID) {
         .attr("cy", function (g) {
             return self.dimensions.row_height - yScale(+g["weight"])
         })
+        .attr("r", 2)
         .classed("word_circle", function (g) {
             return g["word"] == wordID;
         })
@@ -218,7 +219,10 @@ WordView.prototype.update = function(wordID) {
             return self.dimensions.row_height - yScale(+g["weight"])
         })
         .html(function (g) {
-            return g["word"];
+            console.log(g["word"]);
+            console.log(Math.min(g["word"].length,20));
+            console.log(g["word"].slice(0, Math.min(g["word"].length,20)));
+            return g["word"].slice(0, Math.min(g["word"].length,20));
         })
         .attr("transform", function (g, i) {
             return "translate(2,-5) " +

@@ -37,6 +37,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
     var self = this;
 
     document.body.scrollTop = document.documentElement.scrollTop = 0;
+    self.tooltip = d3.select(".tooltip").style("opacity", 0);
 
     self.menuChart.update(hash);
 

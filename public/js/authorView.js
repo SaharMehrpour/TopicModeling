@@ -24,6 +24,12 @@ function AuthorView(paperAuthors, paperTopics, papers, topicLabels) {
     self.topicLabels = topicLabels;
 
     self.tooltip = d3.select(".tooltip");
+
+    self.svg = d3.select("#author_topic_list")
+        .append("svg")
+        .attr("id", "author_topic_svg");
+    var width = parseInt(window.innerWidth) * 0.7 * 0.8;
+    self.dimensions = {row_height: 150, row_distance: 50, row_width: width, padding_top: 50, padding_right: 50};
 }
 
 /**
@@ -39,13 +45,15 @@ AuthorView.prototype.update = function (authorID) {
     // TODO: find the name an author given authorID
     self.authorNameHeader.text(authorID);
 
-    // paper list and collaborators list, all topic IDs, header data
-    var paperIDs = self.findPaperIDs(authorID);
+    // paper list and collaborators list, all topic IDs
+    var paperIDs = self.paperAuthors.filter(function (d) {
+        return d["author"].indexOf(authorID) != -1; // caution!
+        })
+        .map(function (f) {
+            return f["paperID"];
+        });
     var collaborators = self.findCollaborators(authorID, paperIDs);
     var allTopicIDs = self.findTopicIDsForPapers(paperIDs);
-    var header_data = ["Papers"].concat(allTopicIDs.map(function (d) {
-        return d["key"];
-    }));
 
     var collaborators_list = self.authorColDiv.select("ul")
         .selectAll("li")
@@ -64,120 +72,9 @@ AuthorView.prototype.update = function (authorID) {
 
     collaborators_list.exit().remove();
 
-    // table of paper-topics
-    // header
+    self.drawTopicDiagram(authorID, allTopicIDs);
 
-    self.table
-        .select("thead > tr")
-        .selectAll("th")
-        .remove();
-
-    var header = self.table
-        .select("thead > tr")
-        .selectAll("th");
-
-    header.data(header_data)
-        .enter()
-        .append("th")
-        .classed("rotate", function (d,i) {
-            return i != 0;
-        })
-        .classed("first_column", function (d, i) {
-            return (i == 0);
-        })
-        .classed("middle_column", function (d,i) {
-            return i != 0;
-        })
-        .on("mouseover",function (d,i) {
-            if(i==0) return;
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 1);
-            self.tooltip.html(function () {
-                return self.topicLabels[d]["label"];
-            })
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .on("mouseout", function(d,i) {
-            if(i==0) return;
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 0);
-        })
-        .on("click", function (d,i) {
-            if (i!=0)
-                location.hash = "#/topic/" + d;
-        })
-        .append("div")
-        .append("span")
-        .merge(header)
-        .text(function (d,i) {
-            if (i==0) return d;
-            var label = self.topicLabels[d]["label"];
-            if(label.length > 16)
-                return label.slice(0,12) + '...';
-            return label;
-        });
-
-    header.exit().remove();
-
-    // table body
-
-    self.table
-        .select("tbody")
-        .selectAll("tr")
-        .remove();
-
-    var rows = self.table
-        .select("tbody")
-        .selectAll("tr")
-        .data(paperIDs);
-
-    var cells = rows.enter()
-        .append("tr")
-        .on("click", function (d) { // on click for a row
-            location.hash = "#/paper/" + d;
-        })
-        .selectAll("td")
-        .data(function (d) {
-            return self.findTopicsForPapers(d, allTopicIDs);
-        });
-
-    cells.enter()
-        .append("td")
-        .merge(cells)
-        .attr("class", function (g, i) {
-            if (i == 0)
-                return "first_column";
-            return "middle_column";
-        })
-        .html(function (g, i) {
-            if (i == 0)
-                return g["title"];
-            if (g["topicValue"]!=0)
-                return "✓";
-        })
-        .on("mouseover",function (g,i) {
-            if(i==0) return;
-            if (g["topicValue"]==0) return;
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 1);
-            self.tooltip.html(function () {
-                return self.topicLabels[g["topicID"]]["label"]
-                    + '</br>' + d3.format(".3n")(g["topicValue"]*100) + "%";
-            })
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .on("mouseout", function(g,i) {
-            if(i==0) return;
-            if (g["topicValue"]==0) return;
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 0);
-        });
+    self.listAllPapers(authorID);
 
     // Create Pie charts
 
@@ -189,7 +86,9 @@ AuthorView.prototype.update = function (authorID) {
 
     var pieConf = d3.pie()
         .sort(null)
-        .value(function(d) { return d["value"]; });
+        .value(function (d) {
+            return d["value"];
+        });
 
     var confs = self.papers.filter(function (d) {
         return paperIDs.indexOf(d["Paper Id"]) != -1
@@ -206,7 +105,7 @@ AuthorView.prototype.update = function (authorID) {
         })
         .entries(confs);
 
-    colorbrewerLimit = d3.max([3,d3.min([9,confData.length])]);
+    var colorbrewerLimit = d3.max([3, d3.min([9, confData.length])]);
 
     var colorConf = d3.scaleOrdinal()
         .range(colorbrewer.YlGnBu[colorbrewerLimit]);
@@ -234,8 +133,10 @@ AuthorView.prototype.update = function (authorID) {
 
     confPieGroup.append("path")
         .attr("d", arc)
-        .style("fill", function(d,i) { return colorConf(i); })
-        .on("mouseover",function (d) {
+        .style("fill", function (d, i) {
+            return colorConf(i);
+        })
+        .on("mouseover", function (d) { // TODO: set a timeout
             self.tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
@@ -245,28 +146,12 @@ AuthorView.prototype.update = function (authorID) {
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
         })
-        .on("mouseout", function() {
+        .on("mouseout", function () {
             self.tooltip.transition()
                 .duration(200)
                 .style("opacity", 0);
         });
 
-};
-
-/**
- * This function returns a list of topic IDs the author has a paper about
- * @param authorID
- * @returns {string[]}
- */
-AuthorView.prototype.findPaperIDs = function (authorID) {
-    // TODO: author and authorID ?
-
-    var self = this;
-    return self.paperAuthors.filter(function (d) {
-        return d["author"].indexOf(authorID) != -1; // caution!
-    }).map(function (f) {
-        return f["paperID"];
-    });
 };
 
 /**
@@ -325,7 +210,7 @@ AuthorView.prototype.findTopicIDsForPapers = function (paperIDList) {
         }
     });
 
-    var nest = d3.nest()
+    return d3.nest()
         .key(function (d) {
             return d
         }).rollup(function (leaves) {
@@ -334,33 +219,216 @@ AuthorView.prototype.findTopicIDsForPapers = function (paperIDList) {
             return d3.ascending(a,b);
         }));
 
-    return nest;
-
 };
 
 /**
- * This function returns an array of the paper title and a whether a specific topic
- * in the given list exists in the paper or not (e.i. true/false).
- * changed to list of corpus.
- * @param paperID
- * @param topicIDs
- * @returns {*[]}
+ * This function creates the topic visualization on the top
+ * @param authorID
+ * @param allTopicIDs
  */
-AuthorView.prototype.findTopicsForPapers = function (paperID, topicIDs) {
+AuthorView.prototype.drawTopicDiagram = function (authorID, allTopicIDs) {
+
     var self = this;
-    var paperInfo = self.papers.filter(function (d) {
-        return d["Paper Id"] == paperID;
+
+    allTopicIDs.sort(function (a,b) {
+        return d3.descending(a["value"],b["value"])
     });
 
-    var list = [{"title": paperInfo[0]["Title"]}];
+    // fix the size of svg
 
-    var paperTopic = self.paperTopics.filter(function (d) {
-        return d["paperID"] == paperID;
-    })[0];
+    self.svg.style("height", function () {
+        return self.dimensions.row_height + self.dimensions.row_distance;
+    });
 
-    for (var index = 0; index < topicIDs.length; index++) {
-        list.push({"topicValue": paperTopic[topicIDs[index]["key"]], "topicID" : topicIDs[index]["key"]});// != 0});
-    }
+    // find the max number of paper per topic
 
-    return list;
+    var maxNumber = d3.max(allTopicIDs, function (topic) {
+        return topic["value"];
+    });
+
+    //scales
+
+    var yScale = d3.scaleLinear()
+        .domain([0, maxNumber])  // min and max number of occurrence
+        .range([0, self.dimensions.row_height - self.dimensions.padding_top]);
+
+    var xScale = d3.scaleLinear()
+        .domain([0, allTopicIDs.length]) // number of topics for the author
+        .range([0, self.dimensions.row_width - self.dimensions.padding_right]);
+
+    // line function
+
+    var topicLine = d3.area()
+        .x(function (g, i) {
+            return xScale(i);
+        })
+        .y0(self.dimensions.row_height)
+        .y1(function (g) {
+            return self.dimensions.row_height - yScale(+g["value"]);
+        });
+
+    // append a group for each topic
+
+    self.svg.selectAll("g")
+        .data([1])
+        .enter()
+        .append("g")
+        .attr("transform", function () {
+            return "translate(10," + self.dimensions.row_distance + ")";
+        })
+        .append("path");
+
+    self.svg.select("path")
+        .attr("d", function () {
+            return topicLine(allTopicIDs);
+        });
+
+    // append circles corresponding to words of a topic to each group
+
+    var circles = self.svg.select("g")
+        .selectAll("circle")
+        .data(allTopicIDs);
+
+    circles.exit().remove();
+
+    circles.enter()
+        .append("circle")
+        .merge(circles)
+        .attr("cx", function (g, i) {
+            return xScale(i);
+        })
+        .attr("cy", function (g) {
+            return self.dimensions.row_height - yScale(+g["value"])
+        })
+        .attr("r", 5)
+        .attr("class","")
+        .on("click", function (g) {
+            var selected = !d3.select(this).classed("selected_topic");
+            d3.select(this).classed("selected_topic", selected);
+
+            // find selected topics
+
+            var idList = [];
+            var selectedList = [];
+
+            self.svg.selectAll("circle")
+                .each(function (g) {
+                    idList.push(g["key"]);
+                    selectedList.push(d3.select(this).classed("selected_topic"));
+                });
+
+            d3.select("#author_paper_list")
+                .selectAll("li")
+                .each(function (d) { // for each paper
+                    for (var index = 0; index < idList.length; index++) { // for each topic
+                        // if the topic is selected and does not exist in the paper
+                        if (selectedList[index] && d["topics"][idList[index]] == 0) {
+                            d3.select(this).style("display", "none");
+                            return;
+                        }
+                    }
+                    // all selected topics exist
+                    d3.select(this).style("display", null);
+                });
+        });
+
+    // append texts above circles
+
+    var texts = self.svg.select("g")
+        .selectAll(".topic_text")
+        .data(allTopicIDs);
+
+    texts.exit().remove();
+
+    texts.enter()
+        .append("text")
+        .merge(texts)
+        .attr("x", function (g, i) {
+            return xScale(i);
+        })
+        .attr("y", function (g) {
+            return self.dimensions.row_height - yScale(+g["value"])
+        })
+        .html(function (g) {
+            var label = self.topicLabels[g["key"]]["label"];
+            if(label.length > 16)
+                return label.slice(0,12) + '...';
+            return label;
+        })
+        .attr("transform", function (g, i) {
+            return "translate(2,-7) " +
+                "rotate(310," + xScale(i) + "," + (self.dimensions.row_height - yScale(+g["value"])) + ")";
+        })
+        .attr("class", "topic_text ")
+        .on("mouseover",function (g) {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(function () {
+                return self.topicLabels[g["key"]]["label"];
+            })
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d,i) {
+            if(i==0) return;
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        })
+        .on("click", function (g) {
+            location.hash = "#/topic/" + g["key"];
+        });
+};
+
+
+/**
+ * List all the papers of the author
+ * @param authorID
+ */
+AuthorView.prototype.listAllPapers = function (authorID) {
+
+    var self = this;
+
+    var papers = self.paperAuthors.filter(function (d) {
+        return d["author"].indexOf(authorID) != -1; // caution!
+    }).map(function (p) {
+        return {
+            "paperID": p["paperID"],
+            "title": self.papers.filter(function (d) {
+                return d["Paper Id"] == p["paperID"]
+            })[0]["Title"],
+            "topics": self.paperTopics.filter(function (d) {
+                return d["paperID"] == p["paperID"]
+            })[0]
+        };
+    });
+
+    var listItems = d3.select("#author_paper_list")
+        .selectAll("li")
+        .data(papers);
+
+    listItems.exit().remove();
+
+    listItems.enter()
+        .append("li")
+        .merge(listItems)
+        .text(function (d) {
+            return d["title"];
+        })
+        .on("click", function (d) {
+            location.hash = "#/paper/" + d["paperID"];
+        })
+        .on("mouseover", function (d) {
+
+            self.svg.selectAll(".topic_text")
+                .each(function (g) {
+                   if(d["topics"][g["key"]]>0)
+                       d3.select(this).classed("topic_of_paper",true);
+                });
+        })
+        .on("mouseout", function () {
+            self.svg.selectAll(".topic_text")
+                .classed("topic_of_paper",false);
+        });
 };

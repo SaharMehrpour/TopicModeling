@@ -1,6 +1,7 @@
 
 #word_view svg {
     width: 100%;
+    height: 1000px;
 }
 
 #word_view svg path{
@@ -12,7 +13,6 @@
     stroke: darkgrey;
     stroke-width: 3px;
     fill: darkgrey;
-    r: 2;
 }
 
 #word_view svg .topic_title {
