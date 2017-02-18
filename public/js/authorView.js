@@ -185,64 +185,7 @@ AuthorView.prototype.update = function (authorID) {
         .outerRadius(40)
         .innerRadius(0);
 
-    // Topic Pie Chart
-
-    var pieTopics = d3.pie()
-        .sort(null)
-        .value(function(d) { return d["value"]; });
-
-    var colorbrewerLimit = d3.max([3,d3.min([9,allTopicIDs.length])]);
-
-    var colorTopic = d3.scaleOrdinal()
-        .range(colorbrewer.YlGnBu[colorbrewerLimit]);
-
-    var topicPieDiv = d3.select("#topicPie");
-
-    topicPieDiv.selectAll("svg").remove();
-
-    topicPieDiv.selectAll("svg")
-        .data(["topic pie"])
-        .enter()
-        .append("svg");
-
-    // TODO: fix width and height
-    var topicPieSVG = topicPieDiv.select("svg")
-        .attr("width", "100px")
-        .attr("height", "100px")
-        .append("g")
-        .attr("transform", "translate(50,50)");
-
-    var topicPieGroup = topicPieSVG.selectAll(".arc")
-        .data(pieTopics(allTopicIDs))
-        .enter().append("g")
-        .attr("class", "arc");
-
-    topicPieGroup.append("path")
-        .attr("d", arc)
-        .style("fill", function(d,i) {
-            return colorTopic(i);
-        })
-        .on("mouseover",function (d) {
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 1);
-            self.tooltip.html(function () {
-                return self.topicLabels[d["data"]["key"]]["label"];
-            })
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .on("mouseout", function() {
-            self.tooltip.transition()
-                .duration(200)
-                .style("opacity", 0);
-        })
-        .on("click", function (d) {
-            location.hash = "#/topic/" + d["data"]["key"];
-        });
-
     // Conferences Pie Chart
-    // TODO: add tooltip based on "key"
 
     var pieConf = d3.pie()
         .sort(null)
