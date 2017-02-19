@@ -46,32 +46,66 @@ WordIndexView.prototype.init = function() {
         return d3.ascending(a.key, b.key);
     });
 
-    var items = self.div.selectAll("li").data(words);
+    self.createAlphabetIndex();
+
+    var items = self.div
+        .select("#word_index")
+        .selectAll("li").data(words);
 
     items.enter().append("li").text(function (d) {
-        return d.key;
-    }).on("click", function (g) {  // clicking a row in a table will do this
-        location.hash = "#/word/" + g.key;
-    }).style("display","none");
+            return d.key;
+        })
+        .on("click", function (g) {  // clicking a row in a table will do this
+            location.hash = "#/word/" + g.key;
+        })
+        .style("display",function (g) { // default display
+            if(g.key.charAt(0).toUpperCase().charAt(0) == 'A')
+                return null;
+            return "none";
+        });
 
     // Search Option:
 
     d3.select("#wordInput")
         .on("keyup", function () {
             var filter = document.getElementById("wordInput").value.toUpperCase();
-            if(filter == "") {
-                self.div.selectAll("li").style("display", "none");
+
+            // Search box is empty?
+            if (filter == "") {
+
+                // reset display of the words to default:
+                self.div.select("#word_index")
+                    .selectAll("li")
+                    .style("display", function (g) {
+                        if(g.key.charAt(0).toUpperCase() == 'A')
+                            return null;
+                        return "none";
+                    });
+
+                // set 'A' as the selected character
+                self.div.select("#alphabet_index")
+                    .selectAll("li")
+                    .classed("selected",function (d,i) {
+                        return i==0;
+                    });
                 return
             }
-            self.div.selectAll("li")
+
+            self.div.select("#word_index")
+                .selectAll("li")
                 .each(function (d) {
-                    if(d["key"].toUpperCase().indexOf(filter) > -1) {
-                        d3.select(this).style("display",null);
+                    if (d["key"].toUpperCase().indexOf(filter) > -1) {
+                        d3.select(this).style("display", null);
                     }
                     else {
-                        d3.select(this).style("display","none")
+                        d3.select(this).style("display", "none")
                     }
-                })
+                });
+
+            // un-select the characters at the top
+            self.div.select("#alphabet_index")
+                .selectAll("li")
+                .classed("selected",false);
         })
 
 };
@@ -86,3 +120,47 @@ WordIndexView.prototype.update = function() {
     self.div.classed("hidden",false);
 };
 
+/**
+ * This function creates an alphabet list on top
+ * @param words
+ */
+WordIndexView.prototype.createAlphabetIndex = function () {
+
+    var self = this;
+
+    var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    alphabet.push('Special');
+
+    self.div.select("#alphabet_index")
+        .selectAll("li")
+        .data(alphabet)
+        .enter()
+        .append("li")
+        .html(function (d) {
+            return d;
+        })
+        .classed("selected", function (d, i) {
+            return i == 0;
+        })
+        .on("click", function (d) {
+            self.div.select("#alphabet_index")
+                .selectAll("li")
+                .classed("selected", false);
+            d3.select(this)
+                .classed("selected", true);
+
+            self.div.select("#word_index")
+                .selectAll("li")
+                .style("display", function (g) {
+                    if (d == 'Special') {
+                        if (/[^A-Za-z]/.test(g.key.charAt(0)))
+                            return null;
+                        return "none";
+                    }
+                    if (g.key.charAt(0).toUpperCase() == d)
+                        return null;
+                    return "none";
+                });
+
+        });
+};

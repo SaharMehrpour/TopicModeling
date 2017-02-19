@@ -416,6 +416,7 @@ AuthorView.prototype.listAllPapers = function (authorID) {
         .text(function (d) {
             return d["title"];
         })
+        .style("display",null)
         .on("click", function (d) {
             location.hash = "#/paper/" + d["paperID"];
         })

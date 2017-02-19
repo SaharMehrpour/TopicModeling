@@ -53,7 +53,7 @@
                                     }, 100);
                                 }
 
-                                //location.hash = "#/secPriveMeta"; // initial page
+                                location.hash = ""; // initial page
 
                                 menuChart.init();
                             });

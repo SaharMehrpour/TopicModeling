@@ -1,12 +1,16 @@
 /* word index view */
 
-#wordIndex_view li {
+#word_index {
+    padding-top: 1em;
+}
+
+#word_index li {
     min-width: 15em;
     display: inline-block;
     cursor:pointer;
 }
 
-#wordIndex_view ul {
+#word_index ul {
     padding-left: 0;
     list-style-type: none;
     list-style-position: initial;
@@ -19,3 +23,42 @@
     -webkit-margin-end: 0;
     -webkit-padding-start: 40px;
 }
+
+/* alphabet index */
+
+#alphabet_index {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#alphabet_index li {
+    min-width: 2em;
+    display: inline-block;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+#alphabet_index li:hover {
+    color: darkred;
+    font-style: italic;
+}
+
+#alphabet_index .selected {
+    color: darkred;
+    font-weight: bold;
+}
+
+#alphabet_index ul {
+    padding-left: 0;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    display: block;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 40px;
+}
+

@@ -42,6 +42,9 @@ WordView.prototype.update = function(wordID) {
 
     self.div.classed("hidden", false);
 
+    var width = parseInt(window.innerWidth)*0.7;
+    self.dimensions = {row_height : 100 , row_distance : 70 , row_width : width};
+
     self.div.select("#word_header").html(wordID); // word view header
 
     var topics = self.findTopicsForWord(wordID);
@@ -219,9 +222,6 @@ WordView.prototype.update = function(wordID) {
             return self.dimensions.row_height - yScale(+g["weight"])
         })
         .html(function (g) {
-            console.log(g["word"]);
-            console.log(Math.min(g["word"].length,20));
-            console.log(g["word"].slice(0, Math.min(g["word"].length,20)));
             return g["word"].slice(0, Math.min(g["word"].length,20));
         })
         .attr("transform", function (g, i) {

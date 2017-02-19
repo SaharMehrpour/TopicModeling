@@ -102,7 +102,7 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
         case 'word':
             if(splittedHash.length < 3){
                 console.log("error in parsing the URL");
-                d3.select("#temp_view").html("Please select a paper from the Paper List.")
+                d3.select("#temp_view").html("Please select a paper from the Word Index.")
                     .classed("hidden",false);
                 return;
             }
