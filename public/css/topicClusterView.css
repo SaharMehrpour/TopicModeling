@@ -1,0 +1,67 @@
+#topic_header {
+    width: 100%;
+}
+
+#topic_header > div {
+    float: left;
+}
+
+#cluster_view .left_column {
+    width: 25%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#cluster_view .right_column {
+    width: 75%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#cluster_view .right_column .cells {
+    float: left;
+}
+
+#cluster_view .right_column .cell1 {
+    width: 20%;
+}
+
+#cluster_view .right_column .cell2 {
+    width: 20%;
+}
+
+#cluster_view .right_column .cell3 {
+    width: 50%;
+}
+
+#cluster_view .right_column .cell4 {
+    width: 10%;
+}
+
+#cluster_view .right_column .rows {
+    width: 100%;
+    min-height: 5em;
+    clear: both;
+    padding-top: 5px;
+    border-bottom: thin solid lightgray;
+}
+
+#cluster_view .right_column .rows:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+/* Left Column */
+
+#clusters_div .rows {
+    width: 100%;
+    min-height: 6em;
+    clear: both;
+    padding-top: 5px;
+    border-bottom: thin solid lightgray;
+}
+
+#clusters_div .rows:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}

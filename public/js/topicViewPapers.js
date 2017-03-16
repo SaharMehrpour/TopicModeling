@@ -11,6 +11,7 @@ function TopicViewPapers(papers, paperTopics) {
     var self = this;
 
     self.table = d3.select("#topic_view_papers > table");
+    self.list = d3.select("#topic_view_papers");
 
     self.paperTopics = paperTopics;
     self.papers = papers;
@@ -30,12 +31,11 @@ function TopicViewPapers(papers, paperTopics) {
  * @param topicID
  * @param year
  */
-TopicViewPapers.prototype.update = function(topicID,year) {
+TopicViewPapers.prototype.update_22 = function(topicID,year) {
 
     var self = this;
 
     self.paperTopics.sort(function (a, b) {
-
         return d3.descending(a[topicID], b[topicID]);
     });
 
@@ -176,5 +176,126 @@ TopicViewPapers.prototype.paperInfo = function(paperID) {
     if (s[0]["Session"] !== "")
         title = title + ", Session: " + s[0]["Session"];
     return title;
+
+};
+
+
+TopicViewPapers.prototype.update = function(topicID,year) {
+    var self = this;
+
+    self.paperTopics.sort(function (a, b) {
+        return d3.descending(a[topicID], b[topicID]);
+    });
+
+    var topDocs;
+
+    if (year !== undefined) {
+        topDocs = self.paperTopics
+            .filter(function (d) {
+
+                var paper = self.papers.filter(function (g) {
+                    return g["Paper Id"] === d["paperID"];
+                });
+
+                if (paper.length === 0) return;
+                return paper[0]["Year"] == year;
+            })
+            .filter(function (d, i) {
+                return (/*i < self.xTop &&*/ d[topicID] > 0);
+            });
+    }
+
+    else {
+        topDocs = self.paperTopics
+            .filter(function (d) {
+                return (/*i < self.xTop &&*/ d[topicID] > 0);
+            });
+    }
+
+    var rows = self.list
+        .selectAll(".rows")
+        .data(topDocs);
+
+    rows.exit().remove();
+    rows.enter()
+        .append("div")
+        .classed("rows", true)
+        .on("click", function (d) {  // clicking a row in a table will do this
+            location.hash = "#/paper/" + d["paperID"];
+        })
+        .merge(rows)
+        .selectAll(".cells")
+        .data(function (d) {
+            return [
+                {'type': 'percentage', 'value': d[topicID]}, // data for column 2
+                {'type': 'bars', 'value': d[topicID]},  // data for column 1
+                {'type': 'doc_name', 'value': d["paperID"]} // data for column 3
+                // add the data for more columns
+            ];
+        })
+        .enter()
+        .append("div")
+        .classed("cells", true);
+
+    var cells = self.list.selectAll(".cells");
+
+    // 1st Column
+
+    var percentage = cells.filter(function (d) {
+        return d.type == 'percentage'
+    })
+    //.attr("width", self.dimensions.topicCellwidth)
+        .each(function (d) {
+            d3.select(this)
+                .text(function () {
+                    return d3.format(".3n")(d.value * 100) + "%";
+                });
+        });
+
+    // 2nd column
+
+    var weightColorScale = d3.scaleLinear()
+        .range(['#ece2f0', 'darkred'])
+        .domain([0, 1]);
+
+    var weightXScale = d3.scaleLinear()
+        .range([0, self.dimensions.barsCellWidth])
+        .domain([0, 1]);
+
+    var bars = cells.filter(function (d) {
+        return d.type == 'bars';
+    }).each(function (d) {
+
+        d3.select(this).selectAll("svg").remove();
+
+        var group = d3.select(this).append("svg")
+            .attr("width", self.dimensions.barsCellWidth)
+            .attr("height", self.dimensions.barsCellHeight)
+            .append("g");
+
+        group.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", function () {
+                return weightXScale(+d.value);
+            })
+            .attr("height", self.dimensions.barsCellHeight)
+            .attr("fill", function () {
+                return weightColorScale(+d.value);
+            });
+    });
+
+    // 3rd Column
+    var docName = cells.filter(function (d) {
+        return d.type == 'doc_name'
+    })
+    //.attr("width", self.dimensions.topicCellwidth)
+        .each(function (d) {
+            d3.select(this)
+                .text(function () {
+                    return self.paperInfo(d.value);
+                })
+                .classed("title", true);
+        });
 
 };

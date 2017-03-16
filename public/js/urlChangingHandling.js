@@ -12,7 +12,7 @@
  * @constructor
  */
 function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
-    ,wordIndexView,authorView,authorListView,wordView) {
+    ,wordIndexView,authorView,authorListView,wordView,topicClusterView) {
 
     var self = this;
 
@@ -25,6 +25,8 @@ function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
     self.authorView = authorView;
     self.authorListView = authorListView;
     self.wordView = wordView;
+
+    self.topicClusterView = topicClusterView;
 
 }
 
@@ -108,6 +110,9 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
             }
             self.wordView.update(splittedHash[2]); //paperID
             break;
+
+        case 'cluster':
+            self.topicClusterView.update();
 
     }
 

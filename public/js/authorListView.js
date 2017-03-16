@@ -54,7 +54,9 @@ AuthorListView.prototype.init = function () {
             location.hash = "#/author/" + g.key;
         })
         .style("display",function (g) { // default display
-            if(g.key.charAt(0).toUpperCase().charAt(0) == 'A')
+            var name = g.key.split(' ');
+            var last = name[name.length-1];
+            if(last.toUpperCase().charAt(0) == 'A')
                 return null;
             return "none";
         });
@@ -126,8 +128,6 @@ AuthorListView.prototype.createAlphabetIndex = function () {
     var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
     alphabet.push('Special');
 
-    console.log(alphabet);
-
     self.div.select("#alphabet_list")
         .selectAll("li")
         .data(alphabet)
@@ -154,7 +154,9 @@ AuthorListView.prototype.createAlphabetIndex = function () {
                             return null;
                         return "none";
                     }
-                    if (g.key.charAt(0).toUpperCase() == d)
+                    var name = g.key.split(' ');
+                    var last = name[name.length-1];
+                    if (last.charAt(0).toUpperCase() == d)
                         return null;
                     return "none";
                 });

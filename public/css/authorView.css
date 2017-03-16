@@ -144,7 +144,7 @@ div.tooltip {
 
 #author_paper_list {
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
@@ -160,4 +160,10 @@ div.tooltip {
 
 #author_paper_list li:hover{
     font-weight: bold;
+}
+
+/* Co-Author column */
+#author_col {
+    max-height: 300px;
+    overflow: auto;
 }

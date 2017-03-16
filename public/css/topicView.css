@@ -3,7 +3,7 @@
 }
 
 #topic_view .column1 {
-    width: 20%;
+    /*width: 20%;*/
     position: relative;
     float: left;
     padding-top: 0;
@@ -11,12 +11,15 @@
 }
 
 #topic_view .column2 {
-    width: 80%;
+    /*width: 80%;*/
+    width: 60%;
     position: relative;
     float: right;
+    max-height: 400px;
+    overflow: auto;
 }
 
-#topic_view .column2 div {
+#topic_view .column2 > div {
     padding-left: 30px;
 }
 
@@ -53,12 +56,75 @@ div#topic_view_graph svg {
 }
 
 .selectedBar {
-    fill: #B52735;
+    fill: darkblue;
 }
-
 
 #topic_view_title {
     padding-bottom: 20px;
     margin: 0 auto;
     width: 100%;
+}
+
+#topic_view .column1 rect:hover {
+    stroke: darkblue;
+    stroke-width: 1px;
+}
+
+/* Word Diagram */
+
+#words_diagram {
+    width: 100%;
+    height: 200px;
+}
+
+#words_diagram path{
+    fill: #ddd;
+    stroke: darkgrey;
+}
+
+#words_diagram circle {
+    stroke: darkgrey;
+    stroke-width: 3px;
+    fill: darkgrey;
+}
+
+#words_diagram circle:hover {
+    fill: darkred;
+    stroke: darkred;
+}
+
+#words_diagram .word_circle {
+    fill: darkred;
+    stroke: darkred;
+}
+
+#words_diagram .word {
+    text-anchor: start;
+    cursor: pointer;
+}
+
+#words_diagram .word:hover {
+    font-weight: bold;
+}
+
+/* TopicView Words*/
+
+#topic_view_papers .rows{
+    float: left;
+    max-height: 70px;
+    padding-bottom: 5px;
+}
+
+#topic_view_papers .cells {
+    float: left;
+    max-width: 70%;
+    padding-left: 5px;
+}
+
+#topic_view_papers .title {
+    cursor:pointer;
+}
+
+#topic_view_papers .title:hover {
+    font-weight: bold;
 }

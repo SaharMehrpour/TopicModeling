@@ -14,6 +14,8 @@
                     d3.csv("data/Paper_topics.csv", function (error, paperTopics) {
                         d3.csv("data/Topic_years.csv", function (error, topicYears) {
                             d3.csv("data/paper_authors.csv", function (error, paperAuthors) {
+                                d3.csv("data/Topic_categories.csv", function (error, topicCategories) {
+
 
                                 var menuChart = new MenuChart(topicLabels);
 
@@ -34,9 +36,12 @@
 
                                 var wordView = new WordView(topicLabels, topicWords);
 
+                                var topicClusterView = new TopicClusterView(topicWords, topicLabels, paperTopics,
+                                    topicYears, topicCategories);
+
                                 var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
                                     , topicView, paperView, bibView, wordIndexView, authorView, authorListView
-                                    , wordView);
+                                    , wordView, topicClusterView);
 
                                 if ("onhashchange" in window) { // event supported?
                                     window.onhashchange = function () {
@@ -53,9 +58,10 @@
                                     }, 100);
                                 }
 
-                                location.hash = ""; // initial page
+                                location.hash = "#/model"; // initial page
 
                                 menuChart.init();
+                                });
                             });
                         });
                     });

@@ -23,7 +23,7 @@ function TopicView(topicWords,topicLabels,topicYears,papers,paperTopics) {
 
     self.title = self.div.select("#topic_view_title > h3");
 
-    self.topicViewWords = new TopicViewWords(topicWords);
+    self.topicViewWords = new TopicViewWords(topicWords, topicLabels);
     self.topicViewPapers = new TopicViewPapers(papers, paperTopics);
     self.topicViewGraph = new TopicViewGraph(topicYears, self.topicViewPapers);
 }

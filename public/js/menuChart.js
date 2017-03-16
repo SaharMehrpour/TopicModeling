@@ -93,17 +93,8 @@ MenuChart.prototype.update = function(hash) {
     var splittedHash = hash.split("/");
 
     self.mainNav.selectAll(".active").classed("active", false);
-    //self.modelNav.selectAll(".active").classed("active", false);
 
     self.mainNav.select("#nav_" + splittedHash[1]).classed("active", true);
-/*
-    if (splittedHash.length > 2) {
-        self.modelNav.select("#nav_" + splittedHash[1] + "_" + splittedHash[2]).classed("active", true);
-    }
-    else {
-        self.modelNav.select("#nav_" + splittedHash[1] + "_list").classed("active", true);
-    }
-*/
 };
 
 /**
