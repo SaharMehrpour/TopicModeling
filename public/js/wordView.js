@@ -29,6 +29,11 @@ function WordView(topicLabels, topicWords) {
     var width = parseInt(window.innerWidth)*0.7;
 
     self.dimensions = {row_height : 100 , row_distance : 70 , row_width : width};
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
     self.tooltip = d3.select(".tooltip");
 }
 
@@ -45,7 +50,7 @@ WordView.prototype.update = function(wordID) {
     var width = parseInt(window.innerWidth)*0.7;
     self.dimensions = {row_height : 100 , row_distance : 70 , row_width : width};
 
-    self.div.select("#word_header").html(wordID); // word view header
+    self.div.select("#word_header").select("span").html(wordID); // word view header
 
     var topics = self.findTopicsForWord(wordID);
 
@@ -115,7 +120,8 @@ WordView.prototype.update = function(wordID) {
         .merge(paths)
         .attr("d", function (g) {
             return topicWordLine(g["words_weights"]);
-        });
+        })
+        .style("fill", self.colors.words);
 
     // append circles corresponding to words of a topic to each group
 

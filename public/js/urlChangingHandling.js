@@ -3,7 +3,6 @@
  */
 /**
  * @param menuChart
- * @param modelViewList
  * @param topicView
  * @param paperView
  * @param bibView
@@ -11,12 +10,13 @@
  * @param authorView
  * @constructor
  */
-function UrlChangingHandling(menuChart,modelViewList,topicView,paperView,bibView
+function UrlChangingHandling(menuChart//,modelViewList
+    ,topicView,paperView,bibView
     ,wordIndexView,authorView,authorListView,wordView,topicClusterView) {
 
     var self = this;
 
-    self.modelViewList = modelViewList;
+    //self.modelViewList = modelViewList;
     self.topicView = topicView;
     self.menuChart = menuChart;
     self.paperView = paperView;
@@ -53,9 +53,9 @@ UrlChangingHandling.prototype.hashChangedHandler = function(hash){
             d3.select("#sec_prive_meta").classed('hidden', false);
             break;
 
-        case 'model':
-            self.modelViewList.update();
-            break;
+        //case 'model':
+        //    self.modelViewList.update();
+        //    break;
 
         case 'bib':
             self.bibView.update();

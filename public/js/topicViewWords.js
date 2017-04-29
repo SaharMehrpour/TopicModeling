@@ -26,105 +26,13 @@ function TopicViewWords(topicWords, topicLabels) {
     };
 
     self.svg = d3.select("#words_diagram");
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
     self.tooltip = d3.select(".tooltip");
 }
-
-/**
- * This function updates the list of words given a topic ID
- * @param topicID
- */
-TopicViewWords.prototype.update_2 = function(topicID) {
-    var self = this;
-
-    // TODO: sort topicWords
-
-    var rows = self.table.select("tbody").selectAll("tr")
-        .data(self.topicWords[topicID]["words"]);
-
-    rows.exit().remove();
-
-    var enterRows = rows.enter()
-        .append("tr")
-        .on("click", function (d) {  // clicking a row in a table will do this
-            location.hash = "#/word/" + d;
-        });
-
-    var cells = enterRows.merge(rows).selectAll("td")
-        .data(function (d,i) {
-            return [
-                {'type': 'word_name', 'value': self.topicWords[topicID]["words"][i]}, // data for column 1
-                {'type': 'word_weight', 'value': self.topicWords[topicID]["weights"][i]}  // data for column 2
-                // add the data for more columns
-            ];
-        });
-
-    var enterCells = cells.enter().append("td");
-    cells = enterCells.merge(cells);
-
-    // 1st Column
-
-    var topicName = cells.filter(function (d) {
-        return d.type == 'word_name'
-    })
-        .attr("width", self.dimensions.topicCellwidth)
-        .each(function (d) {
-            d3.select(this)
-                .text(function () {
-                    return d.value;
-                });
-        });
-
-
-    // 2nd Column
-
-    var weightColorScale = d3.scaleLinear()
-        .range(['#ece2f0', '#016450'])
-        .domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
-            return +g;
-        })]);
-
-    var weightXScale = d3.scaleLinear()
-        .range([0, self.dimensions.weightCellWidth])
-        .domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
-            return +g;
-        })]);
-
-    cells.filter(function (d) {
-        return d.type == 'word_weight';
-    }).each(function (d) {
-
-        d3.select(this).selectAll("svg").remove();
-
-        var group = d3.select(this).append("svg")
-            .attr("width", self.dimensions.weightCellWidth)
-            .attr("height", self.dimensions.weightCellHeight)
-            .append("g");
-
-        group.append("rect")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("width", function () {
-                return weightXScale(+d.value);
-            })
-            .attr("height", self.dimensions.weightCellHeight)
-            .attr("fill", function () {
-                return weightColorScale(+d.value);
-            });
-        /*
-         group.append("text")
-         .attr("x", 5)
-         .attr("y", self.dimensions.weigthCellHeight / 2)
-         .attr("dy", ".35em")
-         .text(function () {
-         return d.value;
-         })
-         .attr("class", "corpusText");
-         */
-    });
-
-    // add more columns
-
-};
 
 TopicViewWords.prototype.update = function (topicID) {
 
@@ -182,7 +90,7 @@ TopicViewWords.prototype.update = function (topicID) {
     self.svg.selectAll("g")
         .attr("transform", function (d, i) {
             //if (i == 0) return "translate(10," + self.dimensions.row_distance + ")";
-            return "translate(10, "+  self.dimensions.row_distance + ")"
+            return "translate(10, " + self.dimensions.row_distance + ")"
         });
 
     // append a path to each group
@@ -199,7 +107,8 @@ TopicViewWords.prototype.update = function (topicID) {
         .merge(paths)
         .attr("d", function (g) {
             return topicWordLine(g["words_weights"]);
-        });
+        })
+        .style("fill", self.colors.words);
 
     // append circles corresponding to words of a topic to each group
 
@@ -223,7 +132,7 @@ TopicViewWords.prototype.update = function (topicID) {
         })
         .attr("r", 2)
         .on("mouseover", function (g, i) {
-            if (g["topicValue"] == 0) return;
+            if (g["topicValue"] === 0) return;
             self.tooltip.transition()
                 .duration(200)
                 .style("opacity", 1);
@@ -234,8 +143,8 @@ TopicViewWords.prototype.update = function (topicID) {
                 .style("top", (d3.event.pageY - 28) + "px");
         })
         .on("mouseout", function (g, i) {
-            if (i == 0) return;
-            if (g["topicValue"] == 0) return;
+            if (i === 0) return;
+            if (g["topicValue"] === 0) return;
             self.tooltip.transition()
                 .duration(200)
                 .style("opacity", 0);
@@ -265,7 +174,7 @@ TopicViewWords.prototype.update = function (topicID) {
             return self.dimensions.row_height - yScale(+g["weight"])
         })
         .html(function (g) {
-            return g["word"].slice(0, Math.min(g["word"].length,20));
+            return g["word"].slice(0, Math.min(g["word"].length, 20));
         })
         .attr("transform", function (g, i) {
             return "translate(2,-5) " +
@@ -275,8 +184,26 @@ TopicViewWords.prototype.update = function (topicID) {
         .on("click", function (g) {
             location.hash = "#/word/" + g["word"];
         });
-        //.style("opacity", 0); // initially they are invisible
+    //.style("opacity", 0); // initially they are invisible
 
+    // General tooltip TODO
+
+    paths.on("mouseover", function () {
+        self.tooltip.transition()
+            .duration(200)
+            .style("opacity", 1);
+        self.tooltip.html(function () {
+            return "The words that discriminate whether a paper </br>"
+                + "is in the topic along with the weight of their importance";
+        })
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+        .on("mouseout", function () {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        });
 };
 
 

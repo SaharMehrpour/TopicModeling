@@ -39,6 +39,7 @@
     margin: 0 auto;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
+    top: 40px;
 }
 .navbar{
     list-style-type: none;

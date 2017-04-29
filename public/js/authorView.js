@@ -14,7 +14,7 @@ function AuthorView(paperAuthors, paperTopics, papers, topicLabels) {
 
     var self = this;
     self.div = d3.select("#author_view");
-    self.authorNameHeader = self.div.select("h3");
+    self.authorNameHeader = self.div.select("#author_name").select("span");
     self.table = self.div.select("table");
     self.authorColDiv = d3.select("#author_col");
 
@@ -28,8 +28,14 @@ function AuthorView(paperAuthors, paperTopics, papers, topicLabels) {
     self.svg = d3.select("#author_topic_list")
         .append("svg")
         .attr("id", "author_topic_svg");
+
     var width = parseInt(window.innerWidth) * 0.7 * 0.8;
-    self.dimensions = {row_height: 150, row_distance: 50, row_width: width, padding_top: 50, padding_right: 50};
+    self.dimensions = {row_height: 150, row_distance: 50,
+        row_width: width, padding_top: 50, padding_right: 50};
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
 }
 
 /**
@@ -42,7 +48,6 @@ AuthorView.prototype.update = function (authorID) {
     self.div.classed("hidden", false);
 
     // header
-    // TODO: find the name an author given authorID
     self.authorNameHeader.text(authorID);
 
     // paper list and collaborators list, all topic IDs
@@ -281,7 +286,8 @@ AuthorView.prototype.drawTopicDiagram = function (authorID, allTopicIDs) {
     self.svg.select("path")
         .attr("d", function () {
             return topicLine(allTopicIDs);
-        });
+        })
+        .style("fill", self.colors.topic);
 
     // append circles corresponding to words of a topic to each group
 
@@ -414,7 +420,7 @@ AuthorView.prototype.listAllPapers = function (authorID) {
         .append("li")
         .merge(listItems)
         .text(function (d) {
-            return d["title"];
+            return self.paperInfo(d["paperID"]);
         })
         .style("display",null)
         .on("click", function (d) {
@@ -432,4 +438,25 @@ AuthorView.prototype.listAllPapers = function (authorID) {
             self.svg.selectAll(".topic_text")
                 .classed("topic_of_paper",false);
         });
+};
+
+/**
+ * This function return the information of a paper given an ID
+ * @param paperID
+ * @returns {string}
+ */
+AuthorView.prototype.paperInfo = function(paperID) {
+    var self = this;
+    var s = self.papers
+        .filter(function (d) {
+            return d["Paper Id"] === paperID;
+        });
+    if (s.length === 0) return "no entry for '" + paperID + "' in paper.csv dataset";
+    if (s.length > 1) return "redundant entry for '" + paperID + "' in paper.csv dataset";
+
+    var title = s[0]["Title"] + ", " + s[0]["Conference"] + " " + s[0]["Year"];
+    if (s[0]["Session"] !== "")
+        title = title + ", Session: " + s[0]["Session"];
+    return title;
+
 };

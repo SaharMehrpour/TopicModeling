@@ -2,43 +2,57 @@
     width: 100%;
 }
 
-#topic_header > div {
+#topic_header .rows > div {
     float: left;
 }
 
-#cluster_view .left_column {
-    width: 25%;
+#cluster_view .wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid darkgray;
+    margin: 10px 0;
+}
+
+#cluster_view .top_row {
+    overflow-x: scroll;
+    height: 90px;
+    white-space:nowrap;
+}
+
+#cluster_view .top_row .rows {
+    width: 170px;
+    float: left;
+}
+
+#cluster_view .bottom_row {
+    width: 100%;
     max-height: 500px;
     overflow: auto;
 }
 
-#cluster_view .right_column {
-    width: 75%;
-    max-height: 500px;
-    overflow: auto;
-}
-
-#cluster_view .right_column .cells {
+#cluster_view .bottom_row .cells {
     float: left;
 }
 
-#cluster_view .right_column .cell1 {
+#cluster_view .bottom_row .cell1 {
     width: 20%;
 }
 
-#cluster_view .right_column .cell2 {
+#cluster_view .bottom_row .cell2 {
     width: 20%;
 }
 
-#cluster_view .right_column .cell3 {
+#cluster_view .bottom_row .cell3 {
     width: 50%;
 }
 
-#cluster_view .right_column .cell4 {
+#cluster_view .bottom_row .cell4 {
     width: 10%;
 }
 
-#cluster_view .right_column .rows {
+#cluster_view .bottom_row .rows {
     width: 100%;
     min-height: 5em;
     clear: both;
@@ -46,14 +60,14 @@
     border-bottom: thin solid lightgray;
 }
 
-#cluster_view .right_column .rows:hover {
+#cluster_view .bottom_row .rows:hover {
     background-color: #eeeeee;
     cursor: pointer;
 }
 
-/* Left Column */
+/* Bottom Row */
 
-#clusters_div .rows {
+#clusters_div .bottom_row .rows {
     width: 100%;
     min-height: 6em;
     clear: both;

@@ -22,6 +22,10 @@ function BibView(papers) {
         return d3.ascending(a["Year"], b["Year"]);
     });
 
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
     // grouping papers based on years
     var papersYears = d3.nest().key(function (d) {
         return d["Year"];

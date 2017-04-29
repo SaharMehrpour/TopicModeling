@@ -12,6 +12,11 @@ function WordIndexView(topicWords) {
     self.div = d3.select("#wordIndex_view");
 
     self.topicWords = topicWords["tw"];
+    self.topicWords = topicWords["tw"];
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
 
     self.init();
 

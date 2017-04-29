@@ -5,8 +5,8 @@
 }
 
 #word_view svg path{
-    fill: #ddd;
     stroke: darkgrey;
+    opacity: 0.5;
 }
 
 #word_view svg circle {

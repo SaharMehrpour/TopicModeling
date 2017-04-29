@@ -27,6 +27,8 @@ function TopicClusterView(topicWords,topicNames,paperTopics,topicYears,topicCate
     self.topicYears = topicYears;
     self.topicCategories = topicCategories;
 
+    self.displayedTopics = [];
+
     self.dimensions = {
         "topicCellwidth": 80, "yearCellWidth": 120, "wordCellWidth": 100, "corpusCellWidth": 80,
         "yearCellHeight": 40, "corpusCellHeight": 20
@@ -41,6 +43,11 @@ function TopicClusterView(topicWords,topicNames,paperTopics,topicYears,topicCate
 
 
     self.table = self.div.select("#topic_table");
+    self.tooltip = d3.select(".tooltip");
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
 
     self.init();
 
@@ -52,7 +59,63 @@ function TopicClusterView(topicWords,topicNames,paperTopics,topicYears,topicCate
 TopicClusterView.prototype.init = function() {
 
     var self = this;
+
     self.populateCluster();
+
+    // sorting option for header
+
+    self.div.select("#topic_header")
+        .select(".rows")
+        .selectAll("div")
+        .on("click", function (d, i) {
+            if (i === 1 || i === 2) return;
+            self.asc[i] = !self.asc[i];
+            self.displayedTopics.sort(function (a, b) {
+                if (i === 0) { // sort the first column based on topic names
+                    if (self.asc[0])
+                        return d3.ascending(self.topicNames[a["id"]]["label"], self.topicNames[b["id"]]["label"]);
+                    else
+                        return d3.descending(self.topicNames[a["id"]]["label"], self.topicNames[b["id"]]["label"]);
+                }
+
+                else if (i === 3) { // sort the third column based on corpus
+                    if (self.asc[3])
+                        return d3.ascending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
+                    else
+                        return d3.descending(self.computeCorpus(a["id"]), self.computeCorpus(b["id"]));
+                }
+
+            });
+            // Update the table
+            if (i === 0 || i === 3)
+                self.populateTopic();
+        })
+        .on("mouseover", function (d, i) {
+            var text = "";
+            if (i === 0) return;
+            if (i === 1) {
+                text = "The timeline (1980-2015) shows the papercount per year, </br>"
+                    + "where the papercount is the number of papers that score over </br>"
+                    + "a threshold percentage for the topic.";
+            }
+            if (i === 2) {
+                text = "The top words that discriminate <br>whether a paper is in the topic.";
+            }
+            if (i === 3) {
+                text = "The percentage of papers in the topic";
+            }
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(text)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        });
 };
 
 /**
@@ -89,7 +152,12 @@ TopicClusterView.prototype.populateCluster = function() {
         .on("click", function (d) {  // clicking a row in a table will do this
             self.clusterDiv.selectAll(".rows").style("background-color", null);
             d3.select(this).style("background-color", "#eee");
-            self.populateTopic(d["value"])
+
+            var indices = d["value"];
+            self.displayedTopics = self.topicWords.filter(function (d, i) {
+                return indices.indexOf(i.toString()) !== -1
+            });
+            self.populateTopic()
         });
 
     var cells = enterRows.merge(rows).selectAll(".cells")
@@ -102,7 +170,7 @@ TopicClusterView.prototype.populateCluster = function() {
         });
 
     var yearsColorScale = d3.scaleLinear()
-        .range(["#BFA4A6", "#9B0E00"])
+        .range([self.colors.base, self.colors.categories])
         .domain([0, self.maxBarValueCluster]);
 
     var yScale = d3.scaleLinear()
@@ -120,10 +188,10 @@ TopicClusterView.prototype.populateCluster = function() {
             return "cells cell" + (i + 1).toString();
         })
         .each(function (g, i) {
-            if (i == 0)
+            if (i === 0)
                 d3.select(this).html(g.value["value"]);
 
-            if (i == 1) {
+            if (i === 1) {
                 var years = new Array(d3.dsvFormat(";")
                         .parseRows(self.topicYears[+g.value["value"][0]]["years"], function (h) {
                             return h;
@@ -178,16 +246,16 @@ TopicClusterView.prototype.populateCluster = function() {
 /**
  * This function populate the topic table, initially and when sorted
  */
-TopicClusterView.prototype.populateTopic = function(indices) {
+TopicClusterView.prototype.populateTopic = function() {
 
     var self = this;
-
+/*
     var data = self.topicWords.filter(function (d,i) {
-        return indices.indexOf(i.toString())!=-1
+        return indices.indexOf(i.toString())!==-1
     });
-
+*/
     var rows = self.table.selectAll(".rows")
-        .data(data);
+        .data(self.displayedTopics);
 
     rows.exit().remove();
 
@@ -211,7 +279,7 @@ TopicClusterView.prototype.populateTopic = function(indices) {
 
 
     var yearsColorScale = d3.scaleLinear()
-        .range(["lightsteelblue", "midnightblue"])
+        .range([self.colors.base, self.colors.topic])
         .domain([0, self.maxBarValue]);
 
     var yScale = d3.scaleLinear()
@@ -222,7 +290,7 @@ TopicClusterView.prototype.populateTopic = function(indices) {
         .range([0, self.dimensions.yearCellWidth]);
 
     var corpusColorScale = d3.scaleLinear()
-        .range(['#ece2f0', '#6B0B03'])
+        .range([self.colors.base, self.colors.corpus])
         .domain([0, self.maxCorpusValue]);
 
     var barScale = d3.scaleLinear()
@@ -238,10 +306,10 @@ TopicClusterView.prototype.populateTopic = function(indices) {
             return "cells cell" + (i + 1).toString();
         })
         .each(function (g, i) {
-            if (i == 0)
+            if (i === 0)
                 d3.select(this).html(g.value["value"]);
 
-            if (i == 1) {
+            if (i === 1) {
                 var years = d3.dsvFormat(";")
                     .parseRows(g.value["value"], function (h) {
                         return h;
@@ -281,11 +349,11 @@ TopicClusterView.prototype.populateTopic = function(indices) {
 
             }
 
-            if (i == 2) {
+            if (i === 2) {
                 d3.select(this).html(self.findTopWord(g.value["value"]));
             }
 
-            if (i == 3) {
+            if (i === 3) {
                 d3.select(this).selectAll("svg").remove();
 
                 var group = d3.select(this).append("svg")
@@ -347,7 +415,7 @@ TopicClusterView.prototype.findTopWord = function(wordWeight) {
         list.push({'label': wordWeight['words'][i], 'weight': wordWeight['weights'][i]});
 
     list.sort(function (a, b) {
-        return ((a.weight < b.weight) ? 1 : ((a.weight == b.weight) ? 0 : -1));
+        return ((a.weight < b.weight) ? 1 : ((a.weight === b.weight) ? 0 : -1));
     });
 
     var words = "";

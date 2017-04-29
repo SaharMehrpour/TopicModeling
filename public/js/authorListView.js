@@ -15,6 +15,10 @@ function AuthorListView(paperAuthors){
 
     self.paperAuthors = paperAuthors;
 
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
     self.init()
 
 }
@@ -55,8 +59,8 @@ AuthorListView.prototype.init = function () {
         })
         .style("display",function (g) { // default display
             var name = g.key.split(' ');
-            var last = name[name.length-1];
-            if(last.toUpperCase().charAt(0) == 'A')
+            var last = name[name.length - 1];
+            if (last.toUpperCase().charAt(0) === 'A')
                 return null;
             return "none";
         });
@@ -70,13 +74,13 @@ AuthorListView.prototype.init = function () {
             var filter = document.getElementById("authorInput").value.toUpperCase();
 
             // Search box is empty?
-            if (filter == "") {
+            if (filter === "") {
 
                 // reset display of the words to default:
                 self.div.select("#author_list")
                     .selectAll("li")
                     .style("display", function (g) {
-                        if(g.key.charAt(0).toUpperCase() == 'A')
+                        if(g.key.charAt(0).toUpperCase() === 'A')
                             return null;
                         return "none";
                     });
@@ -85,7 +89,7 @@ AuthorListView.prototype.init = function () {
                 self.div.select("#alphabet_list")
                     .selectAll("li")
                     .classed("selected",function (d,i) {
-                        return i==0;
+                        return i===0;
                     });
                 return
             }
@@ -126,7 +130,7 @@ AuthorListView.prototype.createAlphabetIndex = function () {
     var self = this;
 
     var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    alphabet.push('Special');
+    //alphabet.push('Special');
 
     self.div.select("#alphabet_list")
         .selectAll("li")
@@ -149,14 +153,14 @@ AuthorListView.prototype.createAlphabetIndex = function () {
             self.div.select("#author_list")
                 .selectAll("li")
                 .style("display", function (g) {
-                    if (d == 'Special') {
-                        if (/[^A-Za-z]/.test(g.key.charAt(0)))
-                            return null;
-                        return "none";
-                    }
+                    //if (d == 'Special') {
+                    //    if (/[^A-Za-z]/.test(g.key.charAt(0)))
+                    //        return null;
+                    //    return "none";
+                    //}
                     var name = g.key.split(' ');
-                    var last = name[name.length-1];
-                    if (last.charAt(0).toUpperCase() == d)
+                    var last = name[name.length - 1];
+                    if (last.charAt(0).toUpperCase() === d)
                         return null;
                     return "none";
                 });

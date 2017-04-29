@@ -19,12 +19,12 @@
 
                                 var menuChart = new MenuChart(topicLabels);
 
-                                var modelViewList = new ModelViewList(topicWords, topicLabels,
-                                    paperTopics, topicYears);
+                                //var modelViewList = new ModelViewList(topicWords, topicLabels,
+                                //    paperTopics, topicYears);
 
                                 var topicView = new TopicView(topicWords, topicLabels, topicYears, papers, paperTopics);
 
-                                var paperView = new PaperView(papers, paperTopics, topicLabels, topicWords);
+                                var paperView = new PaperView(papers, paperTopics, topicLabels, topicWords, paperAuthors);
 
                                 var bibView = new BibView(papers);
 
@@ -39,7 +39,7 @@
                                 var topicClusterView = new TopicClusterView(topicWords, topicLabels, paperTopics,
                                     topicYears, topicCategories);
 
-                                var urlChangingHandler = new UrlChangingHandling(menuChart, modelViewList
+                                var urlChangingHandler = new UrlChangingHandling(menuChart//, modelViewList
                                     , topicView, paperView, bibView, wordIndexView, authorView, authorListView
                                     , wordView, topicClusterView);
 
@@ -58,7 +58,7 @@
                                     }, 100);
                                 }
 
-                                location.hash = "#/model"; // initial page
+                                location.hash = "#/cluster"; // initial page
 
                                 menuChart.init();
                                 });

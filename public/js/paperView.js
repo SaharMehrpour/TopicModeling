@@ -7,9 +7,10 @@
  * @param paperTopics
  * @param topicLabels
  * @param topicWords
+ * @param paperAuthors
  * @constructor
  */
-function PaperView(papers, paperTopics, topicLabels, topicWords) {
+function PaperView(papers, paperTopics, topicLabels, topicWords, paperAuthors) {
 
     var self = this;
 
@@ -21,6 +22,7 @@ function PaperView(papers, paperTopics, topicLabels, topicWords) {
     self.paperTopics = paperTopics;
     self.topicLabels = topicLabels;
     self.topicWords = topicWords["tw"];
+    self.paperAuthors = paperAuthors;
 
     self.xTop = 10;
     self.xTopWords = 10;
@@ -28,7 +30,46 @@ function PaperView(papers, paperTopics, topicLabels, topicWords) {
     self.dimensions = {
         "topicNameCellWidth": 90, "weightCellWidth": 120, "weightCellHeight": 20
     };
+
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
+    self.tooltip = d3.select(".tooltip");
 }
+
+/**
+ * The init functioo
+ */
+PaperView.prototype.init = function () {
+
+    var self = this;
+
+    self.table.selectAll("th")
+        .on("mouseover", function (d, i) {
+            var text = "";
+            if (i === 0) {
+                text = "Topics in which the paper scores over a threshold.";
+            }
+            if (i === 1) {
+                text = "The top words that discriminate <br>whether a paper is in the topic.";
+            }
+            if (i === 3) {
+                text = "The percentage of papers in the topic";
+            }
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 1);
+            self.tooltip.html(text)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+            self.tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
+        });
+};
 
 /**
  * This function updates a view given a paper ID
@@ -45,6 +86,11 @@ PaperView.prototype.update = function(paperID) {
     var paper = self.papers
         .filter(function (d) {
             return d["Paper Id"] == paperID;
+        });
+
+    var authors = self.paperAuthors
+        .filter(function (d) {
+            return d["paperID"] == paperID;
         });
 
     if (paper.length == 0) {
@@ -65,6 +111,19 @@ PaperView.prototype.update = function(paperID) {
         self.title.select("#conf_name").text(paper[0]["Conference"] + " " + paper[0]["Year"]);
         if (paper[0]["Session"] !== "")
             self.title.select("#session_name").text("Session Name: " + paper[0]["Session"]);
+
+        if (authors.length !== 0) {
+            var text = "";
+            for (var index = 0; index < authors.length - 1; index++) {
+                text = text + "<a href='#/author/" + authors[index]["author"] + "'>"
+                    + authors[index]["author"] + "</a>, ";
+            }
+            text = text + "<a href='#/author/" + authors[authors.length - 1]["author"] + "'>"
+                + authors[authors.length - 1]["author"] + "</a>";
+            self.title.select("#authors").html(text);
+        } else {
+            self.title.select("#authors").html("");
+        }
 
         self.title.select("p")
             .select("a")
@@ -108,7 +167,7 @@ PaperView.prototype.update = function(paperID) {
 
     rows = enterRows.merge(rows);
 
-    rows.on("click",function (d) {
+    rows.on("click", function (d) {
         location.hash = "#/topic/" + d["id"];
     });
 
@@ -154,15 +213,15 @@ PaperView.prototype.update = function(paperID) {
     // 3rd Column
 
     var weightColorScale = d3.scaleLinear()
-        .range(['#ece2f0', '#016450'])
-        .domain([0,1]);
+        .range([self.colors.base, self.colors.topic])
+        .domain([0, 1]);
     //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
     //    return +g;
     //})]);
 
     var weightXScale = d3.scaleLinear()
         .range([0, self.dimensions.weightCellWidth])
-        .domain([0,1]);
+        .domain([0, 1]);
     //.domain([0, d3.max(self.topicWords[topicID]["weights"], function (g) {
     //    return +g;
     //})]);

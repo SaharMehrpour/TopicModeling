@@ -17,6 +17,10 @@ function MenuChart(topicLabels) {
             //document.getElementById("myInput").value = "";  // not tried to see if it works
         });
 
+    self.colors = {categories: '#34888C',topic: '#7CAA2D',
+        author: '#CB6318', words: '#962715',
+        base: '#ddd', corpus: '#34675C'};
+
     d3.select("#myInput")
         .on("keyup", function () {
             var filter = document.getElementById("myInput").value.toUpperCase();

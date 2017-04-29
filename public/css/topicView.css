@@ -15,8 +15,6 @@
     width: 60%;
     position: relative;
     float: right;
-    max-height: 400px;
-    overflow: auto;
 }
 
 #topic_view .column2 > div {
@@ -78,8 +76,8 @@ div#topic_view_graph svg {
 }
 
 #words_diagram path{
-    fill: #ddd;
     stroke: darkgrey;
+    opacity: 0.5;
 }
 
 #words_diagram circle {
@@ -115,16 +113,26 @@ div#topic_view_graph svg {
     padding-bottom: 5px;
 }
 
-#topic_view_papers .cells {
+#topic_view_papers .cells, #topic_view .headers .cells {
     float: left;
     max-width: 70%;
     padding-left: 5px;
 }
 
-#topic_view_papers .title {
+#topic_view_papers .title{
     cursor:pointer;
 }
 
 #topic_view_papers .title:hover {
     font-weight: bold;
+}
+
+#topic_view .headers .paper_header {
+    padding-left: 5em;
+    padding-bottom: 1em;
+}
+
+#topic_view_papers {
+    max-height: 400px;
+    overflow: auto;
 }
